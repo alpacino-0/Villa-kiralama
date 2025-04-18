@@ -1,0 +1,13 @@
+{
+    "greeting": "Hei, velkommen til plattformen for villautleie!",
+    "book_now": "Bestill nå",
+    "header": {
+      "welcome": "Velkommen til nettstedet mitt!",
+      "nav": {
+        "home": "Hjem",
+        "about": "Om oss",
+        "contact": "Kontakt"
+      }
+    }
+  }
+  

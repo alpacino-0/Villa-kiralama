@@ -1,0 +1,83 @@
+{
+  "greeting": "Hej, välkommen till vår villauthyrningssida!",
+  "book_now": "Boka Nu",
+  "header": {
+    "welcome": "Välkommen till vår villauthyrningssida!",
+    "nav": {
+      "home": "Hem",
+      "villas": "Villor",
+      "regions": "Regioner",
+      "about": "Om Oss",
+      "contact": "Kontakt"
+    },
+    "languages": {
+      "tr": "Turkiska",
+      "en": "Engelska",
+      "ar": "Arabiska",
+      "es": "Spanska",
+      "no": "Norska",
+      "sv": "Svenska",
+      "nl": "Holländska",
+      "it": "Italienska",
+      "fr": "Franska",
+      "ru": "Ryska",
+      "de": "Tyska"
+    },
+    "languageSelection": "Språkval",
+    "mobileMenu": {
+      "openMenu": "Öppna Meny",
+      "closeMenu": "Stäng Meny"
+    }
+  },
+  "footer": {
+    "companyInfo": "Din pålitliga källa för lyxvillor och semesterboenden.",
+    "contact": "Kontakt:",
+    "copyright": "© 2025 Villauthyrning. Alla rättigheter förbehållna.",
+    "links": {
+      "homes": "Hem",
+      "villas": "Villor",
+      "locations": "Platser",
+      "promotions": "Kampanjer",
+      "aboutUs": "Om Oss",
+      "contactUs": "Kontakta Oss",
+      "privacyPolicy": "Integritetspolicy",
+      "termsOfService": "Användarvillkor",
+      "paymentMethods": "Betalningsmetoder",
+      "faq": "Vanliga Frågor",
+      "hostAgreement": "Värdavtal",
+      "cancellationPolicy": "Avbokningspolicy",
+      "rentalAgreement": "Hyresavtal",
+      "gdprCompliance": "GDPR Efterlevnad"
+    },
+    "newsletter": {
+      "title": "Prenumerera på vårt nyhetsbrev",
+      "placeholder": "Din e-postadress",
+      "button": "Prenumerera"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    },
+    "quickLinks": "Snabblänkar",
+    "legal": "Juridisk",
+    "brandSlogan": "Semesterns lyxiga sida",
+    "form": {
+      "title": "Kontakta Oss",
+      "name": "Namn",
+      "email": "E-post",
+      "phone": "Telefon",
+      "message": "Meddelande",
+      "sending": "Skickar...",
+      "send": "Skicka"
+    },
+    "securePayment": "Säker Betalning",
+    "sslEncryption": "Alla betalningar är 128-bit SSL-krypterade.",
+    "webDesign": "Webbdesign",
+    "cancellationPolicy": "Avbokningspolicy",
+    "gdprCompliance": "GDPR-efterlevnad",
+    "cookiePolicy": "Cookiepolicy"
+  }
+}

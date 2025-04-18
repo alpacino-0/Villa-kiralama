@@ -1,0 +1,83 @@
+{
+  "greeting": "Здравствуйте, добро пожаловать на сайт аренды вилл!",
+  "book_now": "Забронировать сейчас",
+  "header": {
+    "welcome": "Добро пожаловать на сайт аренды вилл!",
+    "nav": {
+      "home": "Главная",
+      "villas": "Виллы",
+      "regions": "Регионы",
+      "about": "О нас",
+      "contact": "Контакты"
+    },
+    "languages": {
+      "tr": "Турецкий",
+      "en": "Английский",
+      "ar": "Арабский",
+      "es": "Испанский",
+      "no": "Норвежский", 
+      "sv": "Шведский",
+      "nl": "Голландский",
+      "it": "Итальянский",
+      "fr": "Французский",
+      "ru": "Русский",
+      "de": "Немецкий"
+    },
+    "languageSelection": "Выбор языка",
+    "mobileMenu": {
+      "openMenu": "Открыть меню",
+      "closeMenu": "Закрыть меню"
+    }
+  },
+  "footer": {
+    "companyInfo": "Ваш надежный источник роскошных вилл и отпускного жилья.",
+    "contact": "Контакт:",
+    "copyright": "© 2025 Аренда вилл. Все права защищены.",
+    "links": {
+      "homes": "Дома",
+      "villas": "Виллы",
+      "locations": "Локации",
+      "promotions": "Акции",
+      "aboutUs": "О нас",
+      "contactUs": "Связаться",
+      "privacyPolicy": "Политика конфиденциальности",
+      "termsOfService": "Условия использования",
+      "paymentMethods": "Способы оплаты",
+      "faq": "Частые вопросы",
+      "hostAgreement": "Соглашение с хостом",
+      "cancellationPolicy": "Политика отмены",
+      "rentalAgreement": "Договор аренды",
+      "gdprCompliance": "GDPR Соглашение"
+    },
+    "newsletter": {
+      "title": "Подпишитесь на рассылку",
+      "placeholder": "Ваш email",
+      "button": "Подписаться"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    },
+    "quickLinks": "Быстрые ссылки",
+    "legal": "Юридическая информация",
+    "brandSlogan": "Роскошный образ отпуска",
+    "form": {
+      "title": "Свяжитесь с нами",
+      "name": "Ваше имя",
+      "email": "Email",
+      "phone": "Телефон",
+      "message": "Сообщение",
+      "sending": "Отправка...",
+      "send": "Отправить"
+    },
+    "securePayment": "Безопасная оплата",
+    "sslEncryption": "Все платежи защищены 128-битным SSL.",
+    "webDesign": "Веб-дизайн",
+    "cancellationPolicy": "Политика отмены",
+    "gdprCompliance": "GDPR Соответствие",
+    "cookiePolicy": "Политика cookies"
+  }
+}

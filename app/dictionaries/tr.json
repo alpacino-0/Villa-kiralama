@@ -1,0 +1,131 @@
+{
+  "greeting": "Merhaba, Villa Kiralama Sitemize Hoş Geldiniz!",
+  "book_now": "Hemen Rezervasyon Yap",
+  "header": {
+    "welcome": "Villa Kiralama Sitemize Hoş Geldiniz!",
+    "nav": {
+      "home": "Ana Sayfa",
+      "villas": "Villalar",
+      "regions": "Bölgeler",
+      "about": "Hakkımızda",
+      "contact": "İletişim"
+    },
+    "languages": {
+      "tr": "Türkçe",
+      "en": "İngilizce",
+      "ar": "Arapça",
+      "es": "İspanyolca",
+      "no": "Norveççe",
+      "sv": "İsveççe",
+      "nl": "Hollandaca",
+      "it": "İtalyanca",
+      "fr": "Fransızca",
+      "ru": "Rusça",
+      "de": "Almanca"
+    },
+    "languageSelection": "Dil Seçimi",
+    "mobileMenu": {
+      "openMenu": "Menüyü Aç",
+      "closeMenu": "Menüyü Kapat"
+    }
+  },
+  "nav": {
+    "home": "Ana Sayfa"
+  },
+  "footer": {
+    "companyInfo": "Lüks villalar ve tatil evleri konusunda güvenilir kaynağınız.",
+    "contact": "İletişim:",
+    "copyright": "© 2025 Villa Kiralama. Tüm hakları saklıdır.",
+    "links": {
+      "homes": "Evler",
+      "villas": "Villalar",
+      "locations": "Bölgeler",
+      "promotions": "Kampanyalar",
+      "aboutUs": "Hakkımızda",
+      "contactUs": "Bize Ulaşın",
+      "privacyPolicy": "Gizlilik Politikası",
+      "termsOfService": "Kullanım Şartları",
+      "paymentMethods": "Ödeme Yöntemleri",
+      "faq": "Sıkça Sorulan Sorular",
+      "hostAgreement": "Ev Sahibi Sözleşmesi",
+      "cancellationPolicy": "İptal Politikası",
+      "rentalAgreement": "Villa Kiralama Sözleşmesi",
+      "gdprCompliance": "KVKK Aydınlatma Metni"
+    },
+    "newsletter": {
+      "title": "Bültenimize Abone Olun",
+      "placeholder": "E-posta adresiniz",
+      "button": "Abone Ol"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "youtube": "Youtube"
+    },
+    "quickLinks": "Hızlı Bağlantılar",
+    "legal": "Yasal",
+    "brandSlogan": "Tatilin Lüks Yüzü",
+    "form": {
+      "title": "Bize Ulaşın",
+      "name": "Adınız",
+      "email": "E-posta Adresiniz",
+      "phone": "Telefon Numaranız",
+      "message": "Mesajınız",
+      "sending": "Gönderiliyor...",
+      "send": "Gönder"
+    },
+    "securePayment": "Güvenli Ödeme",
+    "sslEncryption": "Tüm ödemeler 128-bit SSL ile şifrelenmektedir.",
+    "webDesign": "Web Tasarım",
+    "cancellationPolicy": "İptal Politikası",
+    "gdprCompliance": "KVKK Aydınlatma Metni",
+    "cookiePolicy": "Çerez Politikası"
+  },
+  "homepage": {
+    "heroTitle": "Hayalinizdeki Tatil İçin Mükemmel Villalar",
+    "heroSubtitle": "Türkiye'nin en güzel tatil bölgelerinde lüks villalar",
+    "searchButton": "Villaları Ara",
+    "featuredSectionTitle": "Öne Çıkan Villalar",
+    "featuredSectionSubtitle": "En popüler tatil villalarımız",
+    "viewAllButton": "Tümünü Görüntüle"
+  },
+  "villaDetails": {
+    "book": "Hemen Rezervasyon Yap",
+    "features": "Özellikler",
+    "amenities": "Olanaklar",
+    "location": "Konum",
+    "reviews": "Değerlendirmeler",
+    "availability": "Müsaitlik",
+    "similarProperties": "Benzer Villalar",
+    "nightPrice": "Gece Fiyatı",
+    "totalPrice": "Toplam Fiyat"
+  },
+  "search": {
+    "title": "Villa Ara",
+    "location": "Konum",
+    "checkIn": "Giriş Tarihi",
+    "checkOut": "Çıkış Tarihi",
+    "guests": "Misafir Sayısı",
+    "searchButton": "Ara",
+    "filters": "Filtreler",
+    "price": "Fiyat",
+    "bedrooms": "Yatak Odaları",
+    "bathrooms": "Banyolar",
+    "amenities": "Olanaklar",
+    "clearFilters": "Filtreleri Temizle",
+    "applyFilters": "Filtreleri Uygula",
+    "resultsFound": "villa bulundu"
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Kaybolmuş gibisiniz",
+    "description": "Aradığınız sayfa mevcut değil!",
+    "goHomeButton": "Ana Sayfaya Dön"
+  },
+  "common": {
+    "emailAddress": "E-posta Adresi",
+    "phoneNumber": "Telefon Numarası"
+  }
+}

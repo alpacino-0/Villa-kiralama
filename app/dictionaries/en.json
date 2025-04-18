@@ -1,0 +1,124 @@
+{
+  "greeting": "Hello, Welcome to our Villa Rental Site!",
+  "book_now": "Book Now",
+  "header": {
+    "welcome": "Welcome to our Villa Rental Site!",
+    "nav": {
+      "home": "Home",
+      "villas": "Villas",
+      "regions": "Regions",
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "languages": {
+      "tr": "Turkish",
+      "en": "English",
+      "ar": "Arabic",
+      "es": "Spanish",
+      "no": "Norwegian",
+      "sv": "Swedish",
+      "nl": "Dutch",
+      "it": "Italian",
+      "fr": "French",
+      "ru": "Russian",
+      "de": "German"
+    },
+    "languageSelection": "Language Selection",
+    "mobileMenu": {
+      "openMenu": "Open Menu",
+      "closeMenu": "Close Menu"
+    }
+  },
+  "nav": {
+    "home": "Home"
+  },
+  "footer": {
+    "companyInfo": "Your trusted source for luxury villas and vacation homes.",
+    "contact": "Contact:",
+    "copyright": "© 2025 Villa Rental. All rights reserved.",
+    "links": {
+      "homes": "Homes",
+      "villas": "Villas",
+      "locations": "Regions",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service"
+    },
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "youtube": "Youtube"
+    },
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "brandSlogan": "The Luxury Face of Holiday",
+    "form": {
+      "title": "Contact Us",
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Your Phone",
+      "message": "Your Message",
+      "sending": "Sending...",
+      "send": "Send"
+    },
+    "securePayment": "Secure Payment",
+    "sslEncryption": "All payments are encrypted with 128-bit SSL.",
+    "webDesign": "Web Design",
+    "cancellationPolicy": "Cancellation Policy",
+    "gdprCompliance": "GDPR Compliance",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "homepage": {
+    "heroTitle": "Perfect Villas for Your Dream Vacation",
+    "heroSubtitle": "Luxury villas in Turkey's most beautiful holiday destinations",
+    "searchButton": "Search Villas",
+    "featuredSectionTitle": "Featured Villas",
+    "featuredSectionSubtitle": "Our most popular holiday villas",
+    "viewAllButton": "View All"
+  },
+  "villaDetails": {
+    "book": "Book Now",
+    "features": "Features",
+    "amenities": "Amenities",
+    "location": "Location",
+    "reviews": "Reviews",
+    "availability": "Availability",
+    "similarProperties": "Similar Villas",
+    "nightPrice": "Night Price",
+    "totalPrice": "Total Price"
+  },
+  "search": {
+    "title": "Search Villas",
+    "location": "Location",
+    "checkIn": "Check-in Date",
+    "checkOut": "Check-out Date",
+    "guests": "Number of Guests",
+    "searchButton": "Search",
+    "filters": "Filters",
+    "price": "Price",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "amenities": "Amenities",
+    "clearFilters": "Clear Filters",
+    "applyFilters": "Apply Filters",
+    "resultsFound": "villas found"
+  },
+  "common": {
+    "emailAddress": "Email Address",
+    "phoneNumber": "Phone Number"
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "You seem to be lost",
+    "description": "The page you are looking for doesn't exist!",
+    "goHomeButton": "Go to Home Page"
+  }
+}

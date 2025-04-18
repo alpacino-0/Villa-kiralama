@@ -1,0 +1,83 @@
+{
+  "greeting": "Hallo, welkom op onze villaverhuur website!",
+  "book_now": "Direct Boeken",
+  "header": {
+    "welcome": "Welkom op onze villaverhuur website!",
+    "nav": {
+      "home": "Home",
+      "villas": "Villa's",
+      "regions": "Regio's",
+      "about": "Over Ons",
+      "contact": "Contact"
+    },
+    "languages": {
+      "tr": "Turks",
+      "en": "Engels",
+      "ar": "Arabisch",
+      "es": "Spaans",
+      "no": "Noors",
+      "sv": "Zweeds",
+      "nl": "Nederlands",
+      "it": "Italiaans",
+      "fr": "Frans",
+      "ru": "Russisch",
+      "de": "Duits"
+    },
+    "languageSelection": "Taal Selectie",
+    "mobileMenu": {
+      "openMenu": "Menu Openen",
+      "closeMenu": "Menu Sluiten"
+    }
+  },
+  "footer": {
+    "companyInfo": "Uw betrouwbare bron voor luxe villa's en vakantiewoningen.",
+    "contact": "Contact:",
+    "copyright": "© 2025 Villaverhuur. Alle rechten voorbehouden.",
+    "links": {
+      "homes": "Huisjes",
+      "villas": "Villa's",
+      "locations": "Locaties",
+      "promotions": "Aanbiedingen",
+      "aboutUs": "Over Ons",
+      "contactUs": "Contact Opnemen",
+      "privacyPolicy": "Privacybeleid",
+      "termsOfService": "Servicevoorwaarden",
+      "paymentMethods": "Betaalmethoden",
+      "faq": "Veelgestelde Vragen",
+      "hostAgreement": "Host Overeenkomst",
+      "cancellationPolicy": "Annuleringsbeleid",
+      "rentalAgreement": "Huuracte",
+      "gdprCompliance": "AVG Overeenkomst"
+    },
+    "newsletter": {
+      "title": "Schrijf je in voor onze nieuwsbrief",
+      "placeholder": "Je emailadres",
+      "button": "Inschrijven"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    },
+    "quickLinks": "Snelle Links",
+    "legal": "Juridisch",
+    "brandSlogan": "De luxe kant van vakantie",
+    "form": {
+      "title": "Neem Contact Op",
+      "name": "Naam",
+      "email": "Email",
+      "phone": "Telefoon",
+      "message": "Bericht",
+      "sending": "Verzenden...",
+      "send": "Verzend"
+    },
+    "securePayment": "Veilige Betaling",
+    "sslEncryption": "Alle betalingen zijn 128-bit SSL versleuteld.",
+    "webDesign": "Webdesign",
+    "cancellationPolicy": "Annuleringsbeleid",
+    "gdprCompliance": "AVG-naleving",
+    "cookiePolicy": "Cookiebeleid"
+  }
+}

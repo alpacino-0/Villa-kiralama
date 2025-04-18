@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --primary: #000000; /* Siyah - Logo, başlıklar, vurgular */
+  --secondary: #100049; /* Koyu Lacivert - Sekonder renk, arka planlar */
+  --radius: 0.625rem;
+  --background: #FFFFFF; /* Beyaz - Arka planlar, içerik alanları */
+  --foreground: #000000; /* Siyah - Metin rengi */
+  --card: #FFFFFF; /* Beyaz - Kart arka planı */
+  --card-foreground: #000000; /* Siyah - Kart metni */
+  --popover: #FFFFFF; /* Beyaz - Popover arka planı */
+  --popover-foreground: #000000; /* Siyah - Popover metni */
+  --primary-foreground: #FFFFFF; /* Beyaz - Primary buton metni */
+  --secondary-foreground: #FFFFFF; /* Beyaz - Secondary buton metni */
+  --muted: #F5F5F5; /* Hafif gri - Muted alanlar */
+  --muted-foreground: #666666; /* Gri - Muted metin */
+  --accent: #180675; /* Mor - Aksanlar */
+  --accent-foreground: #FFFFFF; /* Beyaz - Aksan metni */
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #DDDDDD; /* Hafif gri - Sınırlar */
+  --input: #EEEEEE; /* Gri - Input alanları */
+  --ring: #180675; /* Mor - Odak halkası */
+  --chart-1: #000000; /* Siyah */
+  --chart-2: #100049; /* Koyu Lacivert */
+  --chart-3: #180675; /* Mor */
+  --chart-4: #333333; /* Koyu gri */
+  --chart-5: #666666; /* Orta gri */
+  --sidebar: #100049; /* Koyu Lacivert - Sidebar arka planı */
+  --sidebar-foreground: #FFFFFF; /* Beyaz - Sidebar metni */
+  --sidebar-primary: #000000; /* Siyah - Sidebar primary */
+  --sidebar-primary-foreground: #FFFFFF; /* Beyaz - Sidebar primary metni */
+  --sidebar-accent: #180675; /* Mor - Sidebar aksan */
+  --sidebar-accent-foreground: #FFFFFF; /* Beyaz - Sidebar aksan metni */
+  --sidebar-border: rgba(255, 255, 255, 0.1); /* Transparan beyaz - Sidebar sınırları */
+  --sidebar-ring: rgba(255, 255, 255, 0.5); /* Yarı transparan beyaz - Sidebar halkası */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #FFFFFF; /* Beyaz - Karanlık modda başlıklar */
+    --secondary: #180675; /* Mor - Karanlık modda sekonder */
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat);
+  color: var(--primary);
+}
+
+body, p, span, div, a {
+  font-family: var(--font-nunito);
+}
+
+.dark {
+  --background: #000000; /* Siyah - Karanlık mod arka plan */
+  --foreground: #FFFFFF; /* Beyaz - Karanlık mod metin */
+  --card: #100049; /* Koyu Lacivert - Karanlık mod kart */
+  --card-foreground: #FFFFFF; /* Beyaz - Karanlık mod kart metni */
+  --popover: #100049; /* Koyu Lacivert - Karanlık mod popover */
+  --popover-foreground: #FFFFFF; /* Beyaz - Karanlık mod popover metni */
+  --primary: #FFFFFF; /* Beyaz - Karanlık mod primary */
+  --primary-foreground: #000000; /* Siyah - Karanlık mod primary metni */
+  --secondary: #180675; /* Mor - Karanlık mod secondary */
+  --secondary-foreground: #FFFFFF; /* Beyaz - Karanlık mod secondary metni */
+  --muted: #333333; /* Koyu gri - Karanlık mod muted */
+  --muted-foreground: #BBBBBB; /* Açık gri - Karanlık mod muted metni */
+  --accent: #180675; /* Mor - Karanlık mod aksan */
+  --accent-foreground: #FFFFFF; /* Beyaz - Karanlık mod aksan metni */
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: rgba(255, 255, 255, 0.1); /* Transparan beyaz - Karanlık mod sınırlar */
+  --input: rgba(255, 255, 255, 0.15); /* Yarı transparan beyaz - Karanlık mod input */
+  --ring: rgba(255, 255, 255, 0.5); /* Yarı transparan beyaz - Karanlık mod halka */
+  --chart-1: #FFFFFF; /* Beyaz */
+  --chart-2: #BBBBBB; /* Açık gri */
+  --chart-3: #180675; /* Mor */
+  --chart-4: #100049; /* Koyu Lacivert */
+  --chart-5: #666666; /* Orta gri */
+  --sidebar: #100049; /* Koyu Lacivert - Karanlık mod sidebar */
+  --sidebar-foreground: #FFFFFF; /* Beyaz - Karanlık mod sidebar metni */
+  --sidebar-primary: #180675; /* Mor - Karanlık mod sidebar primary */
+  --sidebar-primary-foreground: #FFFFFF; /* Beyaz - Karanlık mod sidebar primary metni */
+  --sidebar-accent: #333333; /* Koyu gri - Karanlık mod sidebar aksan */
+  --sidebar-accent-foreground: #FFFFFF; /* Beyaz - Karanlık mod sidebar aksan metni */
+  --sidebar-border: rgba(255, 255, 255, 0.1); /* Transparan beyaz - Karanlık mod sidebar sınırları */
+  --sidebar-ring: rgba(255, 255, 255, 0.5); /* Yarı transparan beyaz - Karanlık mod sidebar halkası */
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
