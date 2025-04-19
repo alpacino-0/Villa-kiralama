@@ -1,4 +1,4 @@
-import type { Status, CalendarEventStatus } from '@/types/enums';
+import type { Status, CalendarStatus } from '@/types/enums';
 
 export interface Villa {
   id: string;
@@ -71,8 +71,8 @@ export interface CalendarEvent {
   id: string;
   villaId: string;
   reservationId: string;
-  date: string;
-  status: CalendarEventStatus;
+  date: Date;
+  status: CalendarStatus;
   price: number;
   note: string;
 }
@@ -85,4 +85,21 @@ export interface VillaListResponse {
     limit: number;
     totalPages: number;
   };
+}
+
+export interface Region {
+  id: string;
+  name: string;
+  isMainRegion: boolean;
+  parentId: string;
+  description: string;
+  createdAt: Date;
+  updatedAt: Date;
+  imageUrl: string;
+  isPromoted: boolean;
+  slug: string;
+  villaCount: number;
+  isActive: boolean;
+  metaTitle: string;
+  metaDesc: string;
 } 
