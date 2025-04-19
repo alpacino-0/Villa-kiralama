@@ -1,4 +1,175 @@
 {
     "greeting": "Hallo, willkommen auf der Villa-Vermietungsplattform!",
-    "book_now": "Jetzt buchen"
+    "book_now": "Jetzt buchen",
+    "header": {
+        "welcome": "Willkommen auf unserer Villa-Vermietungswebsite!",
+        "nav": {
+            "home": "Startseite",
+            "villas": "Villen",
+            "regions": "Regionen",
+            "about": "Über uns",
+            "contact": "Kontakt"
+        },
+        "languages": {
+            "tr": "Türkisch",
+            "en": "Englisch",
+            "ar": "Arabisch",
+            "es": "Spanisch",
+            "no": "Norwegisch",
+            "sv": "Schwedisch",
+            "nl": "Niederländisch",
+            "it": "Italienisch",
+            "fr": "Französisch",
+            "ru": "Russisch",
+            "de": "Deutsch"
+        },
+        "languageSelection": "Sprache auswählen",
+        "mobileMenu": {
+            "openMenu": "Menü öffnen",
+            "closeMenu": "Menü schließen"
+        }
+    },
+    "nav": {
+        "home": "Startseite"
+    },
+    "footer": {
+        "companyInfo": "Ihre vertrauenswürdige Quelle für Luxusvillen und Ferienhäuser.",
+        "contact": "Kontakt:",
+        "copyright": "© 2025 Villa Vermietung. Alle Rechte vorbehalten.",
+        "links": {
+            "homes": "Häuser",
+            "villas": "Villen",
+            "locations": "Standorte",
+            "promotions": "Angebote",
+            "aboutUs": "Über uns",
+            "contactUs": "Kontakt",
+            "privacyPolicy": "Datenschutz",
+            "termsOfService": "Nutzungsbedingungen",
+            "paymentMethods": "Zahlungsmethoden",
+            "faq": "FAQ",
+            "hostAgreement": "Gastgebervereinbarung",
+            "cancellationPolicy": "Stornierungsbedingungen",
+            "rentalAgreement": "Mietvertrag",
+            "gdprCompliance": "DSGVO-Hinweis"
+        },
+        "newsletter": {
+            "title": "Abonnieren Sie unseren Newsletter",
+            "placeholder": "Ihre E-Mail-Adresse",
+            "button": "Abonnieren"
+        },
+        "social": {
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "instagram": "Instagram",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube"
+        },
+        "quickLinks": "Schnelllinks",
+        "legal": "Rechtliches",
+        "brandSlogan": "Die luxuriöse Seite des Urlaubs",
+        "form": {
+            "title": "Kontaktieren Sie uns",
+            "name": "Ihr Name",
+            "email": "Ihre E-Mail",
+            "phone": "Ihre Telefonnummer",
+            "message": "Ihre Nachricht",
+            "sending": "Wird gesendet...",
+            "send": "Senden"
+        },
+        "securePayment": "Sichere Zahlung",
+        "sslEncryption": "Alle Zahlungen sind mit 128-bit SSL verschlüsselt.",
+        "webDesign": "Webdesign",
+        "cancellationPolicy": "Stornierungsbedingungen",
+        "gdprCompliance": "DSGVO-Hinweis",
+        "cookiePolicy": "Cookie-Richtlinie"
+    },
+    "homepage": {
+        "heroTitle": "Perfekte Villen für Ihren Traumurlaub",
+        "heroSubtitle": "Luxusvillen an den schönsten Urlaubszielen der Türkei",
+        "searchButton": "Villen suchen",
+        "featuredSectionTitle": "Empfohlene Villen",
+        "featuredSectionSubtitle": "Unsere beliebtesten Ferienvillen",
+        "viewAllButton": "Alle anzeigen"
+    },
+    "villaDetails": {
+        "book": "Jetzt buchen",
+        "features": "Eigenschaften",
+        "amenities": "Annehmlichkeiten",
+        "location": "Standort",
+        "reviews": "Bewertungen",
+        "availability": "Verfügbarkeit",
+        "similarProperties": "Ähnliche Villen",
+        "nightPrice": "Preis pro Nacht",
+        "totalPrice": "Gesamtpreis"
+    },
+    "villaListing": {
+        "pageTitle": "Villen zur Miete",
+        "pageDescription": "Entdecken Sie Villen zur Miete für Ihren Urlaub. Erleben Sie einen unvergesslichen Urlaub in komfortablen und luxuriösen Villen.",
+        "filters": {
+            "title": "Filter",
+            "location": "Standort",
+            "checkIn": "Anreisedatum",
+            "checkOut": "Abreisedatum",
+            "guests": "Anzahl der Gäste",
+            "price": "Preis",
+            "bedrooms": "Schlafzimmer",
+            "bathrooms": "Badezimmer",
+            "apply": "Anwenden",
+            "clear": "Löschen",
+            "reset": "Zurücksetzen",
+            "activeFilters": "Aktive Filter",
+            "region": "Region",
+            "subRegion": "Unterregion",
+            "features": "Merkmale",
+            "minPrice": "Mindestpreis",
+            "maxPrice": "Höchstpreis"
+        },
+        "errorMessage": "Beim Laden der Villen ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.",
+        "unknownError": "Unbekannter Fehler",
+        "noResults": "Keine Villen gefunden, die Ihrer Suche entsprechen.",
+        "resultsCount": "Villen gefunden",
+        "sortBy": "Sortieren nach",
+        "sortOptions": {
+            "newest": "Neueste",
+            "priceAsc": "Preis (aufsteigend)",
+            "priceDesc": "Preis (absteigend)",
+            "rating": "Bewertung"
+        },
+        "loadingMore": "Mehr laden..."
+    },
+    "search": {
+        "title": "Villen suchen",
+        "location": "Standort",
+        "checkIn": "Anreisedatum",
+        "checkOut": "Abreisedatum",
+        "guests": "Anzahl der Gäste",
+        "searchButton": "Suchen",
+        "filters": "Filter",
+        "price": "Preis",
+        "bedrooms": "Schlafzimmer",
+        "bathrooms": "Badezimmer",
+        "amenities": "Annehmlichkeiten",
+        "clearFilters": "Filter löschen",
+        "applyFilters": "Filter anwenden",
+        "resultsFound": "Villen gefunden"
+    },
+    "notFound": {
+        "title": "404",
+        "subtitle": "Sie haben sich wohl verirrt",
+        "description": "Die Seite, die Sie suchen, existiert nicht!",
+        "goHomeButton": "Zur Startseite"
+    },
+    "common": {
+        "emailAddress": "E-Mail-Adresse",
+        "phoneNumber": "Telefonnummer",
+        "loading": "Wird geladen...",
+        "error": "Fehler",
+        "success": "Erfolg",
+        "submit": "Absenden",
+        "cancel": "Abbrechen",
+        "back": "Zurück",
+        "next": "Weiter",
+        "show": "Anzeigen",
+        "hide": "Ausblenden"
+    }
 }

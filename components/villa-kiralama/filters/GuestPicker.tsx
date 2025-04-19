@@ -1,105 +1,110 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback, useEffect } from 'react';
+import { Minus, Plus } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
 
 interface GuestPickerProps {
   value: number;
   onChange: (value: number) => void;
   min?: number;
   max?: number;
+  className?: string;
+  label?: string;
 }
 
 export function GuestPicker({ 
   value, 
   onChange, 
   min = 1, 
-  max = 20 
-}: GuestPickerProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  max = 20,
+  className,
+  label = "Misafir",
+  ...props
+}: GuestPickerProps & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'>) {
+  const [count, setCount] = useState<number>(value);
 
-  const increment = () => {
-    if (value < max) {
-      onChange(value + 1);
-    }
-  };
+  // Değer değiştiğinde state'i güncelle
+  useEffect(() => {
+    setCount(value);
+  }, [value]);
 
-  const decrement = () => {
-    if (value > min) {
-      onChange(value - 1);
+  // Değer arttırma işleyicisi
+  const increment = useCallback(() => {
+    if (count < max) {
+      const newValue = count + 1;
+      setCount(newValue);
+      onChange(newValue);
     }
-  };
+  }, [count, onChange, max]);
+
+  // Değer azaltma işleyicisi
+  const decrement = useCallback(() => {
+    if (count > min) {
+      const newValue = count - 1;
+      setCount(newValue);
+      onChange(newValue);
+    }
+  }, [count, onChange, min]);
 
   return (
-    <div className="relative">
-      <button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between px-3 py-2 border border-gray-300 rounded-md shadow-sm text-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
-        <span className="inline-flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-          </svg>
-          <span>{value} Misafir</span>
-        </span>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-
-      {isOpen && (
-        <div className="absolute z-10 mt-1 w-full bg-white shadow-lg rounded-md border border-gray-200 p-4">
-          <div className="flex items-center justify-between">
-            <span className="text-sm font-medium">Misafir Sayısı</span>
-            
-            <div className="flex items-center space-x-3">
-              <button
-                type="button"
-                onClick={decrement}
-                disabled={value <= min}
-                className={`rounded-full w-8 h-8 flex items-center justify-center border ${
-                  value <= min 
-                    ? 'border-gray-200 text-gray-300 cursor-not-allowed' 
-                    : 'border-gray-300 text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                <span className="sr-only">Azalt</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
-                </svg>
-              </button>
-              
-              <span className="text-sm font-medium w-6 text-center">{value}</span>
-              
-              <button
-                type="button"
-                onClick={increment}
-                disabled={value >= max}
-                className={`rounded-full w-8 h-8 flex items-center justify-center border ${
-                  value >= max 
-                    ? 'border-gray-200 text-gray-300 cursor-not-allowed' 
-                    : 'border-gray-300 text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                <span className="sr-only">Arttır</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          
-          <div className="mt-4 flex justify-end">
-            <button
-              type="button"
-              onClick={() => setIsOpen(false)}
-              className="text-xs bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
-            >
-              Uygula
-            </button>
-          </div>
+    <div className={cn(
+      "w-full flex items-center justify-between rounded-md border border-border p-2 bg-background",
+      "shadow-sm hover:border-accent/50 transition-colors duration-200",
+      className
+    )} {...props}>
+      <Label className="text-sm font-medium text-foreground pl-1 flex-1">
+        {label}
+      </Label>
+      
+      <div className="flex items-center space-x-1 sm:space-x-3">
+        <Button
+          type="button"
+          variant="outline"
+          size="icon"
+          className={cn(
+            "h-8 w-8 sm:h-9 sm:w-9 rounded-full border-border",
+            "transition-all duration-200",
+            count <= min 
+              ? "opacity-50 cursor-not-allowed bg-muted" 
+              : "hover:border-accent hover:text-accent hover:bg-accent/5"
+          )}
+          onClick={decrement}
+          disabled={count <= min}
+          aria-label={`${label} sayısını azalt`}
+        >
+          <Minus className="h-3 w-3 sm:h-4 sm:w-4" />
+        </Button>
+        
+        <div className="flex items-baseline select-none w-10 sm:w-12 justify-center">
+          <span className="text-base sm:text-lg font-semibold font-montserrat text-foreground">
+            {count}
+          </span>
+          <span className="ml-1 text-xs sm:text-sm text-muted-foreground font-nunito hidden xs:inline-block">
+            {label}
+          </span>
         </div>
-      )}
+        
+        <Button
+          type="button"
+          variant="outline"
+          size="icon"
+          className={cn(
+            "h-8 w-8 sm:h-9 sm:w-9 rounded-full border-border",
+            "transition-all duration-200",
+            count >= max 
+              ? "opacity-50 cursor-not-allowed bg-muted" 
+              : "hover:border-accent hover:text-accent hover:bg-accent/5"
+          )}
+          onClick={increment}
+          disabled={count >= max}
+          aria-label={`${label} sayısını arttır`}
+        >
+          <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+        </Button>
+      </div>
     </div>
   );
 } 

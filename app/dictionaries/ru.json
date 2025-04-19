@@ -29,6 +29,9 @@
       "closeMenu": "Закрыть меню"
     }
   },
+  "nav": {
+    "home": "Главная"
+  },
   "footer": {
     "companyInfo": "Ваш надежный источник роскошных вилл и отпускного жилья.",
     "contact": "Контакт:",
@@ -79,5 +82,94 @@
     "cancellationPolicy": "Политика отмены",
     "gdprCompliance": "GDPR Соответствие",
     "cookiePolicy": "Политика cookies"
+  },
+  "homepage": {
+    "heroTitle": "Идеальные виллы для отпуска вашей мечты",
+    "heroSubtitle": "Роскошные виллы в самых красивых курортных местах Турции",
+    "searchButton": "Искать виллы",
+    "featuredSectionTitle": "Избранные виллы",
+    "featuredSectionSubtitle": "Наши самые популярные виллы для отдыха",
+    "viewAllButton": "Смотреть все"
+  },
+  "villaDetails": {
+    "book": "Забронировать сейчас",
+    "features": "Характеристики",
+    "amenities": "Удобства",
+    "location": "Расположение",
+    "reviews": "Отзывы",
+    "availability": "Доступность",
+    "similarProperties": "Похожие виллы",
+    "nightPrice": "Цена за ночь",
+    "totalPrice": "Общая стоимость"
+  },
+  "villaListing": {
+    "pageTitle": "Аренда Вилл",
+    "pageDescription": "Откройте для себя виллы для аренды на время отпуска. Испытайте незабываемый отдых в комфортабельных и роскошных виллах.",
+    "filters": {
+      "title": "Фильтры",
+      "location": "Расположение",
+      "checkIn": "Дата заезда",
+      "checkOut": "Дата выезда",
+      "guests": "Количество гостей",
+      "price": "Цена",
+      "bedrooms": "Спальни",
+      "bathrooms": "Ванные комнаты",
+      "apply": "Применить",
+      "clear": "Очистить",
+      "reset": "Сбросить",
+      "activeFilters": "Активные фильтры",
+      "region": "Регион",
+      "subRegion": "Подрегион",
+      "features": "Особенности",
+      "minPrice": "Мин. цена",
+      "maxPrice": "Макс. цена"
+    },
+    "errorMessage": "Произошла ошибка при загрузке вилл. Пожалуйста, повторите попытку позже.",
+    "unknownError": "Неизвестная ошибка",
+    "noResults": "Не найдено вилл, соответствующих вашему поиску.",
+    "resultsCount": "вилл найдено",
+    "sortBy": "Сортировать по",
+    "sortOptions": {
+      "newest": "Новейшие",
+      "priceAsc": "Цена (мин-макс)",
+      "priceDesc": "Цена (макс-мин)",
+      "rating": "Рейтинг"
+    },
+    "loadingMore": "Загрузка дополнительных данных..."
+  },
+  "search": {
+    "title": "Поиск вилл",
+    "location": "Расположение",
+    "checkIn": "Дата заезда",
+    "checkOut": "Дата выезда",
+    "guests": "Количество гостей",
+    "searchButton": "Поиск",
+    "filters": "Фильтры",
+    "price": "Цена",
+    "bedrooms": "Спальни",
+    "bathrooms": "Ванные комнаты",
+    "amenities": "Удобства",
+    "clearFilters": "Очистить фильтры",
+    "applyFilters": "Применить фильтры",
+    "resultsFound": "вилл найдено"
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Похоже, вы заблудились",
+    "description": "Страница, которую вы ищете, не существует!",
+    "goHomeButton": "На главную"
+  },
+  "common": {
+    "emailAddress": "Email адрес",
+    "phoneNumber": "Номер телефона",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успех",
+    "submit": "Отправить",
+    "cancel": "Отменить",
+    "back": "Назад",
+    "next": "Вперед",
+    "show": "Показать",
+    "hide": "Скрыть"
   }
 }

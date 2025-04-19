@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useCallback, useMemo, type TouchEvent, memo } from 'react';
+import { useState, useCallback, useMemo, type TouchEvent, memo, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
-import type { Villa, VillaImage, VillaTag } from '@/types/villa';
+import type { Villa, VillaImage } from '@/types/villa';
 import { 
   Users, 
   BedDouble, 
@@ -32,8 +33,8 @@ const MIN_SWIPE_DISTANCE = 50;
 const MAX_INDICATOR_DOTS = 3;
 const PLACEHOLDER_IMAGE = '/images/villa-placeholder.jpg';
 
-// i18n Dictionary için tip tanımlaması
-type Dictionary = {
+// Dictionary tipi tanımı - FooterComponent'deki gibi yapılandırıldı
+interface Dictionary {
   villaCard?: {
     misafir?: string;
     yatakOdasi?: string;
@@ -56,10 +57,9 @@ type Dictionary = {
     gorsel?: string;
     fiyatDegisiklik?: string;
     swipeInfo?: string;
-  }
-};
-
-type TranslateFunction = (key: string, fallback: string) => string;
+  };
+  [key: string]: unknown;
+}
 
 interface VillaCardProps {
   villa: Villa;
@@ -86,28 +86,35 @@ FeatureItem.displayName = 'FeatureItem';
 // Villa özellikleri bileşeni
 interface VillaFeaturesProps {
   villa: Villa;
-  t: TranslateFunction;
+  dictionary?: Dictionary;
 }
 
-const VillaFeatures = memo(({ villa, t }: VillaFeaturesProps) => (
-  <div className="flex items-center justify-between bg-muted/60 p-2 rounded-md text-card-foreground font-medium text-sm">
-    <FeatureItem 
-      icon={<Users className="w-4 h-4" />} 
-      value={villa.maxGuests || 0} 
-      label={t('kisilik', 'Kişilik')} 
-    />
-    <FeatureItem 
-      icon={<BedDouble className="w-4 h-4" />} 
-      value={villa.bedrooms || 0} 
-      label={t('yatakOdasi', 'Yatak Odası')} 
-    />
-    <FeatureItem 
-      icon={<Bath className="w-4 h-4" />} 
-      value={villa.bathrooms || 0} 
-      label={t('banyo', 'Banyo')} 
-    />
-  </div>
-));
+const VillaFeatures = memo(({ villa, dictionary }: VillaFeaturesProps) => {
+  // FooterComponent'teki gibi güvenli çeviri erişimi
+  const kisilikText = dictionary?.villaCard?.kisilik || 'Kişilik';
+  const yatakOdasiText = dictionary?.villaCard?.yatakOdasi || 'Yatak Odası';
+  const banyoText = dictionary?.villaCard?.banyo || 'Banyo';
+
+  return (
+    <div className="flex items-center justify-between bg-muted/60 p-2 rounded-md text-card-foreground font-medium text-sm">
+      <FeatureItem 
+        icon={<Users className="w-4 h-4" />} 
+        value={villa.maxGuests || 0} 
+        label={kisilikText} 
+      />
+      <FeatureItem 
+        icon={<BedDouble className="w-4 h-4" />} 
+        value={villa.bedrooms || 0} 
+        label={yatakOdasiText} 
+      />
+      <FeatureItem 
+        icon={<Bath className="w-4 h-4" />} 
+        value={villa.bathrooms || 0} 
+        label={banyoText} 
+      />
+    </div>
+  );
+});
 VillaFeatures.displayName = 'VillaFeatures';
 
 // Fiyat görüntüleme bileşeni
@@ -115,44 +122,54 @@ interface PriceDisplayProps {
   minPrice: number | null;
   isLoading: boolean;
   isDateRangeSelected: boolean;
-  t: TranslateFunction;
+  dictionary?: Dictionary;
 }
 
-const PriceDisplay = memo(({ minPrice, isLoading, isDateRangeSelected, t }: PriceDisplayProps) => (
-  <div className="font-semibold text-accent text-base">
-    {isLoading ? (
-      <span className="text-sm text-muted-foreground">{t('fiyatYukleniyor', 'Fiyat yükleniyor...')}</span>
-    ) : minPrice ? (
-      <>
-        {new Intl.NumberFormat('tr-TR', { 
-          style: 'currency', 
-          currency: 'TRY',
-          minimumFractionDigits: 0,
-          maximumFractionDigits: 0
-        }).format(minPrice)}
-        <span className="text-sm text-muted-foreground ml-1 font-medium">
-          <span className="hidden sm:inline-block">{t('baslayan', 'den başlayan')} {t('fiyatlarla', 'fiyatlarla')}</span>
-          <span className="inline-block sm:hidden">/{t('gece', 'gece')}</span>
-        </span>
-      </>
-    ) : (
-      <span className="text-sm text-muted-foreground">{t('fiyatMevcut', 'Fiyat bilgisi mevcut değil')}</span>
-    )}
-    
-    {isDateRangeSelected && (
-      <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger>
-            <InfoIcon className="w-4 h-4 ml-1 text-muted-foreground" />
-          </TooltipTrigger>
-          <TooltipContent>
-            {t('fiyatDegisiklik', 'Seçilen tarihler için fiyatlar değişiklik gösterebilir.')}
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-    )}
-  </div>
-));
+const PriceDisplay = memo(({ minPrice, isLoading, isDateRangeSelected, dictionary }: PriceDisplayProps) => {
+  // Çeviri metinlerini güvenli bir şekilde al
+  const fiyatYukleniyorText = dictionary?.villaCard?.fiyatYukleniyor || 'Fiyat yükleniyor...';
+  const baslayanText = dictionary?.villaCard?.baslayan || 'den başlayan';
+  const fiyatlarlaText = dictionary?.villaCard?.fiyatlarla || 'fiyatlarla';
+  const geceText = dictionary?.villaCard?.gece || 'gece';
+  const fiyatMevcutText = dictionary?.villaCard?.fiyatMevcut || 'Fiyat bilgisi mevcut değil';
+  const fiyatDegisiklikText = dictionary?.villaCard?.fiyatDegisiklik || 'Seçilen tarihler için fiyatlar değişiklik gösterebilir.';
+
+  return (
+    <div className="font-semibold text-accent text-base">
+      {isLoading ? (
+        <span className="text-sm text-muted-foreground">{fiyatYukleniyorText}</span>
+      ) : minPrice ? (
+        <>
+          {new Intl.NumberFormat('tr-TR', { 
+            style: 'currency', 
+            currency: 'TRY',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+          }).format(minPrice)}
+          <span className="text-sm text-muted-foreground ml-1 font-medium">
+            <span className="hidden sm:inline-block">{baslayanText} {fiyatlarlaText}</span>
+            <span className="inline-block sm:hidden">/{geceText}</span>
+          </span>
+        </>
+      ) : (
+        <span className="text-sm text-muted-foreground">{fiyatMevcutText}</span>
+      )}
+      
+      {isDateRangeSelected && (
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <InfoIcon className="w-4 h-4 ml-1 text-muted-foreground" />
+            </TooltipTrigger>
+            <TooltipContent>
+              {fiyatDegisiklikText}
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      )}
+    </div>
+  );
+});
 PriceDisplay.displayName = 'PriceDisplay';
 
 // Resim göstergeci (indikatörler)
@@ -160,11 +177,15 @@ interface ImageIndicatorsProps {
   totalImages: number;
   activeIndex: number;
   villaId: string;
-  t: TranslateFunction;
+  dictionary?: Dictionary;
 }
 
-const ImageIndicators = memo(({ totalImages, activeIndex, villaId, t }: ImageIndicatorsProps) => {
+const ImageIndicators = memo(({ totalImages, activeIndex, villaId, dictionary }: ImageIndicatorsProps) => {
   if (totalImages <= 1) return null;
+  
+  // Çeviri metinlerini güvenli bir şekilde al
+  const aktifGorselText = dictionary?.villaCard?.aktifGorsel || 'Aktif görsel grubu';
+  const gorselText = dictionary?.villaCard?.gorsel || 'Görsel grubu';
   
   let totalDots = totalImages;
   if (totalDots > MAX_INDICATOR_DOTS) totalDots = MAX_INDICATOR_DOTS;
@@ -184,8 +205,8 @@ const ImageIndicators = memo(({ totalImages, activeIndex, villaId, t }: ImageInd
               isActive ? 'bg-white w-4' : 'bg-white/60 w-1.5'
             }`}
             aria-label={isActive
-              ? t('aktifGorsel', 'Aktif görsel grubu') 
-              : `${t('gorsel', 'Görsel grubu')} ${index + 1}`}
+              ? aktifGorselText 
+              : `${gorselText} ${index + 1}`}
           />
         );
       })}
@@ -199,11 +220,15 @@ interface ImageControlsProps {
   totalImages: number;
   onPrev: () => void;
   onNext: () => void;
-  t: TranslateFunction;
+  dictionary?: Dictionary;
 }
 
-const ImageControls = memo(({ totalImages, onPrev, onNext, t }: ImageControlsProps) => {
+const ImageControls = memo(({ totalImages, onPrev, onNext, dictionary }: ImageControlsProps) => {
   if (totalImages <= 1) return null;
+  
+  // Çeviri metinlerini güvenli bir şekilde al
+  const oncekiGorselText = dictionary?.villaCard?.oncekiGorsel || 'Önceki görsel';
+  const sonrakiGorselText = dictionary?.villaCard?.sonrakiGorsel || 'Sonraki görsel';
   
   const buttonStyles = "absolute top-1/2 -translate-y-1/2 bg-white/80 text-accent p-1 rounded-full hover:bg-accent hover:text-white transition-colors w-8 h-8 flex items-center justify-center backdrop-blur-sm border-none shadow-md z-10";
   
@@ -215,7 +240,7 @@ const ImageControls = memo(({ totalImages, onPrev, onNext, t }: ImageControlsPro
         size="icon"
         className={`${buttonStyles} left-2`}
         onClick={(e) => { e.preventDefault(); onPrev(); }}
-        aria-label={t('oncekiGorsel', 'Önceki görsel')}
+        aria-label={oncekiGorselText}
       >
         <ChevronLeft size={16} />
       </Button>
@@ -225,7 +250,7 @@ const ImageControls = memo(({ totalImages, onPrev, onNext, t }: ImageControlsPro
         size="icon"
         className={`${buttonStyles} right-2`}
         onClick={(e) => { e.preventDefault(); onNext(); }}
-        aria-label={t('sonrakiGorsel', 'Sonraki görsel')}
+        aria-label={sonrakiGorselText}
       >
         <ChevronRight size={16} />
       </Button>
@@ -233,6 +258,31 @@ const ImageControls = memo(({ totalImages, onPrev, onNext, t }: ImageControlsPro
   );
 });
 ImageControls.displayName = 'ImageControls';
+
+// Optimize edilmiş resim bileşeni
+interface OptimizedImageProps {
+  src: string;
+  alt: string;
+  priority?: boolean;
+}
+
+const OptimizedImage = memo(({ src, alt, priority = false }: OptimizedImageProps) => {
+  return (
+    <div className="relative w-full h-full">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        className="object-cover"
+        loading={priority ? "eager" : "lazy"}
+        priority={priority}
+        quality={80}
+      />
+    </div>
+  );
+});
+OptimizedImage.displayName = 'OptimizedImage';
 
 // Resim slider bileşeni
 interface ImageSliderProps {
@@ -248,7 +298,7 @@ interface ImageSliderProps {
   onTouchMove: (e: TouchEvent<HTMLDivElement>) => void;
   onTouchEnd: () => void;
   isSwiping: boolean;
-  t: TranslateFunction;
+  dictionary?: Dictionary;
 }
 
 const ImageSlider = memo(({ 
@@ -264,7 +314,7 @@ const ImageSlider = memo(({
   onTouchMove,
   onTouchEnd,
   isSwiping,
-  t 
+  dictionary
 }: ImageSliderProps) => {
   const aspectRatioStyles = {
     aspectRatio: '4/3',
@@ -276,6 +326,26 @@ const ImageSlider = memo(({
   const resetTextSpacingStyles = {
     fontSize: 0
   };
+
+  // Çeviri metinlerini güvenli bir şekilde al
+  const swipeInfoText = dictionary?.villaCard?.swipeInfo || 'Villa görselleri galerisi, kaydırarak gezinebilirsiniz';
+  const yukleniyorText = dictionary?.villaCard?.yukleniyor || 'Yükleniyor...';
+
+  // Görüntüleri önceden yükle
+  useEffect(() => {
+    if (images.length > 1) {
+      const nextIndex = (activeIndex + 1) % images.length;
+      const prevIndex = (activeIndex - 1 + images.length) % images.length;
+      
+      const preloadImage = (src: string) => {
+        const img = new globalThis.Image();
+        img.src = src;
+      };
+      
+      preloadImage(images[nextIndex]);
+      preloadImage(images[prevIndex]);
+    }
+  }, [activeIndex, images]);
   
   return (
     <div className="relative w-full block" style={aspectRatioStyles}>
@@ -284,7 +354,7 @@ const ImageSlider = memo(({
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
-        aria-label={t('swipeInfo', 'Villa görselleri galerisi, kaydırarak gezinebilirsiniz')}
+        aria-label={swipeInfoText}
         aria-roledescription="slider"
         aria-valuemin={0}
         aria-valuemax={images.length - 1}
@@ -304,7 +374,7 @@ const ImageSlider = memo(({
           totalImages={images.length} 
           activeIndex={activeIndex} 
           villaId={villaId}
-          t={t} 
+          dictionary={dictionary}
         />
       
         {featuredTag && (
@@ -317,26 +387,23 @@ const ImageSlider = memo(({
         
         {isLoading ? (
           <div className="absolute inset-0 bg-muted animate-pulse flex items-center justify-center">
-            <span className="text-muted-foreground text-base">{t('yukleniyor', 'Yükleniyor...')}</span>
+            <span className="text-muted-foreground text-base">{yukleniyorText}</span>
           </div>
         ) : (
-          <div 
-            className="absolute inset-0 bg-center bg-cover transition-transform hover:scale-105 duration-500 m-0 p-0"
-            style={{
-              backgroundImage: `url(${images[activeIndex]})`,
-              width: '100%',
-              height: '100%'
-            }}
-            role="img"
-            aria-label={`${villaTitle} - ${activeIndex + 1}/${images.length}`}
-          />
+          <div className="absolute inset-0 transition-opacity duration-300">
+            <OptimizedImage 
+              src={images[activeIndex]} 
+              alt={`${villaTitle} - ${activeIndex + 1}/${images.length}`}
+              priority={activeIndex === 0}
+            />
+          </div>
         )}
         
         <ImageControls 
           totalImages={images.length} 
           onPrev={onPrev} 
-          onNext={onNext} 
-          t={t}
+          onNext={onNext}
+          dictionary={dictionary}
         />
       </div>
     </div>
@@ -353,7 +420,7 @@ ImageSlider.displayName = 'ImageSlider';
  * - Duyarlı ve erişilebilir arayüz
  * - Çoklu dil desteği
  */
-export const VillaCard = ({ 
+export const VillaCard = memo(({ 
   villa, 
   locale = 'tr',
   dictionary,
@@ -369,11 +436,9 @@ export const VillaCard = ({
   const { data: minPrice, isLoading } = useMinimumSeasonalPrice(villa.id);
   const { data: coverImage, isLoading: isImageLoading } = useCoverImage(villa.id);
   
-  // Çeviri fonksiyonu
-  const t = useCallback((key: string, fallback: string): string => {
-    if (!dictionary || !dictionary.villaCard) return fallback;
-    return dictionary.villaCard[key as keyof typeof dictionary.villaCard] || fallback;
-  }, [dictionary]);
+  // FooterComponent'teki gibi güvenli çeviri erişimi
+  const bolgeText = dictionary?.villaCard?.bolge || 'Bölge';
+  const detaylariGorText = dictionary?.villaCard?.detaylariGor || 'Detayları Gör';
   
   // Görsel dizisini hazırla
   const imagesArray = useMemo(() => {
@@ -450,9 +515,21 @@ export const VillaCard = ({
   const tags = useMemo(() => {
     if (!Array.isArray(villa.tags) || villa.tags.length === 0) return [];
     
-    return typeof villa.tags[0] === 'string' 
-      ? villa.tags 
-      : (villa.tags as unknown as VillaTag[]).map(tag => typeof tag === 'string' ? tag : tag.name);
+    // String olarak etiketler
+    if (typeof villa.tags[0] === 'string') {
+      return villa.tags as string[];
+    }
+    
+    // VillaTag.Tag formatını kontrol et (güncellenen veritabanı yapısı)
+    const firstTag = villa.tags[0] as unknown;
+    if (firstTag && typeof firstTag === 'object' && 'Tag' in (firstTag as Record<string, unknown>)) {
+      return (villa.tags as unknown as Array<{Tag: {name: string}}>).map(tag => tag.Tag?.name || '');
+    }
+    
+    // VillaTag formatını kontrol et
+    return (villa.tags as unknown as Array<{name: string}>).map(tag => 
+      typeof tag === 'string' ? tag : tag.name || ''
+    );
   }, [villa.tags]);
   
   // Öne çıkan tag (varsa ilk tag)
@@ -479,7 +556,7 @@ export const VillaCard = ({
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
           isSwiping={isSwiping}
-          t={t}
+          dictionary={dictionary}
         />
       </div>
       
@@ -495,14 +572,14 @@ export const VillaCard = ({
               <span className="truncate">
                 {villa.mainRegion && villa.subRegion 
                   ? `${villa.mainRegion}, ${villa.subRegion}`
-                  : villa.mainRegion || villa.subRegion || t('bolge', 'Bölge')}
+                  : villa.mainRegion || villa.subRegion || bolgeText}
               </span>
             </CardDescription>
           </CardHeader>
           
           <CardContent className="px-3 pt-0 pb-2">
             {/* Özellikler - tek satırda */}
-            <VillaFeatures villa={villa} t={t} />
+            <VillaFeatures villa={villa} dictionary={dictionary} />
           </CardContent>
         </div>
          
@@ -511,7 +588,7 @@ export const VillaCard = ({
             minPrice={minPrice ?? null} 
             isLoading={isLoading}
             isDateRangeSelected={isDateRangeSelected}
-            t={t}
+            dictionary={dictionary}
           />
           
           <Button 
@@ -521,11 +598,12 @@ export const VillaCard = ({
             className="bg-accent hover:bg-accent/90 text-accent-foreground py-1.5 px-3.5 rounded text-sm font-medium transition-colors h-8"
           >
             <Link href={`/${locale}/villa-kiralama/${villa.slug}`}>
-              {t('detaylariGor', 'Detayları Gör')}
-        </Link>
+              {detaylariGorText}
+            </Link>
           </Button>
         </CardFooter>
       </div>
     </Card>
   );
-};
+});
+VillaCard.displayName = 'VillaCard';

@@ -7,6 +7,21 @@ import type { Villa } from '@/types/villa';
 import { VillaPagination } from '@/components/villa-kiralama/grid/VillaPagination';
 import { VillaCard } from '@/components/villa-kiralama/VillaCard';
 
+// Dictionary tipini tanımlayalım
+interface Dictionary {
+  villaListing?: {
+    loadingText?: string;
+    noResultsTitle?: string;
+    noResultsMessage?: string;
+    clearFilters?: string;
+    showingResults?: string;
+    gridView?: string;
+    listView?: string;
+    [key: string]: unknown;
+  };
+  [key: string]: unknown;
+}
+
 interface VillaGridProps {
   villas: Villa[];
   loading: boolean;
@@ -15,6 +30,7 @@ interface VillaGridProps {
   limit: number;
   onPageChange: (page: number) => void;
   layout?: 'grid' | 'horizontal' | 'list';
+  dictionary?: Dictionary;
 }
 
 export function VillaGrid({
@@ -24,7 +40,8 @@ export function VillaGrid({
   page,
   limit,
   onPageChange,
-  layout = 'grid'
+  layout = 'grid',
+  dictionary
 }: VillaGridProps) {
   // Görünüm tipi (grid/list)
   const [viewType, setViewType] = useState<'grid' | 'list'>(layout === 'list' ? 'list' : 'grid');
@@ -32,19 +49,31 @@ export function VillaGrid({
   // Sayfalama için toplam sayfa sayısı
   const totalPages = Math.ceil(totalVillas / limit);
 
+  // Dictionary'den metinleri al veya varsayılan değerleri kullan
+  const dict = dictionary?.villaListing || {};
+  const loadingText = typeof dict.loadingText === 'string' ? dict.loadingText : 'Villalar yükleniyor...';
+  const noResultsTitle = typeof dict.noResultsTitle === 'string' ? dict.noResultsTitle : 'Villa bulunamadı';
+  const noResultsMessage = typeof dict.noResultsMessage === 'string' ? dict.noResultsMessage : 'Aradığınız kriterlere uygun villa bulunamadı. Lütfen filtrelerinizi genişletin veya farklı bir arama yapın.';
+  const clearFiltersText = typeof dict.clearFilters === 'string' ? dict.clearFilters : 'Filtreleri Temizle';
+  const gridViewText = typeof dict.gridView === 'string' ? dict.gridView : 'Grid görünümü';
+  const listViewText = typeof dict.listView === 'string' ? dict.listView : 'Liste görünümü';
+
   // Veriye göre mesaj oluştur
   const getStatusMessage = () => {
     if (loading) {
-      return 'Villalar yükleniyor...';
+      return loadingText;
     }
     
     if (villas.length === 0) {
-      return 'Aradığınız kriterlere uygun villa bulunamadı. Lütfen farklı kriterlerle arama yapın.';
+      return noResultsMessage;
     }
     
     const start = (page - 1) * limit + 1;
     const end = Math.min(page * limit, totalVillas);
-    return `${totalVillas} villa içinden ${start}-${end} arası gösteriliyor`;
+    const showingResultsText = typeof dict.showingResults === 'string' 
+      ? dict.showingResults 
+      : `${totalVillas} villa içinden ${start}-${end} arası gösteriliyor`;
+    return showingResultsText;
   };
 
   return (
@@ -64,7 +93,7 @@ export function VillaGrid({
                 ? 'bg-blue-50 text-blue-600' 
                 : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
             }`}
-            aria-label="Grid görünümü"
+            aria-label={gridViewText}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
@@ -78,7 +107,7 @@ export function VillaGrid({
                 ? 'bg-blue-50 text-blue-600' 
                 : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
             }`}
-            aria-label="Liste görünümü"
+            aria-label={listViewText}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
@@ -100,8 +129,8 @@ export function VillaGrid({
           <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto text-gray-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <h3 className="text-lg font-medium text-gray-900 mb-2">Villa bulunamadı</h3>
-          <p className="text-gray-500 mb-4">Aradığınız kriterlere uygun villa bulunamadı. Lütfen filtrelerinizi genişletin veya farklı bir arama yapın.</p>
+          <h3 className="text-lg font-medium text-gray-900 mb-2">{noResultsTitle}</h3>
+          <p className="text-gray-500 mb-4">{noResultsMessage}</p>
           <button
             type="button"
             onClick={() => {
@@ -109,7 +138,7 @@ export function VillaGrid({
             }}
             className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
-            Filtreleri Temizle
+            {clearFiltersText}
           </button>
         </div>
       )}
@@ -118,7 +147,11 @@ export function VillaGrid({
       {!loading && villas.length > 0 && viewType === 'grid' && layout === 'grid' && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {villas.map(villa => (
-            <VillaCard key={villa.id} villa={villa} />
+            <VillaCard 
+              key={villa.id} 
+              villa={villa} 
+              dictionary={dictionary} 
+            />
           ))}
         </div>
       )}
@@ -128,7 +161,11 @@ export function VillaGrid({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {villas.map(villa => (
             <div key={villa.id} className="transition-transform duration-300 hover:-translate-y-1">
-              <VillaCard key={villa.id} villa={villa} />
+              <VillaCard 
+                key={villa.id} 
+                villa={villa} 
+                dictionary={dictionary} 
+              />
             </div>
           ))}
         </div>

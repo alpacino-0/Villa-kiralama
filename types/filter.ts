@@ -15,7 +15,18 @@ export interface FilterOption {
   count?: number;
 }
 
+// Region özelliklerini içeren bölge seçeneği
 export interface RegionOption extends FilterOption {
+  isMainRegion?: boolean;
+  parentId?: string;
+  description?: string;
+  imageUrl?: string;
+  isPromoted?: boolean;
+  slug?: string;
+  villaCount?: number;
+  isActive?: boolean;
+  metaTitle?: string;
+  metaDesc?: string;
   subRegions?: FilterOption[];
 }
 

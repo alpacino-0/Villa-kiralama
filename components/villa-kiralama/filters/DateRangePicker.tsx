@@ -1,111 +1,382 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { CalendarIcon } from "lucide-react";
+import { format, isAfter, isBefore, isEqual, startOfMonth, addMonths } from "date-fns";
+import { tr } from "date-fns/locale";
+import { cn } from "@/lib/utils";
+import { useDateRange } from "@/lib/hooks/use-date-range";
 
 interface DateRangePickerProps {
   startDate?: Date;
   endDate?: Date;
   onChange: (startDate?: Date, endDate?: Date) => void;
+  villaId?: string;
+  className?: string;
+  minStay?: number;
+  size?: "sm" | "md" | "lg";
+  disabled?: boolean;
 }
 
-export function DateRangePicker({ startDate, endDate, onChange }: DateRangePickerProps) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Tarihleri yerelleştirme ve formatlama
-  const formatDate = (date?: Date): string => {
-    if (!date) return '';
-    return date.toLocaleDateString('tr-TR', {
-      day: 'numeric',
-      month: 'short',
-      year: 'numeric'
-    });
-  };
-
-  const formattedStartDate = formatDate(startDate);
-  const formattedEndDate = formatDate(endDate);
+export function DateRangePicker({
+  startDate,
+  endDate,
+  onChange,
+  villaId,
+  minStay = 1,
+  size = "md",
+  className,
+  disabled = false
+}: DateRangePickerProps) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
   
-  // Placeholder metin
-  const placeholder = startDate && endDate 
-    ? `${formattedStartDate} - ${formattedEndDate}`
-    : 'Giriş - Çıkış tarihi seçin';
-
-  // Tarih seçimini açıp kapatan fonksiyon
-  const toggleDatePicker = () => {
-    setIsOpen(!isOpen);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+  const [calendarDays, setCalendarDays] = useState<Date[]>([]);
+  const [currentMonth, setCurrentMonth] = useState(startOfMonth(today));
+  const [dateSelectionState, setDateSelectionState] = useState<"start" | "end">("start");
+  
+  // Villa için müsait tarihleri getir
+  const { calendarEvents, isLoading, isDateAvailable } = useDateRange(villaId);
+  
+  // Tarih aralığı bilgisini ve metin bilgisini hesapla
+  const totalNights = startDate && endDate
+    ? Math.max(Math.floor((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)), 1)
+    : 0;
+  
+  // Takvim günlerini oluştur
+  useEffect(() => {
+    const days: Date[] = [];
+    
+    // İki ay için günleri oluştur
+    const firstMonth = currentMonth;
+    const secondMonth = addMonths(currentMonth, 1);
+    
+    const generateDaysForMonth = (month: Date) => {
+      const daysInMonth = new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate();
+      for (let i = 1; i <= daysInMonth; i++) {
+        days.push(new Date(month.getFullYear(), month.getMonth(), i));
+      }
+    };
+    
+    generateDaysForMonth(firstMonth);
+    generateDaysForMonth(secondMonth);
+    
+    setCalendarDays(days);
+  }, [currentMonth]);
+  
+  // Seçim durumunu sıfırla
+  useEffect(() => {
+    if (!startDate && !endDate) {
+      setDateSelectionState("start");
+    } else if (startDate && !endDate) {
+      setDateSelectionState("end");
+    }
+  }, [startDate, endDate]);
+  
+  // Önceki aylara geç
+  const goToPreviousMonths = () => {
+    if (isBefore(addMonths(currentMonth, -1), startOfMonth(today))) return;
+    setCurrentMonth(addMonths(currentMonth, -1));
   };
-
-  // Geçici UI - tam bir tarih seçici entegrasyonu için özelleştirilmelidir
+  
+  // Sonraki aylara geç
+  const goToNextMonths = () => {
+    setCurrentMonth(addMonths(currentMonth, 1));
+  };
+  
+  // Tarihin seçilebilir olup olmadığını kontrol et
+  const isDateSelectable = (date: Date) => {
+    // Bugünden önceki tarihler seçilemez
+    if (isBefore(date, today) && !isEqual(date, today)) {
+      return false;
+    }
+    
+    // Villa ID yoksa veya yükleme durumundaysa sadece geçmiş tarihleri kontrol et
+    if (!villaId || isLoading || !calendarEvents?.length) {
+      return true;
+    }
+    
+    // Müsait olmayan tarihleri devre dışı bırak
+    return isDateAvailable(date);
+  };
+  
+  // Tarihin seçili olup olmadığını kontrol et
+  const isDateSelected = (date: Date) => {
+    if (!startDate) return false;
+    
+    if (endDate) {
+      return (
+        isEqual(date, startDate) || 
+        isEqual(date, endDate) || 
+        (isAfter(date, startDate) && isBefore(date, endDate))
+      );
+    }
+    
+    return isEqual(date, startDate);
+  };
+  
+  // Tarih seçildiğinde
+  const handleDateClick = (date: Date) => {
+    if (!isDateSelectable(date)) return;
+    
+    // Seçilen tarihi 14:00 UTC olacak şekilde ayarla (veritabanındaki format ile uyumlu)
+    const adjustedDate = new Date(date);
+    adjustedDate.setUTCHours(14, 0, 0, 0);
+    
+    if (dateSelectionState === "start" || (startDate && endDate)) {
+      // İlk tarih seçimi veya her iki tarih de seçiliyse, giriş tarihini ayarla
+      onChange(adjustedDate, undefined);
+      setDateSelectionState("end");
+    } else {
+      // Çıkış tarihi giriş tarihinden önce olamaz
+      if (startDate && isBefore(adjustedDate, startDate)) {
+        onChange(adjustedDate, undefined);
+        setDateSelectionState("end");
+      } else if (startDate) {
+        // Minimum konaklama kontrolü
+        const dayDiff = Math.floor((adjustedDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
+        if (dayDiff < minStay) {
+          // Minimum konaklamadan daha az süre seçilmişse, minimum konaklamaya göre ayarla
+          const minStayEndDate = new Date(startDate);
+          minStayEndDate.setDate(minStayEndDate.getDate() + minStay);
+          minStayEndDate.setUTCHours(14, 0, 0, 0);
+          onChange(startDate, minStayEndDate);
+        } else {
+          onChange(startDate, adjustedDate);
+        }
+        setDateSelectionState("start");
+        setIsCalendarOpen(false);
+      }
+    }
+  };
+  
+  // Hızlı seçim - yarın için
+  const handleSelectTomorrow = () => {
+    const today = new Date();
+    today.setUTCHours(14, 0, 0, 0);
+    
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    
+    const nextDay = new Date(tomorrow);
+    nextDay.setDate(nextDay.getDate() + minStay);
+    
+    onChange(tomorrow, nextDay);
+    setIsCalendarOpen(false);
+  };
+  
+  // Hızlı seçim - hafta sonu için
+  const handleSelectWeekend = () => {
+    // Bugünden itibaren önümüzdeki Cuma gününü bul
+    const currentDate = new Date();
+    currentDate.setUTCHours(14, 0, 0, 0);
+    
+    const currentDay = currentDate.getDay(); // 0: Pazar, ..., 6: Cumartesi
+    
+    // Cuma için gereken gün sayısını hesapla (5: Cuma)
+    const daysUntilFriday = currentDay <= 5 ? 5 - currentDay : 7 - currentDay + 5;
+    
+    const friday = new Date(currentDate);
+    friday.setDate(friday.getDate() + daysUntilFriday);
+    
+    const sunday = new Date(friday);
+    sunday.setDate(sunday.getDate() + 2); // Cuma + 2 gün = Pazar
+    
+    onChange(friday, sunday);
+    setIsCalendarOpen(false);
+  };
+  
+  // Tarih formatter yardımcısı
+  const formatDateDay = (date: Date) => {
+    return format(date, 'd', { locale: tr });
+  };
+  
+  // Ay adını formatla
+  const formatMonth = (date: Date) => {
+    return format(date, 'MMMM yyyy', { locale: tr });
+  };
+  
+  // Takvimi oluştur
+  const renderCalendar = () => {
+    // Ay gruplarını oluştur
+    const months: { [key: string]: Date[] } = {};
+    
+    for (const day of calendarDays) {
+      const monthKey = format(day, 'yyyy-MM');
+      if (!months[monthKey]) {
+        months[monthKey] = [];
+      }
+      months[monthKey].push(day);
+    }
+    
+    const monthKeys = Object.keys(months).sort();
+    
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {monthKeys.map((monthKey) => {
+          const days = months[monthKey];
+          if (days.length === 0) return null;
+          
+          const firstDay = days[0];
+          const monthName = formatMonth(firstDay);
+          
+          // Hafta günlerini hesapla
+          const weekDays = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+          
+          // Ayın ilk gününün haftanın hangi günü olduğunu hesapla (0: Pazar, 1: Pazartesi, ...)
+          let firstDayOfMonth = new Date(firstDay.getFullYear(), firstDay.getMonth(), 1).getDay();
+          firstDayOfMonth = firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1; // Pazartesi'yi 0 yap
+          
+          return (
+            <div key={monthKey} className="w-full">
+              <div className="font-medium text-center mb-2">{monthName}</div>
+              
+              <div className="grid grid-cols-7 gap-1 mb-1">
+                {weekDays.map(day => (
+                  <div key={day} className="text-xs text-center text-muted-foreground">
+                    {day}
+                  </div>
+                ))}
+              </div>
+              
+              <div className="grid grid-cols-7 gap-1">
+                {/* Boş günler için dolgu */}
+                {Array.from({ length: firstDayOfMonth }).map((_, index) => (
+                  <div key={`empty-${index}-${monthKey}`} className="p-2" />
+                ))}
+                
+                {/* Ayın günleri */}
+                {days.map(day => {
+                  const isSelectable = isDateSelectable(day);
+                  const isSelected = isDateSelected(day);
+                  const isStartDate = startDate && isEqual(day, startDate);
+                  const isEndDate = endDate && isEqual(day, endDate);
+                  
+                  return (
+                    <button 
+                      type="button"
+                      key={day.toISOString()}
+                      onClick={() => handleDateClick(day)}
+                      disabled={!isSelectable}
+                      className={cn(
+                        "p-2 text-sm rounded-md text-center",
+                        isSelectable ? "hover:bg-muted" : "opacity-50 cursor-not-allowed",
+                        isSelected && "bg-primary/20 text-primary",
+                        isStartDate && "bg-primary text-primary-foreground rounded-l-md",
+                        isEndDate && "bg-primary text-primary-foreground rounded-r-md"
+                      )}
+                    >
+                      {formatDateDay(day)}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+  
+  // Yükleniyor göstergesi
+  const loadingIndicator = (
+    <div className="p-4 text-center">
+      <p className="text-sm text-muted-foreground">Takvim bilgileri yükleniyor...</p>
+    </div>
+  );
+  
   return (
-    <div className="relative">
-      <button 
-        type="button"
-        onClick={toggleDatePicker}
-        className="w-full flex items-center justify-between px-3 py-2 border border-gray-300 rounded-md shadow-sm text-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
-        <span className="inline-flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-          <span>{placeholder}</span>
-        </span>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-
-      {isOpen && (
-        <div className="absolute z-10 mt-1 w-full bg-white shadow-lg rounded-md border border-gray-200 p-4">
-          <div className="text-center">
-            <p className="mb-4 text-sm text-gray-500">Basit tarih seçici örneği</p>
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-xs font-medium text-gray-700 mb-1">Giriş Tarihi</label>
-                <input
-                  type="date"
-                  value={startDate ? startDate.toISOString().split('T')[0] : ''}
-                  onChange={(e) => {
-                    const newStartDate = e.target.value ? new Date(e.target.value) : undefined;
-                    onChange(newStartDate, endDate);
-                  }}
-                  className="w-full px-2 py-1 border border-gray-300 rounded-md text-sm"
-                />
+    <div className={cn("grid gap-2", className)}>
+      <Popover open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
+        <PopoverTrigger asChild>
+          <Button
+            variant="outline"
+            size={size === "lg" ? "lg" : size === "sm" ? "sm" : "default"}
+            className={cn(
+              "w-full justify-start text-left font-normal",
+              !startDate && "text-muted-foreground",
+              disabled && "opacity-50 cursor-not-allowed"
+            )}
+            disabled={disabled}
+          >
+            <CalendarIcon className="mr-2 h-4 w-4" />
+            {startDate && endDate ? (
+              <>
+                {format(startDate, 'dd MMM', { locale: tr })} - {format(endDate, 'dd MMM', { locale: tr })}
+                <span className="ml-auto text-sm text-muted-foreground">
+                  {totalNights} {totalNights === 1 ? 'gece' : 'gece'}
+                </span>
+              </>
+            ) : (
+              <span>Tarih Seçin</span>
+            )}
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent className="w-auto p-4" align="start">
+          <div className="space-y-4">     
+            <div className="flex justify-between items-center">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                onClick={goToPreviousMonths}
+                disabled={isBefore(addMonths(currentMonth, -1), startOfMonth(today))}
+                className="h-7 w-7"
+                aria-label="Önceki aylar"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                  <title>Önceki aylar</title>
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+              </Button>
+              <div className="font-medium text-center">
+                {format(currentMonth, 'MMMM yyyy', { locale: tr })} - {format(addMonths(currentMonth, 1), 'MMMM yyyy', { locale: tr })}
               </div>
-              <div>
-                <label className="block text-xs font-medium text-gray-700 mb-1">Çıkış Tarihi</label>
-                <input
-                  type="date"
-                  value={endDate ? endDate.toISOString().split('T')[0] : ''}
-                  onChange={(e) => {
-                    const newEndDate = e.target.value ? new Date(e.target.value) : undefined;
-                    onChange(startDate, newEndDate);
-                  }}
-                  className="w-full px-2 py-1 border border-gray-300 rounded-md text-sm"
-                />
-              </div>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                onClick={goToNextMonths}
+                className="h-7 w-7"
+                aria-label="Sonraki aylar"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                  <title>Sonraki aylar</title>
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </Button>
             </div>
             
-            <div className="mt-4 flex justify-between">
-              <button
-                type="button"
-                onClick={() => {
-                  onChange(undefined, undefined);
-                  setIsOpen(false);
-                }}
-                className="text-xs text-gray-600 hover:text-gray-800"
+            <div className="flex gap-2">
+              <Button
+                size="sm"
+                variant="ghost"
+                onClick={handleSelectTomorrow}
+                className="text-xs"
               >
-                Temizle
-              </button>
-              <button
-                type="button"
-                onClick={() => setIsOpen(false)}
-                className="text-xs bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
+                Yarın {minStay > 1 ? `(${minStay + 1} gece)` : ""}
+              </Button>
+              <Button
+                size="sm"
+                variant="ghost"
+                onClick={handleSelectWeekend}
+                className="text-xs"
               >
-                Uygula
-              </button>
+                Hafta Sonu
+              </Button>
             </div>
+            
+            {isLoading ? loadingIndicator : renderCalendar()}
+            
+            {startDate && !endDate && (
+              <p className="text-xs text-muted-foreground text-center">
+                Lütfen çıkış tarihini seçin
+              </p>
+            )}
           </div>
-        </div>
-      )}
+        </PopoverContent>
+      </Popover>
     </div>
   );
 } 

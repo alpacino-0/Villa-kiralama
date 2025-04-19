@@ -2,27 +2,66 @@
 
 import { useState } from 'react';
 import type { FilterOption } from '@/types/filter';
+import { Tag, ChevronDown } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { 
+  DropdownMenu, 
+  DropdownMenuContent, 
+  DropdownMenuTrigger,
+  DropdownMenuSeparator
+} from '@/components/ui/dropdown-menu';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Loader2 } from 'lucide-react';
+
+// Dictionary tipini tanımla
+interface Dictionary {
+  villaListing?: {
+    filters?: {
+      features?: string;
+      noFeatures?: string;
+      apply?: string;
+      clear?: string;
+      featuresSelected?: string;
+      selectFeatures?: string;
+      selectedFeatures?: string;
+      [key: string]: string | undefined;
+    };
+    [key: string]: unknown;
+  };
+  [key: string]: unknown;
+}
 
 interface TagFilterProps {
   tags: FilterOption[];
   selectedTagIds: string[];
-  isLoading: boolean;
+  isLoading?: boolean;
   onChange: (tagIds: string[]) => void;
+  dictionary?: Dictionary;
+  className?: string;
 }
 
 export function TagFilter({
   tags,
   selectedTagIds,
-  isLoading,
-  onChange
+  isLoading = false,
+  onChange,
+  dictionary,
+  className
 }: TagFilterProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [searchText, setSearchText] = useState('');
 
-  // Etiketleri filtrele
-  const filteredTags = searchText
-    ? tags.filter(tag => tag.name.toLowerCase().includes(searchText.toLowerCase()))
-    : tags;
+  // Dictionary'den metinleri al veya varsayılan değerleri kullan
+  const filtersDict = dictionary?.villaListing?.filters || {};
+  
+  const noFeaturesText = filtersDict.noFeatures || 'Hiç özellik bulunamadı';
+  const applyText = filtersDict.apply || 'Uygula';
+  const clearText = filtersDict.clear || 'Temizle';
+  const featuresSelectedText = filtersDict.featuresSelected || 'özellik seçildi';
+  const selectFeaturesText = filtersDict.selectFeatures || 'Villa özellikleri seçin';
+  const selectedFeaturesText = filtersDict.selectedFeatures || 'Seçili Özellikler';
 
   // Etiket seçimini değiştirme
   const toggleTag = (tagId: string) => {
@@ -32,97 +71,164 @@ export function TagFilter({
       onChange([...selectedTagIds, tagId]);
     }
   };
+  
+  // Seçili etiketlerin isimlerini bul
+  const selectedTagNames = tags
+    .filter(tag => selectedTagIds.includes(tag.id))
+    .map(tag => tag.name);
+
+  // Tüm filtreleri temizle
+  const clearFilters = () => {
+    onChange([]);
+  };
 
   // Gösterilecek metin
   const displayText = selectedTagIds.length 
-    ? `${selectedTagIds.length} özellik seçildi` 
-    : 'Villa özellikleri seçin';
+    ? `${selectedTagIds.length} ${featuresSelectedText}` 
+    : selectFeaturesText;
+
+  // Seçimleri uygula
+  const handleApply = () => {
+    setIsOpen(false);
+  };
 
   return (
-    <div className="relative">
-      <button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between px-3 py-2 border border-gray-300 rounded-md shadow-sm text-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
-        <span className="inline-flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-          </svg>
-          <span>{displayText}</span>
-        </span>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-
-      {isOpen && (
-        <div className="absolute z-10 mt-1 w-full bg-white shadow-lg rounded-md border border-gray-200 p-4">
-          {/* Arama */}
-          <div className="mb-3">
-            <input
-              type="text"
-              value={searchText}
-              onChange={(e) => setSearchText(e.target.value)}
-              placeholder="Özellik ara..."
-              className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-
+    <div className={cn("relative w-full", className)}>
+      <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
+        <DropdownMenuTrigger asChild>
+          <Button
+            variant="outline"
+            aria-expanded={isOpen}
+            className={cn(
+              "w-full justify-between text-sm px-3 py-2 h-auto min-h-10",
+              "bg-background border-border shadow-sm",
+              "hover:border-accent/50 hover:bg-muted/30 transition-colors",
+              "font-nunito",
+              selectedTagIds.length > 0 && "border-accent/40"
+            )}
+          >
+            <div className="flex items-center gap-2 truncate">
+              <Tag className="h-4 w-4 text-accent shrink-0" />
+              <span className="font-medium truncate">
+                {displayText}
+              </span>
+            </div>
+            <ChevronDown className={cn(
+              "h-4 w-4 text-muted-foreground shrink-0 opacity-70 transition-transform duration-200",
+              isOpen && "rotate-180"
+            )} />
+          </Button>
+        </DropdownMenuTrigger>
+        
+        <DropdownMenuContent 
+          className="w-[var(--radix-dropdown-menu-trigger-width)] p-0 border-border bg-card shadow-md min-w-[240px]" 
+          align="start"
+          alignOffset={-4}
+          sideOffset={8}
+        >
           {isLoading ? (
-            <div className="flex justify-center py-4">
-              <svg className="animate-spin h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-              </svg>
+            <div className="flex justify-center py-8">
+              <Loader2 className="h-6 w-6 text-accent animate-spin" />
             </div>
           ) : (
-            <div>
-              {filteredTags.length === 0 ? (
-                <p className="text-sm text-gray-500 py-2 text-center">Aranan özelliklere uygun sonuç bulunamadı</p>
-              ) : (
-                <div className="grid grid-cols-2 gap-2 max-h-56 overflow-y-auto">
-                  {filteredTags.map(tag => (
-                    <div key={tag.id} className="flex items-start">
-                      <label className="flex items-center space-x-2 cursor-pointer">
-                        <input
-                          type="checkbox"
+            <div className="py-2">
+              {/* Etiketlerin listesi */}
+              <ScrollArea className="h-60 px-1">
+                <div className="space-y-1 px-2">
+                  {tags.length === 0 ? (
+                    <p className="py-6 text-center text-sm text-muted-foreground">
+                      {noFeaturesText}
+                    </p>
+                  ) : (
+                    tags.map((tag) => (
+                      <button
+                        key={tag.id}
+                        className="flex w-full items-center space-x-2 rounded-md px-2 py-1.5 hover:bg-muted transition-colors text-left"
+                        onClick={() => toggleTag(tag.id)}
+                        type="button"
+                      >
+                        <Checkbox
                           checked={selectedTagIds.includes(tag.id)}
-                          onChange={() => toggleTag(tag.id)}
-                          className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                          onCheckedChange={() => toggleTag(tag.id)}
+                          id={`tag-${tag.id}`}
+                          className="data-[state=checked]:bg-accent data-[state=checked]:border-accent"
                         />
-                        <span className="text-sm">{tag.name}</span>
-                        {tag.count !== undefined && (
-                          <span className="text-xs text-gray-500">({tag.count})</span>
-                        )}
-                      </label>
-                    </div>
-                  ))}
+                        <label
+                          htmlFor={`tag-${tag.id}`}
+                          className="flex-1 cursor-pointer text-sm font-nunito"
+                        >
+                          {tag.name}
+                        </label>
+                        <span className="text-xs text-muted-foreground">
+                          ({tag.count || 0})
+                        </span>
+                      </button>
+                    ))
+                  )}
                 </div>
+              </ScrollArea>
+              
+              {/* Seçili etiketlerin listesi */}
+              {selectedTagIds.length > 0 && (
+                <>
+                  <DropdownMenuSeparator className="my-2" />
+                  <div className="px-3 py-2">
+                    <p className="text-xs font-medium text-muted-foreground mb-2 font-montserrat">
+                      {selectedFeaturesText}:
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {selectedTagNames.map(name => (
+                        <Badge 
+                          key={name} 
+                          variant="outline" 
+                          className="bg-accent/10 text-accent border-accent/20 hover:bg-accent/20 font-nunito"
+                        >
+                          {name}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </>
               )}
               
-              <div className="mt-4 flex justify-between">
-                <button
-                  type="button"
-                  onClick={() => {
-                    onChange([]);
-                    setSearchText('');
-                  }}
-                  className="text-xs text-gray-600 hover:text-gray-800"
+              {/* İşlem butonları */}
+              <DropdownMenuSeparator className="my-2" />
+              <div className="flex justify-between px-3 py-2">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={clearFilters}
                   disabled={selectedTagIds.length === 0}
+                  className="text-xs font-normal text-muted-foreground hover:text-foreground hover:bg-muted h-8"
                 >
-                  Temizle
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setIsOpen(false)}
-                  className="text-xs bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
+                  {clearText}
+                </Button>
+                <Button
+                  variant="default"
+                  size="sm"
+                  onClick={handleApply}
+                  className="text-xs bg-accent text-accent-foreground hover:bg-accent/90 h-8"
                 >
-                  Uygula
-                </button>
+                  {applyText}
+                </Button>
               </div>
             </div>
           )}
+        </DropdownMenuContent>
+      </DropdownMenu>
+      
+      {/* Seçili etiketlerin badge'leri (opsiyonel - açılır menü dışında göstermek isterseniz) */}
+      {selectedTagIds.length > 0 && (
+        <div className="flex flex-wrap gap-1 mt-2">
+          {selectedTagNames.map(name => (
+            <Badge 
+              key={name} 
+              variant="outline" 
+              className="bg-accent/5 text-accent border-accent/10 text-xs py-0 h-5"
+            >
+              {name}
+            </Badge>
+          ))}
         </div>
       )}
     </div>

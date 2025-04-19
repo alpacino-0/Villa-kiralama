@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
-import type { Villa, VillaImage, VillaTag, SeasonalPrice, CalendarEvent } from '@/types/villa';
+import type { Villa, VillaImage, VillaTag, SeasonalPrice, CalendarEvent, Region } from '@/types/villa';
 
 // Supabase Database tipi
 export interface Database {
@@ -29,6 +29,11 @@ export interface Database {
         Row: VillaImage;
         Insert: Omit<VillaImage, 'id' | 'createdAt'>;
         Update: Partial<Omit<VillaImage, 'id' | 'createdAt'>>;
+      };
+      Region: {
+        Row: Region;
+        Insert: Omit<Region, 'id' | 'createdAt' | 'updatedAt'>;
+        Update: Partial<Omit<Region, 'id' | 'createdAt' | 'updatedAt'>>;
       };
     };
     Views: {

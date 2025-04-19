@@ -5,7 +5,8 @@ export enum Status {
   DELETED = 'DELETED'
 }
 
-export enum CalendarEventStatus {
+// Veritabanı tablosunda kullanılan enum. CalendarEventStatus ile aynı değerlere sahip.
+export enum CalendarStatus {
   AVAILABLE = 'AVAILABLE',
   RESERVED = 'RESERVED',
   BLOCKED = 'BLOCKED'

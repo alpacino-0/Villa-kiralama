@@ -102,6 +102,41 @@
     "nightPrice": "Gece Fiyatı",
     "totalPrice": "Toplam Fiyat"
   },
+  "villaListing": {
+    "pageTitle": "Kiralık Villalar",
+    "pageDescription": "Tatil için kiralık villaları keşfedin. Konforlu ve lüks villalarla unutulmaz bir tatil deneyimi yaşayın.",
+    "filters": {
+      "title": "Filtreler",
+      "location": "Konum",
+      "checkIn": "Giriş Tarihi",
+      "checkOut": "Çıkış Tarihi",
+      "guests": "Misafir Sayısı",
+      "price": "Fiyat",
+      "bedrooms": "Yatak Odaları",
+      "bathrooms": "Banyolar",
+      "apply": "Uygula",
+      "clear": "Temizle",
+      "reset": "Sıfırla",
+      "activeFilters": "Aktif Filtreler",
+      "region": "Bölge",
+      "subRegion": "Alt Bölge",
+      "features": "Özellikler",
+      "minPrice": "Min. Fiyat",
+      "maxPrice": "Maks. Fiyat"
+    },
+    "errorMessage": "Villalar yüklenirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "unknownError": "Bilinmeyen hata",
+    "noResults": "Aramanıza uygun villa bulunamadı.",
+    "resultsCount": "villa bulundu",
+    "sortBy": "Sırala",
+    "sortOptions": {
+      "newest": "En Yeni",
+      "priceAsc": "Fiyat (Artan)",
+      "priceDesc": "Fiyat (Azalan)",
+      "rating": "Puanlama"
+    },
+    "loadingMore": "Daha fazla yükleniyor..."
+  },
   "search": {
     "title": "Villa Ara",
     "location": "Konum",
@@ -126,6 +161,15 @@
   },
   "common": {
     "emailAddress": "E-posta Adresi",
-    "phoneNumber": "Telefon Numarası"
+    "phoneNumber": "Telefon Numarası",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "submit": "Gönder",
+    "cancel": "İptal",
+    "back": "Geri",
+    "next": "İleri",
+    "show": "Göster",
+    "hide": "Gizle"
   }
 }
