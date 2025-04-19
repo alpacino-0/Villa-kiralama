@@ -34,7 +34,7 @@ export const routes = {
     en: 'contact',
     de: 'kontakt',
     ru: 'контакты',
-    tr: 'iletisim',
+    tr: 'villa-kiralama-iletisim',
     fr: 'contact',
     it: 'contatti',
     nl: 'contact',

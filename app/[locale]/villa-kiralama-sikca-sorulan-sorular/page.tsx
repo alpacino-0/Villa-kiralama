@@ -246,7 +246,7 @@ export default function VillaKiralamaSikcaSorulanSorular({ params }: VillaKirala
             Sorunuza cevap bulamadıysanız, lütfen bizimle iletişime geçin. Size yardımcı olmaktan memnuniyet duyarız.
           </p>
           <Link 
-            href={`/${locale}/iletisim`} 
+            href={`/${locale}/villa-kiralama-iletisim`} 
             className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
           >
             İletişime Geçin

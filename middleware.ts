@@ -34,6 +34,14 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Özel yönlendirmeler - Hidrasyon uyuşmazlığını çözmek için eski yolları yeni yollara yönlendir
+  for (const locale of locales) {
+    // Eski iletişim sayfası yolunu yeni yola yönlendir
+    if (pathname === `/${locale}/iletisim`) {
+      return NextResponse.redirect(new URL(`/${locale}/villa-kiralama-iletisim`, request.url));
+    }
+  }
+
   // URL'de zaten dil kodu var mı diye kontrol et
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`

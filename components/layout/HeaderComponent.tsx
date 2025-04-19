@@ -63,7 +63,7 @@ const HeaderComponent = ({ locale, dictionary }: HeaderComponentProps) => {
     { id: 'villas', text: villasText, href: '/villa-kiralama', icon: Building2, active: pathname?.includes('/villa-kiralama') },
     { id: 'regions', text: regionsText, href: '/bolgeler', icon: MapIcon, active: pathname?.includes('/bolgeler') },
     { id: 'about', text: aboutText, href: '/hakkinda', icon: Info, active: pathname?.includes('/hakkinda') },
-    { id: 'contact', text: contactText, href: '/iletisim', icon: Mail, active: pathname?.includes('/iletisim') },
+    { id: 'contact', text: contactText, href: '/villa-kiralama-iletisim', icon: Mail, active: pathname?.includes('/villa-kiralama-iletisim') },
   ];
 
   // Scroll durumunu kontrol et
