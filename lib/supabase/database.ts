@@ -1,5 +1,5 @@
 import { supabase } from './client';
-import type { Villa } from '@/lib/supabase/types';
+import type { Villa } from '@/types/villa';
 
 /**
  * Villa listesini getir

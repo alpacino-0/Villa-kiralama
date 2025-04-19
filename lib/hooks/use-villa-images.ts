@@ -2,7 +2,7 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/lib/supabase/client';
-import type { VillaImage } from '@/lib/supabase/types';
+import type { VillaImage } from '@/types/villa';
 
 /**
  * useVillaImages

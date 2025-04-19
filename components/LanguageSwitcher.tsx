@@ -28,13 +28,6 @@ interface LanguageSwitcherProps {
 const languageNames: Record<string, string> = {
   tr: 'Türkçe',
   en: 'English',
-  ar: 'العربية',
-  es: 'Español',
-  no: 'Norsk',
-  sv: 'Svenska',
-  nl: 'Nederlands',
-  it: 'Italiano',
-  fr: 'Français',
   ru: 'Русский',
   de: 'Deutsch'
 };

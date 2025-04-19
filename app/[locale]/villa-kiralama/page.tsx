@@ -1,5 +1,6 @@
 // pages/villalar.tsx
-import { VillaList } from '@/components/villa-kiralama/VillaList';
+import { Suspense } from 'react';
+import VillaListingContainer from '@/components/villa-kiralama/VillaListingContainer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,14 +11,17 @@ export const metadata: Metadata = {
 /**
  * Villa Listeleme Sayfası
  * 
- * Bu bir sunucu bileşenidir ve istemci bileşeni olan VillaList'i içerir.
- * React Query hook'ları sadece istemci bileşenlerinde kullanılabilir.
+ * Bu bir sunucu bileşenidir. İstemci tarafında çalışan VillaListingContainer
+ * bileşeni, filtreleme, listeleme ve sayfalama özelliklerini yönetir.
+ * useSearchParams() hook'u Suspense sınırı içinde kullanılması gerektiği için
+ * VillaListingContainer bileşeni bir Suspense içine alınmıştır.
  */
 export default function VillaListPage() {
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-6">Kiralık Villalar</h1>
-      <VillaList />
+    <div className="py-8 px-4 sm:px-6 md:px-8 mx-auto max-w-7xl">
+      <Suspense fallback={<div className="h-screen flex items-center justify-center">Yükleniyor...</div>}>
+        <VillaListingContainer />
+      </Suspense>
     </div>
   );
 }

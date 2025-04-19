@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/lib/supabase/client';
-import type { Villa } from '@/lib/supabase/types';
+import type { Villa } from '@/types/villa';
 
 /**
  * useVillaList

@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Separator } from '@/components/ui/separator';
+import { useEffect, useState } from 'react';
 
 // Dictionary tipi tanımı
 interface Dictionary {
@@ -75,8 +76,44 @@ type FooterComponentProps = {
   dictionary: Dictionary;
 };
 
+// Footer bileşeni tipi tanımlanıyor
 const FooterComponent = ({ locale, dictionary }: FooterComponentProps) => {
   const currentYear = new Date().getFullYear();
+  const [isVisible, setIsVisible] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+  
+  // Client-side-only kodu çalıştırmak için
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  // IntersectionObserver için ayrı bir useEffect
+  useEffect(() => {
+    if (!isClient) return;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        }
+      },
+      { threshold: 0.1 }
+    );
+    
+    const footerElement = document.querySelector('footer');
+    if (footerElement) {
+      observer.observe(footerElement);
+    }
+    
+    return () => {
+      if (footerElement) {
+        observer.unobserve(footerElement);
+      }
+    };
+  }, [isClient]);
   
   // Güvenli bir şekilde footer özelliklerine erişim
   const companyInfo = dictionary.footer?.companyInfo || 'Your trusted source for luxury villas and vacation homes.';
@@ -146,12 +183,28 @@ const FooterComponent = ({ locale, dictionary }: FooterComponentProps) => {
     console.log('Form submitted');
   };
 
+  // Mobil görünüm için bölüm açılır/kapanır durumu
+  const [openSections, setOpenSections] = useState<{[key: string]: boolean}>({
+    quickLinks: false,
+    legal: false,
+    contactForm: false
+  });
+
+  // Mobil görünümde bölüm açma/kapama işlevi
+  const toggleSection = (section: string) => {
+    setOpenSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
+
   return (
-    <footer className="bg-secondary text-white pt-16 pb-10 px-4 md:px-8">
+    <footer className={`bg-secondary text-white pt-12 pb-8 px-4 md:px-8 
+                       ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
       <div className="container mx-auto px-2 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-10">
           {/* Şirket Bilgileri */}
-          <div>
+          <div className={`${isVisible ? 'animate-slide-up animate-delay-100' : ''}`}>
             <div className="mb-4">
               <div className="h-12 w-auto relative mb-2">
                 <Image
@@ -159,95 +212,61 @@ const FooterComponent = ({ locale, dictionary }: FooterComponentProps) => {
                   alt="Inn Elegance"
                   width={180}
                   height={48}
-                  className="transition-all duration-300"
+                  className="transition-all duration-300 hover:scale-105"
                   style={{ width: 'auto', height: 'auto', maxWidth: '180px' }}
                   priority
                 />
               </div>
-              <p className="text-sm font-light mt-2">{brandSlogan}</p>
+              <p className="text-sm font-light mt-2 text-accent-foreground">{brandSlogan}</p>
             </div>
-            <p className="text-white/80 text-sm mb-6">{companyInfo}</p>
-            <div className="space-y-2">
-              <div className="flex items-center text-sm">
-                <Phone size={16} className="mr-2 text-white" />
-                <span>+90 555 123 4567</span>
+            <p className="text-white/80 text-sm mb-6 leading-relaxed">{companyInfo}</p>
+            <div className="space-y-3">
+              <div className="flex items-center text-sm group">
+                <Phone size={16} className="mr-2 text-white group-hover:text-accent transition-colors" />
+                <span className="group-hover:text-accent transition-colors">+90 555 123 4567</span>
               </div>
-              <div className="flex items-center text-sm">
-                <Mail size={16} className="mr-2 text-white" />
-                <span>info@innelegance.com</span>
+              <div className="flex items-center text-sm group">
+                <Mail size={16} className="mr-2 text-white group-hover:text-accent transition-colors" />
+                <span className="group-hover:text-accent transition-colors">info@innelegance.com</span>
               </div>
-              <div className="flex items-start text-sm">
-                <MapPin size={16} className="mr-2 mt-1 text-white" />
-                <span>123 Villa Street, Luxury District, 34000 Istanbul, Turkey</span>
+              <div className="flex items-start text-sm group">
+                <MapPin size={16} className="mr-2 mt-1 text-white group-hover:text-accent transition-colors" />
+                <span className="group-hover:text-accent transition-colors">123 Villa Street, Luxury District, 34000 Istanbul, Turkey</span>
               </div>
             </div>
             
             {/* Ödeme Yöntemleri */}
             <div className="mt-6">
-              <div className="flex items-center space-x-2 mb-2">
-                <CreditCard size={16} className="text-white" />
+              <div className="flex items-center space-x-2 mb-3">
+                <CreditCard size={16} className="text-accent" />
                 <span className="text-sm font-medium text-white">{securePayment}</span>
               </div>
               <div className="flex flex-wrap gap-2">
-                <Image
-                  src="/payment-methods/visa.svg"
-                  alt="Visa"
-                  width={40}
-                  height={24}
-                  className="h-8 w-auto bg-white rounded-md px-2 py-1"
-                />
-                <Image
-                  src="/payment-methods/mastercard.svg"
-                  alt="MasterCard"
-                  width={40}
-                  height={24}
-                  className="h-8 w-auto bg-white rounded-md px-2 py-1"
-                />
-                <Image
-                  src="/payment-methods/amex.svg"
-                  alt="American Express"
-                  width={40}
-                  height={24}
-                  className="h-8 w-auto bg-white rounded-md px-2 py-1"
-                />
-                <Image
-                  src="/payment-methods/paypal.svg"
-                  alt="PayPal"
-                  width={40}
-                  height={24}
-                  className="h-8 w-auto bg-white rounded-md px-2 py-1"
-                />
-                <Image
-                  src="/payment-methods/google-pay.svg"
-                  alt="Google Pay"
-                  width={40}
-                  height={24}
-                  className="h-8 w-auto bg-white rounded-md px-2 py-1"
-                />
-                <Image
-                  src="/payment-methods/apple-pay.svg"
-                  alt="Apple Pay"
-                  width={40}
-                  height={24}
-                  className="h-8 w-auto bg-white rounded-md px-2 py-1"
-                />
-                <Image
-                  src="/payment-methods/stripe.svg"
-                  alt="Stripe"
-                  width={40}
-                  height={24}
-                  className="h-8 w-auto bg-white rounded-md px-2 py-1"
-                />
+                {['visa', 'mastercard', 'amex', 'paypal', 'google-pay', 'apple-pay', 'stripe'].map((method) => (
+                  <div key={method} className="transform transition-transform hover:scale-110 hover:-translate-y-1 duration-300">
+                    <Image
+                      src={`/payment-methods/${method}.svg`}
+                      alt={method.charAt(0).toUpperCase() + method.slice(1).replace('-', ' ')}
+                      width={40}
+                      height={24}
+                      className="h-8 bg-white rounded-md px-2 py-1 shadow-sm"
+                      style={{ width: 'auto', height: '32px' }}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
             
             {/* Sosyal Medya */}
             <div className="flex space-x-3 mt-6">
-              {socialLinks.map((link) => (
+              {socialLinks.map((link, index) => (
                 <a 
                   key={link.id}
                   href={link.url} 
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent transition-colors" 
+                  className={`w-8 h-8 flex items-center justify-center rounded-full 
+                             bg-white/10 hover:bg-accent transition-all duration-300 
+                             hover:scale-110 shadow-sm 
+                             ${isVisible ? `animate-slide-right animate-delay-${(index + 1) * 100}` : ''}`}
                   aria-label={link.label}
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -258,124 +277,118 @@ const FooterComponent = ({ locale, dictionary }: FooterComponentProps) => {
             </div>
           </div>
           
-          {/* Hızlı Linkler */}
-          <div>
-            <h3 className="text-xl font-heading font-bold mb-4 text-white">{quickLinksTitle}</h3>
-            <ul className="space-y-2 text-white/80">
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}`} className="flex items-center">
-                  <Home size={16} className="mr-2 text-white" />
-                  {home}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama`} className="flex items-center">
-                  <Building size={16} className="mr-2 text-white" />
-                  {villasText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-bolgeleri`} className="flex items-center">
-                  <MapPin size={16} className="mr-2 text-white" />
-                  {locationsText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-kampanyalar`} className="flex items-center">
-                  <Gift size={16} className="mr-2 text-white" />
-                  {promotionsText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-hakkimizda`} className="flex items-center">
-                  <Info size={16} className="mr-2 text-white" />
-                  {aboutUsText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-iletisim`} className="flex items-center">
-                  <Mail size={16} className="mr-2 text-white" />
-                  {contactUsText}
-                </Link>
-              </li>
+          {/* Hızlı Linkler - Mobil görünümde açılır/kapanır başlık */}
+          <div className={`${isVisible ? 'animate-slide-up animate-delay-200' : ''}`}>
+            <button 
+              className="flex justify-between items-center w-full text-left mb-4 md:mb-4 cursor-pointer md:cursor-default bg-transparent border-none"
+              onClick={() => toggleSection('quickLinks')}
+              aria-expanded={openSections.quickLinks}
+              type="button"
+            >
+              <h3 className="text-xl font-heading font-bold text-white">{quickLinksTitle}</h3>
+              <span className="md:hidden text-white">
+                {openSections.quickLinks ? '−' : '+'}
+              </span>
+            </button>
+            <ul className={`space-y-2 text-white/80 transition-all duration-300 overflow-hidden 
+                          ${!openSections.quickLinks ? 'max-h-0 md:max-h-[500px]' : 'max-h-[500px]'}`}>
+              {[
+                { icon: Home, text: home, href: `/${locale}`, id: 'home' },
+                { icon: Building, text: villasText, href: `/${locale}/villa-kiralama`, id: 'villas' },
+                { icon: MapPin, text: locationsText, href: `/${locale}/villa-kiralama-bolgeleri`, id: 'locations' },
+                { icon: Gift, text: promotionsText, href: `/${locale}/villa-kiralama-kampanyalar`, id: 'promotions' },
+                { icon: Info, text: aboutUsText, href: `/${locale}/villa-kiralama-hakkimizda`, id: 'about' },
+                { icon: Mail, text: contactUsText, href: `/${locale}/villa-kiralama-iletisim`, id: 'contact' }
+              ].map((item) => (
+                <li key={item.id} className="group hover:translate-x-1 transition-all duration-200 ease-in-out">
+                  <Link href={item.href} className="flex items-center group">
+                    <item.icon size={16} className="mr-2 text-accent group-hover:text-accent-foreground transition-colors" />
+                    <span className="group-hover:text-accent-foreground transition-colors">{item.text}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           
-          {/* Yasal */}
-          <div>
-            <h3 className="text-xl font-heading font-bold mb-4 text-white">{legalTitle}</h3>
-            <ul className="space-y-2 text-white/80">
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-gizlilik-sartlari`} className="flex items-center">
-                  <ShieldCheck size={16} className="mr-2 text-white" />
-                  {privacyPolicyText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-odeme-yontemleri`} className="flex items-center">
-                  <CreditCard size={16} className="mr-2 text-white" />
-                  {paymentMethodsText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-sikca-sorulan-sorular`} className="flex items-center">
-                  <HelpCircle size={16} className="mr-2 text-white" />
-                  {faqText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-ev-sahibi-sozlesmesi`} className="flex items-center">
-                  <FileText size={16} className="mr-2 text-white" />
-                  {hostAgreementText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-iptal-kosullari`} className="flex items-center">
-                  <AlertCircle size={16} className="mr-2 text-white" />
-                  {cancellationPolicyText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/villa-kiralama-sozlesmesi`} className="flex items-center">
-                  <FileText size={16} className="mr-2 text-white" />
-                  {rentalAgreementText}
-                </Link>
-              </li>
-              <li className="hover:text-accent transition-colors">
-                <Link href={`/${locale}/kisisel-verilerin-korunmasi-hakkinda-aydinlatma-metni`} className="flex items-center">
-                  <FileText size={16} className="mr-2 text-white" />
-                  {gdprComplianceText}
-                </Link>
-              </li>
+          {/* Yasal - Mobil görünümde açılır/kapanır başlık */}
+          <div className={`${isVisible ? 'animate-slide-up animate-delay-300' : ''}`}>
+            <button 
+              className="flex justify-between items-center w-full text-left mb-4 md:mb-4 cursor-pointer md:cursor-default bg-transparent border-none"
+              onClick={() => toggleSection('legal')}
+              aria-expanded={openSections.legal}
+              type="button"
+            >
+              <h3 className="text-xl font-heading font-bold text-white">{legalTitle}</h3>
+              <span className="md:hidden text-white">
+                {openSections.legal ? '−' : '+'}
+              </span>
+            </button>
+            <ul className={`space-y-2 text-white/80 transition-all duration-300 overflow-hidden 
+                          ${!openSections.legal ? 'max-h-0 md:max-h-[500px]' : 'max-h-[500px]'}`}>
+              {[
+                { icon: ShieldCheck, text: privacyPolicyText, href: `/${locale}/villa-kiralama-gizlilik-sartlari`, id: 'privacy' },
+                { icon: CreditCard, text: paymentMethodsText, href: `/${locale}/villa-kiralama-odeme-yontemleri`, id: 'payment' },
+                { icon: HelpCircle, text: faqText, href: `/${locale}/villa-kiralama-sikca-sorulan-sorular`, id: 'faq' },
+                { icon: FileText, text: hostAgreementText, href: `/${locale}/villa-kiralama-ev-sahibi-sozlesmesi`, id: 'host' },
+                { icon: AlertCircle, text: cancellationPolicyText, href: `/${locale}/villa-kiralama-iptal-kosullari`, id: 'cancel' },
+                { icon: FileText, text: rentalAgreementText, href: `/${locale}/villa-kiralama-sozlesmesi`, id: 'rental' },
+                { icon: FileText, text: gdprComplianceText, href: `/${locale}/kisisel-verilerin-korunmasi-hakkinda-aydinlatma-metni`, id: 'gdpr' }
+              ].map((item) => (
+                <li key={item.id} className="group hover:translate-x-1 transition-all duration-200 ease-in-out">
+                  <Link href={item.href} className="flex items-center group">
+                    <item.icon size={16} className="mr-2 text-accent group-hover:text-accent-foreground transition-colors" />
+                    <span className="group-hover:text-accent-foreground transition-colors">{item.text}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           
-          {/* İletişim Formu */}
-          <div>
-            <h3 className="text-xl font-heading font-bold mb-4 text-white">{formTitle}</h3>
-            <form onSubmit={handleSubmit} className="space-y-3">
+          {/* İletişim Formu - Mobil görünümde açılır/kapanır başlık */}
+          <div className={`${isVisible ? 'animate-slide-up animate-delay-400' : ''}`}>
+            <button 
+              className="flex justify-between items-center w-full text-left mb-4 md:mb-4 cursor-pointer md:cursor-default bg-transparent border-none"
+              onClick={() => toggleSection('contactForm')}
+              aria-expanded={openSections.contactForm}
+              type="button"
+            >
+              <h3 className="text-xl font-heading font-bold text-white">{formTitle}</h3>
+              <span className="md:hidden text-white">
+                {openSections.contactForm ? '−' : '+'}
+              </span>
+            </button>
+            <form 
+              onSubmit={handleSubmit} 
+              className={`space-y-3 transition-all duration-300 overflow-hidden 
+                        ${!openSections.contactForm ? 'max-h-0 md:max-h-[500px]' : 'max-h-[500px]'}`}
+            >
               <Input 
                 type="text" 
                 placeholder={nameText}
-                className="bg-white/10 border-white/20 placeholder:text-white/50 text-white"
+                className="bg-white/10 border-white/20 placeholder:text-white/50 text-white 
+                         focus:border-accent focus:ring-1 focus:ring-accent transition-all duration-300"
               />
               <Input 
                 type="email" 
                 placeholder={emailText}
-                className="bg-white/10 border-white/20 placeholder:text-white/50 text-white"
+                className="bg-white/10 border-white/20 placeholder:text-white/50 text-white 
+                         focus:border-accent focus:ring-1 focus:ring-accent transition-all duration-300"
               />
               <Input 
                 type="tel" 
                 placeholder={phoneText}
-                className="bg-white/10 border-white/20 placeholder:text-white/50 text-white"
+                className="bg-white/10 border-white/20 placeholder:text-white/50 text-white 
+                         focus:border-accent focus:ring-1 focus:ring-accent transition-all duration-300"
               />
               <Textarea 
                 placeholder={messageText}
-                className="bg-white/10 border-white/20 placeholder:text-white/50 text-white min-h-[100px]"
+                className="bg-white/10 border-white/20 placeholder:text-white/50 text-white min-h-[100px] 
+                         focus:border-accent focus:ring-1 focus:ring-accent transition-all duration-300 resize-none"
               />
               <Button 
                 type="submit" 
-                className="w-full bg-accent hover:bg-accent/90"
+                className="w-full bg-accent hover:bg-accent/90 shadow-md transition-all duration-300 
+                         hover:shadow-lg hover:translate-y-[-2px] active:translate-y-0 active:shadow-md"
               >
                 <Send size={16} className="mr-2 text-white" />
                 {sendText}
@@ -397,7 +410,7 @@ const FooterComponent = ({ locale, dictionary }: FooterComponentProps) => {
           </div>
           <div className="text-white/60 text-sm mt-2 md:mt-0">
             <span>
-              {webDesign}: <Link href="/" className="hover:text-accent">Inn Elegance</Link>
+              {webDesign}: <Link href="/" className="hover:text-accent transition-colors">Inn Elegance</Link>
             </span>
           </div>
         </div>

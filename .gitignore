@@ -51,3 +51,5 @@ docs
 .env.development
 
 veritabanı
+
+memory-bank

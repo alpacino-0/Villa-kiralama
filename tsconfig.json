@@ -22,7 +22,10 @@
     "paths": {
       "@/styles/*": ["styles/*"],
       "@/components/*": ["components/*"],
-      "@/lib/*": ["lib/*"]
+      "@/lib/*": ["lib/*"],
+      "@/app/*": ["app/*"],
+      "@/types/*": ["types/*"],
+      "@/components/villa-kiralama/*": ["components/villa-kiralama/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

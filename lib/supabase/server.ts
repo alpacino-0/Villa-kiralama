@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { cookies } from 'next/headers';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
-import type { Database } from '@/lib/supabase/types';
+import type { Database } from '@/lib/supabase/client';
 
 /**
  * Sunucu bileşenlerinde kullanılacak Supabase istemcisi
