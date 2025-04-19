@@ -1,0 +1,38 @@
+{
+  "title": "Gizlilik Şartları",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Giriş",
+      "content": "İşbu Gizlilik Politikası, www.innelegance.com adresini ziyaret eden ve kullanan tüm kullanıcıları kapsamakta olup; peşinen kabul edilmiştir. Inn Elegance'ı kullanan ziyaretçilerin doğrudan ve/veya dolaylı olarak bizlere sunduğu verilerden aşağıda bahsedilmiştir. Bu veriler, Kiralama ve Kullanım sözleşmesi, Gizlilik Politikası şartları gereği uygun olan haller dahilinde kullanılmakta olup; bu uygun olan hallerin dışında kullanılmamaktadır."
+    },
+    {
+      "id": "data-collection",
+      "title": "Doğrudan Tarafımıza Sunulan Veriler",
+      "content": "Rezervasyon formu, iletişim formu ve/veya diğer formlar aracılığı ile bizlere sunmuş olduğunuz; telefon, elektronik posta, ad-soyad ve diğer talep edilen form bilgileri firmamız tarafından saklanmaktadır. Bu veriler, ticari maksatla herhangi bir gerçek/tüzel üçüncü şahıs ve/veya kurum/firma ile paylaşılmaz. Mevcut olarak tarafımızla paylaştığınız veriler, firmamız tarafından yapılan kampanyaları, gelişmeleri ve güncellemeleri sizlere sunmak adına kullanılır. Sunduğunuz/belirttiğiniz iletişim kanalları üzerinden sadece Inn Elegance ve Inn Elegance alt projeleri üzerinden ancak size bilgilendirme dönüşleri sağlanabilir."
+    },
+    {
+      "id": "cookies",
+      "title": "Dolaylı Olarak Tarafınızdan Elde Edilen Veriler",
+      "content": "IP bilgisi, konum verileri, çerezler ve diğer sizlere daha iyi deneyim sunmak adına arka planda toplanan veriler sadece Inn Elegance sitesine özeldir. Bu veriler hiç bir şekilde uygun haller dışında ticari amaçla satılmaz, paylaşılmaz. Her bilgisayarda, çerez paylaşım ayarlarınızı mevcut web tarayıcınız üzerinden yapabilmektesiniz. Standart belirlenmiş tarayıcı ayarlarında çerez paylaşımı genel anlamda açık olmaktadır ve firmamız sadece bu tarz verileri kullanmaktadır. Harici bir müdahale ya da veri elde etme adına onaysız işlem asla söz konusu değildir."
+    },
+    {
+      "id": "user-rights",
+      "title": "Kullanıcı Hakları",
+      "content": "Inn Elegance ile iletişime geçerek, mevcut bilgilerini değiştirmek ve/veya kullanımı hakkında gerekli izinleri kaldırmak isteyen kullanıcılar info@innelegance.com adresini kullanmalıdırlar. Bu adres üzerinden yapılacak taleplere istinaden, verilerin sistemden tamamen silinmesi ve/veya Inn Elegance için kullanımının tamamen durdurulması mümkün olabilecektir. Bu tarz taleplerde, doğabilecek veri akışına bağlı müşteri/kullanıcı odaklı kesintilerden, aksaklıklardan karşı taraf/talep eden taraf sorumlu olacak olup; doğabilecek veri eksikliğine bağlı aksamalardan Inn Elegance sorumlu tutulamayacaktır."
+    },
+    {
+      "id": "data-sharing",
+      "title": "Rezervasyon ve Kimlik Sunumları",
+      "content": "Firmamız, yasal olarak belirlenmiş kaideler gereği villalarda konaklayacak olan her müşterisi için ilgili güvenlik güçlerine / kolluk kuvvetlerine KİMLİK VERİ BİLDİRİMİ yapmak durumundadır. Bu nedenle, firmamızdan rezervasyon yapan tüm kullanıcılar/müşteriler bu veri bildirimi için kimliklerini beyan edeceklerini kabul etmiş sayılırlar. Beyan edilen kimlik verileri ise sadece ilgili güvenlik güçlerine / kolluk kuvvetlerine sunulmaktadır. Yasal sorumluluğun dışında; gerek firma olarak, gerekse de ticari olarak hiç bir KİMLİK VERİSİ/BİLGİSİ KULLANILAMAZ!"
+    }
+  ],
+  "companyInfo": {
+    "name": "Inn Elegance LLC",
+    "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+    "website": "www.innelegance.com",
+    "owner": "Orhan Yavuz",
+    "email": "info@innelegance.com",
+    "phone": "+90 531 621 61 00"
+  }
+}

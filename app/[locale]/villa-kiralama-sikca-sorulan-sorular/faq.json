@@ -1,0 +1,242 @@
+{
+  "title": "Sık Sorulan Sorular",
+  "description": "Villa kiralama hakkında merak ettiğiniz tüm sorulara yanıtlar bulun.",
+  "heroTitle": "Sık Sorulan Sorular",
+  "heroDescription": "Villa kiralama sürecindeki her türlü sorunuz için kapsamlı SSS rehberimize göz atın. Rezervasyondan check-out'a kadar tüm sorularınızın cevaplarını burada bulabilirsiniz.",
+  "sections": [
+    {
+      "id": "reservations",
+      "title": "Rezervasyon İşlemleri",
+      "faqs": [
+        {
+          "question": "Rezervasyon nasıl yapılır?",
+          "answer": "Rezervasyon yapmak için web sitemizden istediğiniz bölgedeki villaları filtreleyebilir, uygun tarihleri seçebilir ve online olarak rezervasyonunuzu tamamlayabilirsiniz. Alternatif olarak müşteri hizmetlerimizi arayarak telefonla da rezervasyon yapabilirsiniz. Rezervasyon işleminizi tamamlamak için %30 ön ödeme yapmanız gerekecektir."
+        },
+        {
+          "question": "Rezervasyon onayı ne kadar sürede alınır?",
+          "answer": "Online rezervasyon yaptığınızda anında otomatik onay alırsınız. Müşteri hizmetleri aracılığıyla yapılan rezervasyonlarda ise genellikle 24 saat içinde onay alırsınız. Yoğun sezonda bu süre en fazla 48 saate uzayabilir."
+        },
+        {
+          "question": "Rezervasyonumu nasıl değiştirebilirim?",
+          "answer": "Rezervasyonunuzu değiştirmek için en az 30 gün önceden bize bildirmeniz gerekir. Müsaitlik durumuna göre tarih değişikliği yapılabilir. Değişiklik talebinizi müşteri hizmetleri ile iletişime geçerek iletebilirsiniz."
+        },
+        {
+          "question": "Rezervasyon iptal politikası nedir?",
+          "answer": "İptal politikamız şu şekildedir: Giriş tarihinden 60 gün öncesine kadar yapılan iptallerde tam iade yapılır. 30-60 gün kala yapılan iptallerde %50 iade yapılır. 30 günden az kala yapılan iptallerde ise iade yapılmaz. İptal talebinizi yazılı olarak iletmeniz gerekmektedir."
+        },
+        {
+          "question": "Minimum konaklama süresi nedir?",
+          "answer": "Villa ve sezona göre değişiklik göstermekle birlikte, genel olarak minimum konaklama süremiz 3 gecedir. Yüksek sezonda (Haziran-Ağustos) bu süre 7 geceye çıkabilir. Her villanın sayfasında minimum konaklama süresi belirtilmektedir."
+        }
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Ödeme ve Fiyatlandırma",
+      "faqs": [
+        {
+          "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+          "answer": "Banka havalesi/EFT, kredi kartı (Visa, MasterCard, American Express) ve bazı durumlarda uluslararası para transferi (SWIFT) ile ödeme kabul ediyoruz. Ödeme detaylarını 'Villa Kiralama Ödeme Yöntemleri' sayfamızda bulabilirsiniz."
+        },
+        {
+          "question": "Fiyatlandırmaya neler dahildir?",
+          "answer": "Belirtilen fiyata genellikle villa kirası, havuz bakımı, bahçe bakımı, Wi-Fi, normal su ve elektrik kullanımı dahildir. Ekstra hizmetler (transfer, özel şef, günlük temizlik vb.) ve havaalanı transferi ek ücrete tabidir. Her villanın detay sayfasında dahil olan hizmetler listelenmiştir."
+        },
+        {
+          "question": "Depozito uygulamanız var mı?",
+          "answer": "Evet, tüm villa kiralamalarında bir güvenlik depozito bedeli alınmaktadır. Bu bedel genellikle villa fiyatının %20-30'u kadardır ve çıkışta herhangi bir hasar olmaması durumunda 7 iş günü içinde iade edilir. Depozito, nakit veya kredi kartı ile alınabilir."
+        },
+        {
+          "question": "Kalan bakiyeyi ne zaman ödemeliyim?",
+          "answer": "Rezervasyon sırasında toplam tutarın %30'unu ön ödeme olarak yaparsınız. Kalan %70'lik bakiyeyi ise varış tarihinden en geç 30 gün önce ödemeniz gerekmektedir. Bu tarihten sonra yapılan rezervasyonlarda toplam tutarın tamamı peşin olarak talep edilir."
+        },
+        {
+          "question": "Farklı para birimlerinde ödeme yapabilir miyim?",
+          "answer": "Evet, TRY (Türk Lirası), USD (Amerikan Doları), EUR (Euro) ve GBP (İngiliz Sterlini) para birimlerinde ödeme kabul ediyoruz. Ödemelerinizi bu dört para biriminden birinde yapabilirsiniz."
+        }
+      ]
+    },
+    {
+      "id": "amenities",
+      "title": "Villa Olanakları ve Hizmetler",
+      "faqs": [
+        {
+          "question": "Villalarda havuz ısıtması mevcut mu?",
+          "answer": "Bazı villalarımızda havuz ısıtması bulunmaktadır. Bu özellik villa detay sayfasında belirtilmektedir. Havuz ısıtması genellikle ek ücrete tabidir ve önceden rezerve edilmesi gerekir. Sezona göre havuz ısıtması hizmeti sınırlı olabilir."
+        },
+        {
+          "question": "Bebek ve çocuklar için ekipman sağlıyor musunuz?",
+          "answer": "Evet, önceden talep edilmesi halinde bebek yatağı, yüksek sandalye, bebek arabası gibi ekipmanları temin edebiliyoruz. Bu hizmetler için önceden bilgi vermeniz ve bazı durumlarda ek ücret ödemeniz gerekebilir."
+        },
+        {
+          "question": "Villaların temizliği nasıl yapılıyor?",
+          "answer": "Tüm villalarımız misafir girişi öncesinde detaylı bir şekilde temizlenir. 7 gece ve üzeri konaklamalarda haftada bir kez ara temizlik ve çarşaf değişimi ücretsiz olarak yapılır. İsteğe bağlı olarak ek ücret karşılığında günlük temizlik hizmeti de sunulmaktadır."
+        },
+        {
+          "question": "İnternet bağlantısı var mı?",
+          "answer": "Evet, tüm villalarımızda kablosuz internet bağlantısı bulunmaktadır. İnternet hızı bölgeye göre değişiklik gösterebilir. Bazı kırsal bölgelerde internet bağlantısı sınırlı olabilir, ancak temel ihtiyaçlar için yeterli hızdadır."
+        },
+        {
+          "question": "Havlu ve nevresim takımları sağlanıyor mu?",
+          "answer": "Evet, tüm villalarımızda temiz nevresim takımları, banyo havluları ve el havluları ücretsiz olarak sağlanmaktadır. Havuz/plaj havluları da çoğu villamızda bulunmaktadır. 7 gece ve üzeri konaklamalarda havlular ve çarşaflar haftada bir kez değiştirilir."
+        }
+      ]
+    },
+    {
+      "id": "checkin-checkout",
+      "title": "Giriş ve Çıkış İşlemleri",
+      "faqs": [
+        {
+          "question": "Check-in ve check-out saatleri nelerdir?",
+          "answer": "Standart check-in saatimiz 16:00, check-out saatimiz ise 10:00'dur. Erken giriş ve geç çıkış talepleri müsaitlik durumuna göre değerlendirilir ve ek ücrete tabi olabilir. Özel taleplerinizi önceden bildirmeniz durumunda elimizden geldiğince yardımcı olmaya çalışırız."
+        },
+        {
+          "question": "Villa anahtarını nereden alabilirim?",
+          "answer": "Villa anahtarını villa lokasyonunda bulunan temsilcimizden teslim alacaksınız. Giriş saatinizden önce size villa adresi ve temsilcimizin iletişim bilgileri gönderilecektir. Temsilcimiz sizi villada karşılayacak, anahtarı teslim edecek ve villa hakkında bilgi verecektir."
+        },
+        {
+          "question": "Geç saatte varışımız olacak, sorun olur mu?",
+          "answer": "22:00'den sonraki geç varışlar için önceden bilgi vermeniz gerekmektedir. 22:00-00:00 arası varışlar için 50 EUR, 00:00'dan sonraki varışlar için 100 EUR geç check-in ücreti uygulanmaktadır. Bu durumda lütfen en az 24 saat önceden bize bilgi veriniz."
+        },
+        {
+          "question": "Çıkış günü eşyalarımızı villada bırakabilir miyiz?",
+          "answer": "Çıkış saati olan 10:00'dan sonra eşyalarınızı villada bırakmanız normalde mümkün değildir. Ancak özel durumlarda ve villanın müsaitlik durumuna göre bu konuda yardımcı olabiliriz. Böyle bir talebiniz varsa lütfen önceden bildiriniz."
+        },
+        {
+          "question": "Check-out işlemleri nasıl yapılır?",
+          "answer": "Check-out günü temsilcimiz belirlenen saatte villaya gelecek, villanın durumunu kontrol edecek ve anahtarları teslim alacaktır. Herhangi bir hasar veya ekstra temizlik gereksinimi yoksa, depozitonuzu iade sürecini başlatacaktır. Ödemelerinizi tam olarak yaptığınızdan emin olunuz."
+        }
+      ]
+    }
+  ],
+  "generalFaqs": [
+    {
+      "question": "Evcil hayvan getirebilir miyim?",
+      "answer": "Bazı villalarımız evcil hayvan dostu olarak belirlenmiştir. Villa detay sayfasında 'Evcil Hayvan Kabul Edilir' ibaresi olan villalarda, önceden bilgi vermek ve ek ücret ödemek koşuluyla evcil hayvanınızla konaklayabilirsiniz. Genel temizlik ve olası hasarlar için ek depozito talep edilebilir."
+    },
+    {
+      "question": "Konaklama sırasında bir sorun yaşarsak ne yapmalıyız?",
+      "answer": "Konaklama süresince 7/24 ulaşabileceğiniz acil durum telefon numarası tarafınıza iletilecektir. Her türlü sorun, arıza veya ihtiyaç durumunda bu numaradan bize ulaşabilirsiniz. Teknik ekibimiz en kısa sürede müdahale edecektir."
+    },
+    {
+      "question": "Havaalanı transferi ayarlayabilir misiniz?",
+      "answer": "Evet, ek ücret karşılığında havaalanı transfer hizmeti sunmaktayız. Tek yön veya çift yön transfer seçeneklerimiz mevcuttur. Rezervasyon sırasında veya daha sonra bu hizmeti talep edebilirsiniz. Fiyatlar mesafeye, kişi sayısına ve araç tipine göre değişiklik göstermektedir."
+    },
+    {
+      "question": "Özel şef ve yemek servisi mümkün mü?",
+      "answer": "Evet, birçok villamızda özel şef ve yemek servisi hizmeti sunuyoruz. Yerel mutfaktan uluslararası lezzetlere kadar geniş bir menü seçeneğimiz bulunmaktadır. Bu hizmet için en az 48 saat önceden rezervasyon yapılması gerekmektedir. Fiyatlar kişi sayısına ve menü seçimine göre değişmektedir."
+    },
+    {
+      "question": "Yakın çevrede ne tür aktiviteler yapabiliriz?",
+      "answer": "Villa bölgelerimizde tekne turu, kültür turları, doğa yürüyüşleri, dalış, rafting gibi birçok aktivite mevcuttur. Ayrıca özel rehberli turlar ve araç kiralama hizmetleri de sunmaktayız. Konaklamanız sırasında bölgeye özel aktiviteler için temsilcimizden bilgi alabilirsiniz."
+    },
+    {
+      "question": "Villa için maksimum kişi sayısını aşabilir miyiz?",
+      "answer": "Her villanın belirtilen maksimum kişi kapasitesi vardır ve bu sayı aşılamaz. Kapasite, yatak sayısı ve villa büyüklüğüne göre belirlenmiştir. Bazı durumlarda 2 yaş altı bebekler kapasite dışında tutulabilir, ancak önceden bilgi vermeniz gerekir. Kapasite aşımı tespit edilirse ek ücret talep edilir veya konaklama iptal edilebilir."
+    },
+    {
+      "question": "Villa kiralama işlemi nasıl yapılır?",
+      "answer": "Web sitemiz üzerinden lokasyon ve tarih seçimi yaparak uygun villaları listeleyebilirsiniz. Beğendiğiniz villayı seçtikten sonra online olarak rezervasyon yapabilir veya müşteri temsilcilerimizle iletişime geçerek destek alabilirsiniz. Rezervasyon onayı için %30 ön ödeme yapmanız gerekmektedir."
+    },
+    {
+      "question": "Rezervasyon iptal politikanız nedir?",
+      "answer": "Giriş tarihine 60 gün kalana kadar yapılan iptallerde ödemenizin tamamı iade edilir. 30-60 gün kalana kadar yapılan iptallerde %50 iade yapılır. 30 günden az kala yapılan iptallerde iade yapılmamaktadır. Ancak pandemi gibi mücbir sebeplerle seyahat kısıtlaması olması durumunda özel koşullar uygulanabilir."
+    },
+    {
+      "question": "Villalarda neler dahildir?",
+      "answer": "Tüm villalarımızda tam donanımlı mutfak, çamaşır makinesi, internet, klima, havuz, temiz çarşaf ve havlular standart olarak sunulmaktadır. Ayrıca haftalık temizlik, havuz ve bahçe bakımı da fiyata dahildir. Villa sayfasında belirtilen özel donanımlar (barbekü, oyun konsolu, spor aletleri vb.) da konaklamanıza dahildir."
+    },
+    {
+      "question": "Check-in ve check-out saatleri nelerdir?",
+      "answer": "Standart giriş (check-in) saati 16:00, çıkış (check-out) saati ise 10:00'dur. Erken giriş veya geç çıkış talep edebilirsiniz, müsaitlik durumuna göre ek ücret karşılığında bu talepler karşılanabilir. Giriş ve çıkış saatlerinde villa temsilcimiz sizinle villada buluşarak anahtar teslimi ve diğer işlemleri gerçekleştirir."
+    },
+    {
+      "question": "Villa kiralama için hangi ödeme yöntemlerini kullanabilirim?",
+      "answer": "Kredi kartı, banka havalesi, EFT ve online ödeme sistemlerini (PayPal, Stripe, İyzico) kullanarak ödeme yapabilirsiniz. Güvenliğiniz için tüm ödemelerimiz SSL şifrelemeli bağlantı üzerinden gerçekleştirilmektedir. Ayrıca %30 ön ödeme ve kalan bakiyeyi girişten 30 gün önce ödeme seçeneği de sunuyoruz."
+    },
+    {
+      "question": "Villalarda güvenlik önlemleri nelerdir?",
+      "answer": "Tüm villalarımızda güvenlik kameraları (sadece dış alanlarda), alarm sistemi, yangın dedektörleri ve ilk yardım kiti bulunmaktadır. Ayrıca çoğu villamızda güvenlik kapıları ve kasa da mevcuttur. 24 saat acil durum desteği sunmaktayız ve bölgenizdeki güvenlik ekiplerimiz kısa sürede müdahale edebilecek konumdadır."
+    },
+    {
+      "question": "Tatilin ortasında villada bir sorun yaşarsak ne yapmalıyız?",
+      "answer": "7/24 ulaşabileceğiniz müşteri hizmetleri numaramızı arayarak anında destek alabilirsiniz. Teknik bir arıza, temizlik sorunu veya herhangi bir ihtiyacınız olduğunda en kısa sürede müdahale edilecektir. Her bölgede teknik ekiplerimiz bulunmakta ve çoğu sorun aynı gün içinde çözülmektedir."
+    },
+    {
+      "question": "Rezervasyon yaparken ekstra hizmetler talep edebilir miyim?",
+      "answer": "Evet, rezervasyon sırasında veya sonrasında ekstra hizmetler talep edebilirsiniz. Havaalanı transferi, araç kiralama, tekne turu, özel şef, günlük temizlik, bebek bakıcılığı gibi ek hizmetlerimiz mevcuttur. Bu hizmetleri rezervasyon sırasında seçebilir veya müşteri temsilcinizden bilgi alabilirsiniz."
+    },
+    {
+      "question": "Villalarda kaç kişi konaklayabiliriz?",
+      "answer": "Her villamızın belirli bir yatak kapasitesi vardır ve bu villa detay sayfasında belirtilmiştir. Maksimum konaklama kapasitesi aşılmamalıdır. Bebek karyolası gibi ek yatak talepleri için önceden bilgi vermeniz gerekir. Bazı villalarımızda bebekler ve çocuklar için özel ekipmanlar (mama sandalyesi, bebek karyolası, çocuk havuzu) bulunmaktadır."
+    },
+    {
+      "question": "Evcil hayvanlarımızı villalara getirebilir miyiz?",
+      "answer": "Bazı villalarımız evcil hayvan dostudur ve bu bilgi villa detay sayfasında 'Evcil Hayvan Dostu' etiketi ile belirtilmiştir. Evcil hayvan getirmek istiyorsanız, rezervasyon sırasında bunu belirtmeniz ve ek temizlik ücreti ödemeniz gerekebilir. Tüm villalarımızda evcil hayvanların havuza girmesi yasaklanmıştır."
+    },
+    {
+      "question": "Villa fiyatlarınız neleri içerir?",
+      "answer": "Villa fiyatlarımıza konaklama, internet, elektrik, su, gaz, havuz ve bahçe bakımı, haftalık temizlik, çarşaf ve havlu değişimi dahildir. Ekstra temizlik, transfer, ek yatak, özel şef gibi hizmetler ek ücrete tabidir. Ayrıca tüm vergiler fiyatlarımıza dahildir, gizli maliyet bulunmamaktadır."
+    },
+    {
+      "question": "Tatilimiz için uygun villayı nasıl seçebiliriz?",
+      "answer": "Web sitemizde detaylı filtreleme özellikleri sunuyoruz. Lokasyon, fiyat aralığı, konaklayacak kişi sayısı, özel özellikler (deniz manzarası, çocuk havuzu, engelli erişimi vb.) seçerek size en uygun villayı bulabilirsiniz. Ayrıca müşteri temsilcilerimiz ihtiyaçlarınıza göre size en uygun villayı önermek için her zaman hazırdır."
+    },
+    {
+      "question": "Kalabalık gruplar için uygun villalarınız var mı?",
+      "answer": "Evet, 10-20 kişilik büyük gruplar için özel villalarımız mevcuttur. Bu villalarda genellikle birden fazla oturma alanı, geniş mutfaklar, büyük havuzlar ve bazen personel dairesi bile bulunabilir. Aile buluşmaları, arkadaş toplantıları veya küçük etkinlikler için idealdir. Bazı bölgelerde yan yana villalarımız da grup konaklamaları için uygundur."
+    },
+    {
+      "question": "Villalarda internet bağlantısı var mı?",
+      "answer": "Evet, tüm villalarımızda ücretsiz Wi-Fi internet erişimi sağlanmaktadır. İnternet hızı bölgeye ve altyapıya göre değişebilir. Bazı kırsal bölgelerde internet hızı şehirlere göre daha düşük olabilir. Çok yüksek hızlı internet gerektiren iş ihtiyaçlarınız varsa, rezervasyon öncesi müşteri temsilcimizle iletişime geçmenizi öneririz."
+    },
+    {
+      "question": "Yabancı misafirler için hizmetleriniz nelerdir?",
+      "answer": "Yabancı misafirlerimiz için İngilizce, Almanca, Rusça ve Arapça dillerinde destek sunmaktayız. Web sitemiz çoklu dil desteğine sahiptir ve tüm sözleşmelerimiz İngilizce olarak da hazırlanabilir. Ayrıca tercüman, özel rehber ve yabancı dil bilen şoför hizmetlerimiz de bulunmaktadır."
+    },
+    {
+      "question": "Konaklama süresince ulaşım için seçeneklerimiz nelerdir?",
+      "answer": "Araç kiralama, özel şoför, havaalanı transferi gibi ulaşım hizmetleri sunuyoruz. Bazı villalarımız merkezde olup yürüme mesafesinde restoran ve marketlere erişim sağlarken, bazıları daha izole konumdadır ve araç kiralanması önerilir. Toplu taşıma bilgileri, yakın taksi durakları ve diğer ulaşım seçenekleri villa bilgi kitapçığında detaylı olarak verilmektedir."
+    },
+    {
+      "question": "Villalarda havuzlar nasıl temizlenir ve bakımı yapılır?",
+      "answer": "Tüm villalarımızda havuzlar profesyonel ekiplerimiz tarafından haftada en az 2-3 kez düzenli olarak temizlenir ve kimyasal dengesi kontrol edilir. Havuzlar klorin ve diğer güvenli kimyasallarla dezenfekte edilir. Havuz suyu her gün otomatik filtre sistemleriyle temizlenir. Havuz bakımı genellikle sabah erken saatlerde yapılır, misafirleri rahatsız etmeyecek şekilde planlanır."
+    },
+    {
+      "question": "Çocuklu aileler için villalarınızda ne gibi kolaylıklar var?",
+      "answer": "Çocuklu aileler için özel olarak tasarlanmış villalarımızda çocuk havuzu, oyun alanı, mama sandalyesi, bebek karyolası, çocuk güvenlik kapıları, havuz güvenlik çiti gibi özellikler bulunabilir. Villa detay sayfasında 'Çocuk Dostu' etiketine sahip villalarımız, aileler için özellikle uygundur. Ayrıca talep üzerine bebek bakıcılığı hizmeti de sağlayabiliyoruz."
+    },
+    {
+      "question": "Villaların temizliği ne sıklıkla yapılır?",
+      "answer": "Villalarımızda standart olarak haftada bir kez (7 günlük konaklamalarda) genel temizlik ve çarşaf değişimi yapılmaktadır. Daha sık temizlik istiyorsanız, ek ücret karşılığında günlük veya iki günde bir temizlik hizmeti alabilirsiniz. Her temizlikte tüm genel alanlar, banyolar ve yatak odaları temizlenir, çarşaflar ve havlular değiştirilir."
+    },
+    {
+      "question": "Özel etkinlikler (düğün, doğum günü vb.) için villa kiralayabilir miyim?",
+      "answer": "Evet, bazı villalarımız özel etkinlikler için uygundur. Ancak her villanın kendi kuralları ve maksimum kişi limiti vardır. Etkinlik planınızı önceden bildirmeniz ve onay almanız gerekir. Genellikle etkinlikler için ek güvenlik depoziti ve özel etkinlik ücreti talep edilir. Düğün, doğum günü, iş toplantısı gibi organizasyonlarınız için size özel çözümler sunabiliriz."
+    },
+    {
+      "question": "Uzun dönem kiralama için indirimleriniz var mı?",
+      "answer": "Evet, 2 hafta ve üzeri konaklamalarda %5-15 arasında, 1 ay ve üzeri konaklamalarda ise %15-30 arasında indirimler sunuyoruz. Özellikle düşük sezon döneminde (Ekim-Nisan) uzun dönem konaklamalar için daha avantajlı fiyatlar sunmaktayız. Uzun dönem kiralamalarda aylık temizlik, enerji kullanımı gibi konularda özel anlaşmalar yapılabilir."
+    },
+    {
+      "question": "Engelli misafirler için uygun villalarınız var mı?",
+      "answer": "Evet, bazı villalarımız tekerlekli sandalye erişimine uygun olarak tasarlanmıştır. Bu villalarda genellikle eğimsiz giriş, geniş kapılar, özel banyolar ve engelli dostu genel alanlar bulunur. Villa detay sayfasında 'Engelli Erişimine Uygun' etiketi ile bu özellik belirtilmektedir. Özel ihtiyaçlarınız için rezervasyon öncesi mutlaka bilgi veriniz."
+    },
+    {
+      "question": "Konaklarken yerel hizmetlere nasıl erişebiliriz?",
+      "answer": "Her villada bulunan bilgi kitapçığında çevredeki restoran, market, eczane, hastane gibi temel hizmetlerin adresleri ve telefon numaraları bulunmaktadır. Ayrıca mobil uygulamamız üzerinden de bu bilgilere erişebilir, önerilen restoran ve aktiviteleri görebilirsiniz. Acil bir ihtiyaç durumunda müşteri temsilciniz size en yakın hizmet noktasını önerecektir."
+    },
+    {
+      "question": "Villa rezervasyonu için ne kadar önceden planlama yapmalıyım?",
+      "answer": "Yüksek sezon (Haziran-Eylül) için en az 3-6 ay önceden, popüler villalar için ise 6-12 ay önceden rezervasyon yapmanızı öneririz. Düşük sezonda daha kısa sürede rezervasyon yapabilirsiniz, ancak özellikle tatil dönemleri ve özel günlerde (bayramlar, yılbaşı vb.) yine erken rezervasyon avantajlıdır. Erken rezervasyon yapanlara %15'e varan indirimler sunuyoruz."
+    },
+    {
+      "question": "Su sporları ve aktiviteler için hizmetleriniz var mı?",
+      "answer": "Evet, tüm tatil bölgelerimizde yerel partnerlerimiz aracılığıyla su sporları, tekne turları, jeep safari, paraşüt, dalış gibi aktiviteler organize edebiliyoruz. Bu hizmetleri rezervasyon sırasında veya konaklama sürecinde talep edebilirsiniz. Bazı aktiviteler için erken rezervasyon gerekebilir, özellikle yüksek sezonda."
+    },
+    {
+      "question": "Grup rezervasyonları için ekstra avantajlar sunuyor musunuz?",
+      "answer": "Evet, çoklu villa rezervasyonları için özel indirimler ve avantajlar sunuyoruz. Ayrıca büyük gruplar için özel organizasyon ve etkinlik planlama desteği de verebiliyoruz. Düğün grupları, şirket tatilleri veya aile buluşmaları için size özel paketler hazırlayabiliriz. 10+ kişilik gruplar için lütfen müşteri temsilcimizle görüşün."
+    }
+  ]
+} 

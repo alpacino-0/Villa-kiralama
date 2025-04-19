@@ -1,0 +1,63 @@
+{
+  "title": "Villa Kiralama Ev Sahibi Sözleşmesi",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Giriş",
+      "content": "Bu sözleşme, villa sahibi ('Ev Sahibi') ile INN ELEGANCE LİMİTED LİABİLİTY COMPANY ('Platform') arasındaki ilişkiyi düzenleyen hüküm ve koşulları içermektedir. Bu sözleşme, Ev Sahibi tarafından Platform üzerinden kiralama hizmetinin sunulması için gerekli yasal çerçeveyi belirler. Platformumuza bir mülk ekleyerek veya mevcut bir mülkünüzü yöneterek, bu sözleşmedeki şartları kabul etmiş sayılırsınız."
+    },
+    {
+      "id": "definitions",
+      "title": "Tanımlar",
+      "content": "Platform: INN ELEGANCE tarafından sağlanan villa kiralama ve rezervasyon hizmetlerini ifade eder. Ev Sahibi: Platformda bir veya daha fazla mülkü listeleyerek kiralama hizmeti veren gerçek veya tüzel kişiyi ifade eder. Misafir: Platform üzerinden mülk kiralayan müşteriyi ifade eder. Mülk/Villa: Ev Sahibi tarafından kiralamaya sunulan gayrimenkulu ifade eder. Rezervasyon: Misafirin belirli bir mülkü, belirli tarihler için kiralama işlemini ifade eder. Komisyon: Platformun sağladığı hizmetler karşılığında Ev Sahibinden aldığı ücreti ifade eder."
+    },
+    {
+      "id": "commission-terms",
+      "title": "2024 Çalışma Koşulları",
+      "content": "2024 yılı itibariyle komisyon oranı %20 ve ön ödeme tutarı %35 olarak belirlenmiştir (Ön ödeme tutarı ev sahibi isteği doğrultusunda değerlendirmeye alınabilir). İptal şartlarımıza göre mücbir sebep içerisine giren durumlarda misafirlerimizden belge talep edilmektedir. Belge değerlendirmesi sonucunda misafirin ön ödemesi askıya alınır ya da ön ödeme tutarı misafire iade edilir. Misafirin geçersiz(keyfi) sayılan iptallerinde ise ön ödemesi yanar ve girişe 30 günden daha az süre kalan iptal taleplerinde geri kalan ödeme de misafirden tahsil edilmek üzere hukuk birimine yönlendirilir. INN ELEGANCE tarafından tahsil edilen hizmet bedeli mücbir sebepler dışında iade edilmeyecektir. Hizmet bedeli acentenin vermiş olduğu hizmete karşılık kendisinde kalacaktır."
+    },
+    {
+      "id": "payment-terms",
+      "title": "Ödeme Koşulları",
+      "content": "INN ELEGANCE hizmet bedeli iptal edilen tarihlere yeni rezervasyon alınması ya da alınmaması durumunda eski rezervasyona ait olan ön ödeme tutarı ev sahibine iade edilmeyecektir. Ön ödemeyi %35 talep eden ev sahiplerinin komisyon harici kalan ödemeleri misafir giriş yaptıktan sonra en geç 2 iş günü içerisinde ödenir. Tüm ödemeler Platform üzerinden yapılır ve Platform, belirlenen komisyon oranını her başarılı rezervasyon işlemi sonrasında tahsil eder. Komisyon oranları, mülkün konumu, özellikleri ve kiralama bedeline göre değişiklik gösterebilir."
+    },
+    {
+      "id": "property-requirements",
+      "title": "Mülk Gereksinimleri",
+      "content": "Platforma eklenen tüm villalar, yerel mevzuatlara uygun, yasal olarak kiralanabilir durumda olmalıdır. Ev Sahibi, mülklerin doğru ve güncel bilgilerini, gerçek fotoğraflarını ve tüm özelliklerini eksiksiz şekilde sağlamakla yükümlüdür. Mülkler sağlıklı yaşam koşullarını sağlamalı, temiz, güvenli ve ilanında belirtilen tüm olanaklara sahip olmalıdır. Her bir mülk için, acil durum prosedürleri, önemli telefon numaraları ve mülkün kullanımına dair bilgilerin bulunduğu bir rehber hazırlanmalıdır."
+    },
+    {
+      "id": "owner-responsibilities",
+      "title": "Ev Sahibinin Sorumlulukları",
+      "content": "Misafir karşılama ev sahibine aittir. Ev Sahibi, mülkünün temizlik, bakım ve onarımından sorumludur. Her misafirden önce mülkün temiz ve bakımlı olduğundan emin olmalıdır. Mülkün ilanında belirtilen tüm olanakların çalışır durumda ve kullanılabilir olması gerekmektedir. Misafirin villa içerisinde yaşayacağı olumsuz durumlar ile ev sahibi veya bakımcı ilgilenir. Evden kaynaklanan yaşanabilecek tüm sorunlar ev sahibi sorumluluğundadır. INN ELEGANCE sitesinde yer alan ve daha önce ev sahibi tarafından bildirilmiş ve onaylanmış villaya ait özelliklerden herhangi birinin kullanımında (temizlik, arıza ya da misafirin villayı taahhüt edildiği gibi sorunsuz kullanamamasına sebep olan durumlar da) oluşacak problemlerde misafire yapılması gereken iade tutarı ev sahibi tarafından karşılanacaktır."
+    },
+    {
+      "id": "liability",
+      "title": "Sorumluluk ve Çakışmalar",
+      "content": "Villa sahibi ya da yetkilisinin hatasından kaynaklı oluşan rezervasyon çakışmalarında, misafir farklı bir villaya geçirilirse arada oluşan fark villa sahibi tarafından karşılanacaktır. Ev Sahibi, mülkü ile ilgili tüm yasal sorumluluklara sahiptir ve mülkte meydana gelebilecek her türlü kaza, hasar veya yaralanmadan doğrudan sorumludur. Platform, Ev Sahibi ile Misafir arasındaki ilişkide aracı konumundadır ve mülkle ilgili doğrudan bir sorumluluk taşımaz. Ev Sahibi, mülkü için uygun ev sahibi sigortası ve sorumluluk sigortası yaptırmalıdır."
+    },
+    {
+      "id": "cancellation-policy",
+      "title": "İptal Koşulları",
+      "content": "İptal durumlarında INN ELEGANCE kendi hizmet bedelini iade etmemektedir. Ön ödemeden hak talep eden villa sahiplerimiz için misafirden alınan rezervasyon ön ödeme tutarı %40 olarak belirlenecektir. Herhangi bir iptal durumunda %20 ön ödeme INN ELEGANCE'da kalıp diğer %20 oran(kaparo farkı) ise villa sahibine iletilecektir. İptal olan tarihlerin satılması durumunda ise %40 ön ödeme INN ELEGANCE'de kalacaktır. Rezervasyon aşamasında %20 ön ödeme alınmasını talep eden villa sahipleri, herhangi bir iptal durumunda ön ödemeden hak talep edemeyecektir."
+    },
+    {
+      "id": "payment-campaigns",
+      "title": "Ödeme Kampanyaları",
+      "content": "2024 yılında 12 Ay Taksit Kampanyası'na katılmak isteyen villa sahiplerimiz, ödemenin tamamını bankadan almayı kabul etmeleri durumunda bu kampanyaya dahil edilecektir. Platform, dönem dönem farklı ödeme kampanyaları düzenleyebilir. Kampanya koşulları önceden duyurulacak ve kampanyaya katılım tamamen isteğe bağlı olacaktır."
+    },
+    {
+      "id": "legal-terms",
+      "title": "Yasal Hükümler",
+      "content": "Yukarıda bahsi geçen villa/villaların tarafıma ait ya da işletmecisi olduğumu ve yukarıda yazılı olan sözleşme maddelerini kabul ve taahhüt ederim. Bu sözleşme, Türkiye Cumhuriyeti kanunlarına tabidir. Sözleşmeden doğabilecek her türlü uyuşmazlık durumunda, Türkiye mahkemeleri yetkilidir. Platform, bu sözleşmeyi önceden bildirmek kaydıyla tek taraflı olarak değiştirme hakkına sahiptir. Değişiklikler, Ev Sahibine bildirim gönderildikten sonra yürürlüğe girer. Ev Sahibi, değişikliklerin bildirilmesinden sonra Platform'u kullanmaya devam ederek, yeni şartları kabul etmiş sayılır. Bu sözleşmenin herhangi bir maddesinin geçersiz sayılması durumunda, diğer maddeler geçerliliğini korur."
+    }
+  ],
+  "companyInfo": {
+    "name": "Inn Elegance LLC",
+    "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+    "website": "www.innelegance.com",
+    "owner": "Orhan Yavuz",
+    "email": "info@innelegance.com",
+    "phone": "+90 531 621 61 00"
+  }
+} 
