@@ -68,6 +68,72 @@ export interface PageContentData {
   updatedAt: Date;
 }
 
+// Dictionary tipini düzenliyorum - veri yapısını genişletiyorum
+interface Dictionary {
+  about?: {
+    metadata?: {
+      title?: string;
+      description?: string;
+    };
+    heroSection?: {
+      title?: string;
+      description?: string;
+    };
+    introduction?: string;
+    mission?: string;
+    vision?: string;
+    values?: string;
+    missionTitle?: string;
+    visionTitle?: string;
+    valuesTitle?: string;
+    whyChooseUs?: {
+      title?: string;
+      items?: Array<{
+        title: string;
+        description: string;
+        icon?: string;
+      }>;
+    };
+    statistics?: {
+      luxuryVillas?: string;
+      holidayRegions?: string;
+      happyCustomers?: string;
+      yearsExperience?: string;
+    };
+    faq?: {
+      title?: string;
+      items?: Array<{
+        question: string;
+        answer: string;
+      }>;
+    };
+  };
+  common?: {
+    emailAddress?: string;
+    phoneNumber?: string;
+    loading?: string;
+    error?: string;
+    success?: string;
+    submit?: string;
+    cancel?: string;
+    back?: string;
+    next?: string;
+    show?: string;
+    hide?: string;
+    contact?: string;
+  };
+  footer?: {
+    companyInfo?: string;
+    contact?: string;
+    links?: {
+      contactUs?: string;
+      [key: string]: string | undefined;
+    };
+    [key: string]: unknown;
+  };
+  [key: string]: unknown; // Diğer özelliklere izin ver
+}
+
 // Varsayılan içerik
 const defaultContent: AboutPageContent = {
   heroSection: {
@@ -137,29 +203,44 @@ const defaultContent: AboutPageContent = {
 
 // Bileşen propları için tip tanımı
 interface AboutPageContentProps {
-  content: PageContentData | null;
+  content: PageContentData | null | AboutPageContent;
   heroImageUrl?: string;
+  dictionary?: Dictionary; // Dictionary tipi ile değiştirdim
+  locale?: string;  // Dil kodu
 }
 
-export default function AboutPageContent({ content, heroImageUrl }: AboutPageContentProps) {
+export default function AboutPageContent({ content, heroImageUrl, dictionary, locale }: AboutPageContentProps) {
   // İçerik yoksa veya string ise varsayılan içeriği kullan
   let pageContent: AboutPageContent;
   
   if (!content) {
     pageContent = defaultContent;
-  } else if (typeof content.content === 'string') {
+  } else if ('content' in content && typeof content.content === 'string') {
     try {
       pageContent = JSON.parse(content.content) as AboutPageContent;
     } catch {
       // Parsing başarısız olursa, içeriği introduction alanına koyarak varsayılan yapıda kullan
-      pageContent = { ...defaultContent, introduction: content.content };
+      pageContent = { ...defaultContent, introduction: content.content as string };
     }
-  } else {
+  } else if ('content' in content && typeof content.content === 'object') {
     pageContent = content.content as AboutPageContent;
+  } else {
+    pageContent = content as AboutPageContent;
   }
 
   // Dışarıdan gelen hero görseli veya içerikten gelen görsel yoksa varsayılan hero görseli kullan
   const heroImage = heroImageUrl || pageContent.heroSection?.imageUrl || '/images/about-hero.jpg';
+  
+  // Dil sözlüğü içeriğinden değerler kullanma
+  const missionTitle = dictionary?.about?.missionTitle || 'Misyonumuz';
+  const visionTitle = dictionary?.about?.visionTitle || 'Vizyonumuz';
+  const valuesTitle = dictionary?.about?.valuesTitle || 'Değerlerimiz';
+  const whyChooseUsTitle = dictionary?.about?.whyChooseUs?.title || 'Neden Bizi Tercih Etmelisiniz?';
+  const faqTitle = dictionary?.about?.faq?.title || 'Sıkça Sorulan Sorular';
+  
+  // İçerik sağlanmazsa veya boşsa
+  const whyChooseUsItems = pageContent.whyChooseUs || dictionary?.about?.whyChooseUs?.items || [];
+  const faqItems = pageContent.faq || dictionary?.about?.faq?.items || [];
   
   return (
     <div className="container mx-auto px-4 py-12">
@@ -176,44 +257,44 @@ export default function AboutPageContent({ content, heroImageUrl }: AboutPageCon
         />
         <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12 z-20">
           <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 md:mb-4">
-            {pageContent.heroSection?.title || "Hakkımızda"}
+            {pageContent.heroSection?.title || (dictionary?.about?.heroSection?.title || "Hakkımızda")}
           </h1>
           <p className="text-white/90 max-w-2xl text-sm md:text-base">
-            {pageContent.heroSection?.description || "Lüks villa kiralama konusunda Türkiye'nin önde gelen markasıyla tanışın"}
+            {pageContent.heroSection?.description || (dictionary?.about?.heroSection?.description || "Lüks villa kiralama konusunda Türkiye'nin önde gelen markasıyla tanışın")}
           </p>
         </div>
       </div>
       
       {/* Giriş & Şirket Hikayesi */}
       <div className="my-12">
-        <SafeHtml html={pageContent.introduction} />
+        <SafeHtml html={pageContent.introduction || dictionary?.about?.introduction || ''} />
       </div>
       
       {/* Misyon, Vizyon ve Değerler */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-16">
         <CompanyValue 
-          title="Misyonumuz" 
-          description={pageContent.missionVision?.mission || "Misafirlerimize unutulmaz tatil deneyimleri sunarak, lüks villa kiralama sektöründe güven ve memnuniyet standardını yükseltmek."}
+          title={missionTitle} 
+          description={pageContent.missionVision?.mission || dictionary?.about?.mission || "Misafirlerimize unutulmaz tatil deneyimleri sunarak, lüks villa kiralama sektöründe güven ve memnuniyet standardını yükseltmek."}
           icon="/icons/mission.svg"
         />
         <CompanyValue 
-          title="Vizyonumuz" 
-          description={pageContent.missionVision?.vision || "Türkiye'nin en güvenilir ve kaliteli villa kiralama markası olarak, sektörde öncü ve yenilikçi hizmetler sunmak."}
+          title={visionTitle} 
+          description={pageContent.missionVision?.vision || dictionary?.about?.vision || "Türkiye'nin en güvenilir ve kaliteli villa kiralama markası olarak, sektörde öncü ve yenilikçi hizmetler sunmak."}
           icon="/icons/vision.svg"
         />
         <CompanyValue 
-          title="Değerlerimiz" 
-          description={pageContent.missionVision?.values || "Dürüstlük, şeffaflık, müşteri memnuniyeti ve sürekli gelişim prensiplerimizle çalışarak kaliteden ödün vermemek."}
+          title={valuesTitle} 
+          description={pageContent.missionVision?.values || dictionary?.about?.values || "Dürüstlük, şeffaflık, müşteri memnuniyeti ve sürekli gelişim prensiplerimizle çalışarak kaliteden ödün vermemek."}
           icon="/icons/values.svg"
         />
       </div>
       
       {/* Neden Bizi Tercih Etmelisiniz? */}
       <div className="my-16">
-        <h3 className="text-xl font-bold mb-8">Neden Bizi Tercih Etmelisiniz?</h3>
+        <h3 className="text-xl font-bold mb-8">{whyChooseUsTitle}</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {(pageContent.whyChooseUs || []).map((item) => (
-            <div key={`choose-us-${item.title}`} className="flex gap-4">
+          {whyChooseUsItems.map((item: WhyChooseUsItem, index: number) => (
+            <div key={`choose-us-${item.title || index}`} className="flex gap-4">
               <div className="flex-shrink-0 text-primary">
                 {(() => {
                   switch(item.icon) {
@@ -240,12 +321,21 @@ export default function AboutPageContent({ content, heroImageUrl }: AboutPageCon
       </div>
       
       {/* Şirket İstatistikleri */}
-      {pageContent.statistics && pageContent.statistics.length > 0 && (
+      {(pageContent.statistics || dictionary?.about?.statistics) && (
         <div className="bg-muted py-12 px-6 rounded-xl my-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {pageContent.statistics.map((stat) => (
-              <Statistic key={`stat-${stat.label}`} value={stat.value} label={stat.label} />
-            ))}
+            {pageContent.statistics ? (
+              pageContent.statistics.map((stat: StatisticItem, index: number) => (
+                <Statistic key={`stat-${stat.label || index}`} value={stat.value} label={stat.label} />
+              ))
+            ) : (
+              <>
+                <Statistic value="500+" label={dictionary?.about?.statistics?.luxuryVillas || "Lüks Villa"} />
+                <Statistic value="25+" label={dictionary?.about?.statistics?.holidayRegions || "Tatil Bölgesi"} />
+                <Statistic value="10.000+" label={dictionary?.about?.statistics?.happyCustomers || "Mutlu Müşteri"} />
+                <Statistic value="8" label={dictionary?.about?.statistics?.yearsExperience || "Yıllık Tecrübe"} />
+              </>
+            )}
           </div>
         </div>
       )}
@@ -273,14 +363,14 @@ export default function AboutPageContent({ content, heroImageUrl }: AboutPageCon
         </div>
       )}
       
-      {/* Sıkça Sorulan Sorular */}
-      {pageContent.faq && pageContent.faq.length > 0 && (
+      {/* SSS Bölümü */}
+      {(pageContent.faq || dictionary?.about?.faq?.items) && (
         <div className="my-16">
-          <h2 className="text-2xl font-bold mb-8 text-center">Sıkça Sorulan Sorular</h2>
+          <h3 className="text-xl font-bold mb-8">{faqTitle}</h3>
           <div className="space-y-4">
-            {pageContent.faq.map((item) => (
+            {faqItems.map((item: AboutFaqItem, index: number) => (
               <FaqItem 
-                key={`faq-${item.question.substring(0, 20).replace(/\s+/g, '-')}`}
+                key={`faq-${index}`} 
                 question={item.question} 
                 answer={item.answer}
               />
@@ -289,18 +379,14 @@ export default function AboutPageContent({ content, heroImageUrl }: AboutPageCon
         </div>
       )}
       
-      {/* İletişim Çağrısı */}
-      <div className="bg-primary/10 rounded-xl p-8 text-center my-16">
-        <h2 className="text-2xl font-bold mb-3">Hayalinizdeki Tatile Başlayın</h2>
-        <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-          Sizin için en uygun villayı bulmak, özel isteklerinizi değerlendirmek veya daha fazla bilgi almak için bizimle iletişime geçin.
-        </p>
-        <Button 
-          size="lg" 
-          className="bg-primary hover:bg-primary/90 text-white"
-          asChild
-        >
-          <Link href="/villa-kiralama-iletisim">Bize Ulaşın</Link>
+      {/* İletişim CTA */}
+      <div className="bg-primary/10 p-8 rounded-xl text-center my-16">
+        <h3 className="text-xl font-bold mb-4">{dictionary?.common?.contact || "İletişim"}</h3>
+        <p className="mb-6">{dictionary?.footer?.companyInfo || "Lüks villalar ve tatil evleri konusunda güvenilir kaynağınız."}</p>
+        <Button asChild>
+          <Link href={`/${locale || 'tr'}/iletisim`}>
+            {dictionary?.footer?.links?.contactUs || "Bize Ulaşın"}
+          </Link>
         </Button>
       </div>
     </div>

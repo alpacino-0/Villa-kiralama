@@ -1,6 +1,7 @@
 {
   "greeting": "Merhaba, Villa Kiralama Sitemize Hoş Geldiniz!",
   "book_now": "Hemen Rezervasyon Yap",
+  "coming_soon": "Çok yakında hizmetinizde olacağız.",
   "header": {
     "welcome": "Villa Kiralama Sitemize Hoş Geldiniz!",
     "nav": {
@@ -33,7 +34,7 @@
     "home": "Ana Sayfa"
   },
   "footer": {
-    "companyInfo": "Lüks villalar ve tatil evleri konusunda güvenilir kaynağınız.",
+    "companyInfo": "Lüks villalar ve tatil evleri için güvenilir kaynağınız.",
     "contact": "İletişim:",
     "copyright": "© 2025 Villa Kiralama. Tüm hakları saklıdır.",
     "links": {
@@ -171,5 +172,655 @@
     "next": "İleri",
     "show": "Göster",
     "hide": "Gizle"
+  },
+  "agreement": {
+    "metadata": {
+      "title": "Villa Kiralama Sözleşmesi - Inn Elegance",
+      "description": "Inn Elegance villa kiralama hizmetleri için geçerli olan sözleşme şartları ve koşulları."
+    },
+    "pageTitle": "Villa Kiralama Sözleşmesi",
+    "pageDescription": "Bu sayfada Inn Elegance villa kiralama hizmetleri için geçerli olan sözleşme şartlarını bulabilirsiniz.",
+    "breadcrumb": {
+      "home": "Ana Sayfa",
+      "agreement": "Villa Kiralama Sözleşmesi"
+    },
+    "introduction": {
+      "title": "INN ELEGANCE LLC KİRALAMA ŞARTLARI VE SÖZLEŞMESİ",
+      "content": "Inn Elegance LLC, müşterilerine Türkiye'nin en güzel tatil bölgelerinde lüks ve konforlu villalar sunmaktadır. Bu sözleşme, villa kiralama sürecinde tarafların hak ve yükümlülüklerini belirlemektedir."
+    },
+    "sections": {
+      "title": "Sözleşme Maddeleri",
+      "fallbackMessage": "Sözleşme bölümleri yüklenemedi. Lütfen daha sonra tekrar deneyiniz."
+    },
+    "faq": {
+      "title": "Sık Sorulan Sorular",
+      "fallbackMessage": "Sık sorulan sorular yüklenemedi. Lütfen daha sonra tekrar deneyiniz."
+    },
+    "companyInfo": {
+      "title": "Şirket Bilgileri",
+      "company": "Şirket",
+      "address": "Adres",
+      "website": "Web Sitesi",
+      "owner": "Sahibi",
+      "email": "E-posta",
+      "phone": "Telefon"
+    },
+    "sozlesme": {
+      "title": "Villa Kiralama Sözleşmesi",
+      "sections": [
+        {
+          "id": "introduction",
+          "title": "INN ELEGANCE LLC KİRALAMA ŞARTLARI VE SÖZLEŞMESİ",
+          "content": "Öncelikle, Inn Elegance villa kiralama markası ve www.innelegance.com internet sitesinin, INN ELEGANCE LIMITED LIABILITY COMPANY'ye ait olduğunu resmi olarak bildirmekten memnuniyet duyarız. Inn Elegance LLC, Florida'da kurulu bir şirket olup, lüks villa kiralama hizmetleri sunmaktadır. Şirketimiz, konforlu ve özel tatil deneyimleri sunmayı amaçlamakta olup, sunduğumuz villalarla misafirlerimize unutulmaz bir tatil fırsatı sunmayı hedeflemektedir."
+        },
+        {
+          "id": "parties-purpose",
+          "title": "TARAFLAR VE AMAÇ",
+          "content": "Bu sözleşme; \"VİLLAYI/APARTI\" kiralayan (bundan böyle \"MÜŞTERİ\" olarak anılacaktır) ile \"VİLLAYI/APARTI\" kiraya veren (bundan böyle \"Inn Elegance\" olarak anılacaktır) arasında başlangıç ve bitiş tarihleri önceden belirli bir süre için \"VİLLAYI/APARTI\" kiralanması amacı ile yapılmıştır. \"www.innelegance.com\" internet sayfasında ilan edilen \"Villalarımızdan/Apartlarımızdan\" herhangi birine internet sayfamız üzerinden veya telefon yolu ile veya elektronik posta yolu ile rezervasyon yaptıran müşteri ve beraberindekiler aşağıdaki şartları peşinen kabul etmiş sayılırlar. Aşağıdaki şartların herhangi birine aykırı davranış, \"Inn Elegance\"i, rezervasyonu tek taraflı olarak iptal etme, müşterinin Villayı/Apartı terk etmesini isteme, alınan kapora, depozito kira bedelini iade etmeme ve ödenmemiş olan kira bedellerinin tamamını talep etme hakkını verir."
+        },
+        {
+          "id": "reservation-payment",
+          "title": "REZERVASYON VE ÖDEME",
+          "content": "• Villalarımıza/Apartlarımıza internet sayfamızda bulunan rezervasyon formu veya SMS veya telefon yolu veya elektronik posta yolu ile ön rezervasyon yapılabilmektedir.\n\n• Inn Elegance, kiralamak istediğiniz Villa/Apart için kiralayacağınız tarihlerinizi belirttikten sonra, sizden gerekli ulaşım ve fatura bilgilerinizi alarak ön kiralama işlemini yapar. Inn Elegance, ön kiralama yapıldıktan sonra villa/apart için toplam ödenecek ücretin %20'sini kapora ödemesi olarak almaktadır. Kapora, ön kiralama yapıldıktan sonra 1 (bir) iş günü içerisinde ödendiği taktirde villa/apart adınıza rezerve edilir. Ödemeniz gereken kapora tutarı ve banka hesap numaralarımız, ayrıca elektronik posta yolu ile veya SMS yolu ile veya telefon yolu ile tarafınıza bildirilecektir. Kapora 1 (bir) iş günü içinde Havale, EFT ve yine site üzerinden Kredi Kartı ile ödeme yapılmalıdır. Kaporanın teslim alındığından en geç 1 iş günü içerisinde tarafınıza yazılı olarak Villanın/Apartın kiralama onayı gönderilecektir. Bu onay belgesinin içerisinde toplam ücret, alınan kapora ve hangi tarihlerde Villa/Apart'ın adınıza kira edildiği ve yatırmış olduğunuz kaporanın günü saati bildirilmektedir.\n\n• Kaporanın yatırılmaması durumunda Inn Elegance, müşteriye bilgi vermeden ön rezervasyonu iptal etme ve villaya/aparta başka rezervasyon alma hakkını kullanabilecektir.\n\n• Villanın/Apartın geriye kalan ücretini sözleşme yapıldıktan sonra veya Villa/Apart tesliminde villa/apart sahibinin banka hesabına yatırmak şartı ile banka üzerinden resmi olarak alınır. MÜŞTERİ BU SÖZLEŞMEYİ ONAYLADIĞINDA VİLLA/APARTIN KİRASININ GERİ KALAN ÜCRETİNİ MAL SAHİBİNE BANKA ÜZERİNDEN YATIRACAĞINI TAAHHÜT ETMİŞ OLUR. Yine Inn Elegance, müşteriye kiralananı eşyalı olarak teslim edilmesi sebebiyle eşyaların kırık, dökük, hasar, kayıp, zayi vs. olmasına karşın 1000 TL/5000 TL hasar depozitosu almakta olup bu depozito Villa/Apart tesliminde, makbuz karşılığı peşin olarak (nakit) alınır. Hasar depozitosu müşterinin çıkışında demirbaşların sayımından sonra eksik olmaması durumunda müşteriye iade edilecektir."
+        },
+        {
+          "id": "checkin-checkout",
+          "title": "VİLLAYA/APARTA GİRİŞ ve ÇIKIŞ",
+          "content": "• Rezervasyon başlangıç günü villaya/aparta giriş saati, en erken 16:00'dır, en geç 21:00'dır. Müşteri; belirtilen saatler dışında villaya/aparta giriş yapamaz, belirtilen en geç giriş saatinden sonra gelmesi durumunda villaya/aparta bir gün sonra sabah Inn Elegance'in mesai başlangıcında (09.00) giriş yapabilir.\n\n• Müşterinin; belirtilen saatten önce veya belirtilen saatten sonra gelmesi durumunda villaya/aparta giriş yapamamasından kaynaklanan sorunlardan, gece konaklamasından, konaklama yeri bulamamasından vs. problemlerden Inn Elegance kesinlikle sorumlu tutulamaz. Müşterinin geceyi geçireceği yeri kendi bulması ve konaklama ücretini kendi ödemesi gerekmektedir. Inn Elegance bu gibi durumlardan sorumlu tutulamaz.\n\n• Rezervasyon sonunda villadan/aparttan ayrılış saati tüm bölgelerimiz için, en geç sabah saat 10:00'dur. Sabah saat 10.00'da müşterinin villayı/apartı hiç boşaltmamasından veya geç boşaltmasından kaynaklanan problemlerden, zararlardan, mağduriyetten vs. tüm olumsuzluklardan müşteri birebir sorumludur ve bu olumsuzluklardan ortaya çıkabilecek Inn Elegance'ın her türlü maddi zararlarını karşılayacaktır. Seyahat planlarının her iki tarafında mağdur olmaması için bu saatlere göre yapılmasını önemle hatırlatırız. Erken çıkış yapılmak istenmesi durumunda Inn Elegance'e 24 saat önceden bilgi verilmesi gerekmektedir.\n\n• Yoğunluk nedeni ile villa/apart kontrolü yapılamadan müşterinin villadan/aparttan çıkış yapması durumunda hasar depozitosu müşterinin bildireceği bir banka hesabına gönderilecektir, gönderim masrafları hasar depozitosunun içinden ödenecektir. Müşterinin kendi isteği ile villayı/apartı erken terk etmesi durumunda müşteriye konaklama ücreti için herhangi bir para iadesi yapılmayacaktır."
+        },
+        {
+          "id": "villa-capacity",
+          "title": "VİLLA/APART KAPASİTESİ",
+          "content": "• İnternet sayfamızdaki ilanlardan seçtiğiniz Villalarımıza/Apartlarımıza ilan sayfasında belirtilen kapasitenin üzerinde ya da rezervasyon yapılırken belirtilen kişi sayısının üzerinde misafir kesinlikle kabul edilmemektedir (Çocuklar ve bebekler de dahildir).\n\n• Rezervasyon kesinleştikten sonra müşteri tarafından kişi sayısında bir değişiklik yapılmak istenirse, Inn Elegance'e yazılı olarak başvurulacak ve villanın/apartın kapasite durumuna göre Inn Elegance uygun gördüğü takdirde bu değişiklik onaylanabilecektir.\n\n• Inn Elegance, müşteriden ilave ücret talep edebilecektir. Villaya/Aparta giriş yapıldıktan sonra rezervasyon listesinde belirtilen misafirlerin dışında villaya/aparta misafir kesinlikle kabul edilmemektedir. Aksinin tespit edildiği durumlarda Inn Elegance, misafirlerin villayı/apartı terk etmesini isteme, rezervasyonu tamamen iptal etme veya kiralama döneminin sona ermesini beklemeden villanın/apartın tamamen boşaltılmasını talep etme, ücretin tamamını ve ekstra ücret talep etme hakkına sahiptir.\n\n• Villanın/apartın kiralanması aşamasında müşterinin beyanı doğrultusunda işlem yapılmakta olup müşteri vermiş olduğu bilgilerin doğru ve eksiksiz olduğunu, bu hususta doğacak tüm sorumlulukları kabul eder."
+        },
+        {
+          "id": "cleaning-maintenance",
+          "title": "VİLLA/APART TEMİZLİĞİ ve BAKIMI ile EKSTRA GİDERLER",
+          "content": "• Haftalık, aylık villa/apart kiralama fiyatlarına giriş temizliği dahildir. 2 (iki) Hafta ve üzeri konaklamalarda haftalık temizlik ve havlu/çarşaf vs. değişimi fiyatlara dahildir.\n\n• Bunun dışında talep edilecek her türlü temizlik ve havlu/çarşaf vs. değişimi ücrete tabidir.\n\n• Her sabah erken saatlerde havuz ve bahçe bakımı yapılmakta olup kiralama süresince villadan herhangi bir teknik sorun yaşanırsa ev sahibi tarafından giderilecektir, Inn Elegance bundan sorumlu değildir, sadece sorunun giderilmesine yardımcı olur.\n\n• Tüm villaların/apartların havuz, bahçe ve diğer demirbaşlarının periyodik bakımlarının yapılabilmesi için görevli personelin villanın/apartın bahçesine ya da içine girmesi gerekmektedir. Bu hizmetlerin aksamadan yürütülebilmesi için müşteri, görevli personelin villanın içine ve/veya bahçesine girmesine engel olmamalıdır."
+        },
+        {
+          "id": "pets-smoking",
+          "title": "EV CİL HAYVAN ve SİGARA YASAĞI",
+          "content": "• Tüm villalarımızda kesinlikle evcil hayvan kabul edilmemektedir. Ayrıca villalarımızda sigara içilmesi yasaktır."
+        },
+        {
+          "id": "cancellation",
+          "title": "REZERVASYON İPTAL KOŞULLARI",
+          "content": "• 30 gün ve daha az kalan sürelerde iptal durumunda, müşteriye ödeme yapılan miktarın tamamı iade edilmez. Ödemelerin geri alınabilmesi için mücbir sebep gerekçesi gerekmektedir."
+        },
+        {
+          "id": "force-majeure",
+          "title": "MÜCBİR SEBEP DURUMU",
+          "content": "• Aksi taraflarca aksi kararlaştırılmadıkça, doğal afetler ve beklenmeyen sağlık sorunları gibi mücbir sebepler sonucu rezervasyon iptali durumu doğarsa, yapılan ödemeler müşteri talep ettiği takdirde aynı villa/apart için yeniden düzenlenebilir ya da ödeme talebi yapılabilir."
+        },
+        {
+          "id": "other-conditions",
+          "title": "DİĞER ÖNEMLİ BİLGİLER",
+          "content": "1. Villaya/Aparta giden yolların bozuk olması, yokuş yukarı olması, stabilize olması, ıslak zemin olması vs. gibi, INN ELEGANCE'ın önüne geçemediği durumlarda INN ELEGANCE kesinlikle sorumlu tutulamaz.\n\n2. Villaya/Aparta ulaşım esnasında oluşabilecek kaza vs. kısacası her türlü olumsuzluktan INN ELEGANCE kesinlikle sorumlu tutulamaz.\n\n3. Bazı villaların inşaasında kullanılan, farklı malzemeler (sedir ağacı, çam ağacı, bazı plastik ürünler, bahçede veya villanın içinde bulunan her türlü bitki vs.) müşteriyi sağlıksal yönden veya psikolojik yönden rahatsız etmesi durumunda, bu olaydan INN ELEGANCE kesinlikle sorumlu tutulamaz.\n\n4. Tüm Villalarımızda/Apartlarımızda konaklayacak olan müşterilere özel araç lazım olacaktır. Müşterinin villaya/aparta ulaşımı kendi sorumluluğundadır. INN ELEGANCE kesinlikle sorumlu tutulamaz.\n\n5. Villa veya apart kiralamış olan müşteri, kiralamış olduğu villanın veya apartın coğrafi konumundan dolayı hoşnutsuz kalması durumundan INN ELEGANCE sorumlu tutulamaz. INN ELEGANCE, villanın/apartın konumunu Google Harita üzerinden, yaklaşık olarak işaretlemiştir.\n\n6. Villaya/Aparta ulaşım esnasında, özel veya kiralamış olduğunuz aracın zarar görmesinden INN ELEGANCE sorumlu tutulamaz.\n\n7. Villayı/Apartı kiralamış olan müşterinin aracının (motor, otomobil vs.) altının yere yakın olması, aracın motor gücünün zayıf olması, müşterinin; otomobil, motor vs. kullanmadaki acemiliği ve buna bağlı olarak villaya/aparta ulaşamaması sebebiyle ortaya çıkabilecek her türlü olumsuzluk müşterinin kendi sorumluluğundadır. Bu gibi veya buna benzer sorunlardan INN ELEGANCE kesinlikle sorumlu tutulamaz.\n\n8. Villa/Apart hakkındaki \"www.innelegance.com\" detay sayfasında belirtilen \"uzaklık tablosu\" yaklaşık olarak yazılmıştır. Mesafeler tam net olarak belirtilmemiştir. Ufak tefek yanılmalar olabilir. Villayı/Apartı kiralayan müşteri bunu göz önüne almayı kabul eder.\n\n9. Villa/Apart hakkındaki \"www.innelegance.com\" detay sayfasında \"uzaklık tablosu\"nda belirtilen mesafeler, en yakın restoran, en yakın plaj, en yakın merkez, en yakın otogar ve en yakın havaalanı göz önünde bulundurularak yazılmıştır. Belirtilen restoran veya market kapanmış ise INN ELEGANCE sorumluluk kabul etmez.\n\n10. Villada/Apartta bulunan havuzda oluşacak boğulma, düşme, ayak kırılması, kol kırılması gibi oluşacak tüm kazalardan INN ELEGANCE sorumlu tutulamaz.\n\n11. Villaların tamamında yaklaşık 160 litrelik güneş enerjisi ile ısınan sıcak su tankı bulunmaktadır. Müşterinin, adil kullanımın dışında aşırı sıcak su tüketiminden dolayı sıcak suyun kalmamasından kaynaklanan problemlerden müşteri birebir sorumludur, INN ELEGANCE bu durumdan kaynaklanan problemlerden kesinlikle sorumlu tutulamaz.\n\n12. Villalarımızın/apartlarımızın hiç birisinde yiyecek, içecek, herhangi bir gıda ürünü vs. bulunmamaktadır. Hiç bir villada/apartta kahvaltı, öğlen yemeği, akşam yemeği, açık büfe vb. gibi hizmetlerin hiçbirisi yoktur. Bu ürünlerin temin edilmesi müşterinin kendi sorumluluğundadır. INN ELEGANCE bu gibi durumlardan sorumlu tutulamaz.\n\n13. Villalarda/Apartlarda veya yolda, Cep Telefonu sinyalinin hiç alınmaması, az alınması veya cep telefonundan internetin çekmemesi gibi durumlardan INN ELEGANCE kesinlikle sorumlu tutulamaz. GSM operatörünüzü arayıp, gideceğiniz bölgede GSM sinyali durumu hakkında detaylı bilgi alabilirsiniz.\n\n14. Kredi kartı ile veya mail order ile veya EFT veya havale veya vb. şeklinde ödeme yapsanız dahi, size \"onay maili\" ve \"konfirmasyon belgesi\" gelmeden, kesinlikle, uçak bileti, otobüs bileti, vs. satın almayınız. Para ödemesini INN ELEGANCE'a yapsanız bile size \"onay maili\" ve \"konfirmasyon belgesi\" gelmediği taktirde villayı/apartı kesinlikle kiralamış sayılmazsınız. Müşterinin aceleci davrandığı bu ve buna benzer durumlardan ortaya çıkabilecek maddi ve manevi zararlardan INN ELEGANCE kesinlikle sorumlu tutulamaz.\n\n15. Villada/Apartta oluşacak müşterinin sebep olduğu tüm kazalar ve olaylardan yangın, elektrik kaçağı, tüp kaçağı ve bunun sonucunda oluşacak ölüm ve kazalardan, internet sağlayıcısından (Türk Telekom vs.) kaynaklanan telefon ve internet kesilmesi, Elektrik Şirketinden kaynaklanan elektrik kesilmesinden, Su Şirketinden kaynaklanan su kesilmesinden INN ELEGANCE sorumlu tutulamaz.\n\n16. Web sitemizde belirtmiş olduğumuz Villalar/Apartlar birebir aynısı olup, sitede göründüğü gibi olmadığını, sitede daha iyi göründüğünü, sitede daha büyük veya daha küçük olduğu vb. gibi bahaneler asla kabul edilemez ve bunlardan INN ELEGANCE sorumlu tutulamaz.\n\n17. Olumlu veya olumsuz doğa olaylarından/koşullarından ve olumlu veya olumsuz hava durumundan/koşullarından oluşabilecek her türlü olumsuzluktan INN ELEGANCE sorumlu tutulamaz.\n\n18. Müşteriyi; arı, akrep, böcek, yılan sokması, kedi, köpek ısırması ve vb. olaylardan dolayı INN ELEGANCE sorumlu tutulamaz.\n\n19. Havuzu dışarıdan görünmeyen villa diye tabir edilen muhafazakar villaları tercih etmek isteyen müşteri, villanın detay sayfasında; \"bu villa muhafazakar ailelere uygundur\", \"havuzu dışarıdan görünmez\", \"tesettürlü bayanlar tercih edebilir\" vb. ibareler yok ise o villa muhafazakar bir villa değildir. Bu gibi ibareler olmayan villayı kiralayıp, villaya geldiği zaman \"bu villa muhafazakar bir villa değil\" deyip INN ELEGANCE'ı suçlamasından, INN ELEGANCE kesinlikle sorumlu değildir. Villayı kiralayacak olan müşterinin tüm detayları dikkatli bir şekilde okumasını tavsiye ederiz.\n\n20. Villanın/Apartın içerisine veya havuz bahçesi veya havuz terasına, herhangi bir gıda maddesinden dolayı veya çöpünüzden dolayı karınca veya böcek vb. veya değişik hayvan toplanmasından müşteri birebir sorumludur, bu durumdan INN ELEGANCE sorumlu tutulamaz.\n\n21. Villanın/apartın yüzme havuzundan veya duşundan gelen sudan meydana gelebilecek her türlü hastalıktan, klor alerjisinden vs. kimyasal alerjiden, INN ELEGANCE kesinlikle sorumlu tutulamaz. Sağlıksal veya vücut hassaslığı olan kişilerin havuza girmemesini tavsiye ederiz.\n\n22. Kiralanan villa/apart çevresinde her türlü büyükbaş, küçükbaş, tavuk, keklik, vs. hayvancılık yapılabilmektedir, kiralanan villanın/apartın bahçesinde veya komşu evlerin/villaların/apartların bahçelerinde her türlü gübre kullanılabilmektedir, bu ve bu gibi olaylardan kaynaklanabilecek rahatsız edici hayvan sesleri ve kötü kokulardan INN ELEGANCE kesinlikle sorumlu değildir, sorumlu tutulamaz.\n\n23. Cenaze, ölüm, savaş, sağlık problemi, kaza veya kamu personeli veya özel şirket personelinin izin iptali vb. durumlarda tüm kiralama şartları harfiyen geçerli olup iptal durumu kesinlikle söz konusu değildir.\n\nMüşteri, yukarıda belirtmiş olduğumuz tüm koşulları kabul etmiş olup, bu ve vb. bahaneleri üreterek kira sözleşmesini fesih çabasına girmesi takdirinde INN ELEGANCE sözleşmeyi tek başına fesih etme hakkını ve sözleşme bedeli talep etme hakkını saklı tutar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Villa rezervasyonu nasıl yapabilirim?",
+          "answer": "Villalarımıza/Apartlarımıza internet sayfamızda bulunan rezervasyon formu, SMS, telefon veya elektronik posta yolu ile ön rezervasyon yapabilirsiniz. Kapora ödemesi alındıktan sonra rezervasyonunuz kesinleşir ve tarafınıza yazılı olarak onay gönderilir."
+        },
+        {
+          "question": "Kapora ödemesi ne kadar ve nasıl yapılır?",
+          "answer": "Kapora ödemesi, toplam villa kiralama bedelinin %20'si kadardır. Ödeme Havale, EFT veya internet sitemiz üzerinden Kredi Kartı ile yapılabilir. Kapora ödemesi ön rezervasyon yapıldıktan sonra 1 iş günü içerisinde yapılmalıdır."
+        },
+        {
+          "question": "Villaya giriş ve çıkış saatleri nedir?",
+          "answer": "Villaya giriş saati en erken 16:00, en geç 21:00'dır. Villadan çıkış saati ise en geç sabah 10:00'dır. Bu saatlere uyulması önemlidir; aksi takdirde oluşacak aksaklıklardan INN ELEGANCE sorumlu tutulamaz."
+        },
+        {
+          "question": "Hasar depozitosu nedir ve nasıl geri alınır?",
+          "answer": "Hasar depozitosu, villada bulunan eşyaların zarar görmesi durumuna karşı alınan 1000 TL ile 5000 TL arasında değişen bir güvence bedelidir. Villa tesliminde nakit olarak alınır ve çıkışta demirbaş kontrolü yapıldıktan sonra, herhangi bir hasar yoksa aynen iade edilir."
+        },
+        {
+          "question": "Villa kapasitesini aşabilirim mi?",
+          "answer": "Hayır, villalarımıza/apartlarımıza ilan sayfasında belirtilen kapasitenin üzerinde ya da rezervasyon yapılırken belirtilen kişi sayısının üzerinde misafir kesinlikle kabul edilmemektedir. Bu kurala çocuklar ve bebekler de dahildir."
+        },
+        {
+          "question": "Villada evcil hayvan kabul ediliyor mu?",
+          "answer": "Hayır, tüm villalarımızda kesinlikle evcil hayvan kabul edilmemektedir. Ayrıca villalarımızda sigara içilmesi de yasaktır."
+        },
+        {
+          "question": "Temizlik hizmeti dahil midir?",
+          "answer": "Evet, haftalık ve aylık villa kiralama fiyatlarına giriş temizliği dahildir. 2 hafta ve üzeri konaklamalarda haftalık temizlik ve havlu/çarşaf değişimi fiyatlara dahildir. Bunun dışında talep edilecek temizlik ve havlu/çarşaf değişimi ekstra ücrete tabidir."
+        },
+        {
+          "question": "Rezervasyon iptali durumunda ücret iadesi yapılır mı?",
+          "answer": "Giriş tarihine 30 gün ve daha az kalan sürelerde iptal durumunda, ödeme yapılan miktarın tamamı iade edilmez. Ödemelerin geri alınabilmesi için mücbir sebep gerekçesi gerekmektedir."
+        }
+      ],
+      "companyInfo": {
+        "name": "Inn Elegance LLC",
+        "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+        "website": "www.innelegance.com",
+        "owner": "Orhan Yavuz",
+        "email": "info@innelegance.com",
+        "phone": "+90 531 621 61 00"
+      }
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "Hakkımızda - Villa Kiralama",
+      "description": "Villa kiralama hizmetlerimiz ve firmamız hakkında detaylı bilgi."
+    },
+    "heroSection": {
+      "title": "Hakkımızda",
+      "description": "Lüks villa kiralama konusunda Türkiye'nin önde gelen markasıyla tanışın"
+    },
+    "introduction": "<h2 class=\"text-2xl font-bold mb-4\">Lüks Villa Tatillerinin Adresi</h2><p class=\"mb-4\">2015 yılında kurulan şirketimiz, Türkiye'nin en güzel tatil bölgelerinde lüks villa kiralama hizmeti sunmaktadır. Müşteri memnuniyetini ön planda tutan yaklaşımımızla, her detayı düşünülmüş özel havuzlu villalarımızda misafirlerimize unutulmaz tatil deneyimleri yaşatıyoruz.</p><p class=\"mb-4\">Kuruluşumuzdan bu yana, binlerce misafirimize hizmet vererek, villa tatili kavramını Türkiye'de yeni bir boyuta taşıdık. İlk günden beri hedefimiz, misafirlerimize otel konforu ve ev sıcaklığını bir arada sunan, özel ve lüks bir tatil deneyimi yaşatmak oldu.</p><p>Deneyimli ekibimiz, portföyümüzdeki her villayı özenle seçmekte ve düzenli olarak denetlemektedir. Villalarımızın tümü yüksek kalite standartlarına uygun olarak donatılmış ve sizlere en konforlu tatil deneyimini sunmak için hazırlanmıştır.</p>",
+    "mission": "Misafirlerimize unutulmaz tatil deneyimleri sunarak, lüks villa kiralama sektöründe güven ve memnuniyet standardını yükseltmek.",
+    "vision": "Türkiye'nin en güvenilir ve kaliteli villa kiralama markası olarak, sektörde öncü ve yenilikçi hizmetler sunmak.",
+    "values": "Dürüstlük, şeffaflık, müşteri memnuniyeti ve sürekli gelişim prensiplerimizle çalışarak kaliteden ödün vermemek.",
+    "missionTitle": "Misyonumuz",
+    "visionTitle": "Vizyonumuz",
+    "valuesTitle": "Değerlerimiz",
+    "whyChooseUs": {
+      "title": "Neden Bizi Tercih Etmelisiniz?",
+      "items": [
+        {
+          "title": "Özenle Seçilmiş Villalar",
+          "description": "Tüm villalarımız konfor, temizlik ve güvenlik açısından düzenli olarak denetlenmektedir."
+        },
+        {
+          "title": "7/24 Müşteri Desteği",
+          "description": "Tatil sürecinde her an yanınızda olan profesyonel destek ekibimiz."
+        },
+        {
+          "title": "Güvenli Ödeme Seçenekleri",
+          "description": "128-bit SSL güvenlik sertifikası ile korunan ödeme altyapısı ve çoklu ödeme imkanları."
+        },
+        {
+          "title": "Şeffaf Fiyatlandırma",
+          "description": "Gizli masraf olmadan, gördüğünüz fiyat ödeyeceğiniz fiyattır."
+        }
+      ]
+    },
+    "statistics": {
+      "luxuryVillas": "Lüks Villa",
+      "holidayRegions": "Tatil Bölgesi",
+      "happyCustomers": "Mutlu Müşteri",
+      "yearsExperience": "Yıllık Tecrübe"
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "question": "Villa kiralarken dikkat etmemiz gereken noktalar nelerdir?",
+          "answer": "Villa kiralarken öncelikle konum, kapasite, fiyat ve özellikler gibi temel unsurlara dikkat etmelisiniz. Ayrıca villanın geçmiş misafir yorumlarını, iptal koşullarını ve ek hizmetlerini de incelemenizi öneririz."
+        },
+        {
+          "question": "Rezervasyon süreci nasıl işliyor?",
+          "answer": "Rezervasyon yapmak için sitemizden tarih ve kişi sayısı seçerek uygun villaları listeleyebilirsiniz. Beğendiğiniz villayı seçip, ödeme işlemlerini tamamladıktan sonra rezervasyon onayınız e-posta ile tarafınıza iletilir."
+        },
+        {
+          "question": "İptal politikanız nedir?",
+          "answer": "İptal politikamız, rezervasyon tarihinize kalan süreye göre değişiklik göstermektedir. Genel olarak, giriş tarihine 30 gün kalana kadar yapılan iptallerde tam iade yapılmaktadır."
+        },
+        {
+          "question": "Ekstra hizmetler sunuyor musunuz?",
+          "answer": "Evet, villa kiralamalarında araç kiralama, özel şef, havaalanı transferi, tekne turu gibi ekstra hizmetler sunuyoruz. Bu hizmetleri rezervasyon sırasında veya sonrasında talep edebilirsiniz."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Villa Kiralama İletişim | Türkiye'nin En İyi Villa Kiralama Platformu",
+      "description": "Villa kiralama platformumuz aracılığıyla bizimle iletişime geçin. Sorularınızı yanıtlamak ve size yardımcı olmak için buradayız."
+    },
+    "pageTitle": "Bizimle İletişime Geçin",
+    "pageDescription": "Villa kiralama sürecinizde herhangi bir sorunuz mu var? Bize yazın, en kısa sürede size dönüş yapalım.",
+    "contactForm": {
+      "title": "İletişim Formu",
+      "description": "Aşağıdaki formu doldurarak bize ulaşabilirsiniz.",
+      "nameLabel": "Adınız Soyadınız",
+      "namePlaceholder": "Adınızı ve soyadınızı girin",
+      "emailLabel": "E-posta Adresiniz",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "phoneLabel": "Telefon Numaranız",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
+      "subjectLabel": "Konu",
+      "subjectPlaceholder": "İletişim konunuzu girin",
+      "messageLabel": "Mesajınız",
+      "messagePlaceholder": "Mesajınızı buraya yazın...",
+      "submitButton": "Mesajı Gönder"
+    },
+    "contactInfo": {
+      "title": "İletişim Bilgilerimiz",
+      "description": "Bize aşağıdaki kanallardan ulaşabilirsiniz.",
+      "addressTitle": "Adres",
+      "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+      "phoneTitle": "Telefon",
+      "phone": "+90 531 621 6100",
+      "emailTitle": "E-posta",
+      "email": "info@innelegance.com",
+      "workingHoursTitle": "Çalışma Saatleri",
+      "workingHours": "Pazartesi - Cumartesi: 09:00 - 18:00"
+    },
+    "mapTitle": "Villa Kiralama Merkez Ofis Konumu",
+    "faq": {
+      "title": "Sık Sorulan Sorular",
+      "items": [
+        {
+          "id": "reservation-cancellation",
+          "question": "Rezervasyon iptali için ne kadar süre öncesinden haber vermem gerekiyor?",
+          "answer": "Rezervasyon iptallerinizi, konaklama tarihinden en az 7 gün önce yapmanız durumunda ödemenizin tamamı iade edilir. 3-7 gün arasında yapılan iptallerde %50 iade yapılırken, 3 günden az bir süre kala yapılan iptallerde iade yapılmamaktadır."
+        },
+        {
+          "id": "deposit-payment",
+          "question": "Villa kiralama sürecinde depozito ödemesi yapmalı mıyım?",
+          "answer": "Evet, villa kiralaması sırasında güvenlik depozitosu alınmaktadır. Bu tutar, villanın değerine ve konumuna göre değişiklik gösterebilir. Çıkış işlemleriniz tamamlandıktan ve villa kontrol edildikten sonra, herhangi bir hasar yoksa depozito tutarı tarafınıza iade edilecektir."
+        },
+        {
+          "id": "pets-policy",
+          "question": "Evcil hayvanımı villaya getirebilir miyim?",
+          "answer": "Evcil hayvan politikamız villadan villaya değişiklik göstermektedir. Evcil hayvan kabul eden villalarımız filtreleme seçeneklerinde belirtilmiştir. Rezervasyon yapmadan önce seçtiğiniz villanın evcil hayvan politikasını kontrol etmenizi öneririz."
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "metadata": {
+      "title": "Gizlilik Şartları - Villa Kiralama",
+      "description": "Villa kiralama platformumuzun gizlilik şartları ve kişisel verilerin korunmasına ilişkin bilgiler."
+    },
+    "pageTitle": "Gizlilik Şartları",
+    "pageDescription": "Kişisel verilerinizin güvenliği ve gizliliği bizim için önemlidir. Bu sayfada, sizinle ilgili bilgileri nasıl topladığımızı ve kullandığımızı öğrenebilirsiniz.",
+    "breadcrumb": {
+      "home": "Ana Sayfa",
+      "privacy": "Gizlilik Şartları"
+    },
+    "sections": [
+      {
+        "id": "introduction",
+        "title": "Giriş",
+        "content": "İşbu Gizlilik Politikası, www.innelegance.com adresini ziyaret eden ve kullanan tüm kullanıcıları kapsamakta olup; peşinen kabul edilmiştir. Inn Elegance'ı kullanan ziyaretçilerin doğrudan ve/veya dolaylı olarak bizlere sunduğu verilerden aşağıda bahsedilmiştir. Bu veriler, Kiralama ve Kullanım sözleşmesi, Gizlilik Politikası şartları gereği uygun olan haller dahilinde kullanılmakta olup; bu uygun olan hallerin dışında kullanılmamaktadır."
+      },
+      {
+        "id": "data-collection",
+        "title": "Doğrudan Tarafımıza Sunulan Veriler",
+        "content": "Rezervasyon formu, iletişim formu ve/veya diğer formlar aracılığı ile bizlere sunmuş olduğunuz; telefon, elektronik posta, ad-soyad ve diğer talep edilen form bilgileri firmamız tarafından saklanmaktadır. Bu veriler, ticari maksatla herhangi bir gerçek/tüzel üçüncü şahıs ve/veya kurum/firma ile paylaşılmaz. Mevcut olarak tarafımızla paylaştığınız veriler, firmamız tarafından yapılan kampanyaları, gelişmeleri ve güncellemeleri sizlere sunmak adına kullanılır. Sunduğunuz/belirttiğiniz iletişim kanalları üzerinden sadece Inn Elegance ve Inn Elegance alt projeleri üzerinden ancak size bilgilendirme dönüşleri sağlanabilir."
+      },
+      {
+        "id": "cookies",
+        "title": "Dolaylı Olarak Tarafınızdan Elde Edilen Veriler",
+        "content": "IP bilgisi, konum verileri, çerezler ve diğer sizlere daha iyi deneyim sunmak adına arka planda toplanan veriler sadece Inn Elegance sitesine özeldir. Bu veriler hiç bir şekilde uygun haller dışında ticari amaçla satılmaz, paylaşılmaz. Her bilgisayarda, çerez paylaşım ayarlarınızı mevcut web tarayıcınız üzerinden yapabilmektesiniz. Standart belirlenmiş tarayıcı ayarlarında çerez paylaşımı genel anlamda açık olmaktadır ve firmamız sadece bu tarz verileri kullanmaktadır. Harici bir müdahale ya da veri elde etme adına onaysız işlem asla söz konusu değildir."
+      },
+      {
+        "id": "user-rights",
+        "title": "Kullanıcı Hakları",
+        "content": "Inn Elegance ile iletişime geçerek, mevcut bilgilerini değiştirmek ve/veya kullanımı hakkında gerekli izinleri kaldırmak isteyen kullanıcılar info@innelegance.com adresini kullanmalıdırlar. Bu adres üzerinden yapılacak taleplere istinaden, verilerin sistemden tamamen silinmesi ve/veya Inn Elegance için kullanımının tamamen durdurulması mümkün olabilecektir. Bu tarz taleplerde, doğabilecek veri akışına bağlı müşteri/kullanıcı odaklı kesintilerden, aksaklıklardan karşı taraf/talep eden taraf sorumlu olacak olup; doğabilecek veri eksikliğine bağlı aksamalardan Inn Elegance sorumlu tutulamayacaktır."
+      },
+      {
+        "id": "data-sharing",
+        "title": "Rezervasyon ve Kimlik Sunumları",
+        "content": "Firmamız, yasal olarak belirlenmiş kaideler gereği villalarda konaklayacak olan her müşterisi için ilgili güvenlik güçlerine / kolluk kuvvetlerine KİMLİK VERİ BİLDİRİMİ yapmak durumundadır. Bu nedenle, firmamızdan rezervasyon yapan tüm kullanıcılar/müşteriler bu veri bildirimi için kimliklerini beyan edeceklerini kabul etmiş sayılırlar. Beyan edilen kimlik verileri ise sadece ilgili güvenlik güçlerine / kolluk kuvvetlerine sunulmaktadır. Yasal sorumluluğun dışında; gerek firma olarak, gerekse de ticari olarak hiç bir KİMLİK VERİSİ/BİLGİSİ KULLANILAMAZ!"
+      }
+    ],
+    "companyInfo": {
+      "title": "Şirket Bilgileri",
+      "name": "Inn Elegance LLC",
+      "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+      "website": "www.innelegance.com",
+      "owner": "Orhan Yavuz",
+      "email": "info@innelegance.com",
+      "phone": "+90 531 621 61 00",
+      "labels": {
+        "company": "Şirket",
+        "address": "Adres",
+        "website": "Web Sitesi",
+        "owner": "Sahibi",
+        "email": "E-posta",
+        "phone": "Telefon"
+      }
+    },
+    "lastUpdate": "Bu gizlilik politikası son olarak Haziran 2023 tarihinde güncellenmiştir.",
+    "contactCTA": {
+      "text": "Gizlilik politikamız hakkında sorularınız varsa, lütfen bizimle iletişime geçin.",
+      "button": "İletişime Geçin"
+    }
+  },
+  "faq": {
+    "metadata": {
+      "title": "Sıkça Sorulan Sorular - Villa Kiralama",
+      "description": "Villa kiralama hakkında merak ettiğiniz tüm sorulara yanıtlar bulun."
+    },
+    "pageTitle": "Sıkça Sorulan Sorular",
+    "heroTitle": "Sıkça Sorulan Sorular",
+    "heroDescription": "Villa kiralama sürecindeki her türlü sorunuz için kapsamlı SSS rehberimize göz atın. Rezervasyondan check-out'a kadar tüm sorularınızın cevaplarını burada bulabilirsiniz.",
+    "searchPlaceholder": "Sorunuzu arayın...",
+    "allQuestions": "Tüm Sorular",
+    "generalQuestions": "Genel Sorular",
+    "noResultsInCategory": "Bu kategoride aradığınız soru bulunamadı.",
+    "noResultsInCategoryWithTerm": "\"{searchTerm}\" ile ilgili bu kategoride sonuç bulunamadı.",
+    "noCategoryQuestions": "Bu kategoride henüz soru bulunmamaktadır.",
+    "noResultsFound": "\"{searchTerm}\" ile ilgili hiçbir sonuç bulunamadı. Lütfen başka bir arama terimi deneyin.",
+    "searchHint": {
+      "title": "Aradığınızı Bulamadınız mı?",
+      "description": "Sorunuza cevap bulamadıysanız, lütfen bizimle iletişime geçin. Size yardımcı olmaktan memnuniyet duyarız.",
+      "contactButton": "İletişime Geçin"
+    },
+    "sections": [
+      {
+        "id": "reservations",
+        "title": "Rezervasyon İşlemleri",
+        "faqs": [
+          {
+            "question": "Rezervasyon nasıl yapılır?",
+            "answer": "Rezervasyon yapmak için web sitemizden istediğiniz bölgedeki villaları filtreleyebilir, uygun tarihleri seçebilir ve online olarak rezervasyonunuzu tamamlayabilirsiniz. Alternatif olarak müşteri hizmetlerimizi arayarak telefonla da rezervasyon yapabilirsiniz. Rezervasyon işleminizi tamamlamak için %30 ön ödeme yapmanız gerekecektir."
+          },
+          {
+            "question": "Rezervasyon onayı ne kadar sürede alınır?",
+            "answer": "Online rezervasyon yaptığınızda anında otomatik onay alırsınız. Müşteri hizmetleri aracılığıyla yapılan rezervasyonlarda ise genellikle 24 saat içinde onay alırsınız. Yoğun sezonda bu süre en fazla 48 saate uzayabilir."
+          },
+          {
+            "question": "Rezervasyonumu nasıl değiştirebilirim?",
+            "answer": "Rezervasyonunuzu değiştirmek için en az 30 gün önceden bize bildirmeniz gerekir. Müsaitlik durumuna göre tarih değişikliği yapılabilir. Değişiklik talebinizi müşteri hizmetleri ile iletişime geçerek iletebilirsiniz."
+          },
+          {
+            "question": "Rezervasyon iptal politikası nedir?",
+            "answer": "İptal politikamız şu şekildedir: Giriş tarihinden 60 gün öncesine kadar yapılan iptallerde tam iade yapılır. 30-60 gün kalana kadar yapılan iptallerde %50 iade yapılır. 30 günden az kala yapılan iptallerde ise iade yapılmaz. İptal talebinizi yazılı olarak iletmeniz gerekmektedir."
+          },
+          {
+            "question": "Minimum konaklama süresi nedir?",
+            "answer": "Villa ve sezona göre değişiklik göstermekle birlikte, genel olarak minimum konaklama süremiz 3 gecedir. Yüksek sezonda (Haziran-Ağustos) bu süre 7 geceye çıkabilir. Her villanın sayfasında minimum konaklama süresi belirtilmektedir."
+          }
+        ]
+      },
+      {
+        "id": "payments",
+        "title": "Ödeme ve Fiyatlandırma",
+        "faqs": [
+          {
+            "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+            "answer": "Banka havalesi/EFT, kredi kartı (Visa, MasterCard, American Express) ve bazı durumlarda uluslararası para transferi (SWIFT) ile ödeme kabul ediyoruz. Ödeme detaylarını 'Villa Kiralama Ödeme Yöntemleri' sayfamızda bulabilirsiniz."
+          },
+          {
+            "question": "Fiyatlandırmaya neler dahildir?",
+            "answer": "Belirtilen fiyata genellikle villa kirası, havuz bakımı, bahçe bakımı, Wi-Fi, normal su ve elektrik kullanımı dahildir. Ekstra hizmetler (transfer, özel şef, günlük temizlik vb.) ve havaalanı transferi ek ücrete tabidir. Her villanın detay sayfasında dahil olan hizmetler listelenmiştir."
+          },
+          {
+            "question": "Depozito uygulamanız var mı?",
+            "answer": "Evet, tüm villa kiralamalarında bir güvenlik depozito bedeli alınmaktadır. Bu bedel genellikle villa fiyatının %20-30'u kadardır ve çıkışta herhangi bir hasar olmaması durumunda 7 iş günü içinde iade edilir. Depozito, nakit veya kredi kartı ile alınabilir."
+          },
+          {
+            "question": "Kalan bakiyeyi ne zaman ödemeliyim?",
+            "answer": "Rezervasyon sırasında toplam tutarın %30'unu ön ödeme olarak yaparsınız. Kalan %70'lik bakiyeyi ise varış tarihinden en geç 30 gün önce ödemeniz gerekmektedir. Bu tarihten sonra yapılan rezervasyonlarda toplam tutarın tamamı peşin olarak talep edilir."
+          },
+          {
+            "question": "Farklı para birimlerinde ödeme yapabilir miyim?",
+            "answer": "Evet, TRY (Türk Lirası), USD (Amerikan Doları), EUR (Euro) ve GBP (İngiliz Sterlini) para birimlerinde ödeme kabul ediyoruz. Ödemelerinizi bu dört para biriminden birinde yapabilirsiniz."
+          }
+        ]
+      },
+      {
+        "id": "amenities",
+        "title": "Villa Olanakları ve Hizmetler",
+        "faqs": [
+          {
+            "question": "Villalarda havuz ısıtması mevcut mu?",
+            "answer": "Bazı villalarımızda havuz ısıtması bulunmaktadır. Bu özellik villa detay sayfasında belirtilmektedir. Havuz ısıtması genellikle ek ücrete tabidir ve önceden rezerve edilmesi gerekir. Sezona göre havuz ısıtması hizmeti sınırlı olabilir."
+          },
+          {
+            "question": "Bebek ve çocuklar için ekipman sağlıyor musunuz?",
+            "answer": "Evet, önceden talep edilmesi halinde bebek yatağı, yüksek sandalye, bebek arabası gibi ekipmanları temin edebiliyoruz. Bu hizmetler için önceden bilgi vermeniz ve bazı durumlarda ek ücret ödemeniz gerekebilir."
+          },
+          {
+            "question": "Villaların temizliği nasıl yapılıyor?",
+            "answer": "Tüm villalarımız misafir girişi öncesinde detaylı bir şekilde temizlenir. 7 gece ve üzeri konaklamalarda haftada bir kez ara temizlik ve çarşaf değişimi ücretsiz olarak yapılır. İsteğe bağlı olarak ek ücret karşılığında günlük temizlik hizmeti de sunulmaktadır."
+          },
+          {
+            "question": "İnternet bağlantısı var mı?",
+            "answer": "Evet, tüm villalarımızda kablosuz internet bağlantısı bulunmaktadır. İnternet hızı bölgeye göre değişiklik gösterebilir. Bazı kırsal bölgelerde internet bağlantısı sınırlı olabilir, ancak temel ihtiyaçlar için yeterli hızdadır."
+          },
+          {
+            "question": "Havlu ve nevresim takımları sağlanıyor mu?",
+            "answer": "Evet, tüm villalarımızda temiz nevresim takımları, banyo havluları ve el havluları ücretsiz olarak sağlanmaktadır. Havuz/plaj havluları da çoğu villamızda bulunmaktadır. 7 gece ve üzeri konaklamalarda havlular ve çarşaflar haftada bir kez değiştirilir."
+          }
+        ]
+      },
+      {
+        "id": "checkin-checkout",
+        "title": "Giriş ve Çıkış İşlemleri",
+        "faqs": [
+          {
+            "question": "Check-in ve check-out saatleri nelerdir?",
+            "answer": "Standart check-in saatimiz 16:00, check-out saatimiz ise 10:00'dur. Erken giriş ve geç çıkış talepleri müsaitlik durumuna göre değerlendirilir ve ek ücrete tabi olabilir. Özel taleplerinizi önceden bildirmeniz durumunda elimizden geldiğince yardımcı olmaya çalışırız."
+          },
+          {
+            "question": "Villa anahtarını nereden alabilirim?",
+            "answer": "Villa anahtarını villa lokasyonunda bulunan temsilcimizden teslim alacaksınız. Giriş saatinizden önce size villa adresi ve temsilcimizin iletişim bilgileri gönderilecektir. Temsilcimiz sizi villada karşılayacak, anahtarı teslim edecek ve villa hakkında bilgi verecektir."
+          },
+          {
+            "question": "Geç saatte varışımız olacak, sorun olur mu?",
+            "answer": "22:00'den sonraki geç varışlar için önceden bilgi vermeniz gerekmektedir. 22:00-00:00 arası varışlar için 50 EUR, 00:00'dan sonraki varışlar için 100 EUR geç check-in ücreti uygulanmaktadır. Bu durumda lütfen en az 24 saat önceden bize bilgi veriniz."
+          },
+          {
+            "question": "Çıkış günü eşyalarımızı villada bırakabilir miyiz?",
+            "answer": "Çıkış saati olan 10:00'dan sonra eşyalarınızı villada bırakmanız normalde mümkün değildir. Ancak özel durumlarda ve villanın müsaitlik durumuna göre bu konuda yardımcı olabiliriz. Böyle bir talebiniz varsa lütfen önceden bildiriniz."
+          },
+          {
+            "question": "Check-out işlemleri nasıl yapılır?",
+            "answer": "Check-out günü temsilcimiz belirlenen saatte villaya gelecek, villanın durumunu kontrol edecek ve anahtarları teslim alacaktır. Herhangi bir hasar veya ekstra temizlik gereksinimi yoksa, depozitonuzu iade sürecini başlatacaktır. Ödemelerinizi tam olarak yaptığınızdan emin olunuz."
+          }
+        ]
+      }
+    ],
+    "generalFaqs": [
+      {
+        "question": "Evcil hayvan getirebilir miyim?",
+        "answer": "Bazı villalarımız evcil hayvan dostu olarak belirlenmiştir. Villa detay sayfasında 'Evcil Hayvan Kabul Edilir' ibaresi olan villalarda, önceden bilgi vermek ve ek ücret ödemek koşuluyla evcil hayvanınızla konaklayabilirsiniz. Genel temizlik ve olası hasarlar için ek depozito talep edilebilir."
+      },
+      {
+        "question": "Konaklama sırasında bir sorun yaşarsak ne yapmalıyız?",
+        "answer": "Konaklama süresince 7/24 ulaşabileceğiniz acil durum telefon numarası tarafınıza iletilecektir. Her türlü sorun, arıza veya ihtiyaç durumunda bu numaradan bize ulaşabilirsiniz. Teknik ekibimiz en kısa sürede müdahale edecektir."
+      },
+      {
+        "question": "Havaalanı transferi ayarlayabilir misiniz?",
+        "answer": "Evet, ek ücret karşılığında havaalanı transfer hizmeti sunmaktayız. Tek yön veya çift yön transfer seçeneklerimiz mevcuttur. Rezervasyon sırasında veya daha sonra bu hizmeti talep edebilirsiniz. Fiyatlar mesafeye, kişi sayısına ve araç tipine göre değişiklik göstermektedir."
+      },
+      {
+        "question": "Özel şef ve yemek servisi mümkün mü?",
+        "answer": "Evet, birçok villamızda özel şef ve yemek servisi hizmeti sunuyoruz. Yerel mutfaktan uluslararası lezzetlere kadar geniş bir menü seçeneğimiz bulunmaktadır. Bu hizmet için en az 48 saat önceden rezervasyon yapılması gerekmektedir. Fiyatlar kişi sayısına ve menü seçimine göre değişmektedir."
+      },
+      {
+        "question": "Yakın çevrede ne tür aktiviteler yapabiliriz?",
+        "answer": "Villa bölgelerimizde tekne turu, kültür turları, doğa yürüyüşleri, dalış, rafting gibi birçok aktivite mevcuttur. Ayrıca özel rehberli turlar ve araç kiralama hizmetleri de sunmaktayız. Konaklamanız sırasında bölgeye özel aktiviteler için temsilcimizden bilgi alabilirsiniz."
+      },
+      {
+        "question": "Villa için maksimum kişi sayısını aşabilir miyiz?",
+        "answer": "Her villanın belirtilen maksimum kişi kapasitesi vardır ve bu sayı aşılamaz. Kapasite, yatak sayısı ve villa büyüklüğüne göre belirlenmiştir. Bazı durumlarda 2 yaş altı bebekler kapasite dışında tutulabilir, ancak önceden bilgi vermeniz gerekir. Kapasite aşımı tespit edilirse ek ücret talep edilir veya konaklama iptal edilebilir."
+      },
+      {
+        "question": "Villa kiralama işlemi nasıl yapılır?",
+        "answer": "Web sitemiz üzerinden lokasyon ve tarih seçimi yaparak uygun villaları listeleyebilirsiniz. Beğendiğiniz villayı seçtikten sonra online olarak rezervasyon yapabilir veya müşteri temsilcilerimizle iletişime geçerek destek alabilirsiniz. Rezervasyon onayı için %30 ön ödeme yapmanız gerekmektedir."
+      },
+      {
+        "question": "Rezervasyon iptal politikanız nedir?",
+        "answer": "Giriş tarihine 60 gün kalana kadar yapılan iptallerde ödemenizin tamamı iade edilir. 30-60 gün kalana kadar yapılan iptallerde %50 iade yapılır. 30 günden az kala yapılan iptallerde iade yapılmamaktadır. Ancak pandemi gibi mücbir sebeplerle seyahat kısıtlaması olması durumunda özel koşullar uygulanabilir."
+      }
+    ]
+  },
+  "ownerAgreement": {
+    "metadata": {
+      "title": "Villa Kiralama Ev Sahibi Sözleşmesi",
+      "description": "Villa sahipleri için platform kullanım şartları ve yasal düzenlemeler."
+    },
+    "heroSection": {
+      "title": "Ev Sahibi Sözleşmesi",
+      "description": "Bu sözleşme, ev sahiplerinin Inn Elegance platformu üzerinden villa kiralama hizmetlerine katılımını düzenler ve taraflar arasındaki hak ve yükümlülükleri belirler."
+    },
+    "companyInfo": {
+      "title": "Şirket Bilgileri",
+      "company": "Şirket",
+      "address": "Adres",
+      "website": "Web Sitesi",
+      "owner": "Sahibi",
+      "email": "E-posta",
+      "phone": "Telefon"
+    },
+    "legalTerms": {
+      "lastUpdated": "Son Güncelleme",
+      "acceptanceNote": "Bu sözleşme, villa sahibi ile Inn Elegance arasındaki yasal ilişkiyi tanımlar. Platformda mülk listelemeniz, bu sözleşme şartlarını kabul ettiğiniz anlamına gelir.",
+      "contactInfo": "Platformumuza villa eklemek veya sözleşme ile ilgili sorularınız için lütfen bizimle iletişime geçin."
+    },
+    "buttons": {
+      "contact": "İletişime Geçin",
+      "addVilla": "Villa Ekle"
+    },
+    "breadcrumb": {
+      "home": "Ana Sayfa",
+      "ownerAgreement": "Ev Sahibi Sözleşmesi"
+    },
+    "sections": {
+      "introduction": {
+        "title": "Giriş",
+        "content": "Bu sözleşme, villa sahibi ('Ev Sahibi') ile INN ELEGANCE LİMİTED LİABİLİTY COMPANY ('Platform') arasındaki ilişkiyi düzenleyen hüküm ve koşulları içermektedir. Bu sözleşme, Ev Sahibi tarafından Platform üzerinden kiralama hizmetinin sunulması için gerekli yasal çerçeveyi belirler. Platformumuza bir mülk ekleyerek veya mevcut bir mülkünüzü yöneterek, bu sözleşmedeki şartları kabul etmiş sayılırsınız."
+      },
+      "definitions": {
+        "title": "Tanımlar",
+        "content": "Platform: INN ELEGANCE tarafından sağlanan villa kiralama ve rezervasyon hizmetlerini ifade eder. Ev Sahibi: Platformda bir veya daha fazla mülkü listeleyerek kiralama hizmeti veren gerçek veya tüzel kişiyi ifade eder. Misafir: Platform üzerinden mülk kiralayan müşteriyi ifade eder. Mülk/Villa: Ev Sahibi tarafından kiralamaya sunulan gayrimenkulu ifade eder. Rezervasyon: Misafirin belirli bir mülkü, belirli tarihler için kiralama işlemini ifade eder. Komisyon: Platformun sağladığı hizmetler karşılığında Ev Sahibinden aldığı ücreti ifade eder."
+      },
+      "commission_terms": {
+        "title": "2024 Çalışma Koşulları",
+        "content": "2024 yılı itibariyle komisyon oranı %20 ve ön ödeme tutarı %35 olarak belirlenmiştir (Ön ödeme tutarı ev sahibi isteği doğrultusunda değerlendirmeye alınabilir). İptal şartlarımıza göre mücbir sebep içerisine giren durumlarda misafirlerimizden belge talep edilmektedir. Belge değerlendirmesi sonucunda misafirin ön ödemesi askıya alınır ya da ön ödeme tutarı misafire iade edilir. Misafirin geçersiz(keyfi) sayılan iptallerinde ise ön ödemesi yanar ve girişe 30 günden daha az süre kalan iptal taleplerinde geri kalan ödeme de misafirden tahsil edilmek üzere hukuk birimine yönlendirilir. INN ELEGANCE tarafından tahsil edilen hizmet bedeli mücbir sebepler dışında iade edilmeyecektir. Hizmet bedeli acentenin vermiş olduğu hizmete karşılık kendisinde kalacaktır."
+      },
+      "payment_terms": {
+        "title": "Ödeme Koşulları",
+        "content": "INN ELEGANCE hizmet bedeli iptal edilen tarihlere yeni rezervasyon alınması ya da alınmaması durumunda eski rezervasyona ait olan ön ödeme tutarı ev sahibine iade edilmeyecektir. Ön ödemeyi %35 talep eden ev sahiplerinin komisyon harici kalan ödemeleri misafir giriş yaptıktan sonra en geç 2 iş günü içerisinde ödenir. Tüm ödemeler Platform üzerinden yapılır ve Platform, belirlenen komisyon oranını her başarılı rezervasyon işlemi sonrasında tahsil eder. Komisyon oranları, mülkün konumu, özellikleri ve kiralama bedeline göre değişiklik gösterebilir."
+      },
+      "property_requirements": {
+        "title": "Mülk Gereksinimleri",
+        "content": "Platforma eklenen tüm villalar, yerel mevzuatlara uygun, yasal olarak kiralanabilir durumda olmalıdır. Ev Sahibi, mülklerin doğru ve güncel bilgilerini, gerçek fotoğraflarını ve tüm özelliklerini eksiksiz şekilde sağlamakla yükümlüdür. Mülkler sağlıklı yaşam koşullarını sağlamalı, temiz, güvenli ve ilanında belirtilen tüm olanaklara sahip olmalıdır. Her bir mülk için, acil durum prosedürleri, önemli telefon numaraları ve mülkün kullanımına dair bilgilerin bulunduğu bir rehber hazırlanmalıdır."
+      },
+      "owner_responsibilities": {
+        "title": "Ev Sahibinin Sorumlulukları",
+        "content": "Misafir karşılama ev sahibine aittir. Ev Sahibi, mülkünün temizlik, bakım ve onarımından sorumludur. Her misafirden önce mülkün temiz ve bakımlı olduğundan emin olmalıdır. Mülkün ilanında belirtilen tüm olanakların çalışır durumda ve kullanılabilir olması gerekmektedir. Misafirin villa içerisinde yaşayacağı olumsuz durumlar ile ev sahibi veya bakımcı ilgilenir. Evden kaynaklanan yaşanabilecek tüm sorunlar ev sahibi sorumluluğundadır. INN ELEGANCE sitesinde yer alan ve daha önce ev sahibi tarafından bildirilmiş ve onaylanmış villaya ait özelliklerden herhangi birinin kullanımında (temizlik, arıza ya da misafirin villayı taahhüt edildiği gibi sorunsuz kullanamamasına sebep olan durumlar da) oluşacak problemlerde misafire yapılması gereken iade tutarı ev sahibi tarafından karşılanacaktır."
+      },
+      "liability": {
+        "title": "Sorumluluk ve Çakışmalar",
+        "content": "Villa sahibi ya da yetkilisinin hatasından kaynaklı oluşan rezervasyon çakışmalarında, misafir farklı bir villaya geçirilirse arada oluşan fark villa sahibi tarafından karşılanacaktır. Ev Sahibi, mülkü ile ilgili tüm yasal sorumluluklara sahiptir ve mülkte meydana gelebilecek her türlü kaza, hasar veya yaralanmadan doğrudan sorumludur. Platform, Ev Sahibi ile Misafir arasındaki ilişkide aracı konumundadır ve mülkle ilgili doğrudan bir sorumluluk taşımaz. Ev Sahibi, mülkü için uygun ev sahibi sigortası ve sorumluluk sigortası yaptırmalıdır."
+      },
+      "cancellation_policy": {
+        "title": "İptal Koşulları",
+        "content": "İptal durumlarında INN ELEGANCE kendi hizmet bedelini iade etmemektedir. Ön ödemeden hak talep eden villa sahiplerimiz için misafirden alınan rezervasyon ön ödeme tutarı %40 olarak belirlenecektir. Herhangi bir iptal durumunda %20 ön ödeme INN ELEGANCE'da kalıp diğer %20 oran(kaparo farkı) ise villa sahibine iletilecektir. İptal olan tarihlerin satılması durumunda ise %40 ön ödeme INN ELEGANCE'de kalacaktır. Rezervasyon aşamasında %20 ön ödeme alınmasını talep eden villa sahipleri, herhangi bir iptal durumunda ön ödemeden hak talep edemeyecektir."
+      },
+      "payment_campaigns": {
+        "title": "Ödeme Kampanyaları",
+        "content": "2024 yılında 12 Ay Taksit Kampanyası'na katılmak isteyen villa sahiplerimiz, ödemenin tamamını bankadan almayı kabul etmeleri durumunda bu kampanyaya dahil edilecektir. Platform, dönem dönem farklı ödeme kampanyaları düzenleyebilir. Kampanya koşulları önceden duyurulacak ve kampanyaya katılım tamamen isteğe bağlı olacaktır."
+      },
+      "legal_terms": {
+        "title": "Yasal Hükümler",
+        "content": "Yukarıda bahsi geçen villa/villaların tarafıma ait ya da işletmecisi olduğumu ve yukarıda yazılı olan sözleşme maddelerini kabul ve taahhüt ederim. Bu sözleşme, Türkiye Cumhuriyeti kanunlarına tabidir. Sözleşmeden doğabilecek her türlü uyuşmazlık durumunda, Türkiye mahkemeleri yetkilidir. Platform, bu sözleşmeyi önceden bildirmek kaydıyla tek taraflı olarak değiştirme hakkına sahiptir. Değişiklikler, Ev Sahibine bildirim gönderildikten sonra yürürlüğe girer. Ev Sahibi, değişikliklerin bildirilmesinden sonra Platform'u kullanmaya devam ederek, yeni şartları kabul etmiş sayılır. Bu sözleşmenin herhangi bir maddesinin geçersiz sayılması durumunda, diğer maddeler geçerliliğini korur."
+      }
+    }
+  },
+  "cancellationTerms": {
+    "metadata": {
+      "title": "Villa Kiralama İptal Koşulları",
+      "description": "Villa kiralama hizmetlerimize ilişkin iptal koşulları ve iade politikaları hakkında bilgi alın."
+    },
+    "hero": {
+      "title": "Villa Kiralama İptal Koşulları",
+      "description": "Bu sayfada Inn Elegance villa kiralama hizmetlerine ilişkin iptal koşulları ve iade politikalarını bulabilirsiniz. Rezervasyon yapmadan önce bu koşulları dikkatlice okuyunuz."
+    },
+    "breadcrumb": {
+      "home": "Ana Sayfa",
+      "cancellationTerms": "İptal Koşulları"
+    },
+    "sectionTitle": "İptal ve İade Koşulları",
+    "companyInfoTitle": "Şirket Bilgileri",
+    "companyInfoLabels": {
+      "company": "Şirket",
+      "address": "Adres",
+      "website": "Web Sitesi",
+      "owner": "Sahibi",
+      "email": "E-posta",
+      "phone": "Telefon"
+    },
+    "faqTitle": "Sık Sorulan Sorular",
+    "disclaimerText": "Bu iptal koşulları ve iade politikaları, Inn Elegance LLC ile yapılan tüm rezervasyonlar için geçerlidir. Rezervasyon yaparak bu koşulları kabul etmiş sayılırsınız.",
+    "disclaimerSubtext": "Lütfen rezervasyon yapmadan önce koşulları dikkatlice okuyunuz.",
+    "moreInfoText": "İptal koşulları ve iadeler hakkında daha fazla bilgi için bizimle iletişime geçin.",
+    "buttons": {
+      "contact": "İletişime Geçin",
+      "viewVillas": "Villaları İncele"
+    }
+  },
+  "gdprNotice": {
+    "metadata": {
+      "title": "Kişisel Verilerin Korunması - Inn Elegance",
+      "description": "Inn Elegance LLC tarafından müşterilerimizin kişisel verilerinin işlenmesi ve korunması hakkında bilgilendirme."
+    },
+    "pageTitle": "KİŞİSEL VERİLERİN KORUNMASI VE İŞLENMESİ POLİTİKASI İLE MÜŞTERİ AYDINLATMA METNİ",
+    "pageDescription": "Bu metin, Inn Elegance LLC tarafından müşterilerimizin kişisel verilerinin işlenmesi ve korunması hakkında bilgilendirme amacıyla hazırlanmıştır.",
+    "lastUpdated": "Son Güncelleme: 01.03.2024",
+    "breadcrumb": {
+      "home": "Ana Sayfa",
+      "gdprNotice": "Kişisel Verilerin Korunması"
+    },
+    "princplesSectionTitle": "Kişisel Verilerin Korunması İlkeleri",
+    "contactActionText": "Kişisel verileriniz hakkında daha fazla bilgi almak veya sorularınız için lütfen bizimle iletişime geçin.",
+    "contactButton": "İletişime Geçin",
+    "disclaimerText": "Bu metin, Inn Elegance LLC'nin kişisel verileri koruma politikasını ve yasal yükümlülüklerini açıklamaktadır. Platformumuzu kullanan tüm ziyaretçilerimiz bu şartları kabul etmiş sayılır.",
+    "companyInfo": {
+      "title": "Şirket Bilgileri",
+      "name": "Inn Elegance LLC",
+      "address": "7901 4TH ST N STE 300, ST. PETERSBURG, FL. 33702, USA",
+      "website": "www.innelegance.com",
+      "owner": "Inn Elegance LLC Yönetim Kurulu",
+      "email": "info@innelegance.com",
+      "phone": "+90 (531) 621-61-00",
+      "labels": {
+        "company": "Şirket",
+        "address": "Adres",
+        "website": "Web Sitesi",
+        "owner": "Yönetim",
+        "email": "E-posta",
+        "phone": "Telefon"
+      }
+    },
+    "sections": [
+      {
+        "id": "sirket-tanitimi",
+        "title": "Inn Elegance LLC Hakkında",
+        "content": "Öncelikle, Inn Elegance markası ve www.innelegance.com internet sitemizin tamamen Inn Elegance LLC'ye ait olduğunu resmi olarak duyurmaktan memnuniyet duyarız.\n\nInn Elegance LLC, Florida merkezli bir şirket olup, lüks villa, daire, otel ve diğer konaklama seçenekleri sunan bir platformdur. Misafirlerimize konforlu ve özel tatil deneyimleri sağlamayı amaçlayan Inn Elegance, her bir konaklama biriminde unutulmaz bir tatil fırsatı sunmayı hedeflemektedir.\n\nPlatformumuz, kullanıcılara geniş bir konaklama yelpazesi sunarak tatillerini kolayca planlama imkânı sağlar. Inn Elegance, kullanıcı dostu arayüzü ve güvenilir kiralama deneyimiyle, misafirlerine lüks ve rahat bir tatil için ideal seçenekler sunmaktadır. Tatilciler, konforu, estetiği ve benzersiz deneyimi bir arada bulmak için platformumuzu tercih etmektedir."
+      },
+      {
+        "id": "politika-amaci",
+        "title": "1. Kişisel Verilerin Korunması ve İşlenmesi Politikası",
+        "content": "Kişisel verilerin korunması, Inn Elegance LLC'nin en önemli önceliklerinden biridir. Bu politika, şirketimizin çalışan adayları, şirket ortakları, şirket yetkilileri, iş birliği yaptığı kurumların çalışanları, ortakları ve yetkilileri ile müşterileri ve ziyaretçi üçüncü kişilerin kişisel verilerinin korunmasına yönelik olarak yönetilmektedir.\n\nBu politika çerçevesinde, yasal mevzuat çerçevesinde işlenen kişisel verilerin korunması için gereken idari ve teknik tedbirler alınmaktadır."
+      },
+      {
+        "id": "temel-ilkeler",
+        "title": "2. İşlenen Kişisel Verilerin Temel İlkeleri",
+        "content": "Inn Elegance LLC olarak, müşterilerimizin ve kullanıcılarımızın kişisel verilerinin korunmasına büyük önem veriyoruz. Florida eyaletinde faaliyet gösteren bir şirket olarak, kişisel veri güvenliğini sağlamak ve gizliliğinizi korumak için çeşitli yasal düzenlemelere ve en iyi uygulamalara uymaktayız.\n\n2.1. Florida Information Protection Act (FIPA)\nFlorida'da, kişisel verilerin korunmasını sağlayan en önemli yasal çerçeve Florida Information Protection Act (FIPA)'dır. Bu yasa, veri güvenliği ihlallerini önlemeyi ve kullanıcı bilgilerini güvenli bir şekilde saklamayı amaçlamaktadır.\n\n2.2. Florida's Data Breach Notification Law\nInn Elegance LLC, Florida'nın Data Breach Notification Law yasasına tamamen uyar. Bu yasa, kişisel verilerin ihlal edilmesi durumunda etkilenen bireylere bildirimin yapılmasını zorunlu kılar.\n\n2.3. Sosyal Güvenlik Numarası Koruma Yasası\nVeri güvenliğine dair sorumluluklarımızın bir parçası olarak, Inn Elegance LLC, Florida Sosyal Güvenlik Numarası Koruma Yasası'na uyar.\n\n2.4. Diğer İlgili Yasalar ve Düzenlemeler\nBunun dışında, Inn Elegance LLC, California Consumer Privacy Act (CCPA) ve Avrupa Birliği Genel Veri Koruma Yönetmeliği (GDPR) gibi diğer ulusal ve uluslararası veri koruma yasalarına da uygun hareket eder."
+      },
+      {
+        "id": "ilke-prensipler",
+        "title": "3. Kişisel Verilerin İşlenmesi ve Korunması İlke ve Prensipleri",
+        "content": "• Kişisel veriler hukuka ve dürüstlük kurallarına uygun işlenir.\n• Kişisel veriler doğru ve güncel tutulur.\n• Kişisel veriler belirli, açık ve meşru amaçlar için işlenir.\n• Kişisel veriler işlendikleri amaçla bağlantılı, sınırlı ve ölçülü olarak işlenir.\n• Kişisel veriler, ilgili mevzuatta öngörülen veya işlendikleri amaç için gerekli olan süre kadar muhafaza edilir.\n• Kişisel veri sahipleri aydınlatılır ve bilgilendirilir.\n• Kişisel veri sahiplerinin haklarını kullanması için gerekli sistemler kurulur.\n• Kişisel verilerin muhafazası için gerekli tedbirler alınır.\n• Kişisel verilerin üçüncü kişilere aktarılmasında ilgili mevzuata ve KVK Kurulu düzenlemelerine uyulur.\n• Özel nitelikli kişisel verilerin işlenmesine ve korunmasına gereken hassasiyet gösterilir."
+      },
+      {
+        "id": "gizlilik-sartlari",
+        "title": "4. Gizlilik Şartları",
+        "content": "www.innelegance.com, işbu Gizlilik Politikası ve Kullanım Sözleşmesi'nde tanımlı olan haller haricinde kişisel bilgileri herhangi bir şirket veya üçüncü kişilere açıklamayacaktır. www.innelegance.com, ziyaretçilerin, kayıtlı kullanıcıların ve ortakların kişisel bilgilerini üçüncü şahıslara satmaz.\n\nDoğrudan Tarafımıza Sunulan Veriler: Rezervasyon formu, iletişim formu ve diğer formlar aracılığıyla bizlere sunulan bilgiler ticari amaçlarla üçüncü şahıslarla paylaşılmaz.\n\nDolaylı Olarak Tarafınızdan Elde Edilen Veriler: IP bilgisi, konum verileri, çerezler ve diğer kullanım verileri sadece www.innelegance.com sitesine özeldir ve ticari amaçla kullanılmaz."
+      },
+      {
+        "id": "rezervasyon-kimlik",
+        "title": "5. Rezervasyon ve Kimlik Sunumları",
+        "content": "Firmamız, yasal gereklilikler doğrultusunda villalarda konaklayacak olan her müşterisi için ilgili güvenlik güçlerine kimlik veri bildirimi yapar. Bu nedenle, rezervasyon yapan tüm kullanıcılar bu veri bildirimi için kimliklerini beyan ederler. Beyan edilen kimlik verileri sadece ilgili güvenlik güçlerine sunulur."
+      },
+      {
+        "id": "kabul-sartlari",
+        "title": "6. Kabul Edilen Şartlar ve Yetki",
+        "content": "Inn Elegance LLC'den herhangi bir konaklama yapan müşteriler, yukarıda belirtilen şartları kabul etmiş sayılırlar. Bu şartlara aykırı davranışlar, Inn Elegance LLC tarafından rezervasyonları tek taraflı iptal etme ve geri ödeme yapmama hakkını beraberinde getirir."
+      }
+    ]
   }
 }

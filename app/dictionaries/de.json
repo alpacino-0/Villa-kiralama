@@ -1,6 +1,7 @@
 {
     "greeting": "Hallo, willkommen auf der Villa-Vermietungsplattform!",
     "book_now": "Jetzt buchen",
+    "coming_soon": "Wir stehen Ihnen in Kürze zur Verfügung.",
     "header": {
         "welcome": "Willkommen auf unserer Villa-Vermietungswebsite!",
         "nav": {
@@ -171,5 +172,655 @@
         "next": "Weiter",
         "show": "Anzeigen",
         "hide": "Ausblenden"
+    },
+    "agreement": {
+        "metadata": {
+            "title": "Mietvertrag für Villen - Inn Elegance",
+            "description": "Geschäftsbedingungen für die Villenvermietungsdienste von Inn Elegance."
+        },
+        "pageTitle": "Mietvertrag für Villen",
+        "pageDescription": "Auf dieser Seite finden Sie die Vertragsbedingungen, die für die Villenvermietungsdienste von Inn Elegance gelten.",
+        "breadcrumb": {
+            "home": "Startseite",
+            "agreement": "Mietvertrag für Villen"
+        },
+        "introduction": {
+            "title": "INN ELEGANCE LLC MIETBEDINGUNGEN UND VERTRAG",
+            "content": "Inn Elegance LLC bietet unseren Kunden luxuriöse und komfortable Villen in den schönsten Urlaubsregionen der Türkei an. Dieser Vertrag regelt die Rechte und Pflichten der Parteien im Villenvermietungsprozess."
+        },
+        "sections": {
+            "title": "Vertragsklauseln",
+            "fallbackMessage": "Vertragsabschnitte konnten nicht geladen werden. Bitte versuchen Sie es später noch einmal."
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen",
+            "fallbackMessage": "Häufig gestellte Fragen konnten nicht geladen werden. Bitte versuchen Sie es später noch einmal."
+        },
+        "companyInfo": {
+            "title": "Unternehmensangaben",
+            "company": "Unternehmen",
+            "address": "Adresse",
+            "website": "Webseite",
+            "owner": "Eigentümer",
+            "email": "E-Mail",
+            "phone": "Telefon"
+        },
+        "sozlesme": {
+            "title": "Villenvermietungsvertrag",
+            "sections": [
+                {
+                    "id": "introduction",
+                    "title": "INN ELEGANCE LLC MIETBEDINGUNGEN UND VERTRAG",
+                    "content": "Zunächst möchten wir Ihnen offiziell mitteilen, dass die Villenvermietermarke Inn Elegance und die Website www.innelegance.com zur INN ELEGANCE LIMITED LIABILITY COMPANY gehören. Inn Elegance LLC ist ein in Florida gegründetes Unternehmen, das Luxusvillenvermieterdienstleistungen anbietet. Unser Unternehmen zielt darauf ab, komfortable und private Urlaubserlebnisse anzubieten und unseren Gästen durch die von uns angebotenen Villen eine unvergessliche Urlaubsmöglichkeit zu bieten."
+                },
+                {
+                    "id": "parties-purpose",
+                    "title": "PARTEIEN UND ZWECK",
+                    "content": "Diese Vereinbarung wurde zum Zweck der Anmietung der \"VILLA/APARTMENT\" für einen vorher festgelegten Zeitraum zwischen dem Mieter der \"VILLA/APARTMENT\" (im Folgenden als \"KUNDE\" bezeichnet) und dem Vermieter der \"VILLA/APARTMENT\" (im Folgenden als \"Inn Elegance\" bezeichnet) geschlossen. Der Kunde und seine Begleiter, die eine Reservierung für eine unserer auf der Website \"www.innelegance.com\" beworbenen \"Villen/Apartments\" über unsere Website, per Telefon oder per E-Mail vornehmen, gelten als im Voraus mit den folgenden Bedingungen einverstanden. Jeder Verstoß gegen die folgenden Bedingungen gibt \"Inn Elegance\" das Recht, die Reservierung einseitig zu stornieren, den Kunden aufzufordern, die Villa/das Apartment zu verlassen, die Anzahlung nicht zurückzuerstatten und den vollen Betrag der unbezahlten Mietgebühren zu verlangen."
+                },
+                {
+                    "id": "reservation-payment",
+                    "title": "RESERVIERUNG UND ZAHLUNG",
+                    "content": "• Sie können eine Vorreservierung für unsere Villen/Apartments über das Reservierungsformular auf unserer Website, per SMS, Telefon oder E-Mail vornehmen.\n\n• Nachdem Sie die Daten angegeben haben, für die Sie die Villa/das Apartment mieten möchten, führt Inn Elegance die vorläufige Vermietung durch, indem es Ihre notwendigen Transport- und Rechnungsinformationen erhält. Inn Elegance nimmt nach der vorläufigen Vermietung 20% der insgesamt für die Villa/das Apartment zu zahlenden Gebühr als Anzahlung. Die Villa/das Apartment wird auf Ihren Namen reserviert, wenn die Anzahlung innerhalb von 1 (einem) Werktag nach der vorläufigen Vermietung bezahlt wird. Der Anzahlungsbetrag, den Sie zahlen müssen, und unsere Bankkontennummern werden Ihnen auch per E-Mail oder SMS oder telefonisch mitgeteilt. Die Anzahlung muss innerhalb von 1 (einem) Werktag per Banküberweisung, EFT oder Kreditkarte über die Website erfolgen. Innerhalb von höchstens 1 Werktag ab Erhalt der Anzahlung wird Ihnen eine schriftliche Mietbestätigung der Villa/des Apartments zugesandt. Dieses Bestätigungsdokument enthält die Gesamtgebühr, die erhaltene Anzahlung und für welche Daten die Villa/das Apartment auf Ihren Namen gemietet ist, sowie das Datum und die Uhrzeit der von Ihnen geleisteten Anzahlung.\n\n• Falls die Anzahlung nicht geleistet wird, kann Inn Elegance das Recht ausüben, die Vorreservierung ohne Benachrichtigung des Kunden zu stornieren und eine andere Reservierung für die Villa/das Apartment anzunehmen.\n\n• Die verbleibende Gebühr für die Villa/das Apartment wird offiziell über die Bank entgegengenommen, vorausgesetzt, sie wird nach Vertragsabschluss oder bei Übergabe der Villa/des Apartments auf das Bankkonto des Eigentümers der Villa/des Apartments eingezahlt. WENN DER KUNDE DIESER VEREINBARUNG ZUSTIMMT, VERPFLICHTET ER SICH, DIE RESTLICHE GEBÜHR FÜR DIE MIETE DER VILLA/DES APARTMENTS ÜBER DIE BANK AN DEN EIGENTÜMER ZU ÜBERWEISEN. Da Inn Elegance das gemietete Objekt mit Möbeln an den Kunden übergibt, nimmt es eine Schadenskaution von 1000 TL/5000 TL gegen das Brechen, Zerschlagen, Beschädigen, Verlieren usw. der Möbel, und diese Kaution wird bei Übergabe der Villa/des Apartments mit Quittung in bar (Bargeld) genommen. Die Schadenskaution wird dem Kunden nach Zählung der Einrichtungsgegenstände zurückgegeben, wenn bei der Abreise des Kunden keine fehlenden Gegenstände vorliegen."
+                },
+                {
+                    "id": "checkin-checkout",
+                    "title": "VILLA/APARTMENT CHECK-IN und CHECK-OUT",
+                    "content": "• Am Reservierungsbeginntag ist die Check-in-Zeit für die Villa/das Apartment frühestens um 16:00 Uhr und spätestens um 21:00 Uhr. Der Kunde kann die Villa/das Apartment außerhalb der angegebenen Zeiten nicht betreten, und wenn er nach der angegebenen spätesten Eintrittszeit ankommt, kann er die Villa/das Apartment am nächsten Tag morgens zu Beginn der Geschäftszeiten von Inn Elegance (09.00 Uhr) betreten.\n\n• Inn Elegance ist definitiv nicht verantwortlich für Probleme, die sich aus der Unfähigkeit des Kunden ergeben, die Villa/das Apartment zu betreten, wenn er vor oder nach der angegebenen Zeit ankommt, Übernachtung, keine Unterkunft finden usw. Der Kunde muss selbst einen Platz zum Übernachten finden und die Unterkunftsgebühr selbst bezahlen. Inn Elegance kann für solche Situationen nicht verantwortlich gemacht werden.\n\n• Am Ende der Reservierung ist die Check-out-Zeit aus der Villa/dem Apartment für alle unsere Regionen spätestens um 10:00 Uhr morgens. Der Kunde ist direkt verantwortlich für alle Probleme, Schäden, Beschwerden usw., die sich aus dem völligen Versäumnis des Kunden ergeben, die Villa/das Apartment um 10.00 Uhr morgens zu räumen oder spät zu räumen, und wird alle Arten von materiellen Schäden von Inn Elegance decken, die aus diesen Negativitäten entstehen können. Wir erinnern Sie nachdrücklich daran, Ihre Reisepläne nach diesen Zeiten zu gestalten, damit beide Parteien nicht benachteiligt werden. Im Falle des Wunsches, früh auszuchecken, muss Inn Elegance 24 Stunden im Voraus informiert werden.\n\n• Falls der Kunde die Villa/das Apartment aufgrund von Dichte ohne Kontrolle der Villa/des Apartments verlässt, wird die Schadenskaution auf ein Bankkonto überwiesen, das der Kunde angeben wird, und die Überweisungskosten werden von der Schadenskaution bezahlt. Wenn der Kunde die Villa/das Apartment freiwillig früh verlässt, wird dem Kunden für die Unterkunftsgebühr keine Rückerstattung gewährt."
+                },
+                {
+                    "id": "villa-capacity",
+                    "title": "VILLA/APARTMENT KAPAZITÄT",
+                    "content": "• Gäste, die die auf der Anzeigeseite unserer von Ihnen aus unseren Anzeigen auf unserer Website ausgewählten Villen/Apartments angegebene Kapazität überschreiten oder die Anzahl der Personen, die während der Reservierung angegeben wurden, werden definitiv nicht akzeptiert (Kinder und Babys sind ebenfalls eingeschlossen).\n\n• Wenn der Kunde nach Bestätigung der Reservierung eine Änderung der Personenzahl vornehmen möchte, wird Inn Elegance schriftlich kontaktiert, und diese Änderung kann genehmigt werden, wenn Inn Elegance es entsprechend der Kapazitätssituation der Villa/des Apartments für angemessen hält.\n\n• Inn Elegance kann vom Kunden eine zusätzliche Gebühr verlangen. Nach dem Betreten der Villa/des Apartments werden Gäste, die nicht in der Reservierungsliste angegeben sind, definitiv nicht in die Villa/das Apartment aufgenommen. In Fällen, in denen das Gegenteil festgestellt wird, hat Inn Elegance das Recht, Gäste aufzufordern, die Villa/das Apartment zu verlassen, die Reservierung vollständig zu stornieren oder die vollständige Räumung der Villa/des Apartments zu verlangen, ohne das Ende der Mietzeit abzuwarten, die gesamte Gebühr und eine Extragebühr zu verlangen.\n\n• Während der Vermietung der Villa/des Apartments wird der Prozess gemäß der Erklärung des Kunden durchgeführt, und der Kunde akzeptiert, dass die von ihm gegebenen Informationen korrekt und vollständig sind, und akzeptiert alle Verantwortlichkeiten, die in dieser Hinsicht entstehen werden."
+                },
+                {
+                    "id": "cleaning-maintenance",
+                    "title": "VILLA/APARTMENT REINIGUNG und WARTUNG mit ZUSÄTZLICHEN AUSGABEN",
+                    "content": "• Die Eingangsreinigung ist in den wöchentlichen, monatlichen Villa/Apartment-Mietpreisen enthalten. Wöchentliche Reinigung und Handtuch/Bettwäsche usw. Wechsel ist in den Preisen für Aufenthalte von 2 (zwei) Wochen und mehr enthalten.\n\n• Abgesehen davon unterliegt jede angeforderte Reinigung und Handtuch/Bettwäsche usw. Wechsel einer Gebühr.\n\n• Pool- und Gartenpflege wird in den frühen Morgenstunden jeden Tag durchgeführt, und wenn während der Mietzeit technische Probleme von der Villa auftreten, werden diese vom Hausbesitzer gelöst, Inn Elegance ist hierfür nicht verantwortlich, es hilft nur bei der Lösung des Problems.\n\n• Das autorisierte Personal muss den Garten oder das Innere der Villa/des Apartments für die regelmäßige Wartung des Pools, Gartens und anderer Einrichtungsgegenstände aller Villen/Apartments betreten. Der Kunde sollte das autorisierte Personal nicht daran hindern, das Innere und/oder den Garten der Villa zu betreten, damit diese Dienstleistungen ohne Unterbrechung durchgeführt werden können."
+                },
+                {
+                    "id": "pets-smoking",
+                    "title": "HAUSTIERE und RAUCHVERBOT",
+                    "content": "• Haustiere werden in allen unseren Villen absolut nicht akzeptiert. Außerdem ist das Rauchen in unseren Villen verboten."
+                },
+                {
+                    "id": "cancellation",
+                    "title": "RESERVIERUNGSSTORNIERUNGSBEDINGUNGEN",
+                    "content": "• Im Falle einer Stornierung innerhalb von 30 Tagen oder weniger verbleibenden Zeiträumen wird dem Kunden der gesamte gezahlte Betrag nicht erstattet. Um Zahlungen zurückzuerhalten, ist eine Force-Majeure-Begründung erforderlich."
+                },
+                {
+                    "id": "force-majeure",
+                    "title": "FORCE-MAJEURE-SITUATION",
+                    "content": "• Sofern von den Parteien nicht anders vereinbart, können im Falle einer Reservierungsstornierungssituation aufgrund von höherer Gewalt wie Naturkatastrophen und unerwarteten Gesundheitsproblemen getätigte Zahlungen auf Anfrage des Kunden für dieselbe Villa/dasselbe Apartment neu arrangiert werden oder eine Zahlungsanforderung gestellt werden."
+                },
+                {
+                    "id": "other-conditions",
+                    "title": "ANDERE WICHTIGE INFORMATIONEN",
+                    "content": "1. INN ELEGANCE kann nicht für Situationen verantwortlich gemacht werden, die INN ELEGANCE nicht verhindern kann, wie z.B. kaputte, bergauf führende, stabilisierte, nasse Böden usw. der Straßen, die zur Villa/zum Apartment führen.\n\n2. INN ELEGANCE ist definitiv nicht verantwortlich für Unfälle usw. während des Zugangs zur Villa/zum Apartment, kurz gesagt, für alle Arten von Negativität.\n\n3. INN ELEGANCE ist definitiv nicht verantwortlich für dieses Ereignis, wenn verschiedene im Bau einiger Villen verwendete Materialien (Zedernholz, Kiefernholz, einige Kunststoffprodukte, alle Arten von Pflanzen im Garten oder innerhalb der Villa usw.) den Kunden in Bezug auf Gesundheit oder Psychologie stören.\n\n4. Privatautos werden für Kunden benötigt, die in allen unseren Villen/Apartments übernachten werden. Der Zugang des Kunden zur Villa/zum Apartment liegt in seiner eigenen Verantwortung. INN ELEGANCE kann definitiv nicht verantwortlich gemacht werden.\n\n5. INN ELEGANCE kann nicht verantwortlich gemacht werden, wenn ein Kunde, der eine Villa oder ein Apartment gemietet hat, mit der geografischen Lage der von ihm gemieteten Villa oder des Apartments unzufrieden ist. INN ELEGANCE hat den Standort der Villa/des Apartments auf Google Map ungefähr markiert.\n\n6. INN ELEGANCE kann nicht für Schäden an Ihrem privaten oder gemieteten Fahrzeug während des Zugangs zur Villa/zum Apartment verantwortlich gemacht werden.\n\n7. Der Kunde, der die Villa/das Apartment gemietet hat, ist direkt verantwortlich für alle Arten von Negativität, die aufgrund der Nähe des Bodens des Fahrzeugs des Kunden (Motor, Automobil usw.) zum Boden, der schwachen Motorleistung des Fahrzeugs, der Unerfahrenheit des Kunden bei der Nutzung von Automobil, Motor usw. und folglich der Unfähigkeit, die Villa/das Apartment zu erreichen, entstehen können. INN ELEGANCE kann definitiv nicht für solche oder ähnliche Probleme verantwortlich gemacht werden.\n\n8. Die auf der Detailseite \"www.innelegance.com\" über die Villa/das Apartment angegebene \"Entfernungstabelle\" ist ungefähr geschrieben. Entfernungen werden nicht genau angegeben. Es können geringfügige Fehler auftreten. Der Kunde, der die Villa/das Apartment mietet, stimmt zu, dies zu berücksichtigen.\n\n9. Die in der \"Entfernungstabelle\" auf der Detailseite \"www.innelegance.com\" über die Villa/das Apartment angegebenen Entfernungen sind unter Berücksichtigung des nächsten Restaurants, des nächsten Strandes, des nächsten Zentrums, des nächsten Busbahnhofs und des nächsten Flughafens geschrieben. INN ELEGANCE übernimmt keine Verantwortung, wenn das angegebene Restaurant oder der Markt geschlossen ist.\n\n10. INN ELEGANCE kann nicht für alle Unfälle wie Ertrinken, Fallen, Fußbruch, Armbruch verantwortlich gemacht werden, die im Pool der Villa/des Apartments auftreten werden.\n\n11. Alle Villen haben einen Warmwassertank, der durch Sonnenenergie von ungefähr 160 Litern beheizt wird. Der Kunde ist direkt verantwortlich für Probleme, die durch den Mangel an Warmwasser aufgrund von übermäßigem Warmwasserverbrauch außerhalb der fairen Nutzung verursacht werden, INN ELEGANCE kann definitiv nicht für Probleme verantwortlich gemacht werden, die durch diese Situation verursacht werden.\n\n12. Keine unserer Villen/Apartments hat Lebensmittel, Getränke, irgendwelche Lebensmittelprodukte usw. Keine der Villen/Apartments hat irgendwelche Dienstleistungen wie Frühstück, Mittagessen, Abendessen, Buffet usw. Es liegt in der Verantwortung des Kunden, diese Produkte bereitzustellen. INN ELEGANCE kann für solche Situationen nicht verantwortlich gemacht werden.\n\n13. INN ELEGANCE ist definitiv nicht verantwortlich für Situationen wie überhaupt kein Mobiltelefonsignal empfangen, es ein wenig empfangen oder kein Internet vom Mobiltelefon in Villen/Apartments oder auf der Straße empfangen. Sie können Ihren GSM-Betreiber anrufen und detaillierte Informationen über den GSM-Signalstatus in dem Gebiet erhalten, in das Sie gehen werden.\n\n14. Auch wenn Sie per Kreditkarte oder Mailorder oder EFT oder Banküberweisung oder ähnliches bezahlen, kaufen Sie definitiv keine Flugtickets, Bustickets usw., bevor Sie die \"Bestätigungs-E-Mail\" und das \"Bestätigungsdokument\" erhalten. Selbst wenn Sie eine Zahlung an INN ELEGANCE leisten, gelten Sie definitiv nicht als Mieter der Villa/des Apartments, wenn Sie die \"Bestätigungs-E-Mail\" und das \"Bestätigungsdokument\" nicht erhalten. INN ELEGANCE ist definitiv nicht verantwortlich für materielle und moralische Schäden, die aus solchen und ähnlichen Situationen entstehen können, in denen der Kunde übereilt handelt.\n\n15. INN ELEGANCE kann nicht für alle Unfälle und Vorfälle verantwortlich gemacht werden, die vom Kunden in der Villa/im Apartment verursacht werden, Feuer, elektrische Leckage, Rohrleckage und daraus resultierende Todesfälle und Unfälle, Telefon- und Internetausfälle, die vom Internetanbieter (Türk Telekom usw.) verursacht werden, Stromausfälle, die von der Elektrizitätsgesellschaft verursacht werden, Wasserausfälle, die von der Wassergesellschaft verursacht werden.\n\n16. Die Villen/Apartments, die wir auf unserer Website angegeben haben, sind genau die gleichen, Entschuldigungen wie sie sind nicht so, wie sie auf der Website erscheinen, sie sehen auf der Website besser aus, sie sind auf der Website größer oder kleiner usw. sind niemals akzeptabel und INN ELEGANCE kann für sie nicht verantwortlich gemacht werden.\n\n17. INN ELEGANCE kann nicht für alle Arten von Negativität verantwortlich gemacht werden, die aus positiven oder negativen Naturereignissen/Bedingungen und positiven oder negativen Wetterbedingungen entstehen können.\n\n18. INN ELEGANCE kann nicht für Vorfälle wie Bienen-, Skorpion-, Insekten-, Schlangenbisse, Katzen-, Hundebisse usw. an den Kunden verantwortlich gemacht werden.\n\n19. Ein Kunde, der konservative Villen bevorzugen möchte, die als Villen bezeichnet werden, deren Pool von außen nicht sichtbar ist, wenn es auf der Detailseite der Villa keine Aussagen wie \"diese Villa ist für konservative Familien geeignet\", \"ihr Pool ist von außen nicht sichtbar\", \"verschleierte Damen können bevorzugen\" usw. gibt, dann ist diese Villa keine konservative Villa. INN ELEGANCE ist definitiv nicht verantwortlich, wenn der Kunde eine Villa mietet, die keine solchen Aussagen hat, und dann INN ELEGANCE beschuldigt, indem er sagt \"diese Villa ist keine konservative Villa\", wenn er zur Villa kommt. Wir empfehlen dem Kunden, der die Villa mieten wird, alle Details sorgfältig zu lesen.\n\n20. Der Kunde ist direkt verantwortlich für die Ansammlung von Ameisen oder Insekten usw. oder verschiedenen Tieren im Inneren der Villa/des Apartments oder im Poolgarten oder auf der Poolterrasse aufgrund von Lebensmitteln oder Ihrem Müll, INN ELEGANCE kann für diese Situation nicht verantwortlich gemacht werden.\n\n21. INN ELEGANCE ist definitiv nicht verantwortlich für alle Arten von Krankheiten, Chlorallergie usw. chemische Allergie, die durch das Wasser aus dem Schwimmbad oder der Dusche der Villa/des Apartments auftreten können. Wir empfehlen Personen mit gesundheitlicher oder körperlicher Empfindlichkeit, nicht in den Pool zu gehen.\n\n22. Alle Arten von Rindern, Schafen, Hühnern, Rebhühnern usw. können um die gemietete Villa/Apartment herum gezüchtet werden, alle Arten von Düngemitteln können im Garten der gemieteten Villa/Apartment oder in den Gärten der Nachbarhäuser/Villen/Apartments verwendet werden, INN ELEGANCE ist definitiv nicht verantwortlich, kann nicht verantwortlich gemacht werden für störende Tiergeräusche und schlechte Gerüche, die aus diesen und solchen Ereignissen entstehen können.\n\n23. In Fällen wie Beerdigung, Tod, Krieg, Gesundheitsproblem, Unfall oder Stornierung des Urlaubs von öffentlichem Personal oder Personal privater Unternehmen usw. gelten alle Mietbedingungen buchstabengetreu und eine Stornierung ist definitiv nicht in Frage.\n\nDer Kunde hat alle von uns oben angegebenen Bedingungen akzeptiert, und im Falle des Versuchs, den Mietvertrag zu kündigen, indem er diese und ähnliche Entschuldigungen vorbringt, behält sich INN ELEGANCE das Recht vor, den Vertrag allein zu kündigen und das Recht, den Vertragsbetrag zu verlangen."
+                }
+            ],
+            "faq": [
+                {
+                    "question": "Wie kann ich eine Villareservierung vornehmen?",
+                    "answer": "Sie können eine Vorreservierung für unsere Villen/Apartments über das Reservierungsformular auf unserer Website, per SMS, Telefon oder E-Mail vornehmen. Sobald die Anzahlung eingegangen ist, wird Ihre Reservierung bestätigt und eine schriftliche Bestätigung wird Ihnen zugesandt."
+                },
+                {
+                    "question": "Wie hoch ist die Anzahlung und wie wird sie geleistet?",
+                    "answer": "Die Anzahlung beträgt 20% der gesamten Villamietgebühr. Die Zahlung kann per Banküberweisung, EFT oder Kreditkarte über unsere Website erfolgen. Die Anzahlung muss innerhalb von 1 Werktag nach der Vorreservierung erfolgen."
+                },
+                {
+                    "question": "Was sind die Check-in- und Check-out-Zeiten?",
+                    "answer": "Die Check-in-Zeit für die Villa ist frühestens um 16:00 Uhr und spätestens um 21:00 Uhr. Die Check-out-Zeit aus der Villa ist spätestens um 10:00 Uhr morgens. Es ist wichtig, diese Zeiten einzuhalten; andernfalls kann INN ELEGANCE nicht für daraus resultierende Probleme verantwortlich gemacht werden."
+                },
+                {
+                    "question": "Was ist eine Schadenskaution und wie wird sie zurückerstattet?",
+                    "answer": "Die Schadenskaution ist eine Sicherheitsgebühr, die zwischen 1000 TL und 5000 TL liegt und gegen Schäden an den Möbeln in der Villa genommen wird. Sie wird bei Übergabe der Villa in bar erhoben und wird nach der Inventarkontrolle beim Check-out vollständig zurückerstattet, vorausgesetzt, es gibt keinen Schaden."
+                },
+                {
+                    "question": "Kann ich die Villakapazität überschreiten?",
+                    "answer": "Nein, Gäste, die die auf der Anzeigeseite unserer Villen/Apartments angegebene Kapazität überschreiten oder die Anzahl der während der Reservierung angegebenen Personen, werden definitiv nicht akzeptiert. Diese Regel gilt auch für Kinder und Babys."
+                },
+                {
+                    "question": "Sind Haustiere in der Villa erlaubt?",
+                    "answer": "Nein, Haustiere werden in allen unseren Villen absolut nicht akzeptiert. Außerdem ist das Rauchen in unseren Villen verboten."
+                },
+                {
+                    "question": "Ist der Reinigungsservice inklusive?",
+                    "answer": "Ja, die Eingangsreinigung ist in den wöchentlichen und monatlichen Villa-Mietpreisen enthalten. Für Aufenthalte von 2 Wochen und mehr ist die wöchentliche Reinigung und der Handtuch-/Bettwäschewechsel in den Preisen enthalten. Jede zusätzlich angeforderte Reinigung und Handtuch-/Bettwäschewechsel unterliegt einer Gebühr."
+                },
+                {
+                    "question": "Wird im Falle einer Reservierungsstornierung eine Rückerstattung vorgenommen?",
+                    "answer": "Im Falle einer Stornierung innerhalb von 30 Tagen oder weniger bis zum Eintrittsdatum wird der gesamte gezahlte Betrag nicht erstattet. Um Zahlungen zurückzuerhalten, ist eine Force-Majeure-Begründung erforderlich."
+                }
+            ],
+            "companyInfo": {
+                "name": "Inn Elegance LLC",
+                "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+                "website": "www.innelegance.com",
+                "owner": "Orhan Yavuz",
+                "email": "info@innelegance.com",
+                "phone": "+90 531 621 61 00"
+            }
+        }
+    },
+    "about": {
+        "metadata": {
+            "title": "Über Uns - Villa Vermietung",
+            "description": "Detaillierte Informationen über unsere Villa-Vermietungsdienstleistungen und unser Unternehmen."
+        },
+        "heroSection": {
+            "title": "Über Uns",
+            "description": "Lernen Sie die führende Marke für Luxusvilla-Vermietung in der Türkei kennen"
+        },
+        "introduction": "<h2 class=\"text-2xl font-bold mb-4\">Die Adresse für Luxusvilla-Urlaub</h2><p class=\"mb-4\">Unser 2015 gegründetes Unternehmen bietet Luxusvilla-Vermietungsservices in den schönsten Urlaubsregionen der Türkei an. Mit unserem kundenorientierten Ansatz bieten wir unseren Gästen in unseren sorgfältig gestalteten Privatpool-Villen, bei denen jedes Detail berücksichtigt wurde, unvergessliche Urlaubserlebnisse.</p><p class=\"mb-4\">Seit unserer Gründung haben wir Tausenden von Gästen gedient und das Konzept des Villa-Urlaubs in der Türkei auf eine neue Ebene gehoben. Von Anfang an war es unser Ziel, unseren Gästen ein besonderes und luxuriöses Urlaubserlebnis zu bieten, das Hotelkomfort mit der Wärme eines Zuhauses verbindet.</p><p>Unser erfahrenes Team wählt jede Villa in unserem Portfolio sorgfältig aus und inspiziert sie regelmäßig. Alle unsere Villen sind nach hohen Qualitätsstandards ausgestattet und darauf vorbereitet, Ihnen das komfortabelste Urlaubserlebnis zu bieten.</p>",
+        "mission": "Den Standard von Vertrauen und Zufriedenheit im Luxusvilla-Vermietungssektor zu erhöhen, indem wir unseren Gästen unvergessliche Urlaubserlebnisse bieten.",
+        "vision": "Pionier- und innovative Dienstleistungen als zuverlässigste und qualitativ hochwertigste Villa-Vermietungsmarke der Türkei im Sektor anzubieten.",
+        "values": "Niemals Kompromisse bei der Qualität einzugehen, indem wir mit den Prinzipien der Ehrlichkeit, Transparenz, Kundenzufriedenheit und kontinuierlichen Verbesserung arbeiten.",
+        "missionTitle": "Unsere Mission",
+        "visionTitle": "Unsere Vision",
+        "valuesTitle": "Unsere Werte",
+        "whyChooseUs": {
+            "title": "Warum uns wählen?",
+            "items": [
+                {
+                    "title": "Sorgfältig ausgewählte Villen",
+                    "description": "Alle unsere Villen werden regelmäßig auf Komfort, Sauberkeit und Sicherheit überprüft."
+                },
+                {
+                    "title": "24/7 Kundenservice",
+                    "description": "Unser professionelles Support-Team steht Ihnen während Ihres Urlaubs jederzeit zur Seite."
+                },
+                {
+                    "title": "Sichere Zahlungsoptionen",
+                    "description": "Zahlungsinfrastruktur, die durch ein 128-Bit-SSL-Sicherheitszertifikat geschützt ist, und mehrere Zahlungsmöglichkeiten."
+                },
+                {
+                    "title": "Transparente Preisgestaltung",
+                    "description": "Keine versteckten Kosten, der Preis, den Sie sehen, ist der Preis, den Sie zahlen."
+                }
+            ]
+        },
+        "statistics": {
+            "luxuryVillas": "Luxusvillen",
+            "holidayRegions": "Urlaubsregionen",
+            "happyCustomers": "Zufriedene Kunden",
+            "yearsExperience": "Jahre Erfahrung"
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen",
+            "items": [
+                {
+                    "question": "Worauf sollten wir bei der Anmietung einer Villa achten?",
+                    "answer": "Bei der Anmietung einer Villa sollten Sie vor allem auf grundlegende Elemente wie Lage, Kapazität, Preis und Ausstattung achten. Wir empfehlen Ihnen auch, die früheren Gästebewertungen, Stornierungsbedingungen und zusätzlichen Dienstleistungen der Villa zu überprüfen."
+                },
+                {
+                    "question": "Wie funktioniert der Reservierungsprozess?",
+                    "answer": "Um eine Reservierung vorzunehmen, können Sie geeignete Villen auflisten, indem Sie das Datum und die Anzahl der Personen von unserer Website auswählen. Nachdem Sie die Villa ausgewählt haben, die Ihnen gefällt, und die Zahlungsverfahren abgeschlossen haben, wird Ihnen Ihre Reservierungsbestätigung per E-Mail zugesandt."
+                },
+                {
+                    "question": "Wie ist Ihre Stornierungsrichtlinie?",
+                    "answer": "Unsere Stornierungsrichtlinie variiert je nach der verbleibenden Zeit bis zu Ihrem Reservierungsdatum. Generell werden für Stornierungen, die bis zu 30 Tage vor dem Check-in-Datum erfolgen, vollständige Rückerstattungen gewährt."
+                },
+                {
+                    "question": "Bieten Sie zusätzliche Dienstleistungen an?",
+                    "answer": "Ja, wir bieten zusätzliche Dienstleistungen wie Autovermietung, Privatkoch, Flughafentransfer und Bootstouren für Villa-Vermietungen an. Sie können diese Dienstleistungen während oder nach Ihrer Reservierung anfordern."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "metadata": {
+            "title": "Kontakt Villa Vermietung | Die beste Villa-Vermietungsplattform der Türkei",
+            "description": "Kontaktieren Sie uns über unsere Villa-Vermietungsplattform. Wir sind hier, um Ihre Fragen zu beantworten und Ihnen zu helfen."
+        },
+        "pageTitle": "Kontaktieren Sie uns",
+        "pageDescription": "Haben Sie Fragen zu Ihrem Villa-Mietprozess? Schreiben Sie uns, und wir werden uns so schnell wie möglich bei Ihnen melden.",
+        "contactForm": {
+            "title": "Kontaktformular",
+            "description": "Sie können uns erreichen, indem Sie das untenstehende Formular ausfüllen.",
+            "nameLabel": "Ihr vollständiger Name",
+            "namePlaceholder": "Geben Sie Ihren Vor- und Nachnamen ein",
+            "emailLabel": "Ihre E-Mail-Adresse",
+            "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+            "phoneLabel": "Ihre Telefonnummer",
+            "phonePlaceholder": "+90 5XX XXX XX XX",
+            "subjectLabel": "Betreff",
+            "subjectPlaceholder": "Geben Sie Ihren Kontaktbetreff ein",
+            "messageLabel": "Ihre Nachricht",
+            "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier...",
+            "submitButton": "Nachricht senden"
+        },
+        "contactInfo": {
+            "title": "Unsere Kontaktinformationen",
+            "description": "Sie können uns über die folgenden Kanäle erreichen.",
+            "addressTitle": "Adresse",
+            "address": "Beispielviertel, Villa-Vermietungsstraße Nr:123, Bodrum/Mugla",
+            "phoneTitle": "Telefon",
+            "phone": "+90 252 123 45 67",
+            "emailTitle": "E-Mail",
+            "email": "info@villavermietung.com.tr",
+            "workingHoursTitle": "Öffnungszeiten",
+            "workingHours": "Montag - Samstag: 09:00 - 18:00"
+        },
+        "mapTitle": "Standort des Villa-Vermietungshauptbüros",
+        "faq": {
+            "title": "Häufig gestellte Fragen",
+            "items": [
+                {
+                    "id": "reservation-cancellation",
+                    "question": "Wie weit im Voraus muss ich eine Reservierungsstornierung mitteilen?",
+                    "answer": "Wenn Sie Ihre Reservierung mindestens 7 Tage vor Ihrem Aufenthaltsdatum stornieren, wird Ihre Zahlung vollständig erstattet. Bei Stornierungen zwischen 3-7 Tagen wird eine Erstattung von 50% gewährt, während bei Stornierungen weniger als 3 Tage vorher keine Erstattung erfolgt."
+                },
+                {
+                    "id": "deposit-payment",
+                    "question": "Muss ich während des Villa-Mietprozesses eine Kaution zahlen?",
+                    "answer": "Ja, bei der Anmietung einer Villa ist eine Sicherheitskaution erforderlich. Dieser Betrag kann je nach Wert und Lage der Villa variieren. Nach Abschluss Ihres Check-out-Prozesses und Inspektion der Villa wird der Kautionsbetrag an Sie zurückerstattet, wenn keine Schäden vorliegen."
+                },
+                {
+                    "id": "pets-policy",
+                    "question": "Kann ich mein Haustier mit in die Villa bringen?",
+                    "answer": "Unsere Haustierrichtlinie variiert von Villa zu Villa. Villen, die Haustiere akzeptieren, sind in den Filteroptionen angegeben. Wir empfehlen, die Haustierrichtlinie der von Ihnen ausgewählten Villa vor der Reservierung zu überprüfen."
+                }
+            ]
+        }
+    },
+    "privacy": {
+        "metadata": {
+            "title": "Datenschutzrichtlinie - Villa Vermietung",
+            "description": "Datenschutzrichtlinie und Informationen zum Schutz personenbezogener Daten auf unserer Villa-Vermietungsplattform."
+        },
+        "pageTitle": "Datenschutzrichtlinie",
+        "pageDescription": "Die Sicherheit und der Schutz Ihrer persönlichen Daten sind uns wichtig. Auf dieser Seite erfahren Sie, wie wir Informationen über Sie sammeln und verwenden.",
+        "breadcrumb": {
+            "home": "Startseite",
+            "privacy": "Datenschutzrichtlinie"
+        },
+        "sections": [
+            {
+                "id": "introduction",
+                "title": "Einführung",
+                "content": "Diese Datenschutzrichtlinie gilt für alle Benutzer, die www.innelegance.com besuchen und nutzen, und wird im Voraus akzeptiert. Nachfolgend haben wir die Daten erwähnt, die Besucher, die Inn Elegance nutzen, uns direkt und/oder indirekt zur Verfügung stellen. Diese Daten werden innerhalb der Umstände verwendet, die gemäß der Miet- und Nutzungsvereinbarung, den Datenschutzrichtlinien angemessen sind; und werden außerhalb dieser angemessenen Umstände nicht verwendet."
+            },
+            {
+                "id": "data-collection",
+                "title": "Daten, die uns direkt zur Verfügung gestellt werden",
+                "content": "Telefon, E-Mail, Name-Nachname und andere angeforderte Formularinformationen, die Sie uns über das Reservierungsformular, Kontaktformular und/oder andere Formulare zur Verfügung gestellt haben, werden von unserem Unternehmen gespeichert. Diese Daten werden zu kommerziellen Zwecken nicht mit realen/juristischen Dritten und/oder Institutionen/Unternehmen geteilt. Die Daten, die Sie derzeit mit uns teilen, werden verwendet, um Ihnen Kampagnen, Entwicklungen und Updates unseres Unternehmens zu präsentieren. Nur über Inn Elegance und Inn Elegance-Unterprojekte können Ihnen Informationsrückmeldungen über die von Ihnen angegebenen/spezifizierten Kommunikationskanäle bereitgestellt werden."
+            },
+            {
+                "id": "cookies",
+                "title": "Daten, die indirekt von Ihnen erhalten werden",
+                "content": "IP-Informationen, Standortdaten, Cookies und andere im Hintergrund gesammelte Daten, um Ihnen ein besseres Erlebnis zu bieten, sind nur für die Inn Elegance-Website spezifisch. Diese Daten werden niemals zu kommerziellen Zwecken verkauft oder geteilt, außer unter angemessenen Umständen. Auf jedem Computer können Sie Ihre Cookie-Freigabeeinstellungen über Ihren aktuellen Webbrowser vornehmen. In Standardbrowsereinstellungen ist die Cookie-Freigabe im Allgemeinen aktiviert, und unser Unternehmen verwendet nur solche Daten. Externe Eingriffe oder unbefugte Verarbeitung zur Datenerfassung sind niemals in Frage."
+            },
+            {
+                "id": "user-rights",
+                "title": "Benutzerrechte",
+                "content": "Benutzer, die ihre aktuellen Informationen ändern und/oder notwendige Berechtigungen bezüglich ihrer Verwendung durch Kontaktaufnahme mit Inn Elegance entfernen möchten, sollten die Adresse info@innelegance.com verwenden. Auf der Grundlage von Anfragen, die über diese Adresse gestellt werden, wird es möglich sein, die Daten vollständig aus dem System zu löschen und/oder ihre Verwendung für Inn Elegance vollständig zu stoppen. Bei solchen Anfragen ist die Gegenpartei/der Antragsteller für kundenorientierte/benutzerorientierte Unterbrechungen, Störungen verantwortlich, die aufgrund des Datenflusses entstehen können; Inn Elegance kann nicht für Störungen verantwortlich gemacht werden, die aufgrund von Datenmangel entstehen können."
+            },
+            {
+                "id": "data-sharing",
+                "title": "Reservierungs- und Identitätsvorlagen",
+                "content": "Unser Unternehmen ist verpflichtet, IDENTITÄTSDATENBENACHRICHTIGUNG an die entsprechenden Sicherheitskräfte/Strafverfolgungsbehörden für jeden seiner Kunden zu machen, der in Villen übernachten wird, wie es die gesetzlich festgelegten Regeln erfordern. Daher wird davon ausgegangen, dass alle Benutzer/Kunden, die Reservierungen von unserem Unternehmen vornehmen, akzeptiert haben, dass sie ihre Identitäten für diese Datenbenachrichtigung angeben werden. Die angegebenen Identitätsdaten werden nur den entsprechenden Sicherheitskräften/Strafverfolgungsbehörden vorgelegt. Abgesehen von der rechtlichen Verantwortung; KEINE IDENTITÄTSDATEN/-INFORMATIONEN KÖNNEN entweder als Unternehmen oder kommerziell VERWENDET WERDEN!"
+            }
+        ],
+        "companyInfo": {
+            "title": "Unternehmensinformationen",
+            "name": "Inn Elegance LLC",
+            "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+            "website": "www.innelegance.com",
+            "owner": "Orhan Yavuz",
+            "email": "info@innelegance.com",
+            "phone": "+90 531 621 61 00",
+            "labels": {
+                "company": "Unternehmen",
+                "address": "Adresse",
+                "website": "Webseite",
+                "owner": "Inhaber",
+                "email": "E-Mail",
+                "phone": "Telefon"
+            }
+        },
+        "lastUpdate": "Diese Datenschutzrichtlinie wurde zuletzt im Juni 2023 aktualisiert.",
+        "contactCTA": {
+            "text": "Wenn Sie Fragen zu unserer Datenschutzrichtlinie haben, kontaktieren Sie uns bitte.",
+            "button": "Kontaktieren Sie uns"
+        }
+    },
+    "faq": {
+        "metadata": {
+            "title": "Häufig gestellte Fragen - Villenvermietung",
+            "description": "Finden Sie Antworten auf alle Ihre Fragen zur Villenvermietung."
+        },
+        "pageTitle": "Häufig gestellte Fragen",
+        "heroTitle": "Häufig gestellte Fragen",
+        "heroDescription": "Schauen Sie sich unseren umfassenden FAQ-Leitfaden für alle Ihre Fragen zum Villenvermietungsprozess an. Hier finden Sie Antworten auf alle Ihre Fragen von der Reservierung bis zum Auschecken.",
+        "searchPlaceholder": "Suchen Sie Ihre Frage...",
+        "allQuestions": "Alle Fragen",
+        "generalQuestions": "Allgemeine Fragen",
+        "noResultsInCategory": "Keine Fragen in dieser Kategorie gefunden.",
+        "noResultsInCategoryWithTerm": "Keine Ergebnisse in dieser Kategorie für \"{searchTerm}\" gefunden.",
+        "noCategoryQuestions": "In dieser Kategorie gibt es noch keine Fragen.",
+        "noResultsFound": "Keine Ergebnisse für \"{searchTerm}\" gefunden. Bitte versuchen Sie einen anderen Suchbegriff.",
+        "searchHint": {
+            "title": "Haben Sie nicht gefunden, wonach Sie suchen?",
+            "description": "Wenn Sie keine Antwort auf Ihre Frage gefunden haben, kontaktieren Sie uns bitte. Wir helfen Ihnen gerne weiter.",
+            "contactButton": "Kontaktieren Sie uns"
+        },
+        "sections": [
+            {
+                "id": "reservations",
+                "title": "Reservierungsprozess",
+                "faqs": [
+                    {
+                        "question": "Wie kann ich eine Reservierung vornehmen?",
+                        "answer": "Sie können eine Reservierung vornehmen, indem Sie auf unserer Website Villen in der gewünschten Region filtern, geeignete Termine auswählen und Ihre Reservierung online abschließen. Alternativ können Sie auch telefonisch über unseren Kundenservice eine Reservierung vornehmen. Sie müssen eine Anzahlung von 30% leisten, um Ihren Reservierungsprozess abzuschließen."
+                    },
+                    {
+                        "question": "Wie lange dauert es, eine Reservierungsbestätigung zu erhalten?",
+                        "answer": "Bei einer Online-Reservierung erhalten Sie sofort eine automatische Bestätigung. Bei Reservierungen über den Kundenservice erhalten Sie in der Regel innerhalb von 24 Stunden eine Bestätigung. In der Hochsaison kann sich dies auf bis zu 48 Stunden verlängern."
+                    },
+                    {
+                        "question": "Wie kann ich meine Reservierung ändern?",
+                        "answer": "Sie müssen uns mindestens 30 Tage im Voraus informieren, um Ihre Reservierung zu ändern. Datumsänderungen können je nach Verfügbarkeit vorgenommen werden. Sie können Ihre Änderungsanfrage einreichen, indem Sie sich an den Kundenservice wenden."
+                    },
+                    {
+                        "question": "Wie lautet die Stornierungsrichtlinie?",
+                        "answer": "Unsere Stornierungsrichtlinie ist wie folgt: Volle Rückerstattung bei Stornierungen bis zu 60 Tage vor dem Anreisedatum. 50% Rückerstattung bei Stornierungen 30-60 Tage vor Anreise. Keine Rückerstattung bei Stornierungen weniger als 30 Tage vor Anreise. Sie müssen Ihre Stornierungsanfrage schriftlich einreichen."
+                    },
+                    {
+                        "question": "Was ist die Mindestaufenthaltsdauer?",
+                        "answer": "Obwohl sie je nach Villa und Saison variiert, beträgt unsere allgemeine Mindestaufenthaltsdauer 3 Nächte. Während der Hochsaison (Juni-August) kann dies auf 7 Nächte erhöht werden. Die Mindestaufenthaltsdauer ist auf jeder Villenseite angegeben."
+                    }
+                ]
+            },
+            {
+                "id": "payments",
+                "title": "Zahlung und Preisgestaltung",
+                "faqs": [
+                    {
+                        "question": "Welche Zahlungsmethoden akzeptieren Sie?",
+                        "answer": "Wir akzeptieren Zahlungen per Banküberweisung/EFT, Kreditkarte (Visa, MasterCard, American Express) und in einigen Fällen internationale Geldüberweisungen (SWIFT). Zahlungsdetails finden Sie auf unserer Seite 'Zahlungsmethoden für Villenvermietung'."
+                    },
+                    {
+                        "question": "Was ist im Preis enthalten?",
+                        "answer": "Der angegebene Preis umfasst in der Regel Villenmiete, Poolpflege, Gartenpflege, Wi-Fi, normalen Wasser- und Stromverbrauch. Zusätzliche Dienstleistungen (Transfer, Privatkoch, tägliche Reinigung usw.) und Flughafentransfers unterliegen zusätzlichen Gebühren. Die enthaltenen Dienstleistungen sind auf der Detailseite jeder Villa aufgeführt."
+                    },
+                    {
+                        "question": "Haben Sie eine Kautionsanforderung?",
+                        "answer": "Ja, für alle Villenvermietungen ist eine Sicherheitskaution erforderlich. Dieser Betrag beträgt in der Regel etwa 20-30% des Villenpreises und wird innerhalb von 7 Werktagen nach dem Auschecken zurückerstattet, wenn keine Schäden vorliegen. Die Kaution kann in bar oder per Kreditkarte hinterlegt werden."
+                    },
+                    {
+                        "question": "Wann sollte ich den Restbetrag bezahlen?",
+                        "answer": "Sie leisten eine Anzahlung von 30% des Gesamtbetrags während der Reservierung. Der verbleibende Restbetrag von 70% muss spätestens 30 Tage vor dem Anreisedatum bezahlt werden. Bei Reservierungen, die nach diesem Datum vorgenommen werden, ist der volle Betrag im Voraus erforderlich."
+                    },
+                    {
+                        "question": "Kann ich in verschiedenen Währungen bezahlen?",
+                        "answer": "Ja, wir akzeptieren Zahlungen in TRY (Türkische Lira), USD (US-Dollar), EUR (Euro) und GBP (Britisches Pfund). Sie können Ihre Zahlungen in einer dieser vier Währungen leisten."
+                    }
+                ]
+            },
+            {
+                "id": "amenities",
+                "title": "Villenausstattung und Dienstleistungen",
+                "faqs": [
+                    {
+                        "question": "Ist Poolheizung in den Villen verfügbar?",
+                        "answer": "Einige unserer Villen verfügen über Poolheizung. Diese Funktion ist auf der Detailseite der Villa angegeben. Poolheizung ist in der Regel mit einer zusätzlichen Gebühr verbunden und muss im Voraus reserviert werden. Der Poolheizungsdienst kann je nach Saison eingeschränkt sein."
+                    },
+                    {
+                        "question": "Stellen Sie Ausrüstung für Babys und Kinder bereit?",
+                        "answer": "Ja, auf vorherige Anfrage können wir Ausrüstungen wie Babybetten, Hochstühle und Kinderwagen bereitstellen. Sie müssen uns im Voraus über diese Dienstleistungen informieren, und in einigen Fällen kann eine zusätzliche Gebühr anfallen."
+                    },
+                    {
+                        "question": "Wie werden die Villen gereinigt?",
+                        "answer": "Alle unsere Villen werden vor dem Check-in der Gäste gründlich gereinigt. Bei Aufenthalten von 7 Nächten oder mehr wird einmal pro Woche kostenlos eine Zwischenreinigung und ein Wäschewechsel angeboten. Der tägliche Reinigungsservice ist gegen Aufpreis auf Anfrage erhältlich."
+                    },
+                    {
+                        "question": "Ist Internetverbindung verfügbar?",
+                        "answer": "Ja, in allen unseren Villen ist eine drahtlose Internetverbindung verfügbar. Die Internetgeschwindigkeit kann je nach Region variieren. In einigen ländlichen Gebieten kann die Internetverbindung eingeschränkt sein, aber sie ist für grundlegende Bedürfnisse ausreichend."
+                    },
+                    {
+                        "question": "Werden Handtücher und Bettwäsche bereitgestellt?",
+                        "answer": "Ja, saubere Bettwäsche, Badetücher und Handtücher werden in allen unseren Villen kostenlos bereitgestellt. Pool-/Strandtücher sind auch in den meisten unserer Villen verfügbar. Bei Aufenthalten von 7 Nächten oder mehr werden Handtücher und Bettwäsche einmal pro Woche gewechselt."
+                    }
+                ]
+            },
+            {
+                "id": "checkin-checkout",
+                "title": "Check-in und Check-out Verfahren",
+                "faqs": [
+                    {
+                        "question": "Wie sind die Check-in- und Check-out-Zeiten?",
+                        "answer": "Unsere Standard-Check-in-Zeit ist 16:00 Uhr und unsere Check-out-Zeit ist 10:00 Uhr. Frühes Check-in und spätes Check-out werden je nach Verfügbarkeit bewertet und können mit einer zusätzlichen Gebühr verbunden sein. Wir werden versuchen, Ihren speziellen Anfragen nachzukommen, wenn Sie uns im Voraus informieren."
+                    },
+                    {
+                        "question": "Wo kann ich den Villenschlüssel abholen?",
+                        "answer": "Sie erhalten den Villenschlüssel von unserem Vertreter am Villenstandort. Vor Ihrer Check-in-Zeit werden Ihnen die Villenadresse und die Kontaktinformationen unseres Vertreters zugesandt. Unser Vertreter wird Sie in der Villa begrüßen, den Schlüssel übergeben und Informationen über die Villa bereitstellen."
+                    },
+                    {
+                        "question": "Wir werden spät ankommen, wird das ein Problem sein?",
+                        "answer": "Sie müssen uns im Voraus über späte Ankünfte nach 22:00 Uhr informieren. Für Ankünfte zwischen 22:00-00:00 Uhr wird eine späte Check-in-Gebühr von 50 EUR und für Ankünfte nach 00:00 Uhr 100 EUR erhoben. Bitte informieren Sie uns in diesem Fall mindestens 24 Stunden im Voraus."
+                    },
+                    {
+                        "question": "Können wir am Check-out-Tag unsere Sachen in der Villa lassen?",
+                        "answer": "Es ist normalerweise nicht möglich, Ihre Sachen nach der Check-out-Zeit von 10:00 Uhr in der Villa zu lassen. In besonderen Fällen können wir jedoch je nach Verfügbarkeit der Villa behilflich sein. Bitte informieren Sie uns im Voraus, wenn Sie eine solche Anfrage haben."
+                    },
+                    {
+                        "question": "Wie wird der Check-out-Prozess durchgeführt?",
+                        "answer": "Am Check-out-Tag wird unser Vertreter zur festgelegten Zeit in die Villa kommen, den Zustand der Villa überprüfen und die Schlüssel einsammeln. Wenn kein Schaden oder zusätzlicher Reinigungsbedarf vorliegt, wird der Prozess zur Rückerstattung der Kaution eingeleitet. Bitte stellen Sie sicher, dass Sie alle Ihre Zahlungen vollständig geleistet haben."
+                    }
+                ]
+            }
+        ],
+        "generalFaqs": [
+            {
+                "question": "Kann ich ein Haustier mitbringen?",
+                "answer": "Einige unserer Villen sind als haustierfreundlich gekennzeichnet. Sie können mit Ihrem Haustier in Villen übernachten, die auf der Villendetailseite als 'Haustiere erlaubt' gekennzeichnet sind, vorausgesetzt, Sie informieren uns im Voraus und zahlen eine zusätzliche Gebühr. Für die allgemeine Reinigung und mögliche Schäden kann eine zusätzliche Kaution erforderlich sein."
+            },
+            {
+                "question": "Was sollten wir tun, wenn wir während unseres Aufenthalts ein Problem haben?",
+                "answer": "Eine Notfalltelefonnummer, die Sie während Ihres Aufenthalts rund um die Uhr erreichen können, wird Ihnen zur Verfügung gestellt. Sie können uns unter dieser Nummer bei Problemen, Pannen oder Bedürfnissen kontaktieren. Unser technisches Team wird so schnell wie möglich reagieren."
+            },
+            {
+                "question": "Können Sie Flughafentransfers organisieren?",
+                "answer": "Ja, wir bieten Flughafentransferservices gegen eine zusätzliche Gebühr an. Wir haben Optionen für einfache oder Hin- und Rückfahrt. Sie können diesen Service während der Reservierung oder später anfordern. Die Preise variieren je nach Entfernung, Personenzahl und Fahrzeugtyp."
+            },
+            {
+                "question": "Ist ein Privatkoch und Essensservice möglich?",
+                "answer": "Ja, wir bieten in vielen unserer Villen Privatkoch- und Essensservice an. Wir haben eine breite Palette von Menüoptionen von lokaler Küche bis zu internationalen Geschmacksrichtungen. Dieser Service erfordert eine Reservierung mindestens 48 Stunden im Voraus. Die Preise variieren je nach Personenzahl und Menüauswahl."
+            },
+            {
+                "question": "Welche Arten von Aktivitäten können wir in der Umgebung unternehmen?",
+                "answer": "In unseren Villenregionen gibt es viele Aktivitäten wie Bootstouren, Kulturtouren, Naturwanderungen, Tauchen und Rafting. Wir bieten auch geführte Touren und Autovermietungsservices an. Sie können während Ihres Aufenthalts von unserem Vertreter Informationen über regionsspezifische Aktivitäten erhalten."
+            },
+            {
+                "question": "Können wir die maximale Personenzahl für die Villa überschreiten?",
+                "answer": "Jede Villa hat eine festgelegte maximale Kapazität, und diese Zahl kann nicht überschritten werden. Die Kapazität wird basierend auf der Anzahl der Betten und der Größe der Villa bestimmt. In einigen Fällen können Babys unter 2 Jahren von der Kapazität ausgeschlossen sein, aber Sie müssen uns im Voraus informieren. Wenn ein Kapazitätsüberschuss festgestellt wird, kann eine zusätzliche Gebühr erhoben oder die Unterkunft storniert werden."
+            },
+            {
+                "question": "Wie wird der Villenvermietungsprozess durchgeführt?",
+                "answer": "Sie können geeignete Villen auflisten, indem Sie Standort und Datum über unsere Website auswählen. Nachdem Sie die Villa ausgewählt haben, die Ihnen gefällt, können Sie online eine Reservierung vornehmen oder unsere Kundenvertreter für Unterstützung kontaktieren. Für die Reservierungsbestätigung ist eine Anzahlung von 30% erforderlich."
+            },
+            {
+                "question": "Wie lautet Ihre Reservierungsstornierungsrichtlinie?",
+                "answer": "Bei Stornierungen bis zu 60 Tage vor dem Check-in-Datum wird Ihre gesamte Zahlung zurückerstattet. Eine 50%ige Rückerstattung wird für Stornierungen 30-60 Tage vor dem Check-in vorgenommen. Für Stornierungen weniger als 30 Tage vor dem Check-in werden keine Rückerstattungen vorgenommen. Bei Reisebeschränkungen aufgrund von höherer Gewalt wie einer Pandemie können jedoch besondere Bedingungen gelten."
+            }
+        ]
+    },
+    "ownerAgreement": {
+        "metadata": {
+            "title": "Gastgebervereinbarung für Villenvermietung",
+            "description": "Plattformnutzungsbedingungen und rechtliche Vorschriften für Villenbesitzer."
+        },
+        "heroSection": {
+            "title": "Gastgebervereinbarung",
+            "description": "Diese Vereinbarung regelt die Teilnahme von Eigentümern an Villenvermietungsdiensten über die Inn Elegance-Plattform und bestimmt die Rechte und Pflichten zwischen den Parteien."
+        },
+        "companyInfo": {
+            "title": "Unternehmensinformationen",
+            "company": "Unternehmen",
+            "address": "Adresse",
+            "website": "Webseite",
+            "owner": "Eigentümer",
+            "email": "E-Mail",
+            "phone": "Telefon"
+        },
+        "legalTerms": {
+            "lastUpdated": "Letzte Aktualisierung",
+            "acceptanceNote": "Diese Vereinbarung definiert die rechtliche Beziehung zwischen dem Villenbesitzer und Inn Elegance. Die Auflistung einer Immobilie auf der Plattform bedeutet, dass Sie die Bedingungen dieser Vereinbarung akzeptieren.",
+            "contactInfo": "Bitte kontaktieren Sie uns, um eine Villa zu unserer Plattform hinzuzufügen oder bei Fragen zur Vereinbarung."
+        },
+        "buttons": {
+            "contact": "Kontakt",
+            "addVilla": "Villa hinzufügen"
+        },
+        "breadcrumb": {
+            "home": "Startseite",
+            "ownerAgreement": "Gastgebervereinbarung"
+        },
+        "sections": {
+            "introduction": {
+                "title": "Einführung",
+                "content": "Diese Vereinbarung enthält die Bedingungen, die das Verhältnis zwischen dem Villenbesitzer ('Gastgeber') und der INN ELEGANCE LIMITED LIABILITY COMPANY ('Plattform') regeln. Diese Vereinbarung legt den rechtlichen Rahmen für den Gastgeber fest, Vermietungsdienstleistungen über die Plattform anzubieten. Durch das Hinzufügen einer Immobilie zu unserer Plattform oder die Verwaltung Ihrer bestehenden Immobilie gelten die Bedingungen dieser Vereinbarung als akzeptiert."
+            },
+            "definitions": {
+                "title": "Definitionen",
+                "content": "Plattform: Bezieht sich auf die von INN ELEGANCE bereitgestellten Villenvermietungs- und Reservierungsdienste. Gastgeber: Bezieht sich auf die natürliche oder juristische Person, die einen Vermietungsdienst anbietet, indem sie eine oder mehrere Immobilien auf der Plattform auflistet. Gast: Bezieht sich auf den Kunden, der über die Plattform eine Immobilie mietet. Immobilie/Villa: Bezieht sich auf die vom Gastgeber zur Vermietung angebotene Immobilie. Reservierung: Bezieht sich auf die Anmietung einer bestimmten Immobilie durch den Gast für bestimmte Termine. Provision: Bezieht sich auf die Gebühr, die von der Plattform vom Gastgeber für die erbrachten Dienstleistungen erhoben wird."
+            },
+            "commission_terms": {
+                "title": "Arbeitsbedingungen 2024",
+                "content": "Ab 2024 wird die Provisionsrate auf 20% und die Anzahlungshöhe auf 35% festgelegt (Die Anzahlungshöhe kann entsprechend dem Wunsch des Gastgebers bewertet werden). Gemäß unseren Stornierungsbedingungen werden von unseren Gästen in Fällen höherer Gewalt Dokumente angefordert. Als Ergebnis der Dokumentenprüfung wird die Anzahlung des Gastes ausgesetzt oder der Anzahlungsbetrag an den Gast zurückerstattet. Bei ungültigen (willkürlichen) Stornierungen des Gastes verfällt die Anzahlung, und bei Stornierungsanfragen mit weniger als 30 Tagen bis zum Eintritt wird auch die restliche Zahlung zur Einziehung vom Gast an die Rechtsabteilung weitergeleitet. Die von INN ELEGANCE erhobene Servicegebühr wird außer in Fällen höherer Gewalt nicht erstattet. Die Servicegebühr verbleibt bei der Agentur als Gegenleistung für den von ihr erbrachten Service."
+            },
+            "payment_terms": {
+                "title": "Zahlungsbedingungen",
+                "content": "Unabhängig davon, ob für die stornierten Termine eine neue Reservierung vorgenommen wird oder nicht, wird die Anzahlung der alten Reservierung nicht an den Gastgeber zurückerstattet. Die verbleibenden Zahlungen ohne Provision für Gastgeber, die eine Anzahlung von 35% verlangen, werden innerhalb von 2 Werktagen nach dem Check-in des Gastes bezahlt. Alle Zahlungen erfolgen über die Plattform, und die Plattform erhebt die festgelegte Provisionsrate nach jeder erfolgreichen Reservierungstransaktion. Die Provisionsraten können je nach Lage, Eigenschaften und Mietpreis der Immobilie variieren."
+            },
+            "property_requirements": {
+                "title": "Immobilienanforderungen",
+                "content": "Alle zur Plattform hinzugefügten Villen müssen den lokalen Vorschriften entsprechen und legal vermietbar sein. Der Gastgeber ist verpflichtet, genaue und aktuelle Informationen, echte Fotos und alle Merkmale der Immobilien vollständig bereitzustellen. Die Immobilien müssen gesunde Lebensbedingungen bieten, sauber und sicher sein sowie alle in ihrer Auflistung angegebenen Annehmlichkeiten aufweisen. Für jede Immobilie muss ein Leitfaden mit Notfallverfahren, wichtigen Telefonnummern und Informationen zur Nutzung der Immobilie erstellt werden."
+            },
+            "owner_responsibilities": {
+                "title": "Gastgeberverantwortlichkeiten",
+                "content": "Die Begrüßung der Gäste gehört zum Gastgeber. Der Gastgeber ist für die Reinigung, Wartung und Reparatur seiner Immobilie verantwortlich. Er muss sicherstellen, dass die Immobilie vor jedem Gast sauber und gut gepflegt ist. Alle in der Immobilienliste angegebenen Annehmlichkeiten müssen in funktionsfähigem Zustand und zur Nutzung verfügbar sein. Der Gastgeber oder Betreuer kümmert sich um widrige Situationen, die der Gast in der Villa erleben könnte. Alle Probleme, die vom Haus ausgehen, liegen in der Verantwortung des Gastgebers. Bei Problemen, die bei der Nutzung einer der Eigenschaften der Villa auftreten, die auf der INN ELEGANCE-Website aufgeführt sind und die zuvor vom Gastgeber gemeldet und genehmigt wurden (einschließlich Reinigung, Fehlfunktion oder Situationen, die den Gast daran hindern, die Villa wie versprochen reibungslos zu nutzen), wird der an den Gast zu erstattende Betrag vom Gastgeber übernommen."
+            },
+            "liability": {
+                "title": "Haftung und Konflikte",
+                "content": "Bei Reservierungskonflikten, die auf einen Fehler des Villenbesitzers oder seines Vertreters zurückzuführen sind, wird, wenn der Gast in eine andere Villa verlegt wird, der Unterschied zwischen ihnen vom Villenbesitzer übernommen. Der Gastgeber trägt alle rechtlichen Verantwortlichkeiten bezüglich seiner Immobilie und ist direkt verantwortlich für jeden Unfall, Schaden oder Verletzung, die auf der Immobilie auftreten können. Die Plattform ist ein Vermittler in der Beziehung zwischen dem Gastgeber und dem Gast und trägt keine direkte Verantwortung im Zusammenhang mit der Immobilie. Der Gastgeber muss für seine Immobilie eine angemessene Hausbesitzer- und Haftpflichtversicherung abschließen."
+            },
+            "cancellation_policy": {
+                "title": "Stornierungsbedingungen",
+                "content": "INN ELEGANCE erstattet im Falle von Stornierungen keine Servicegebühr. Für Villenbesitzer, die Rechte aus der Anzahlung geltend machen, wird der vom Gast genommene Reservierungsanzahlungsbetrag auf 40% festgelegt. Im Falle einer Stornierung verbleiben 20% der Anzahlung bei INN ELEGANCE und die anderen 20% (Kautionsdifferenz) werden an den Villenbesitzer übertragen. Wenn die stornierten Termine verkauft werden, verbleibt die 40%ige Anzahlung bei INN ELEGANCE. Villenbesitzer, die während der Reservierungsphase eine 20%ige Anzahlung verlangen, können im Falle einer Stornierung keine Rechte aus der Anzahlung geltend machen."
+            },
+            "payment_campaigns": {
+                "title": "Zahlungskampagnen",
+                "content": "Unsere Villenbesitzer, die an der 12-Monats-Ratenzahlungskampagne 2024 teilnehmen möchten, werden in diese Kampagne aufgenommen, wenn sie akzeptieren, die gesamte Zahlung von der Bank zu erhalten. Die Plattform kann von Zeit zu Zeit verschiedene Zahlungskampagnen organisieren. Die Kampagnenbedingungen werden im Voraus bekannt gegeben und die Teilnahme an der Kampagne ist völlig freiwillig."
+            },
+            "legal_terms": {
+                "title": "Rechtliche Bestimmungen",
+                "content": "Ich akzeptiere und verpflichte mich, dass die oben genannte Villa/Villen mir gehören oder dass ich der Betreiber bin, und ich akzeptiere und verpflichte mich zu den oben geschriebenen Vertragspunkten. Diese Vereinbarung unterliegt den Gesetzen der Republik Türkei. Im Falle eines Streits aus der Vereinbarung sind die Gerichte der Türkei zuständig. Die Plattform hat das Recht, diese Vereinbarung einseitig zu ändern, vorausgesetzt, dass sie im Voraus benachrichtigt. Änderungen treten in Kraft, nachdem eine Benachrichtigung an den Gastgeber gesendet wurde. Der Gastgeber gilt als die neuen Bedingungen akzeptierend, wenn er die Plattform nach Bekanntgabe der Änderungen weiterhin nutzt. Wenn eine Klausel dieser Vereinbarung als ungültig angesehen wird, bleiben die anderen Klauseln gültig."
+            }
+        }
+    },
+    "cancellationTerms": {
+        "metadata": {
+            "title": "Stornierungsbedingungen für Villa-Vermietung",
+            "description": "Erfahren Sie mehr über die Stornierungsbedingungen und Erstattungsrichtlinien für unsere Villa-Vermietungsdienste."
+        },
+        "hero": {
+            "title": "Stornierungsbedingungen für Villa-Vermietung",
+            "description": "Auf dieser Seite finden Sie Stornierungsbedingungen und Erstattungsrichtlinien für die Villa-Vermietungsdienste von Inn Elegance. Bitte lesen Sie diese Bedingungen vor der Reservierung sorgfältig durch."
+        },
+        "breadcrumb": {
+            "home": "Startseite",
+            "cancellationTerms": "Stornierungsbedingungen"
+        },
+        "sectionTitle": "Stornierung und Rückerstattung",
+        "companyInfoTitle": "Firmeninformationen",
+        "companyInfoLabels": {
+            "company": "Unternehmen",
+            "address": "Adresse",
+            "website": "Webseite",
+            "owner": "Inhaber",
+            "email": "E-Mail",
+            "phone": "Telefon"
+        },
+        "faqTitle": "Häufig gestellte Fragen",
+        "disclaimerText": "Diese Stornierungsbedingungen und Erstattungsrichtlinien gelten für alle bei Inn Elegance LLC getätigten Reservierungen. Mit einer Reservierung gelten diese Bedingungen als akzeptiert.",
+        "disclaimerSubtext": "Bitte lesen Sie die Bedingungen vor der Reservierung sorgfältig durch.",
+        "moreInfoText": "Für weitere Informationen zu Stornierungsbedingungen und Erstattungen kontaktieren Sie uns bitte.",
+        "buttons": {
+            "contact": "Kontakt aufnehmen",
+            "viewVillas": "Villen anzeigen"
+        }
+    },
+    "gdprNotice": {
+        "metadata": {
+            "title": "Datenschutz - Inn Elegance",
+            "description": "Informationen zur Verarbeitung und zum Schutz personenbezogener Daten durch Inn Elegance LLC."
+        },
+        "pageTitle": "DATENSCHUTZRICHTLINIE UND KUNDENINFORMATIONSTEXT",
+        "pageDescription": "Dieser Text wurde von Inn Elegance LLC erstellt, um unsere Kunden über die Verarbeitung und den Schutz personenbezogener Daten zu informieren.",
+        "lastUpdated": "Zuletzt aktualisiert: 01.03.2024",
+        "breadcrumb": {
+            "home": "Startseite",
+            "gdprNotice": "Datenschutz"
+        },
+        "princplesSectionTitle": "Grundsätze des Datenschutzes",
+        "contactActionText": "Für weitere Informationen zu Ihren persönlichen Daten oder bei Fragen wenden Sie sich bitte an uns.",
+        "contactButton": "Kontakt aufnehmen",
+        "disclaimerText": "Dieser Text erläutert die Datenschutzrichtlinie und die rechtlichen Verpflichtungen von Inn Elegance LLC. Alle Besucher, die unsere Plattform nutzen, gelten als mit diesen Bedingungen einverstanden.",
+        "companyInfo": {
+            "title": "Unternehmensinformationen",
+            "name": "Inn Elegance LLC",
+            "address": "7901 4TH ST N STE 300, ST. PETERSBURG, FL. 33702, USA",
+            "website": "www.innelegance.com",
+            "owner": "Inn Elegance LLC Vorstand",
+            "email": "info@innelegance.com",
+            "phone": "+90 (531) 621-61-00",
+            "labels": {
+                "company": "Unternehmen",
+                "address": "Adresse",
+                "website": "Webseite",
+                "owner": "Leitung",
+                "email": "E-Mail",
+                "phone": "Telefon"
+            }
+        },
+        "sections": [
+            {
+                "id": "company-introduction",
+                "title": "Über Inn Elegance LLC",
+                "content": "Zunächst freuen wir uns, offiziell bekannt zu geben, dass die Marke Inn Elegance und unsere Website www.innelegance.com vollständig der Inn Elegance LLC gehören.\n\nInn Elegance LLC ist ein in Florida ansässiges Unternehmen, das eine Plattform für Luxusvillen, Apartments, Hotels und andere Unterkunftsmöglichkeiten anbietet. Inn Elegance hat das Ziel, unseren Gästen komfortable und besondere Urlaubserlebnisse zu bieten und strebt danach, in jeder Unterkunftseinheit eine unvergessliche Urlaubsmöglichkeit anzubieten.\n\nUnsere Plattform bietet Nutzern eine breite Palette von Unterkünften und ermöglicht ihnen, ihre Ferien einfach zu planen. Inn Elegance bietet mit seiner benutzerfreundlichen Oberfläche und zuverlässigen Mieterfahrung seinen Gästen ideale Optionen für einen luxuriösen und komfortablen Urlaub. Urlauber bevorzugen unsere Plattform, um Komfort, Ästhetik und ein einzigartiges Erlebnis miteinander zu verbinden."
+            },
+            {
+                "id": "policy-purpose",
+                "title": "1. Datenschutz- und Verarbeitungsrichtlinie",
+                "content": "Der Schutz personenbezogener Daten ist eine der wichtigsten Prioritäten von Inn Elegance LLC. Diese Richtlinie wird zum Schutz der personenbezogenen Daten von Mitarbeiterkandidaten, Unternehmenspartnern, Firmenvertretern, Mitarbeitern, Partnern und Vertretern kooperierender Institutionen sowie Kunden und Besuchern als Dritte unseres Unternehmens verwaltet.\n\nIm Rahmen dieser Richtlinie werden administrative und technische Maßnahmen ergriffen, die für den Schutz personenbezogener Daten erforderlich sind, die im Rahmen der gesetzlichen Vorschriften verarbeitet werden."
+            },
+            {
+                "id": "basic-principles",
+                "title": "2. Grundprinzipien der verarbeiteten personenbezogenen Daten",
+                "content": "Als Inn Elegance LLC legen wir großen Wert auf den Schutz der personenbezogenen Daten unserer Kunden und Nutzer. Als Unternehmen, das im Bundesstaat Florida tätig ist, halten wir uns an verschiedene gesetzliche Vorschriften und bewährte Praktiken, um die Sicherheit personenbezogener Daten zu gewährleisten und Ihre Privatsphäre zu schützen.\n\n2.1. Florida Information Protection Act (FIPA)\nIn Florida ist der wichtigste rechtliche Rahmen für den Schutz personenbezogener Daten der Florida Information Protection Act (FIPA). Dieses Gesetz zielt darauf ab, Verstöße gegen die Datensicherheit zu verhindern und Benutzerinformationen sicher zu speichern.\n\n2.2. Florida's Data Breach Notification Law\nInn Elegance LLC hält sich vollständig an das Data Breach Notification Law von Florida. Dieses Gesetz erfordert im Falle einer Verletzung personenbezogener Daten eine Benachrichtigung der betroffenen Personen.\n\n2.3. Sozialversicherungsnummer-Schutzgesetz\nAls Teil unserer Verantwortung bezüglich der Datensicherheit hält sich Inn Elegance LLC an das Florida Social Security Number Protection Act.\n\n2.4. Andere relevante Gesetze und Vorschriften\nDarüber hinaus handelt Inn Elegance LLC auch in Übereinstimmung mit anderen nationalen und internationalen Datenschutzgesetzen wie dem California Consumer Privacy Act (CCPA) und der Datenschutz-Grundverordnung der Europäischen Union (DSGVO)."
+            },
+            {
+                "id": "principles-procedures",
+                "title": "3. Grundsätze und Verfahren zur Verarbeitung und zum Schutz personenbezogener Daten",
+                "content": "• Personenbezogene Daten werden gemäß dem Gesetz und den Regeln der Ehrlichkeit verarbeitet.\n• Personenbezogene Daten werden korrekt und aktuell gehalten.\n• Personenbezogene Daten werden für bestimmte, klare und legitime Zwecke verarbeitet.\n• Personenbezogene Daten werden in einer Weise verarbeitet, die für den Zweck, für den sie verarbeitet werden, relevant, begrenzt und verhältnismäßig ist.\n• Personenbezogene Daten werden für den in den relevanten Gesetzen vorgesehenen Zeitraum oder für den Zweck, für den sie verarbeitet werden, aufbewahrt.\n• Inhaber personenbezogener Daten werden informiert und aufgeklärt.\n• Es werden die notwendigen Systeme eingerichtet, damit die Inhaber personenbezogener Daten ihre Rechte ausüben können.\n• Für den Schutz personenbezogener Daten werden die notwendigen Maßnahmen getroffen.\n• Bei der Übermittlung personenbezogener Daten an Dritte werden die relevanten Gesetze und Vorschriften des Datenschutzausschusses eingehalten.\n• Der Verarbeitung und dem Schutz besonderer Kategorien personenbezogener Daten wird angemessene Sensibilität entgegengebracht."
+            },
+            {
+                "id": "privacy-terms",
+                "title": "4. Datenschutzbestimmungen",
+                "content": "www.innelegance.com wird persönliche Informationen nicht an Unternehmen oder Dritte weitergeben, außer wie in dieser Datenschutzrichtlinie und den Nutzungsbedingungen definiert. www.innelegance.com verkauft die persönlichen Daten von Besuchern, registrierten Nutzern und Partnern nicht an Dritte.\n\nDirekt an uns übermittelte Daten: Über das Reservierungsformular, das Kontaktformular und andere Formulare bereitgestellte Informationen werden nicht zu kommerziellen Zwecken an Dritte weitergegeben.\n\nIndirekt von Ihnen erhaltene Daten: IP-Informationen, Standortdaten, Cookies und andere Nutzungsdaten sind spezifisch für die Website www.innelegance.com und werden nicht für kommerzielle Zwecke verwendet."
+            },
+            {
+                "id": "reservation-identity",
+                "title": "5. Reservierungs- und Identitätseinreichungen",
+                "content": "Unser Unternehmen meldet personenbezogene Daten an die relevanten Sicherheitskräfte für jeden Kunden, der in den Villen übernachten wird, im Einklang mit den gesetzlichen Anforderungen. Daher deklarieren alle Nutzer, die Reservierungen vornehmen, ihre Identitäten für diese Datenmeldung. Die deklarierten Identitätsdaten werden nur den relevanten Sicherheitskräften vorgelegt."
+            },
+            {
+                "id": "accepted-terms",
+                "title": "6. Akzeptierte Bedingungen und Befugnis",
+                "content": "Kunden, die eine Unterkunft von Inn Elegance LLC buchen, gelten als mit den oben genannten Bedingungen einverstanden. Verhaltensweisen, die gegen diese Bedingungen verstoßen, bringen das Recht von Inn Elegance LLC mit sich, Reservierungen einseitig zu stornieren und keine Rückerstattungen vorzunehmen."
+            }
+        ]
     }
 }

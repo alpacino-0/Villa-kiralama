@@ -10,12 +10,32 @@ type ContactFormProps = {
   title?: string;
   description?: string;
   buttonText?: string;
+  nameLabel?: string;
+  namePlaceholder?: string;
+  emailLabel?: string;
+  emailPlaceholder?: string;
+  phoneLabel?: string;
+  phonePlaceholder?: string;
+  subjectLabel?: string;
+  subjectPlaceholder?: string;
+  messageLabel?: string;
+  messagePlaceholder?: string;
 };
 
 export default function ContactForm({
   title = "İletişim Formu",
   description = "Aşağıdaki formu doldurarak bize ulaşabilirsiniz. En kısa sürede talebinize yanıt vereceğiz.",
-  buttonText = "Mesajı Gönder"
+  buttonText = "Mesajı Gönder",
+  nameLabel = "Adınız Soyadınız",
+  namePlaceholder = "Adınız Soyadınız",
+  emailLabel = "E-posta Adresiniz",
+  emailPlaceholder = "ornek@mail.com",
+  phoneLabel = "Telefon Numaranız",
+  phonePlaceholder = "0500 000 00 00",
+  subjectLabel = "Konu",
+  subjectPlaceholder = "Mesajınızın konusu",
+  messageLabel = "Mesajınız",
+  messagePlaceholder = "Mesajınızı buraya yazabilirsiniz..."
 }: ContactFormProps) {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -34,39 +54,39 @@ export default function ContactForm({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm font-medium">
-                Adınız Soyadınız
+                {nameLabel}
               </label>
-              <Input id="name" placeholder="Adınız Soyadınız" required />
+              <Input id="name" placeholder={namePlaceholder} required />
             </div>
             <div className="space-y-2">
               <label htmlFor="email" className="text-sm font-medium">
-                E-posta Adresiniz
+                {emailLabel}
               </label>
-              <Input id="email" type="email" placeholder="ornek@mail.com" required />
+              <Input id="email" type="email" placeholder={emailPlaceholder} required />
             </div>
           </div>
           
           <div className="space-y-2">
             <label htmlFor="phone" className="text-sm font-medium">
-              Telefon Numaranız
+              {phoneLabel}
             </label>
-            <Input id="phone" type="tel" placeholder="0500 000 00 00" />
+            <Input id="phone" type="tel" placeholder={phonePlaceholder} />
           </div>
           
           <div className="space-y-2">
             <label htmlFor="subject" className="text-sm font-medium">
-              Konu
+              {subjectLabel}
             </label>
-            <Input id="subject" placeholder="Mesajınızın konusu" required />
+            <Input id="subject" placeholder={subjectPlaceholder} required />
           </div>
           
           <div className="space-y-2">
             <label htmlFor="message" className="text-sm font-medium">
-              Mesajınız
+              {messageLabel}
             </label>
             <Textarea 
               id="message" 
-              placeholder="Mesajınızı buraya yazabilirsiniz..." 
+              placeholder={messagePlaceholder}
               rows={5}
               required
             />

@@ -1,6 +1,7 @@
 {
   "greeting": "Hello, Welcome to Our Villa Rental Website!",
   "book_now": "Book Now",
+  "coming_soon": "We will be at your service very soon.",
   "header": {
     "welcome": "Welcome to Our Villa Rental Website!",
     "nav": {
@@ -171,5 +172,655 @@
     "next": "Next",
     "show": "Show",
     "hide": "Hide"
+  },
+  "agreement": {
+    "metadata": {
+      "title": "Villa Rental Agreement - Inn Elegance",
+      "description": "Terms and conditions applicable to Inn Elegance villa rental services."
+    },
+    "pageTitle": "Villa Rental Agreement",
+    "pageDescription": "On this page, you can find the contract terms applicable to Inn Elegance villa rental services.",
+    "breadcrumb": {
+      "home": "Home",
+      "agreement": "Villa Rental Agreement"
+    },
+    "introduction": {
+      "title": "INN ELEGANCE LLC RENTAL TERMS AND AGREEMENT",
+      "content": "Inn Elegance LLC offers our customers luxury and comfortable villas in Turkey's most beautiful holiday regions. This agreement determines the rights and obligations of the parties in the villa rental process."
+    },
+    "sections": {
+      "title": "Agreement Clauses",
+      "fallbackMessage": "Agreement sections could not be loaded. Please try again later."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "fallbackMessage": "Frequently asked questions could not be loaded. Please try again later."
+    },
+    "companyInfo": {
+      "title": "Company Information",
+      "company": "Company",
+      "address": "Address",
+      "website": "Website",
+      "owner": "Owner",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "sozlesme": {
+      "title": "Villa Rental Agreement",
+      "sections": [
+        {
+          "id": "introduction",
+          "title": "INN ELEGANCE LLC RENTAL TERMS AND AGREEMENT",
+          "content": "First of all, we are pleased to officially inform you that the Inn Elegance villa rental brand and the website www.innelegance.com belong to INN ELEGANCE LIMITED LIABILITY COMPANY. Inn Elegance LLC is a company established in Florida, offering luxury villa rental services. Our company aims to provide comfortable and private holiday experiences and aims to offer our guests an unforgettable holiday opportunity with the villas we offer."
+        },
+        {
+          "id": "parties-purpose",
+          "title": "PARTIES AND PURPOSE",
+          "content": "This agreement has been made between the person renting the \"VILLA/APARTMENT\" (hereinafter referred to as the \"CUSTOMER\") and the person renting out the \"VILLA/APARTMENT\" (hereinafter referred to as \"Inn Elegance\") for the purpose of renting the \"VILLA/APARTMENT\" for a period with predetermined start and end dates. Customers and their companions who make reservations for any of our \"Villas/Apartments\" advertised on the \"www.innelegance.com\" website, either through our website or by phone or by e-mail, are deemed to have accepted the following conditions in advance. Any violation of any of the following conditions gives \"Inn Elegance\" the right to unilaterally cancel the reservation, request the customer to leave the Villa/Apartment, not refund the deposit, security deposit, rental fee, and demand all unpaid rental fees."
+        },
+        {
+          "id": "reservation-payment",
+          "title": "RESERVATION AND PAYMENT",
+          "content": "• You can make a preliminary reservation for our Villas/Apartments via the reservation form on our website, SMS, phone, or e-mail.\n\n• After you specify the dates you want to rent the Villa/Apartment, Inn Elegance makes the preliminary rental transaction by getting your necessary transportation and invoice information. Inn Elegance takes 20% of the total fee to be paid for the villa/apartment as a deposit payment after the preliminary rental is made. The villa/apartment is reserved in your name if the deposit is paid within 1 (one) business day after the preliminary rental is made. The deposit amount you need to pay and our bank account numbers will also be notified to you via e-mail or SMS or by phone. The deposit must be paid within 1 (one) business day by Bank Transfer, EFT, or Credit Card through the site. You will be sent a written rental confirmation of the Villa/Apartment within 1 business day at the latest from the receipt of the deposit. This confirmation document includes the total fee, the deposit received, and on which dates the Villa/Apartment is rented in your name, and the date and time of the deposit you paid.\n\n• In case the deposit is not paid, Inn Elegance may exercise the right to cancel the preliminary reservation without informing the customer and accept another reservation for the villa/apartment.\n\n• The remaining fee of the Villa/Apartment is officially received through the bank, provided that it is deposited into the villa/apartment owner's bank account after the contract is made or upon delivery of the Villa/Apartment. WHEN THE CUSTOMER APPROVES THIS AGREEMENT, THEY COMMIT TO DEPOSITING THE REMAINING FEE OF THE VILLA/APARTMENT'S RENT TO THE OWNER THROUGH THE BANK. Also, since Inn Elegance delivers the rented property to the customer with furniture, it takes a damage deposit of 1000 TL/5000 TL against the furniture being broken, cracked, damaged, lost, etc., and this deposit is taken in cash (cash) upon delivery of the Villa/Apartment with a receipt. The damage deposit will be returned to the customer after counting the fixtures if there are no missing items at the customer's exit."
+        },
+        {
+          "id": "checkin-checkout",
+          "title": "VILLA/APARTMENT CHECK-IN and CHECK-OUT",
+          "content": "• On the reservation start day, the check-in time for the villa/apartment is at the earliest 16:00 and at the latest 21:00. The customer cannot enter the villa/apartment outside the specified hours, and if they arrive after the specified latest entry time, they can enter the villa/apartment the next day in the morning at the start of Inn Elegance's business hours (09.00).\n\n• Inn Elegance is definitely not responsible for problems arising from the customer's inability to enter the villa/apartment if they arrive before or after the specified time, overnight accommodation, not finding a place to stay, etc. The customer needs to find the place to spend the night themselves and pay the accommodation fee themselves. Inn Elegance cannot be held responsible for such situations.\n\n• At the end of the reservation, the check-out time from the villa/apartment is at the latest 10:00 in the morning for all our regions. The customer is directly responsible for all problems, damages, grievances, etc. arising from the customer's complete failure to vacate the villa/apartment at 10.00 in the morning or late evacuation, and will cover all kinds of material damages of Inn Elegance that may arise from these negativities. We strongly remind you to make your travel plans according to these hours so that both parties are not victimized. In case of wanting to check out early, Inn Elegance must be informed 24 hours in advance.\n\n• In case the customer leaves the villa/apartment without the villa/apartment control due to density, the damage deposit will be sent to a bank account that the customer will specify, and the sending costs will be paid from the damage deposit. If the customer leaves the villa/apartment early of their own accord, no refund will be made to the customer for the accommodation fee."
+        },
+        {
+          "id": "villa-capacity",
+          "title": "VILLA/APARTMENT CAPACITY",
+          "content": "• Guests exceeding the capacity stated on the advertisement page of our Villas/Apartments you have selected from our advertisements on our website or the number of people specified during the reservation are definitely not accepted (Children and babies are also included).\n\n• If the customer wants to make a change in the number of people after the reservation is confirmed, Inn Elegance will be applied to in writing, and this change may be approved if Inn Elegance deems it appropriate according to the capacity situation of the villa/apartment.\n\n• Inn Elegance may request an additional fee from the customer. After entering the Villa/Apartment, guests other than those specified in the reservation list are definitely not accepted to the villa/apartment. In cases where the opposite is detected, Inn Elegance has the right to request guests to leave the villa/apartment, completely cancel the reservation, or request the complete evacuation of the villa/apartment without waiting for the rental period to end, demand the entire fee and extra fee.\n\n• During the rental of the Villa/apartment, the process is carried out in line with the customer's declaration, and the customer accepts that the information they have given is correct and complete, and accepts all responsibilities that will arise in this regard."
+        },
+        {
+          "id": "cleaning-maintenance",
+          "title": "VILLA/APARTMENT CLEANING and MAINTENANCE with EXTRA EXPENSES",
+          "content": "• Entry cleaning is included in weekly, monthly villa/apartment rental prices. Weekly cleaning and towel/sheet, etc. change is included in the prices for stays of 2 (two) weeks and above.\n\n• Apart from this, any requested cleaning and towel/sheet, etc. change is subject to a fee.\n\n• Pool and garden maintenance is done in the early hours of every morning, and if any technical problem is experienced from the villa during the rental period, it will be solved by the homeowner, Inn Elegance is not responsible for this, it only helps to solve the problem.\n\n• The authorized personnel need to enter the garden or inside of the villa/apartment for periodic maintenance of the pool, garden, and other fixtures of all villas/apartments. The customer should not prevent the authorized personnel from entering the inside and/or garden of the villa so that these services can be carried out without interruption."
+        },
+        {
+          "id": "pets-smoking",
+          "title": "PETS and SMOKING BAN",
+          "content": "• Pets are absolutely not accepted in all our villas. Also, smoking is prohibited in our villas."
+        },
+        {
+          "id": "cancellation",
+          "title": "RESERVATION CANCELLATION CONDITIONS",
+          "content": "• In case of cancellation within 30 days or less remaining periods, the entire amount paid to the customer is not refunded. Force majeure justification is required to get payments back."
+        },
+        {
+          "id": "force-majeure",
+          "title": "FORCE MAJEURE SITUATION",
+          "content": "• Unless otherwise agreed by the parties, if a reservation cancellation situation arises as a result of force majeure such as natural disasters and unexpected health problems, payments made can be rearranged for the same villa/apartment if the customer requests or a payment request can be made."
+        },
+        {
+          "id": "other-conditions",
+          "title": "OTHER IMPORTANT INFORMATION",
+          "content": "1. INN ELEGANCE cannot be held responsible in situations that INN ELEGANCE cannot prevent, such as the roads leading to the Villa/Apartment being broken, uphill, stabilized, wet ground, etc.\n\n2. INN ELEGANCE is definitely not responsible for accidents etc. during access to the Villa/Apartment, in short, all kinds of negativity.\n\n3. INN ELEGANCE is definitely not responsible for this event if different materials used in the construction of some villas (cedar tree, pine tree, some plastic products, all kinds of plants in the garden or inside the villa, etc.) disturb the customer in terms of health or psychology.\n\n4. Private vehicles will be needed for customers who will stay in all our Villas/Apartments. The customer's access to the villa/apartment is their own responsibility. INN ELEGANCE can definitely not be held responsible.\n\n5. INN ELEGANCE cannot be held responsible if a customer who has rented a villa or apartment is dissatisfied with the geographical location of the villa or apartment they have rented. INN ELEGANCE has approximately marked the location of the villa/apartment on Google Map.\n\n6. INN ELEGANCE cannot be held responsible for damage to your private or rented vehicle during access to the Villa/Apartment.\n\n7. The customer who has rented the Villa/Apartment is directly responsible for all kinds of negativity that may arise due to the bottom of the customer's vehicle (motor, automobile, etc.) being close to the ground, the engine power of the vehicle being weak, the customer's inexperience in using automobile, motor, etc. and consequently not being able to reach the villa/apartment. INN ELEGANCE can definitely not be held responsible for such or similar problems.\n\n8. The \"distance table\" specified on the \"www.innelegance.com\" detail page about the Villa/Apartment is written approximately. Distances are not specified exactly. There may be minor errors. The customer renting the Villa/Apartment agrees to consider this.\n\n9. The distances specified in the \"distance table\" on the \"www.innelegance.com\" detail page about the Villa/Apart are written considering the nearest restaurant, the nearest beach, the nearest center, the nearest bus station, and the nearest airport. INN ELEGANCE does not accept responsibility if the specified restaurant or market is closed.\n\n10. INN ELEGANCE cannot be held responsible for all accidents such as drowning, falling, foot breaking, arm breaking that will occur in the pool in the Villa/Apartment.\n\n11. All villas have a hot water tank heated by solar energy of approximately 160 liters. The customer is directly responsible for problems caused by the lack of hot water due to excessive hot water consumption outside of fair use, INN ELEGANCE can definitely not be held responsible for problems caused by this situation.\n\n12. None of our villas/apartments have food, drinks, any food products, etc. None of the villas/apartments have any services such as breakfast, lunch, dinner, buffet, etc. It is the customer's responsibility to provide these products. INN ELEGANCE cannot be held responsible for such situations.\n\n13. INN ELEGANCE is definitely not responsible for situations such as not receiving a Mobile Phone signal at all, receiving it a little, or not receiving internet from the mobile phone in Villas/Apartments or on the road. You can call your GSM operator and get detailed information about the GSM signal status in the area you will go to.\n\n14. Even if you make a payment by Credit card or mail order or EFT or bank transfer or similar, do not buy plane tickets, bus tickets, etc. definitely before you receive the \"confirmation mail\" and \"confirmation document\". Even if you make a payment to INN ELEGANCE, you are definitely not considered to have rented the villa/apartment if you do not receive the \"confirmation mail\" and \"confirmation document\". INN ELEGANCE is definitely not responsible for material and moral damages that may arise from such and similar situations where the customer acts hastily.\n\n15. INN ELEGANCE cannot be held responsible for all accidents and incidents caused by the customer in the Villa/Apartment, fire, electrical leakage, tube leakage and resulting death and accidents, telephone and internet outage caused by the internet provider (Turkish Telecom, etc.), electricity outage caused by the Electricity Company, water outage caused by the Water Company.\n\n16. The Villas/Apartments that we have specified on our website are exactly the same, excuses such as they are not as they appear on the site, they look better on the site, they are larger or smaller on the site, etc. are never acceptable and INN ELEGANCE cannot be held responsible for them.\n\n17. INN ELEGANCE cannot be held responsible for all kinds of negativity that may arise from positive or negative natural events/conditions and positive or negative weather conditions.\n\n18. INN ELEGANCE cannot be held responsible for incidents such as bee, scorpion, insect, snake bites, cat, dog bites, etc. to the customer.\n\n19. A customer who wants to prefer conservative villas, which are referred to as villas whose pool is not visible from the outside, if there are no statements such as \"this villa is suitable for conservative families\", \"its pool is not visible from the outside\", \"veiled ladies can prefer\" etc. on the villa's detail page, then that villa is not a conservative villa. INN ELEGANCE is definitely not responsible for the customer renting a villa that does not have such statements and then accusing INN ELEGANCE by saying \"this villa is not a conservative villa\" when they come to the villa. We recommend that the customer who will rent the villa read all the details carefully.\n\n20. The customer is directly responsible for the gathering of ants or insects, etc. or different animals to the inside of the Villa/Apartment or the pool garden or the pool terrace due to any food item or your garbage, INN ELEGANCE cannot be held responsible for this situation.\n\n21. INN ELEGANCE is definitely not responsible for all kinds of diseases, chlorine allergy, etc. chemical allergy that may occur from the water coming from the swimming pool or shower of the Villa/apartment. We recommend that people with health or body sensitivity do not enter the pool.\n\n22. All kinds of cattle, sheep, chickens, partridges, etc. can be bred around the rented villa/apartment, all kinds of fertilizers can be used in the garden of the rented villa/apartment or in the gardens of neighboring houses/villas/apartments, INN ELEGANCE is definitely not responsible, cannot be held responsible for disturbing animal sounds and bad smells that may arise from these and such events.\n\n23. In cases such as funeral, death, war, health problem, accident, or cancellation of leave of public personnel or private company personnel, etc., all rental conditions are valid to the letter and cancellation is definitely not in question.\n\nThe customer has accepted all the conditions we have specified above, and in case of attempting to terminate the rental agreement by producing these and similar excuses, INN ELEGANCE reserves the right to terminate the agreement alone and the right to demand the contract amount."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How can I make a villa reservation?",
+          "answer": "You can make a preliminary reservation for our Villas/Apartments via the reservation form on our website, SMS, phone, or e-mail. After the deposit payment is received, your reservation is confirmed and a written confirmation is sent to you."
+        },
+        {
+          "question": "How much is the deposit payment and how is it made?",
+          "answer": "The deposit payment is 20% of the total villa rental fee. Payment can be made by Bank Transfer, EFT, or Credit Card through our website. The deposit payment must be made within 1 business day after the preliminary reservation is made."
+        },
+        {
+          "question": "What are the check-in and check-out times?",
+          "answer": "The check-in time for the villa is 16:00 at the earliest and 21:00 at the latest. The check-out time from the villa is 10:00 in the morning at the latest. It is important to adhere to these times; otherwise, INN ELEGANCE cannot be held responsible for any resulting problems."
+        },
+        {
+          "question": "What is a damage deposit and how is it refunded?",
+          "answer": "The damage deposit is a security fee ranging from 1000 TL to 5000 TL, taken against damage to the furniture in the villa. It is collected in cash upon villa delivery and is returned in full after inventory control at check-out, provided there is no damage."
+        },
+        {
+          "question": "Can I exceed the villa capacity?",
+          "answer": "No, guests exceeding the capacity stated on the advertisement page of our Villas/Apartments or the number of people specified during the reservation are definitely not accepted. This rule also applies to children and babies."
+        },
+        {
+          "question": "Are pets allowed in the villa?",
+          "answer": "No, pets are absolutely not accepted in all our villas. Also, smoking is prohibited in our villas."
+        },
+        {
+          "question": "Is cleaning service included?",
+          "answer": "Yes, entry cleaning is included in weekly and monthly villa rental prices. For stays of 2 weeks and above, weekly cleaning and towel/sheet change is included in the prices. Any additional requested cleaning and towel/sheet change is subject to a fee."
+        },
+        {
+          "question": "Is a refund made in case of reservation cancellation?",
+          "answer": "In case of cancellation within 30 days or less remaining to the entry date, the entire amount paid is not refunded. Force majeure justification is required to get payments back."
+        }
+      ],
+      "companyInfo": {
+        "name": "Inn Elegance LLC",
+        "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+        "website": "www.innelegance.com",
+        "owner": "Orhan Yavuz",
+        "email": "info@innelegance.com",
+        "phone": "+90 531 621 61 00"
+      }
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "About Us - Villa Rental",
+      "description": "Detailed information about our villa rental services and our company."
+    },
+    "heroSection": {
+      "title": "About Us",
+      "description": "Meet Turkey's leading luxury villa rental brand"
+    },
+    "introduction": "<h2 class=\"text-2xl font-bold mb-4\">The Address of Luxury Villa Holidays</h2><p class=\"mb-4\">Founded in 2015, our company offers luxury villa rental services in the most beautiful holiday regions of Turkey. With our customer-focused approach, we provide unforgettable holiday experiences to our guests in our specially designed private pool villas where every detail has been considered.</p><p class=\"mb-4\">Since our establishment, we have served thousands of guests, taking the concept of villa holidays to a new level in Turkey. From day one, our goal has been to offer our guests a special and luxurious holiday experience that combines hotel comfort with the warmth of home.</p><p>Our experienced team carefully selects and regularly inspects each villa in our portfolio. All our villas are equipped to high quality standards and prepared to offer you the most comfortable holiday experience.</p>",
+    "mission": "To elevate the standard of trust and satisfaction in the luxury villa rental sector by offering our guests unforgettable holiday experiences.",
+    "vision": "To provide pioneering and innovative services as Turkey's most reliable and quality villa rental brand in the sector.",
+    "values": "To never compromise on quality by working with principles of honesty, transparency, customer satisfaction, and continuous improvement.",
+    "missionTitle": "Our Mission",
+    "visionTitle": "Our Vision",
+    "valuesTitle": "Our Values",
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "items": [
+        {
+          "title": "Carefully Selected Villas",
+          "description": "All our villas are regularly inspected for comfort, cleanliness, and safety."
+        },
+        {
+          "title": "24/7 Customer Support",
+          "description": "Our professional support team is at your side at all times during your holiday."
+        },
+        {
+          "title": "Secure Payment Options",
+          "description": "Payment infrastructure protected by 128-bit SSL security certificate and multiple payment options."
+        },
+        {
+          "title": "Transparent Pricing",
+          "description": "No hidden costs, the price you see is the price you pay."
+        }
+      ]
+    },
+    "statistics": {
+      "luxuryVillas": "Luxury Villas",
+      "holidayRegions": "Holiday Regions",
+      "happyCustomers": "Happy Customers",
+      "yearsExperience": "Years of Experience"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What should we pay attention to when renting a villa?",
+          "answer": "When renting a villa, you should primarily pay attention to basic elements such as location, capacity, price, and features. We also recommend you review the past guest reviews, cancellation conditions, and additional services of the villa."
+        },
+        {
+          "question": "How does the reservation process work?",
+          "answer": "To make a reservation, you can list suitable villas by selecting the date and number of people from our website. After selecting the villa you like and completing the payment procedures, your reservation confirmation will be sent to you by email."
+        },
+        {
+          "question": "What is your cancellation policy?",
+          "answer": "Our cancellation policy varies depending on the time remaining until your reservation date. Generally, full refunds are made for cancellations made up to 30 days before the check-in date."
+        },
+        {
+          "question": "Do you offer extra services?",
+          "answer": "Yes, we offer extra services such as car rental, private chef, airport transfer, and boat tours for villa rentals. You can request these services during or after your reservation."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact Villa Rental | Turkey's Best Villa Rental Platform",
+      "description": "Contact us through our villa rental platform. We are here to answer your questions and assist you."
+    },
+    "pageTitle": "Contact Us",
+    "pageDescription": "Do you have any questions about your villa rental process? Write to us, and we will get back to you as soon as possible.",
+    "contactForm": {
+      "title": "Contact Form",
+      "description": "You can reach us by filling out the form below.",
+      "nameLabel": "Your Full Name",
+      "namePlaceholder": "Enter your first and last name",
+      "emailLabel": "Your Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "phoneLabel": "Your Phone Number",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Enter your contact subject",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Write your message here...",
+      "submitButton": "Send Message"
+    },
+    "contactInfo": {
+      "title": "Our Contact Information",
+      "description": "You can reach us through the following channels.",
+      "addressTitle": "Address",
+      "address": "Example Neighborhood, Villa Rental Street No:123, Bodrum/Mugla",
+      "phoneTitle": "Phone",
+      "phone": "+90 252 123 45 67",
+      "emailTitle": "Email",
+      "email": "info@villarental.com.tr",
+      "workingHoursTitle": "Working Hours",
+      "workingHours": "Monday - Saturday: 09:00 - 18:00"
+    },
+    "mapTitle": "Villa Rental Head Office Location",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "id": "reservation-cancellation",
+          "question": "How far in advance do I need to notify for a reservation cancellation?",
+          "answer": "If you cancel your reservation at least 7 days before your stay date, your payment will be fully refunded. For cancellations made between 3-7 days, a 50% refund is provided, while no refund is made for cancellations less than 3 days before."
+        },
+        {
+          "id": "deposit-payment",
+          "question": "Do I need to make a deposit payment during the villa rental process?",
+          "answer": "Yes, a security deposit is required when renting a villa. This amount may vary depending on the value and location of the villa. After your check-out process is completed and the villa is inspected, the deposit amount will be refunded to you if there is no damage."
+        },
+        {
+          "id": "pets-policy",
+          "question": "Can I bring my pet to the villa?",
+          "answer": "Our pet policy varies from villa to villa. Villas that accept pets are indicated in the filtering options. We recommend checking the pet policy of the villa you have selected before making a reservation."
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "metadata": {
+      "title": "Privacy Policy - Villa Rental",
+      "description": "Privacy policy and information about the protection of personal data on our villa rental platform."
+    },
+    "pageTitle": "Privacy Policy",
+    "pageDescription": "The security and privacy of your personal data is important to us. On this page, you can learn about how we collect and use information about you.",
+    "breadcrumb": {
+      "home": "Home",
+      "privacy": "Privacy Policy"
+    },
+    "sections": [
+      {
+        "id": "introduction",
+        "title": "Introduction",
+        "content": "This Privacy Policy covers all users who visit and use www.innelegance.com and is accepted in advance. Below we have mentioned the data that visitors using Inn Elegance provide to us directly and/or indirectly. This data is used within the circumstances that are appropriate as per the Rental and Usage agreement, Privacy Policy terms; and is not used outside of these appropriate circumstances."
+      },
+      {
+        "id": "data-collection",
+        "title": "Data Directly Provided to Us",
+        "content": "Phone, email, name-surname and other requested form information that you have provided to us through the reservation form, contact form and/or other forms are stored by our company. This data is not shared with any real/legal third party and/or institution/company for commercial purposes. The data you currently share with us is used to present you with campaigns, developments and updates made by our company. Only through Inn Elegance and Inn Elegance sub-projects, information returns can be provided to you via the communication channels you have provided/specified."
+      },
+      {
+        "id": "cookies",
+        "title": "Data Indirectly Obtained from You",
+        "content": "IP information, location data, cookies and other data collected in the background to offer you a better experience are specific to the Inn Elegance site only. This data is never sold or shared for commercial purposes except in appropriate circumstances. On every computer, you can make your cookie sharing settings through your current web browser. In standard browser settings, cookie sharing is generally open, and our company only uses such data. External intervention or unauthorized processing to obtain data is never in question."
+      },
+      {
+        "id": "user-rights",
+        "title": "User Rights",
+        "content": "Users who wish to change their current information and/or remove necessary permissions regarding its use by contacting Inn Elegance should use the address info@innelegance.com. Based on requests to be made through this address, it will be possible to completely delete the data from the system and/or completely stop its use for Inn Elegance. In such requests, the counterparty/requesting party will be responsible for customer/user-oriented interruptions, disruptions that may arise due to data flow; Inn Elegance cannot be held responsible for disruptions that may arise due to data deficiency."
+      },
+      {
+        "id": "data-sharing",
+        "title": "Reservation and Identity Submissions",
+        "content": "Our company is obliged to make IDENTITY DATA NOTIFICATION to the relevant security forces/law enforcement officers for each of its customers who will stay in villas as required by legally determined rules. Therefore, all users/customers who make reservations from our company are deemed to have accepted that they will declare their identities for this data notification. The declared identity data is only submitted to the relevant security forces/law enforcement officers. Apart from legal responsibility; NO IDENTITY DATA/INFORMATION CAN BE USED either as a company or commercially!"
+      }
+    ],
+    "companyInfo": {
+      "title": "Company Information",
+      "name": "Inn Elegance LLC",
+      "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+      "website": "www.innelegance.com",
+      "owner": "Orhan Yavuz",
+      "email": "info@innelegance.com",
+      "phone": "+90 531 621 61 00",
+      "labels": {
+        "company": "Company",
+        "address": "Address",
+        "website": "Website",
+        "owner": "Owner",
+        "email": "Email",
+        "phone": "Phone"
+      }
+    },
+    "lastUpdate": "This privacy policy was last updated in June 2023.",
+    "contactCTA": {
+      "text": "If you have questions about our privacy policy, please contact us.",
+      "button": "Contact Us"
+    }
+  },
+  "faq": {
+    "metadata": {
+      "title": "Frequently Asked Questions - Villa Rental",
+      "description": "Find answers to all your questions about villa rental."
+    },
+    "pageTitle": "Frequently Asked Questions",
+    "heroTitle": "Frequently Asked Questions",
+    "heroDescription": "Check out our comprehensive FAQ guide for all your questions about the villa rental process. You can find answers to all your questions from reservation to check-out here.",
+    "searchPlaceholder": "Search your question...",
+    "allQuestions": "All Questions",
+    "generalQuestions": "General Questions",
+    "noResultsInCategory": "No questions found in this category.",
+    "noResultsInCategoryWithTerm": "No results found in this category for \"{searchTerm}\".",
+    "noCategoryQuestions": "There are no questions in this category yet.",
+    "noResultsFound": "No results found for \"{searchTerm}\". Please try another search term.",
+    "searchHint": {
+      "title": "Couldn't Find What You're Looking For?",
+      "description": "If you couldn't find an answer to your question, please contact us. We'd be happy to help you.",
+      "contactButton": "Contact Us"
+    },
+    "sections": [
+      {
+        "id": "reservations",
+        "title": "Reservation Process",
+        "faqs": [
+          {
+            "question": "How do I make a reservation?",
+            "answer": "You can make a reservation by filtering villas in your desired region through our website, selecting suitable dates, and completing your reservation online. Alternatively, you can also make a reservation by calling our customer service. You will need to make a 30% advance payment to complete your reservation process."
+          },
+          {
+            "question": "How long does it take to get a reservation confirmation?",
+            "answer": "When you make an online reservation, you will receive an automatic confirmation immediately. For reservations made through customer service, you usually get confirmation within 24 hours. During peak season, this may extend to up to 48 hours."
+          },
+          {
+            "question": "How can I change my reservation?",
+            "answer": "You need to notify us at least 30 days in advance to change your reservation. Date changes can be made based on availability. You can submit your change request by contacting customer service."
+          },
+          {
+            "question": "What is the cancellation policy?",
+            "answer": "Our cancellation policy is as follows: Full refund for cancellations made up to 60 days before the arrival date. 50% refund for cancellations made 30-60 days before arrival. No refund for cancellations made less than 30 days before arrival. You must submit your cancellation request in writing."
+          },
+          {
+            "question": "What is the minimum stay period?",
+            "answer": "While it varies by villa and season, our general minimum stay period is 3 nights. During high season (June-August), this may increase to 7 nights. The minimum stay duration is specified on each villa's page."
+          }
+        ]
+      },
+      {
+        "id": "payments",
+        "title": "Payment and Pricing",
+        "faqs": [
+          {
+            "question": "What payment methods do you accept?",
+            "answer": "We accept payment by bank transfer/EFT, credit card (Visa, MasterCard, American Express), and in some cases, international money transfer (SWIFT). You can find payment details on our 'Villa Rental Payment Methods' page."
+          },
+          {
+            "question": "What is included in the pricing?",
+            "answer": "The stated price typically includes villa rental, pool maintenance, garden maintenance, Wi-Fi, normal water and electricity usage. Extra services (transfer, private chef, daily cleaning, etc.) and airport transfers are subject to additional charges. Services included are listed on each villa's detail page."
+          },
+          {
+            "question": "Do you have a deposit requirement?",
+            "answer": "Yes, a security deposit is required for all villa rentals. This amount is usually about 20-30% of the villa price and is refunded within 7 business days after check-out if there is no damage. The deposit can be made in cash or by credit card."
+          },
+          {
+            "question": "When should I pay the balance?",
+            "answer": "You make a 30% advance payment of the total amount during reservation. The remaining 70% balance must be paid no later than 30 days before the arrival date. For reservations made after this date, the full amount is required upfront."
+          },
+          {
+            "question": "Can I pay in different currencies?",
+            "answer": "Yes, we accept payments in TRY (Turkish Lira), USD (US Dollar), EUR (Euro), and GBP (British Pound). You can make your payments in any of these four currencies."
+          }
+        ]
+      },
+      {
+        "id": "amenities",
+        "title": "Villa Amenities and Services",
+        "faqs": [
+          {
+            "question": "Is pool heating available in the villas?",
+            "answer": "Some of our villas have pool heating. This feature is specified on the villa detail page. Pool heating is generally subject to an additional fee and needs to be reserved in advance. Pool heating service may be limited depending on the season."
+          },
+          {
+            "question": "Do you provide equipment for babies and children?",
+            "answer": "Yes, upon prior request, we can provide equipment such as baby cots, high chairs, and strollers. You need to inform us in advance for these services, and there may be an additional fee in some cases."
+          },
+          {
+            "question": "How are the villas cleaned?",
+            "answer": "All our villas are thoroughly cleaned before guest check-in. For stays of 7 nights or more, an interim cleaning and linen change is provided free of charge once a week. Daily cleaning service is also available for an additional fee upon request."
+          },
+          {
+            "question": "Is internet connection available?",
+            "answer": "Yes, wireless internet connection is available in all our villas. Internet speed may vary by region. In some rural areas, internet connection may be limited, but it is adequate for basic needs."
+          },
+          {
+            "question": "Are towels and bed linens provided?",
+            "answer": "Yes, clean bed linens, bath towels, and hand towels are provided free of charge in all our villas. Pool/beach towels are also available in most of our villas. For stays of 7 nights or more, towels and sheets are changed once a week."
+          }
+        ]
+      },
+      {
+        "id": "checkin-checkout",
+        "title": "Check-in and Check-out Procedures",
+        "faqs": [
+          {
+            "question": "What are the check-in and check-out times?",
+            "answer": "Our standard check-in time is 16:00, and our check-out time is 10:00. Early check-in and late check-out requests are evaluated based on availability and may be subject to an additional fee. We will try to accommodate your special requests if you notify us in advance."
+          },
+          {
+            "question": "Where can I pick up the villa key?",
+            "answer": "You will receive the villa key from our representative at the villa location. Before your check-in time, you will be sent the villa address and our representative's contact information. Our representative will welcome you at the villa, hand over the key, and provide information about the villa."
+          },
+          {
+            "question": "We will have a late arrival, will it be a problem?",
+            "answer": "You need to inform us in advance for late arrivals after 22:00. A late check-in fee of 50 EUR is applied for arrivals between 22:00-00:00, and 100 EUR for arrivals after 00:00. Please inform us at least 24 hours in advance in this case."
+          },
+          {
+            "question": "Can we leave our belongings at the villa on the check-out day?",
+            "answer": "It is usually not possible to leave your belongings at the villa after the check-out time of 10:00. However, we can assist in special cases depending on the villa's availability. Please inform us in advance if you have such a request."
+          },
+          {
+            "question": "How is the check-out process conducted?",
+            "answer": "On the check-out day, our representative will come to the villa at the scheduled time, check the condition of the villa, and collect the keys. If there is no damage or extra cleaning requirement, the deposit refund process will be initiated. Please ensure that you have made all your payments in full."
+          }
+        ]
+      }
+    ],
+    "generalFaqs": [
+      {
+        "question": "Can I bring a pet?",
+        "answer": "Some of our villas are designated as pet-friendly. You can stay with your pet in villas marked 'Pets Allowed' on the villa detail page, provided you inform us in advance and pay an additional fee. An extra deposit may be required for general cleaning and possible damages."
+      },
+      {
+        "question": "What should we do if we have a problem during our stay?",
+        "answer": "An emergency phone number that you can reach 24/7 during your stay will be provided to you. You can contact us at this number for any problems, breakdowns, or needs. Our technical team will respond as soon as possible."
+      },
+      {
+        "question": "Can you arrange airport transfers?",
+        "answer": "Yes, we offer airport transfer services for an additional fee. We have one-way or round-trip transfer options. You can request this service during reservation or later. Prices vary depending on distance, number of people, and vehicle type."
+      },
+      {
+        "question": "Is a private chef and meal service possible?",
+        "answer": "Yes, we offer private chef and meal service in many of our villas. We have a wide range of menu options from local cuisine to international flavors. This service requires a reservation at least 48 hours in advance. Prices vary according to the number of people and menu selection."
+      },
+      {
+        "question": "What kind of activities can we do in the surrounding area?",
+        "answer": "There are many activities available in our villa regions, such as boat tours, cultural tours, nature walks, diving, and rafting. We also offer guided tours and car rental services. You can get information about region-specific activities from our representative during your stay."
+      },
+      {
+        "question": "Can we exceed the maximum number of people for the villa?",
+        "answer": "Each villa has a specified maximum capacity, and this number cannot be exceeded. The capacity is determined based on the number of beds and the size of the villa. In some cases, babies under 2 years may be excluded from the capacity, but you need to inform us in advance. If a capacity excess is detected, an additional fee may be charged or the accommodation may be canceled."
+      },
+      {
+        "question": "How is the villa rental process done?",
+        "answer": "You can list suitable villas by selecting location and date through our website. After selecting the villa you like, you can make a reservation online or contact our customer representatives for support. A 30% advance payment is required for reservation confirmation."
+      },
+      {
+        "question": "What is your reservation cancellation policy?",
+        "answer": "For cancellations made up to 60 days before the check-in date, your entire payment is refunded. A 50% refund is made for cancellations made 30-60 days before check-in. No refunds are made for cancellations made less than 30 days before check-in. However, special conditions may apply in case of travel restrictions due to force majeure events such as a pandemic."
+      }
+    ]
+  },
+  "ownerAgreement": {
+    "metadata": {
+      "title": "Villa Rental Host Agreement",
+      "description": "Platform terms of use and legal regulations for villa owners."
+    },
+    "heroSection": {
+      "title": "Host Agreement",
+      "description": "This agreement regulates the participation of owners in villa rental services through the Inn Elegance platform and determines the rights and obligations between the parties."
+    },
+    "companyInfo": {
+      "title": "Company Information",
+      "company": "Company",
+      "address": "Address",
+      "website": "Website",
+      "owner": "Owner",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "legalTerms": {
+      "lastUpdated": "Last Updated",
+      "acceptanceNote": "This agreement defines the legal relationship between the villa owner and Inn Elegance. Listing a property on the platform means you accept the terms of this agreement.",
+      "contactInfo": "Please contact us for adding a villa to our platform or for any questions regarding the agreement."
+    },
+    "buttons": {
+      "contact": "Contact Us",
+      "addVilla": "Add Villa"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "ownerAgreement": "Host Agreement"
+    },
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "This agreement contains the terms and conditions governing the relationship between the villa owner ('Host') and INN ELEGANCE LIMITED LIABILITY COMPANY ('Platform'). This agreement establishes the legal framework for the Host to provide rental services through the Platform. By adding a property to our platform or managing your existing property, you are deemed to have accepted the terms of this agreement."
+      },
+      "definitions": {
+        "title": "Definitions",
+        "content": "Platform: Refers to the villa rental and reservation services provided by INN ELEGANCE. Host: Refers to the natural or legal person who provides rental service by listing one or more properties on the Platform. Guest: Refers to the customer who rents property through the Platform. Property/Villa: Refers to the real estate offered for rent by the Host. Reservation: Refers to the rental of a specific property by the Guest for specific dates. Commission: Refers to the fee charged by the Platform from the Host in return for the services provided."
+      },
+      "commission_terms": {
+        "title": "2024 Working Conditions",
+        "content": "As of 2024, the commission rate is determined as 20% and the advance payment amount as 35% (The advance payment amount can be evaluated in line with the host's request). According to our cancellation terms, documents are requested from our guests in cases of force majeure. As a result of the document evaluation, the guest's advance payment is suspended or the advance payment amount is refunded to the guest. In case of invalid (arbitrary) cancellations of the guest, the advance payment is forfeited, and in cancellation requests with less than 30 days until entry, the remaining payment is also directed to the legal unit to be collected from the guest. The service fee collected by INN ELEGANCE will not be refunded except for force majeure reasons. The service fee will remain with the agency in return for the service it has provided."
+      },
+      "payment_terms": {
+        "title": "Payment Terms",
+        "content": "INN ELEGANCE service fee, whether or not a new reservation is made for the canceled dates, the advance payment amount of the old reservation will not be refunded to the host. The remaining payments excluding commission of hosts who request 35% advance payment will be paid within 2 business days after the guest check-in. All payments are made through the Platform, and the Platform collects the determined commission rate after each successful reservation transaction. Commission rates may vary according to the location, features, and rental price of the property."
+      },
+      "property_requirements": {
+        "title": "Property Requirements",
+        "content": "All villas added to the platform must be in compliance with local regulations and legally rentable. The Host is obliged to provide accurate and up-to-date information, real photographs, and all features of the properties completely. Properties must provide healthy living conditions, be clean, safe, and have all the amenities specified in their listing. A guide containing emergency procedures, important phone numbers, and information about the use of the property must be prepared for each property."
+      },
+      "owner_responsibilities": {
+        "title": "Host Responsibilities",
+        "content": "Guest welcoming belongs to the host. The Host is responsible for the cleaning, maintenance, and repair of their property. They must ensure that the property is clean and well-maintained before each guest. All amenities specified in the property's listing must be in working condition and available for use. The host or caretaker deals with adverse situations that the guest may experience in the villa. All problems arising from the house are the responsibility of the host. In problems that will occur in the use of any of the features of the villa that are included on the INN ELEGANCE website and that have been previously reported and approved by the host (including cleaning, malfunction, or situations that prevent the guest from using the villa smoothly as promised), the refund amount to be made to the guest will be covered by the host."
+      },
+      "liability": {
+        "title": "Liability and Conflicts",
+        "content": "In reservation conflicts resulting from the error of the villa owner or their representative, if the guest is transferred to a different villa, the difference between them will be covered by the villa owner. The Host has all legal responsibilities regarding their property and is directly responsible for any accident, damage, or injury that may occur on the property. The Platform is an intermediary in the relationship between the Host and the Guest and does not bear any direct responsibility related to the property. The Host must have appropriate homeowner's insurance and liability insurance for their property."
+      },
+      "cancellation_policy": {
+        "title": "Cancellation Policy",
+        "content": "INN ELEGANCE does not refund its service fee in case of cancellations. For villa owners who claim rights from the advance payment, the reservation advance payment amount taken from the guest will be determined as 40%. In case of any cancellation, 20% advance payment will remain with INN ELEGANCE and the other 20% rate (deposit difference) will be transferred to the villa owner. If the canceled dates are sold, the 40% advance payment will remain with INN ELEGANCE. Villa owners who request a 20% advance payment during the reservation phase will not be able to claim rights from the advance payment in case of any cancellation."
+      },
+      "payment_campaigns": {
+        "title": "Payment Campaigns",
+        "content": "Our villa owners who want to participate in the 12-Month Installment Campaign in 2024 will be included in this campaign if they accept to receive the entire payment from the bank. The Platform may organize different payment campaigns from time to time. Campaign conditions will be announced in advance and participation in the campaign will be entirely voluntary."
+      },
+      "legal_terms": {
+        "title": "Legal Terms",
+        "content": "I accept and undertake that the aforementioned villa/villas belong to me or that I am the operator, and I accept and undertake the contract items written above. This agreement is subject to the laws of the Republic of Turkey. In case of any dispute arising from the agreement, the courts of Turkey are authorized. The Platform has the right to unilaterally change this agreement, provided that it notifies in advance. Changes take effect after notification is sent to the Host. The Host is deemed to have accepted the new terms by continuing to use the Platform after the changes are notified. If any clause of this agreement is deemed invalid, the other clauses remain valid."
+      }
+    }
+  },
+  "cancellationTerms": {
+    "metadata": {
+      "title": "Villa Rental Cancellation Terms",
+      "description": "Learn about the cancellation terms and refund policies for our villa rental services."
+    },
+    "hero": {
+      "title": "Villa Rental Cancellation Terms",
+      "description": "On this page, you can find cancellation terms and refund policies for Inn Elegance villa rental services. Please read these terms carefully before making a reservation."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "cancellationTerms": "Cancellation Terms"
+    },
+    "sectionTitle": "Cancellation and Refund Policies",
+    "companyInfoTitle": "Company Information",
+    "companyInfoLabels": {
+      "company": "Company",
+      "address": "Address",
+      "website": "Website",
+      "owner": "Owner",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "faqTitle": "Frequently Asked Questions",
+    "disclaimerText": "These cancellation terms and refund policies apply to all reservations made with Inn Elegance LLC. By making a reservation, you are deemed to have accepted these terms.",
+    "disclaimerSubtext": "Please read the terms carefully before making a reservation.",
+    "moreInfoText": "For more information about cancellation terms and refunds, please contact us.",
+    "buttons": {
+      "contact": "Contact Us",
+      "viewVillas": "Browse Villas"
+    }
+  },
+  "gdprNotice": {
+    "metadata": {
+      "title": "Personal Data Protection - Inn Elegance",
+      "description": "Information on the processing and protection of personal data by Inn Elegance LLC."
+    },
+    "pageTitle": "PERSONAL DATA PROTECTION AND PROCESSING POLICY AND CUSTOMER INFORMATION TEXT",
+    "pageDescription": "This text has been prepared by Inn Elegance LLC to inform our customers about the processing and protection of personal data.",
+    "lastUpdated": "Last Updated: 03/01/2024",
+    "breadcrumb": {
+      "home": "Home",
+      "gdprNotice": "Personal Data Protection"
+    },
+    "princplesSectionTitle": "Principles of Personal Data Protection",
+    "contactActionText": "For more information about your personal data or if you have any questions, please contact us.",
+    "contactButton": "Contact Us",
+    "disclaimerText": "This text explains Inn Elegance LLC's personal data protection policy and legal obligations. All visitors using our platform are deemed to have accepted these terms.",
+    "companyInfo": {
+      "title": "Company Information",
+      "name": "Inn Elegance LLC",
+      "address": "7901 4TH ST N STE 300, ST. PETERSBURG, FL. 33702, USA",
+      "website": "www.innelegance.com",
+      "owner": "Inn Elegance LLC Board of Directors",
+      "email": "info@innelegance.com",
+      "phone": "+90 (531) 621-61-00",
+      "labels": {
+        "company": "Company",
+        "address": "Address",
+        "website": "Website",
+        "owner": "Management",
+        "email": "Email",
+        "phone": "Phone"
+      }
+    },
+    "sections": [
+      {
+        "id": "company-introduction",
+        "title": "About Inn Elegance LLC",
+        "content": "First and foremost, we are pleased to officially announce that the Inn Elegance brand and our website www.innelegance.com belong entirely to Inn Elegance LLC.\n\nInn Elegance LLC is a Florida-based company, offering a platform for luxury villas, apartments, hotels, and other accommodation options. Aiming to provide our guests with comfortable and special holiday experiences, Inn Elegance strives to offer an unforgettable holiday opportunity in each accommodation unit.\n\nOur platform provides users with a wide range of accommodations, allowing them to easily plan their holidays. Inn Elegance, with its user-friendly interface and reliable rental experience, offers its guests ideal options for a luxurious and comfortable holiday. Holidaymakers prefer our platform to find comfort, aesthetics, and a unique experience together."
+      },
+      {
+        "id": "policy-purpose",
+        "title": "1. Personal Data Protection and Processing Policy",
+        "content": "Protection of personal data is one of Inn Elegance LLC's most important priorities. This policy is managed for the protection of personal data of our company's employee candidates, company partners, company officials, employees, partners, and officials of cooperating institutions, as well as customers and third-party visitors.\n\nWithin the framework of this policy, administrative and technical measures required for the protection of personal data processed within the framework of legal legislation are taken."
+      },
+      {
+        "id": "basic-principles",
+        "title": "2. Basic Principles of Processed Personal Data",
+        "content": "As Inn Elegance LLC, we place great importance on protecting the personal data of our customers and users. As a company operating in the state of Florida, we comply with various legal regulations and best practices to ensure personal data security and protect your privacy.\n\n2.1. Florida Information Protection Act (FIPA)\nIn Florida, the most important legal framework for the protection of personal data is the Florida Information Protection Act (FIPA). This law aims to prevent data security breaches and securely store user information.\n\n2.2. Florida's Data Breach Notification Law\nInn Elegance LLC fully complies with Florida's Data Breach Notification Law. This law requires notification to affected individuals in case of personal data breach.\n\n2.3. Social Security Number Protection Act\nAs part of our responsibilities regarding data security, Inn Elegance LLC complies with the Florida Social Security Number Protection Act.\n\n2.4. Other Relevant Laws and Regulations\nIn addition, Inn Elegance LLC also acts in accordance with other national and international data protection laws such as the California Consumer Privacy Act (CCPA) and the European Union General Data Protection Regulation (GDPR)."
+      },
+      {
+        "id": "principles-procedures",
+        "title": "3. Personal Data Processing and Protection Principles and Procedures",
+        "content": "• Personal data is processed in accordance with the law and rules of honesty.\n• Personal data is kept accurate and up-to-date.\n• Personal data is processed for specific, clear, and legitimate purposes.\n• Personal data is processed in a manner that is relevant, limited, and proportionate to the purpose for which it is processed.\n• Personal data is retained for the period stipulated in the relevant legislation or required for the purpose for which it is processed.\n• Personal data owners are informed and enlightened.\n• Necessary systems are established for personal data owners to exercise their rights.\n• Necessary measures are taken for the protection of personal data.\n• Relevant legislation and regulations of the Data Protection Board are complied with in the transfer of personal data to third parties.\n• Due sensitivity is shown to the processing and protection of special categories of personal data."
+      },
+      {
+        "id": "privacy-terms",
+        "title": "4. Privacy Terms",
+        "content": "www.innelegance.com will not disclose personal information to any company or third parties except as defined in this Privacy Policy and Terms of Use. www.innelegance.com does not sell the personal information of visitors, registered users, and partners to third parties.\n\nData Provided Directly to Us: Information provided to us through the reservation form, contact form, and other forms is not shared with third parties for commercial purposes.\n\nData Obtained Indirectly from You: IP information, location data, cookies, and other usage data are specific to the www.innelegance.com site and are not used for commercial purposes."
+      },
+      {
+        "id": "reservation-identity",
+        "title": "5. Reservation and Identity Submissions",
+        "content": "Our company makes identity data notifications to the relevant security forces for each customer who will stay in the villas in line with legal requirements. Therefore, all users who make reservations declare their identities for this data notification. The declared identity data is only presented to the relevant security forces."
+      },
+      {
+        "id": "accepted-terms",
+        "title": "6. Accepted Terms and Authority",
+        "content": "Customers who make any accommodation from Inn Elegance LLC are deemed to have accepted the terms stated above. Behaviors contrary to these terms bring along the right of Inn Elegance LLC to unilaterally cancel reservations and not make refunds."
+      }
+    ]
   }
 }

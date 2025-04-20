@@ -1,8 +1,6 @@
-"use client"
-
 import React from 'react';
 import Link from 'next/link';
-import kvkkData from './kvkk.json';
+import type { Metadata } from 'next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { 
   Breadcrumb, 
@@ -18,15 +16,38 @@ import {
   AccordionTrigger 
 } from '@/components/ui/accordion';
 import { ChevronRight, HomeIcon, Shield } from 'lucide-react';
+import { getDictionary } from '@/app/dictionaries';
+import { Locale, locales } from '@/app/i18n';
 
 type KVKKProps = {
   params: Promise<{ locale: string }>;
 };
 
-export default function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) {
-  // React.use() ile params Promise'ini çözüyoruz
-  const resolvedParams = React.use(params);
-  const { locale } = resolvedParams;
+// Dinamik metadata oluşturma
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  // Next.js 15.3.0'da params bir Promise olarak geliyor
+  const resolvedParams = await params;
+  
+  // Dil sözlüğünü al
+  const locale = resolvedParams.locale;
+  const dict = await getDictionary(locale);
+
+  return {
+    title: dict.gdprNotice.metadata.title,
+    description: dict.gdprNotice.metadata.description,
+  };
+}
+
+export default async function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) {
+  // Next.js 15.3.0'da params bir Promise olarak geliyor
+  const resolvedParams = await params;
+  
+  // Dil kontrolü ve sözlük yükleme
+  const locale = locales.includes(resolvedParams.locale as Locale) ? resolvedParams.locale : 'en';
+  const dict = await getDictionary(locale);
+  
+  // KVKK verileri
+  const gdprData = dict.gdprNotice;
 
   return (
     <div className="container mx-auto px-4 py-8 md:py-12">
@@ -38,7 +59,7 @@ export default function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) 
               <BreadcrumbLink asChild>
                 <Link href={`/${locale}`} className="flex items-center text-muted-foreground hover:text-primary">
                   <HomeIcon className="h-4 w-4 mr-1" />
-                  Ana Sayfa
+                  {gdprData.breadcrumb.home}
                 </Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
@@ -46,7 +67,7 @@ export default function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) 
               <ChevronRight className="h-4 w-4" />
             </BreadcrumbSeparator>
             <BreadcrumbItem>
-              <span className="text-primary font-medium">Kişisel Verilerin Korunması</span>
+              <span className="text-primary font-medium">{gdprData.breadcrumb.gdprNotice}</span>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -57,13 +78,13 @@ export default function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) 
             <Shield className="h-16 w-16 text-primary" />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
-            {kvkkData.title}
+            {gdprData.pageTitle}
           </h1>
           <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto">
-            Bu metin, Inn Elegance LLC tarafından müşterilerimizin kişisel verilerinin işlenmesi ve korunması hakkında bilgilendirme amacıyla hazırlanmıştır.
+            {gdprData.pageDescription}
           </p>
           <p className="text-accent text-sm mt-2">
-            Son Güncelleme: {kvkkData.lastUpdated}
+            {gdprData.lastUpdated}
           </p>
         </div>
         
@@ -71,21 +92,21 @@ export default function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) 
         <Card className="mb-8 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-primary">
           <CardHeader>
             <CardTitle className="text-xl md:text-2xl text-primary">
-              {kvkkData.sections[0].title}
+              {gdprData.sections[0].title}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-foreground text-base whitespace-pre-line">
-              {kvkkData.sections[0].content}
+              {gdprData.sections[0].content}
             </p>
           </CardContent>
         </Card>
         
         {/* Diğer bölümleri accordion olarak göster */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-primary">Kişisel Verilerin Korunması İlkeleri</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-primary">{gdprData.princplesSectionTitle}</h2>
           <Accordion type="single" collapsible className="border rounded-lg">
-            {kvkkData.sections.slice(1).map((section) => (
+            {gdprData.sections.slice(1).map((section) => (
               <AccordionItem key={section.id} value={section.id}>
                 <AccordionTrigger className="text-lg font-medium text-primary px-4">
                   {section.title}
@@ -102,36 +123,36 @@ export default function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) 
         
         {/* Şirket Bilgileri */}
         <div className="bg-muted p-6 rounded-lg mt-8">
-          <h2 className="text-2xl font-semibold mb-4 text-primary">Şirket Bilgileri</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-primary">{gdprData.companyInfo.title}</h2>
           <div className="space-y-3 text-foreground">
             <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Şirket:</strong> 
-              <span>{kvkkData.companyInfo.name}</span>
+              <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.company}:</strong> 
+              <span>{gdprData.companyInfo.name}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Adres:</strong> 
-              <span>{kvkkData.companyInfo.address}</span>
+              <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.address}:</strong> 
+              <span>{gdprData.companyInfo.address}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Web Sitesi:</strong> 
-              <a href={`https://${kvkkData.companyInfo.website}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                {kvkkData.companyInfo.website}
+              <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.website}:</strong> 
+              <a href={`https://${gdprData.companyInfo.website}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                {gdprData.companyInfo.website}
               </a>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Yönetim:</strong> 
-              <span>{kvkkData.companyInfo.owner}</span>
+              <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.owner}:</strong> 
+              <span>{gdprData.companyInfo.owner}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">E-posta:</strong> 
-              <a href={`mailto:${kvkkData.companyInfo.email}`} className="text-primary hover:underline">
-                {kvkkData.companyInfo.email}
+              <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.email}:</strong> 
+              <a href={`mailto:${gdprData.companyInfo.email}`} className="text-primary hover:underline">
+                {gdprData.companyInfo.email}
               </a>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Telefon:</strong> 
-              <a href={`tel:${kvkkData.companyInfo.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
-                {kvkkData.companyInfo.phone}
+              <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.phone}:</strong> 
+              <a href={`tel:${gdprData.companyInfo.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
+                {gdprData.companyInfo.phone}
               </a>
             </p>
           </div>
@@ -141,15 +162,15 @@ export default function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) 
         <div className="mt-12 text-center">
           <Card className="p-6 mb-8 bg-accent/10 border-accent">
             <p className="text-accent-foreground font-medium mb-4">
-              Bu metin, Inn Elegance LLC&apos;nin kişisel verileri koruma politikasını ve yasal yükümlülüklerini açıklamaktadır. Platformumuzu kullanan tüm ziyaretçilerimiz bu şartları kabul etmiş sayılır.
+              {gdprData.disclaimerText}
             </p>
             <p className="text-muted-foreground">
-              Son Güncelleme: {kvkkData.lastUpdated}
+              {gdprData.lastUpdated}
             </p>
           </Card>
           
           <p className="text-muted-foreground mb-6">
-            Kişisel verileriniz hakkında daha fazla bilgi almak veya sorularınız için lütfen bizimle iletişime geçin.
+            {gdprData.contactActionText}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -157,7 +178,7 @@ export default function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) 
               href={`/${locale}/villa-kiralama-iletisim`} 
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
             >
-              İletişime Geçin
+              {gdprData.contactButton}
             </Link>
           </div>
         </div>

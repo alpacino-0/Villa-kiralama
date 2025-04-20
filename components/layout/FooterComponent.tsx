@@ -183,7 +183,7 @@ const FooterComponent = ({ locale, dictionary }: FooterComponentProps) => {
             <div className="space-y-2">
               <div className="flex items-center text-sm group">
                 <Phone size={16} className="mr-2 text-white group-hover:text-white transition-colors" />
-                <span className="text-white">+90 555 123 4567</span>
+                <span className="text-white">+90 531 621 6100</span>
               </div>
               <div className="flex items-center text-sm group">
                 <Mail size={16} className="mr-2 text-white group-hover:text-white transition-colors" />
@@ -287,7 +287,7 @@ const FooterComponent = ({ locale, dictionary }: FooterComponentProps) => {
           </p>
           <div className="text-white text-sm mt-2 md:mt-0">
             <span>
-              {webDesign}: <Link href="/" className="hover:underline transition-colors">Inn Elegance</Link>
+              {webDesign}: <Link href="https://www.linkedin.com/in/orhan-yavuz-18719034a" target="_blank" rel="noopener noreferrer " className="hover:underline transition-colors">Orhan Yavuz</Link>
             </span>
           </div>
         </div>

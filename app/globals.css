@@ -171,3 +171,178 @@ body, p, span, div, a {
     @apply bg-background text-foreground;
   }
 }
+
+/* Renk Paleti ve Temel Değişkenler */
+:root {
+  --color-black: #000000;
+  --color-dark-navy: #100049;
+  --color-purple: #180675;
+  --color-white: #FFFFFF;
+  
+  --animation-timing: cubic-bezier(0.75, -0.01, 0, 0.99);
+  --stroke-width: 2px;
+  --animation-base-duration: 1s;
+}
+
+/* CPU Mimari Animasyon Kapsayıcı */
+.cpu-animation-container {
+  display: grid;
+  place-items: center;
+  min-height: 300px;
+  background: linear-gradient(135deg, var(--color-dark-navy) 0%, var(--color-black) 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  position: relative;
+  filter: drop-shadow(0 0 1px rgba(24, 6, 117, 0.3)) 
+          drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+}
+
+/* Erişilebilirlik için Gizli Metin */
+.cpu-animation-container::after {
+  content: "CPU mimarisi animasyon gösterimi";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Temel Çizgi Stilleri */
+.cpu-architecture {
+  offset-anchor: 10px 0px;
+  animation: animation-path infinite var(--animation-timing);
+  stroke-width: var(--stroke-width);
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  will-change: transform;
+}
+
+/* Ortak Çizgi Animasyon Özellikleri */
+[class^="cpu-line-"] {
+  animation-name: animation-path;
+  animation-timing-function: var(--animation-timing);
+  animation-iteration-count: infinite;
+}
+
+/* Bireysel Çizgi Animasyonları */
+.cpu-line-1 {
+  offset-path: path("M 10 20 h 79.5 q 5 0 5 5 v 30");
+  animation-duration: calc(var(--animation-base-duration) * 5);
+  animation-delay: calc(var(--animation-base-duration) * 1);
+  stroke: var(--color-purple);
+}
+
+.cpu-line-2 {
+  offset-path: path("M 180 10 h -69.7 q -5 0 -5 5 v 40");
+  animation-duration: calc(var(--animation-base-duration) * 2);
+  animation-delay: calc(var(--animation-base-duration) * 6);
+  stroke: var(--color-black);
+}
+
+.cpu-line-3 {
+  offset-path: path("M 130 20 v 21.8 q 0 5 -5 5 h -25");
+  animation-duration: calc(var(--animation-base-duration) * 6);
+  animation-delay: calc(var(--animation-base-duration) * 4);
+  stroke: var(--color-purple);
+}
+
+.cpu-line-4 {
+  offset-path: path("M 170 80 v -21.8 q 0 -5 -5 -5 h -65");
+  animation-duration: calc(var(--animation-base-duration) * 3);
+  animation-delay: calc(var(--animation-base-duration) * 3);
+  stroke: var(--color-black);
+}
+
+.cpu-line-5 {
+  offset-path: path("M 135 65 h 15 q 5 0 5 5 v 10 q 0 5 -5 5 h -39.8 q -5 0 -5 -5 v -35");
+  animation-duration: calc(var(--animation-base-duration) * 4);
+  animation-delay: calc(var(--animation-base-duration) * 9);
+  stroke: var(--color-purple);
+}
+
+.cpu-line-6 {
+  offset-path: path("M 94.8 95 v -46");
+  animation-duration: calc(var(--animation-base-duration) * 7);
+  animation-delay: calc(var(--animation-base-duration) * 3);
+  stroke: var(--color-black);
+}
+
+.cpu-line-7 {
+  offset-path: path("M 88 88 v -15 q 0 -5 -5 -5 h -10 q -5 0 -5 -5 v -5 q 0 -5 5 -5 h 28");
+  animation-duration: calc(var(--animation-base-duration) * 4);
+  animation-delay: calc(var(--animation-base-duration) * 4);
+  stroke: var(--color-purple);
+}
+
+.cpu-line-8 {
+  offset-path: path("M 30 30 h 25 q 5 0 5 5 v 6.5 q 0 5 5 5 h 35");
+  animation-duration: calc(var(--animation-base-duration) * 3);
+  animation-delay: calc(var(--animation-base-duration) * 3);
+  stroke: var(--color-black);
+}
+
+/* Ana Animasyon Keyframes */
+@keyframes animation-path {
+  0% {
+    offset-distance: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0.8;
+  }
+}
+
+/* Hareket Azaltma Tercihi İçin */
+@media (prefers-reduced-motion: reduce) {
+  .cpu-architecture {
+    animation: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 768px) {
+  .cpu-animation-container {
+    padding: 1rem;
+    min-height: 200px;
+  }
+  
+  .cpu-architecture {
+    stroke-width: calc(var(--stroke-width) * 0.8);
+    transform: scale(0.8);
+  }
+  
+  [class^="cpu-line-"] {
+    animation-duration: calc(var(--animation-base-duration) * 0.7);
+  }
+}
+
+/* Koyu Tema Desteği */
+@media (prefers-color-scheme: dark) {
+  .cpu-animation-container {
+    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-dark-navy) 100%);
+  }
+  
+  .cpu-line-2, .cpu-line-4, .cpu-line-6, .cpu-line-8 {
+    stroke: var(--color-white);
+  }
+}

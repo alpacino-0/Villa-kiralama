@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { ChevronRight, MoreHorizontal } from "lucide-react"
+import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 
@@ -98,6 +99,73 @@ function BreadcrumbEllipsis({
   )
 }
 
+export interface BreadcrumbItem {
+  label: string;
+  href: string;
+  isCurrent?: boolean;
+}
+
+interface BreadcrumbWithTranslationProps {
+  items: BreadcrumbItem[];
+  homeLabel: string;
+  locale: string;
+  className?: string;
+  homeIcon?: React.ReactNode;
+  separator?: React.ReactNode;
+}
+
+function BreadcrumbWithTranslation({
+  items,
+  homeLabel,
+  locale,
+  className,
+  homeIcon,
+  separator
+}: BreadcrumbWithTranslationProps) {
+  return (
+    <Breadcrumb className={className}>
+      <BreadcrumbList>
+        <BreadcrumbItem>
+          <BreadcrumbLink asChild>
+            <Link href={`/${locale}`} className="flex items-center text-muted-foreground hover:text-primary">
+              {homeIcon && <span className="mr-1">{homeIcon}</span>}
+              {homeLabel}
+            </Link>
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        
+        <BreadcrumbSeparator>
+          {separator || <ChevronRight className="h-4 w-4" />}
+        </BreadcrumbSeparator>
+        
+        {items.map((item, index) => (
+          <React.Fragment key={item.href}>
+            <BreadcrumbItem>
+              {item.isCurrent ? (
+                <span className="text-primary font-medium" aria-current="page">
+                  {item.label}
+                </span>
+              ) : (
+                <BreadcrumbLink asChild>
+                  <Link href={item.href} className="text-muted-foreground hover:text-primary">
+                    {item.label}
+                  </Link>
+                </BreadcrumbLink>
+              )}
+            </BreadcrumbItem>
+            
+            {index < items.length - 1 && (
+              <BreadcrumbSeparator>
+                {separator || <ChevronRight className="h-4 w-4" />}
+              </BreadcrumbSeparator>
+            )}
+          </React.Fragment>
+        ))}
+      </BreadcrumbList>
+    </Breadcrumb>
+  );
+}
+
 export {
   Breadcrumb,
   BreadcrumbList,
@@ -106,4 +174,5 @@ export {
   BreadcrumbPage,
   BreadcrumbSeparator,
   BreadcrumbEllipsis,
+  BreadcrumbWithTranslation,
 }

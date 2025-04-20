@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import sozlesmeData from './sozlesme.json';
+import type { Metadata } from 'next';
 import { 
   Accordion, 
   AccordionContent, 
@@ -16,15 +16,38 @@ import {
   BreadcrumbSeparator 
 } from '@/components/ui/breadcrumb';
 import { ChevronRight, HomeIcon } from 'lucide-react';
+import { getDictionary } from '@/app/dictionaries';
+import { Locale, locales } from '@/app/i18n';
 
 type VillaKiralamaSozlesmesiProps = {
   params: Promise<{ locale: string }>;
 };
 
+// Dinamik metadata oluşturma
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  // Next.js 15.3.0'da params bir Promise olarak geliyor
+  const resolvedParams = await params;
+  
+  // Dil sözlüğünü al
+  const locale = resolvedParams.locale;
+  const dict = await getDictionary(locale);
+
+  return {
+    title: dict.agreement.metadata.title,
+    description: dict.agreement.metadata.description,
+  };
+}
+
 export default async function VillaKiralamaSozlesmesi({ params }: VillaKiralamaSozlesmesiProps) {
   // Next.js 15.3.0'da params bir Promise olarak geliyor
   const resolvedParams = await params;
-  const { locale } = resolvedParams;
+  
+  // Dil kontrolü ve sözlük yükleme
+  const locale = locales.includes(resolvedParams.locale as Locale) ? resolvedParams.locale : 'en';
+  const dict = await getDictionary(locale);
+  
+  // Sözleşme verilerini sözlük nesnesinden al
+  const sozlesmeData = dict.agreement.sozlesme;
 
   return (
     <div className="container mx-auto px-4 py-8 md:py-12">
@@ -36,7 +59,7 @@ export default async function VillaKiralamaSozlesmesi({ params }: VillaKiralamaS
               <BreadcrumbLink asChild>
                 <Link href={`/${locale}`} className="flex items-center text-muted-foreground hover:text-primary">
                   <HomeIcon className="h-4 w-4 mr-1" />
-                  Ana Sayfa
+                  {dict.agreement.breadcrumb.home}
                 </Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
@@ -44,59 +67,65 @@ export default async function VillaKiralamaSozlesmesi({ params }: VillaKiralamaS
               <ChevronRight className="h-4 w-4" />
             </BreadcrumbSeparator>
             <BreadcrumbItem>
-              <span className="text-primary font-medium">Villa Kiralama Sözleşmesi</span>
+              <span className="text-primary font-medium">{dict.agreement.breadcrumb.agreement}</span>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
         
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center text-primary">
-          {sozlesmeData.title}
+          {dict.agreement.pageTitle}
         </h1>
         
         <p className="text-muted-foreground text-center mb-8 max-w-3xl mx-auto">
-          Bu sayfada Inn Elegance villa kiralama hizmetleri için geçerli olan sözleşme şartlarını bulabilirsiniz.
+          {dict.agreement.pageDescription}
         </p>
         
         {/* Giriş Bilgileri */}
         <Card className="mb-8 shadow-sm hover:shadow-md transition-shadow">
           <CardHeader>
             <CardTitle className="text-xl md:text-2xl text-primary">
-              {sozlesmeData.sections[0].title}
+              {dict.agreement.introduction.title}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-foreground text-base">
-              {sozlesmeData.sections[0].content}
+              {sozlesmeData?.sections && sozlesmeData.sections.length > 0 
+                ? sozlesmeData.sections[0]?.content 
+                : dict.agreement.introduction.content}
             </p>
           </CardContent>
         </Card>
         
         {/* Sözleşme Bölümleri */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-primary">Sözleşme Maddeleri</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-primary">{dict.agreement.sections.title}</h2>
           <Accordion type="single" collapsible className="border rounded-lg">
-            {sozlesmeData.sections.slice(1).map((section) => (
-              <AccordionItem key={section.id} value={section.id}>
-                <AccordionTrigger className="text-lg font-medium text-primary px-4">
-                  {section.title}
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-4">
-                  <div className="whitespace-pre-line text-foreground text-base">
-                    {section.content}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
+            {sozlesmeData?.sections && sozlesmeData.sections.length > 1
+              ? sozlesmeData.sections.slice(1).map((section) => (
+                <AccordionItem key={section.id} value={section.id}>
+                  <AccordionTrigger className="text-lg font-medium text-primary px-4">
+                    {section.title}
+                  </AccordionTrigger>
+                  <AccordionContent className="px-4 pb-4">
+                    <div className="whitespace-pre-line text-foreground text-base">
+                      {section.content}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              ))
+              : <p className="p-4">{dict.agreement.sections.fallbackMessage}</p>
+            }
           </Accordion>
         </div>
         
         {/* Sık Sorulan Sorular */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-primary">Sık Sorulan Sorular</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-primary">{dict.agreement.faq.title}</h2>
           <Card className="shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="pt-6">
               <Accordion type="single" collapsible>
-                {sozlesmeData.faq.map((faq) => (
+                {sozlesmeData?.faq && sozlesmeData.faq.length > 0
+                  ? sozlesmeData.faq.map((faq) => (
                   <AccordionItem 
                     key={`faq-${faq.question.replace(/\s+/g, '-').toLowerCase().slice(0, 20)}`} 
                     value={`faq-${faq.question.replace(/\s+/g, '-').toLowerCase().slice(0, 20)}`}
@@ -110,7 +139,9 @@ export default async function VillaKiralamaSozlesmesi({ params }: VillaKiralamaS
                       </p>
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                ))
+                : <p className="p-4">{dict.agreement.faq.fallbackMessage}</p>
+                }
               </Accordion>
             </CardContent>
           </Card>
@@ -118,38 +149,44 @@ export default async function VillaKiralamaSozlesmesi({ params }: VillaKiralamaS
         
         {/* Şirket Bilgileri */}
         <div className="bg-muted p-6 rounded-lg">
-          <h2 className="text-2xl font-semibold mb-4 text-primary">Şirket Bilgileri</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-primary">{dict.agreement.companyInfo.title}</h2>
           <div className="space-y-3 text-foreground">
             <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Şirket:</strong> 
-              <span>{sozlesmeData.companyInfo.name}</span>
+              <strong className="min-w-24 inline-block">{dict.agreement.companyInfo.company}:</strong> 
+              <span>{sozlesmeData?.companyInfo?.name || ""}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Adres:</strong> 
-              <span>{sozlesmeData.companyInfo.address}</span>
+              <strong className="min-w-24 inline-block">{dict.agreement.companyInfo.address}:</strong> 
+              <span>{sozlesmeData?.companyInfo?.address || ""}</span>
             </p>
+            {sozlesmeData?.companyInfo?.website && (
+              <p className="flex flex-col sm:flex-row sm:gap-2">
+                <strong className="min-w-24 inline-block">{dict.agreement.companyInfo.website}:</strong> 
+                <a href={`https://${sozlesmeData.companyInfo.website}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  {sozlesmeData.companyInfo.website}
+                </a>
+              </p>
+            )}
             <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Web Sitesi:</strong> 
-              <a href={`https://${sozlesmeData.companyInfo.website}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                {sozlesmeData.companyInfo.website}
-              </a>
+              <strong className="min-w-24 inline-block">{dict.agreement.companyInfo.owner}:</strong> 
+              <span>{sozlesmeData?.companyInfo?.owner || ""}</span>
             </p>
-            <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Sahibi:</strong> 
-              <span>{sozlesmeData.companyInfo.owner}</span>
-            </p>
-            <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">E-posta:</strong> 
-              <a href={`mailto:${sozlesmeData.companyInfo.email}`} className="text-primary hover:underline">
-                {sozlesmeData.companyInfo.email}
-              </a>
-            </p>
-            <p className="flex flex-col sm:flex-row sm:gap-2">
-              <strong className="min-w-24 inline-block">Telefon:</strong> 
-              <a href={`tel:${sozlesmeData.companyInfo.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
-                {sozlesmeData.companyInfo.phone}
-              </a>
-            </p>
+            {sozlesmeData?.companyInfo?.email && (
+              <p className="flex flex-col sm:flex-row sm:gap-2">
+                <strong className="min-w-24 inline-block">{dict.agreement.companyInfo.email}:</strong> 
+                <a href={`mailto:${sozlesmeData.companyInfo.email}`} className="text-primary hover:underline">
+                  {sozlesmeData.companyInfo.email}
+                </a>
+              </p>
+            )}
+            {sozlesmeData?.companyInfo?.phone && (
+              <p className="flex flex-col sm:flex-row sm:gap-2">
+                <strong className="min-w-24 inline-block">{dict.agreement.companyInfo.phone}:</strong> 
+                <a href={`tel:${sozlesmeData.companyInfo.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
+                  {sozlesmeData.companyInfo.phone}
+                </a>
+              </p>
+            )}
           </div>
         </div>
       </div>
