@@ -5,16 +5,25 @@ import { locales, defaultLocale, type Locale } from "../i18n";
 import HeaderComponent from "@/components/layout/HeaderComponent";
 import FooterComponent from "@/components/layout/FooterComponent";
 import { getDictionary } from "../dictionaries";
+import { defaultMetadata } from "../metadata";
 
 // Statik olarak desteklenen diller
 export function generateStaticParams() {  
   return locales.map(locale => ({ locale }));
 }
 
-// Metadata tanımı
+// Dil bazlı metadata tanımlarını oluşturuyoruz
+// Not: Next.js 15'te dil parametrelerinden dinamik metadata oluşturmak için
+// generateMetadata fonksiyonunu kullanmıyoruz, çünkü Typescript hataları oluşabiliyor
 export const metadata: Metadata = {
-  title: 'Villa Kiralama',
-  description: 'En güzel villalar burada',
+  ...defaultMetadata,
+  alternates: {
+    canonical: '/',
+    languages: {
+      'tr': '/tr',
+      'en': '/en',
+    },
+  },
 };
 
 // Next.js 15.3.0 için tip tanımını yeni yöntemle güncelliyoruz
@@ -41,7 +50,9 @@ export default async function LocaleLayout({
   return (
     <div className="w-screen h-screen" data-locale={locale}>
       <HeaderComponent locale={locale} dictionary={dictionary} />
-      {children}
+      <main lang={locale}>
+        {children}
+      </main>
       <FooterComponent locale={locale} dictionary={dictionary} />
     </div>
   );

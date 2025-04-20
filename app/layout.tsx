@@ -1,9 +1,9 @@
 import './globals.css';
 import { Geist, Geist_Mono } from "next/font/google";
-import type { Metadata } from "next";
 import { defaultLocale } from "./i18n";
 import { Nunito, Montserrat } from "next/font/google";
 import { Providers } from '@/lib/providers';
+import { defaultMetadata, defaultViewport } from './metadata';
 
 // Font tanımlamaları
 const geistSans = Geist({
@@ -32,10 +32,9 @@ const montserrat = Montserrat({
   weight: ["600", "700"]
 });
 
-export const metadata: Metadata = {
-  title: 'Villa Kiralama',
-  description: 'En iyi villalarımızı keşfedin ve kiralamanın tadını çıkarın.',
-};
+// Varsayılan metadata ve viewport yapılandırması
+export const metadata = defaultMetadata;
+export const viewport = defaultViewport;
 
 /**
  * Root Layout
