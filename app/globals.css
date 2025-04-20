@@ -6,6 +6,7 @@
 :root {
   --primary: #000000; /* Siyah - Logo, başlıklar, vurgular */
   --secondary: #100049; /* Koyu Lacivert - Sekonder renk, arka planlar */
+  --secondary-foreground: #10004950; /* Beyaz - Secondary buton metni */
   --radius: 0.625rem;
   --background: #FFFFFF; /* Beyaz - Arka planlar, içerik alanları */
   --foreground: #000000; /* Siyah - Metin rengi */
@@ -20,6 +21,7 @@
   --accent: #180675; /* Mor - Aksanlar */
   --accent-foreground: #FFFFFF; /* Beyaz - Aksan metni */
   --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: #FFFFFF; /* Beyaz - Destructive metin */
   --border: #DDDDDD; /* Hafif gri - Sınırlar */
   --input: #EEEEEE; /* Gri - Input alanları */
   --ring: #180675; /* Mor - Odak halkası */
@@ -36,6 +38,12 @@
   --sidebar-accent-foreground: #FFFFFF; /* Beyaz - Sidebar aksan metni */
   --sidebar-border: rgba(255, 255, 255, 0.1); /* Transparan beyaz - Sidebar sınırları */
   --sidebar-ring: rgba(255, 255, 255, 0.5); /* Yarı transparan beyaz - Sidebar halkası */
+  
+  /* tailwind.config.js'deki inn renkleri */
+  --inn-black: #000000; /* Inn Elegance Siyah */
+  --inn-navy: #100049; /* Inn Elegance Lacivert */
+  --inn-purple: #180675; /* Inn Elegance Mor */
+  --inn-white: #FFFFFF; /* Inn Elegance Beyaz */
 }
 
 @theme inline {
@@ -60,6 +68,7 @@
   --color-input: var(--input);
   --color-border: var(--border);
   --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
@@ -70,6 +79,10 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-inn-black: var(--inn-black);
+  --color-inn-navy: var(--inn-navy);
+  --color-inn-purple: var(--inn-purple);
+  --color-inn-white: var(--inn-white);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -78,7 +91,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #FFFFFF; /* Beyaz - Karanlık modda başlıklar */
+    --primary: #100049; /* Beyaz - Karanlık modda başlıklar */
     --secondary: #180675; /* Mor - Karanlık modda sekonder */
   }
 }
@@ -98,6 +111,19 @@ body, p, span, div, a {
   font-family: var(--font-nunito);
 }
 
+.text-primary {
+  color: var(--secondary);
+}
+
+.text-accent-foreground {
+  color: var(--secondary);
+}
+
+.text-accent-foreground {
+  color: #FFFFFF;
+}
+
+
 .dark {
   --background: #000000; /* Siyah - Karanlık mod arka plan */
   --foreground: #FFFFFF; /* Beyaz - Karanlık mod metin */
@@ -114,6 +140,7 @@ body, p, span, div, a {
   --accent: #180675; /* Mor - Karanlık mod aksan */
   --accent-foreground: #FFFFFF; /* Beyaz - Karanlık mod aksan metni */
   --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: #FFFFFF; /* Beyaz - Karanlık mod destructive metni */
   --border: rgba(255, 255, 255, 0.1); /* Transparan beyaz - Karanlık mod sınırlar */
   --input: rgba(255, 255, 255, 0.15); /* Yarı transparan beyaz - Karanlık mod input */
   --ring: rgba(255, 255, 255, 0.5); /* Yarı transparan beyaz - Karanlık mod halka */
@@ -130,6 +157,10 @@ body, p, span, div, a {
   --sidebar-accent-foreground: #FFFFFF; /* Beyaz - Karanlık mod sidebar aksan metni */
   --sidebar-border: rgba(255, 255, 255, 0.1); /* Transparan beyaz - Karanlık mod sidebar sınırları */
   --sidebar-ring: rgba(255, 255, 255, 0.5); /* Yarı transparan beyaz - Karanlık mod sidebar halkası */
+  --inn-black: #000000; /* Inn Elegance Siyah */
+  --inn-navy: #100049; /* Inn Elegance Lacivert */
+  --inn-purple: #180675; /* Inn Elegance Mor */
+  --inn-white: #FFFFFF; /* Inn Elegance Beyaz */
 }
 
 @layer base {

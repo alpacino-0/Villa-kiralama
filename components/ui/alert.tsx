@@ -15,6 +15,10 @@ const alertVariants = cva(
           "border-accent/20 bg-accent/10 text-accent [&>svg]:text-accent",
         info:
           "border-secondary/20 bg-secondary/10 text-secondary [&>svg]:text-secondary",
+        navy:
+          "border-inn-navy/20 bg-inn-navy/10 text-inn-navy [&>svg]:text-inn-navy",
+        purple:
+          "border-inn-purple/20 bg-inn-purple/10 text-inn-purple [&>svg]:text-inn-purple",
       },
     },
     defaultVariants: {
