@@ -3,20 +3,12 @@
 import { useState, useCallback } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/lib/supabase/client';
-import { CalendarStatus } from '@/types/enums';
+import { CalendarStatus, EventType } from '@/types/enums';
+import type { CalendarEvent } from '@/types/villa';
 
 export type DateRangeType = {
   startDate: Date | undefined;
   endDate: Date | undefined;
-};
-
-export type CalendarEvent = {
-  id: string;
-  villaId: string;
-  date: string;
-  status: CalendarStatus;
-  price: number | null;
-  note: string | null;
 };
 
 /**
@@ -68,7 +60,7 @@ export function useDateRange(villaId?: string) {
 
       const { data, error } = await supabase
         .from('CalendarEvent')
-        .select('id, villaId, date, status, price, note')
+        .select('id, villaId, date, status, price, note, eventType, reservationId')
         .eq('villaId', villaId)
         .gte('date', todayStr)
         .lte('date', oneYearLaterStr)
@@ -174,6 +166,16 @@ export function useDateRange(villaId?: string) {
     return dayCount > 0 ? totalPrice : null;
   }, [dateRange, calendarEvents]);
 
+  // Özel teklif (special offer) tarihleri bulma
+  const getSpecialOfferDates = useCallback((): CalendarEvent[] => {
+    if (!calendarEvents) return [];
+    
+    return calendarEvents.filter(event => 
+      event.eventType?.includes(EventType.SPECIAL_OFFER) && 
+      event.status === CalendarStatus.AVAILABLE
+    );
+  }, [calendarEvents]);
+
   return {
     dateRange,
     updateDateRange,
@@ -181,6 +183,7 @@ export function useDateRange(villaId?: string) {
     isLoading,
     isDateAvailable,
     areAllDatesAvailable,
-    calculateTotalPrice
+    calculateTotalPrice,
+    getSpecialOfferDates
   };
 } 

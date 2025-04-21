@@ -34,7 +34,7 @@
         "home": "Startseite"
     },
     "footer": {
-        "companyInfo": "Ihre vertrauenswürdige Quelle für Luxusvillen und Ferienhäuser.",
+        "companyInfo": "Bietet seinen Gästen Komfort, Privatsphäre und Qualität mit luxuriösen Villen und Ferienhäusern an ausgewählten Standorten.",
         "contact": "Kontakt:",
         "copyright": "© 2025 Villa Vermietung. Alle Rechte vorbehalten.",
         "links": {
@@ -750,6 +750,94 @@
         "buttons": {
             "contact": "Kontakt aufnehmen",
             "viewVillas": "Villen anzeigen"
+        },
+        "lastUpdated": "Letzte Aktualisierung: 10.05.2024",
+        "sections": [
+            {
+                "id": "introduction",
+                "title": "INN ELEGANCE LIMITED LIABILITY COMPANY",
+                "content": "Zunächst freuen wir uns, offiziell bekannt zu geben, dass die Marke Inn Elegance und unsere Website www.innelegance.com vollständig im Besitz von Inn Elegance LLC sind. Inn Elegance LLC ist ein in Florida ansässiges Unternehmen, das eine Plattform für Luxusvillen, Apartments, Hotels und andere Unterkunftsmöglichkeiten anbietet. Inn Elegance strebt danach, seinen Gästen komfortable und besondere Urlaubserlebnisse zu bieten und in jeder Unterkunftseinheit eine unvergessliche Urlaubsmöglichkeit anzubieten."
+            },
+            {
+                "id": "company-description",
+                "title": "Unternehmensvorstellung",
+                "content": "Unsere Plattform bietet Nutzern eine breite Palette von Unterkünften und ermöglicht ihnen, ihre Ferien einfach zu planen. Inn Elegance bietet mit seiner benutzerfreundlichen Oberfläche und zuverlässigen Mieterfahrung seinen Gästen ideale Optionen für einen luxuriösen und komfortablen Urlaub. Urlauber bevorzugen unsere Plattform, um Komfort, Ästhetik und ein einzigartiges Erlebnis miteinander zu verbinden."
+            },
+            {
+                "id": "parties-purpose",
+                "title": "Parteien und Zweck",
+                "content": "Diese Vereinbarung wird zwischen der Person, die die 'VILLA/APARTMENT' mietet (im Folgenden als 'KUNDE' bezeichnet), und der Person, die die 'VILLA/APARTMENT' vermietet (im Folgenden als 'INN ELEGANCE' bezeichnet), zum Zweck der Vermietung der 'VILLA/APARTMENT' für einen vorher festgelegten Zeitraum mit Start- und Enddaten geschlossen. Kunden und ihre Begleiter, die eine Reservierung für eine unserer 'Villen/Apartments', die auf der Website 'www.innelegance.com' beworben werden, entweder über unsere Website, per Telefon oder per E-Mail vornehmen, gelten als mit den folgenden Bedingungen einverstanden. Jedes Verhalten, das gegen eine der folgenden Bedingungen verstößt, gibt 'INN ELEGANCE' das Recht, die Reservierung einseitig zu stornieren, den Kunden aufzufordern, die Villa/das Apartment zu verlassen, die Anzahlung, Mietgebühr nicht zurückzuerstatten und die vollständige Zahlung unbezahlter Mietgebühren zu verlangen."
+            },
+            {
+                "id": "time-based-conditions",
+                "title": "Reservierungs-, Zahlungs-, Stornierungs- und Erstattungsbedingungen",
+                "content": "Der Kunde kann seine Reise vor Beginn stornieren. Der Kunde muss die Stornierungsmitteilung schriftlich an INN ELEGANCE richten, und nicht schriftlich eingereichte Mitteilungen sind nicht akzeptabel. Reservierungsstornierungen, die mündlich per Telefon vorgenommen werden, sind absolut nicht gültig. Reservierungsstornierungen sind ab dem Moment gültig, in dem die schriftliche Mitteilung INN ELEGANCE erreicht. Bei Stornierungen wird INN ELEGANCE bestimmte Prozentsätze vom Kunden auf Basis der Gesamtpreise der im Reisevertrag festgelegten Dienstleistungen einbehalten, um die getroffenen Maßnahmen bezüglich der Reise, Ausgaben und die Entschädigung der Villa-/Apartment-Besitzer zu kompensieren."
+            },
+            {
+                "id": "cancellation-conditions",
+                "title": "Stornierungsbedingungen",
+                "content": "Wenn eine Anzahlung (Kaution) erhalten wurde: a) Für die 20% Anzahlung (Kaution), die für die Reservierung gezahlt wurde (kann zwischen 20% und 100% in unseren Villen variieren), gibt es absolut keine Erstattung. b) Im Falle von Stornierungen, die bis zu 30 Tage oder weniger vor Ihrem Check-in-Datum in der Villa/Apartment gemacht werden, oder im Falle des Nichterscheinens in der Villa/Apartment, muss der Kunde 100% der Zahlung leisten."
+            },
+            {
+                "id": "full-payment-cancellation",
+                "title": "Stornierung bei vollständiger Zahlung",
+                "content": "Wenn die Gesamtzahlung erhalten wurde: a) Für Stornierungen, die bis zu 30 Tage oder mehr vor Ihrem Check-in-Datum in der Villa/Apartment gemacht werden, wird der 20% Anzahlungsbetrag (Kaution) berechnet, und dieser Betrag ist nicht erstattungsfähig. Der verbleibende Betrag wird auf Ihr Konto zurückerstattet. b) Im Falle von Stornierungen, die bis zu 30 Tage oder weniger vor Ihrem Check-in-Datum in der Villa/Apartment gemacht werden, oder im Falle des Nichterscheinens in der Villa/Apartment, gibt es keine Erstattung für die geleistete Zahlung."
+            },
+            {
+                "id": "refund-conditions",
+                "title": "Erstattungsbedingungen",
+                "content": "Bei Reservierungsstornierungen werden finanzielle Schäden, Kommissionsgebühren usw., die aufgrund der Erstattungsprozesse von Zahlungen entstehen und entstehen werden, die per Überweisung, Banküberweisung oder Kreditkarte geleistet wurden und die INN ELEGANCE von der Republik Türkei, Bank oder Banken auferlegt werden, von dem an den Kunden zu erstattenden Geld abgezogen."
+            },
+            {
+                "id": "company-cancellation",
+                "title": "Stornierung durch das Unternehmen",
+                "content": "Im Falle einer einseitigen Stornierung der Villa-/Apartment-Reservierung durch INN ELEGANCE aus irgendeinem Grund wird diese Situation dem Kunden so schnell wie möglich mitgeteilt. Wenn in unserem Portfolio zu denselben Terminen eine gleichwertige Villa/Apartment verfügbar ist, wird sie dem Kunden angeboten. Wenn der Kunde nicht zustimmt und in Fällen, die nicht unter die Klausel 'höhere Gewalt' fallen, wird das erhaltene Geld an den Kunden zurückerstattet."
+            },
+            {
+                "id": "company-liability",
+                "title": "Unternehmenshaftung",
+                "content": "INN ELEGANCE ist absolut nicht verantwortlich für Schäden, die aus von INN ELEGANCE stornierten Reservierungen entstehen, und kann nicht verantwortlich gemacht werden. Der Kunde, der die Villa/Apartment mietet, akzeptiert, dies zu berücksichtigen, dass INN ELEGANCE absolut nicht verantwortlich ist für alle Details, einschließlich Flugtickets, Bustickets, gemietete Autos, Boote, Transferdienste, Hotel- und Pensionsunterkunftsgebühren usw., die der Kunde im Voraus gekauft hat, sowie für alle von privaten Unternehmen oder der Regierung erhaltenen Genehmigungen, die ungültig werden können."
+            },
+            {
+                "id": "force-majeure",
+                "title": "Höhere Gewalt",
+                "content": "In Fällen höherer Gewalt wie Gesundheitsprobleme, Naturkatastrophen, Reisebeschränkungen, Krieg, terroristische Ereignisse wird unter der Bedingung, dass ein offizielles Dokument vorgelegt wird, eine besondere Bewertung vorgenommen. In diesen Fällen kann, wenn die von der Stornierung betroffenen Reservierungstermine weiterverkauft werden können, die Anzahlung erstattet oder die Reservierung auf einen anderen Termin verschoben werden. Die INN ELEGANCE Servicegebühr (20%) wird unter keinen Umständen erstattet."
+            },
+            {
+                "id": "written-notifications",
+                "title": "Erfordernis für schriftliche Mitteilung",
+                "content": "Alle Stornierungsanfragen müssen schriftlich (per E-Mail oder über das Reservierungssystem) erfolgen. Stornierungsanfragen, die telefonisch gemacht werden, sind nicht gültig. Stornierungsanfragen, die ohne schriftliche Mitteilung gemacht werden, werden nicht bearbeitet, und der Kunde bleibt weiterhin für alle Zahlungsverpflichtungen verantwortlich."
+            }
+        ],
+        "faq": [
+            {
+                "question": "Ist die Anzahlung, die ich für die Reservierung geleistet habe, erstattungsfähig?",
+                "answer": "Für die 20% Anzahlung (Kaution), die für die Reservierung gezahlt wurde (kann zwischen 20% und 100% in unseren Villen variieren), gibt es absolut keine Erstattung."
+            },
+            {
+                "question": "Ist die Zahlung erstattungsfähig, wenn ich weniger als 30 Tage vor dem Check-in-Datum storniere?",
+                "answer": "Im Falle von Stornierungen, die bis zu 30 Tage oder weniger vor Ihrem Check-in-Datum in der Villa/Apartment gemacht werden, oder im Falle des Nichterscheinens in der Villa/Apartment, gibt es keine Erstattung für die geleistete Zahlung."
+            },
+            {
+                "question": "Wie kann ich meine Reservierung stornieren?",
+                "answer": "Sie müssen die Stornierungsmitteilung schriftlich an INN ELEGANCE richten (per E-Mail oder über das Reservierungssystem). Reservierungsstornierungen, die mündlich per Telefon vorgenommen werden, sind absolut nicht gültig."
+            },
+            {
+                "question": "Was passiert, wenn INN ELEGANCE meine Reservierung storniert?",
+                "answer": "Falls Ihre Reservierung von INN ELEGANCE storniert wird, wenn in unserem Portfolio zu denselben Terminen eine gleichwertige Villa/Apartment verfügbar ist, wird sie Ihnen angeboten. Wenn Sie nicht zustimmen und in Fällen, die nicht unter die Klausel 'höhere Gewalt' fallen, wird der von Ihnen gezahlte Betrag erstattet."
+            },
+            {
+                "question": "Werden bei Erstattungsprozessen Bankgebühren abgezogen?",
+                "answer": "Ja, bei Reservierungsstornierungen werden Kommissionsgebühren, die aufgrund der Erstattungsprozesse von Zahlungen entstehen, die per Überweisung, Banküberweisung oder Kreditkarte geleistet wurden, von dem an den Kunden zu erstattenden Betrag abgezogen."
+            }
+        ],
+        "companyInfo": {
+            "name": "Inn Elegance LLC",
+            "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+            "website": "www.innelegance.com",
+            "owner": "Orhan Yavuz",
+            "email": "info@innelegance.com",
+            "phone": "+90 531 621 61 00"
         }
     },
     "gdprNotice": {
@@ -789,7 +877,7 @@
             {
                 "id": "company-introduction",
                 "title": "Über Inn Elegance LLC",
-                "content": "Zunächst freuen wir uns, offiziell bekannt zu geben, dass die Marke Inn Elegance und unsere Website www.innelegance.com vollständig der Inn Elegance LLC gehören.\n\nInn Elegance LLC ist ein in Florida ansässiges Unternehmen, das eine Plattform für Luxusvillen, Apartments, Hotels und andere Unterkunftsmöglichkeiten anbietet. Inn Elegance hat das Ziel, unseren Gästen komfortable und besondere Urlaubserlebnisse zu bieten und strebt danach, in jeder Unterkunftseinheit eine unvergessliche Urlaubsmöglichkeit anzubieten.\n\nUnsere Plattform bietet Nutzern eine breite Palette von Unterkünften und ermöglicht ihnen, ihre Ferien einfach zu planen. Inn Elegance bietet mit seiner benutzerfreundlichen Oberfläche und zuverlässigen Mieterfahrung seinen Gästen ideale Optionen für einen luxuriösen und komfortablen Urlaub. Urlauber bevorzugen unsere Plattform, um Komfort, Ästhetik und ein einzigartiges Erlebnis miteinander zu verbinden."
+                "content": "Zunächst freuen wir uns, offiziell bekannt zu geben, dass die Marke Inn Elegance und unsere Website www.innelegance.com vollständig der Inn Elegance LLC gehören.\n\nInn Elegance LLC ist ein in Florida ansässiges Unternehmen, das Luxusvillenvermieterdienstleistungen anbietet. Unser Unternehmen zielt darauf ab, komfortable und private Urlaubserlebnisse anzubieten und unseren Gästen durch die von uns angebotenen Villen eine unvergessliche Urlaubsmöglichkeit zu bieten.\n\nUnsere Plattform bietet Nutzern eine breite Palette von Unterkünften und ermöglicht ihnen, ihre Ferien einfach zu planen. Inn Elegance bietet mit seiner benutzerfreundlichen Oberfläche und zuverlässigen Mieterfahrung seinen Gästen ideale Optionen für einen luxuriösen und komfortablen Urlaub. Urlauber bevorzugen unsere Plattform, um Komfort, Ästhetik und ein einzigartiges Erlebnis miteinander zu verbinden."
             },
             {
                 "id": "policy-purpose",

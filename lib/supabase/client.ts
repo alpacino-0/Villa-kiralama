@@ -1,8 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
-import type { Villa, VillaImage, VillaTag, SeasonalPrice, CalendarEvent, Region } from '@/types/villa';
+import type { Villa, VillaImage, VillaTag, CalendarEvent, Region, VillaAmenity } from '@/types/villa';
 
 // Supabase Database tipi
-export interface Database {
+export type Database = {
   public: {
     Tables: {
       Villa: {
@@ -16,9 +16,80 @@ export interface Database {
         Update: Partial<Omit<CalendarEvent, 'id'>>;
       };
       SeasonalPrice: {
-        Row: SeasonalPrice;
-        Insert: Omit<SeasonalPrice, 'id'>;
-        Update: Partial<Omit<SeasonalPrice, 'id'>>;
+        Row: {
+          id: string;
+          villaId: string;
+          seasonName: string;
+          startDate: string;
+          endDate: string;
+          nightlyPrice: number;
+          weeklyPrice: number | null;
+          currencyId: string;
+          description: string | null;
+          isActive: boolean;
+        };
+        Insert: {
+          id?: string;
+          villaId: string;
+          seasonName: string;
+          startDate: string;
+          endDate: string;
+          nightlyPrice: number;
+          weeklyPrice?: number | null;
+          currencyId: string;
+          description?: string | null;
+          isActive?: boolean;
+        };
+        Update: {
+          id?: string;
+          villaId?: string;
+          seasonName?: string;
+          startDate?: string;
+          endDate?: string;
+          nightlyPrice?: number;
+          weeklyPrice?: number | null;
+          currencyId?: string;
+          description?: string | null;
+          isActive?: boolean;
+        };
+        Relationships: [
+          {
+            foreignKeyName: "SeasonalPrice_villaId_fkey";
+            columns: ["villaId"];
+            referencedRelation: "Villa";
+            referencedColumns: ["id"];
+          },
+          {
+            foreignKeyName: "SeasonalPrice_currencyId_fkey";
+            columns: ["currencyId"];
+            referencedRelation: "Currency";
+            referencedColumns: ["id"];
+          }
+        ];
+      };
+      Currency: {
+        Row: {
+          id: string;
+          code: string;
+          symbol: string;
+          name: string;
+          isActive: boolean;
+        };
+        Insert: {
+          id?: string;
+          code: string;
+          symbol: string;
+          name: string;
+          isActive?: boolean;
+        };
+        Update: {
+          id?: string;
+          code?: string;
+          symbol?: string;
+          name?: string;
+          isActive?: boolean;
+        };
+        Relationships: [];
       };
       VillaTag: {
         Row: VillaTag;
@@ -29,6 +100,11 @@ export interface Database {
         Row: VillaImage;
         Insert: Omit<VillaImage, 'id' | 'createdAt'>;
         Update: Partial<Omit<VillaImage, 'id' | 'createdAt'>>;
+      };
+      VillaAmenity: {
+        Row: VillaAmenity;
+        Insert: Omit<VillaAmenity, 'id' | 'createdAt'>;
+        Update: Partial<Omit<VillaAmenity, 'id' | 'createdAt'>>;
       };
       Region: {
         Row: Region;
@@ -50,7 +126,9 @@ export interface Database {
       };
     };
     Enums: {
-      [name: string]: string[];
+      CalendarStatus: 'AVAILABLE' | 'RESERVED' | 'BLOCKED';
+      EventType: 'CHECKIN' | 'CHECKOUT' | 'SPECIAL_OFFER';
+      Status: 'ACTIVE' | 'INACTIVE' | 'PENDING' | 'DELETED';
     };
   };
 }

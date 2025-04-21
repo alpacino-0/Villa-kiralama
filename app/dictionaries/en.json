@@ -34,7 +34,7 @@
     "home": "Home"
   },
   "footer": {
-    "companyInfo": "Your trusted source for luxury villas and holiday homes.",
+    "companyInfo": "Offers guests comfort, privacy, and quality combined with luxurious villas and holiday homes in exclusive locations.",
     "contact": "Contact:",
     "copyright": "© 2025 Villa Rental. All rights reserved.",
     "links": {
@@ -750,6 +750,94 @@
     "buttons": {
       "contact": "Contact Us",
       "viewVillas": "Browse Villas"
+    },
+    "lastUpdated": "Last Updated: 05/10/2024",
+    "sections": [
+      {
+        "id": "introduction",
+        "title": "INN ELEGANCE LIMITED LIABILITY COMPANY",
+        "content": "First and foremost, we are pleased to officially announce that the Inn Elegance brand and our website www.innelegance.com are entirely owned by Inn Elegance LLC. Inn Elegance LLC is a Florida-based company that offers a platform for luxury villas, apartments, hotels, and other accommodation options. Aiming to provide our guests with comfortable and special holiday experiences, Inn Elegance strives to offer an unforgettable holiday opportunity in each accommodation unit."
+      },
+      {
+        "id": "company-description",
+        "title": "Company Introduction",
+        "content": "Our platform provides users with a wide range of accommodations, allowing them to easily plan their holidays. Inn Elegance, with its user-friendly interface and reliable rental experience, offers its guests ideal options for a luxurious and comfortable holiday. Holidaymakers prefer our platform to find comfort, aesthetics, and a unique experience together."
+      },
+      {
+        "id": "parties-purpose",
+        "title": "Parties and Purpose",
+        "content": "This agreement is made between the person renting the 'VILLA/APARTMENT' (hereinafter referred to as the 'CUSTOMER') and the person renting out the 'VILLA/APARTMENT' (hereinafter referred to as 'INN ELEGANCE') for the purpose of renting the 'VILLA/APARTMENT' for a predetermined period with start and end dates. Customers and their companions who make a reservation for any of our 'Villas/Apartments' advertised on the 'www.innelegance.com' website, either through our website, by phone, or by electronic mail, are deemed to have accepted the following conditions in advance. Any behavior contrary to any of the following conditions gives 'INN ELEGANCE' the right to unilaterally cancel the reservation, request the customer to leave the Villa/Apartment, not refund the deposit, rental fee, and demand the full payment of unpaid rental fees."
+      },
+      {
+        "id": "time-based-conditions",
+        "title": "Reservation, Payment, Cancellation and Refund Conditions",
+        "content": "The customer can cancel their trip before it begins. The customer must make the cancellation notification to INN ELEGANCE in writing, and notifications not made in writing are not acceptable. Reservation cancellations made verbally by phone are absolutely not valid. Reservation cancellations are valid from the moment the written notification reaches INN ELEGANCE. In cancellation cases, INN ELEGANCE will take certain percentages from the customer based on the total prices of the services specified in the travel agreement, in order to compensate for the measures taken regarding the trip, expenses, and the compensation of the villa/apartment owners."
+      },
+      {
+        "id": "cancellation-conditions",
+        "title": "Cancellation Conditions",
+        "content": "If an Advance Payment (Deposit) Has Been Received: a) There is absolutely no refund for the 20% advance payment (deposit) paid for the reservation (may vary between 20% and 100% in our villas). b) In case of cancellations made up to 30 days or less before your check-in date to the Villa/Apartment, or in case of not showing up at the villa/apartment at all, the customer must pay 100% of the payment."
+      },
+      {
+        "id": "full-payment-cancellation",
+        "title": "Cancellation in Case of Full Payment",
+        "content": "If the total payment has been received: a) For cancellations made up to 30 days or more before your check-in date to the Villa/Apartment, the 20% advance payment (deposit) amount is calculated, and this amount is non-refundable. The remaining amount will be refunded to your account. b) In case of cancellations made up to 30 days or less before your check-in date to the Villa/Apartment, or in case of not showing up at the villa/apartment at all, there is no refund for the payment made."
+      },
+      {
+        "id": "refund-conditions",
+        "title": "Refund Conditions",
+        "content": "In reservation cancellations; financial damage, commission fees, etc. that arise and will arise due to the refund processes of payments made by EFT, wire transfer, or credit card, and that will be imposed on INN ELEGANCE by the Republic of Turkey, bank or banks, will be deducted from the money to be refunded to the customer."
+      },
+      {
+        "id": "company-cancellation",
+        "title": "Cancellation by the Company",
+        "content": "In case of unilateral cancellation of the villa/apartment reservation by INN ELEGANCE for any reason, this situation will be notified to the customer as soon as possible. If there is an equivalent villa/apartment available in our portfolio on the same dates, it will be offered to the customer. If the customer does not approve and in cases that do not fall under the 'force majeure' clause, the money received will be refunded to the customer."
+      },
+      {
+        "id": "company-liability",
+        "title": "Company Liability",
+        "content": "INN ELEGANCE is absolutely not responsible for damages arising from reservations canceled by INN ELEGANCE, and cannot be held responsible. The customer who rents the Villa/Apartment accepts to consider this, that INN ELEGANCE is absolutely not responsible for all details including airline tickets, bus tickets, rented cars, boats, transfer services, hotel and pension accommodation fees, etc. that the customer has purchased in advance, as well as any permissions obtained from private companies or the government that may become invalid."
+      },
+      {
+        "id": "force-majeure",
+        "title": "Force Majeure",
+        "content": "In cases of force majeure such as health problems, natural disasters, travel restrictions, war, terrorist events, a special evaluation is made on the condition that an official document is presented. In these cases, if the reservation dates subject to cancellation can be resold, the advance payment may be refunded or the reservation may be postponed to another date. The INN ELEGANCE service fee (20%) is not refunded under any circumstances."
+      },
+      {
+        "id": "written-notifications",
+        "title": "Requirement for Written Notification",
+        "content": "All cancellation requests must be made in writing (via email or through the reservation management system). Cancellation requests made by phone are not valid. Cancellation requests made without written notification are not processed, and the customer continues to be responsible for all payment obligations."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is the deposit I paid for the reservation refundable?",
+        "answer": "There is absolutely no refund for the 20% advance payment (deposit) paid for the reservation (may vary between 20% and 100% in our villas)."
+      },
+      {
+        "question": "Is the payment refundable if I cancel less than 30 days before the check-in date?",
+        "answer": "In case of cancellations made up to 30 days or less before your check-in date to the Villa/Apartment, or in case of not showing up at the villa/apartment at all, there is no refund for the payment made."
+      },
+      {
+        "question": "How can I cancel my reservation?",
+        "answer": "You must make the cancellation notification to INN ELEGANCE in writing (via email or through the reservation system). Reservation cancellations made verbally by phone are absolutely not valid."
+      },
+      {
+        "question": "What happens if INN ELEGANCE cancels my reservation?",
+        "answer": "In case your reservation is canceled by INN ELEGANCE, if there is an equivalent villa/apartment available in our portfolio on the same dates, it will be offered to you. If you do not approve and in cases that do not fall under the 'force majeure' clause, the amount you paid will be refunded."
+      },
+      {
+        "question": "Is bank commission deducted in refund processes?",
+        "answer": "Yes, in reservation cancellations, commission fees that arise due to the refund processes of payments made by EFT, wire transfer, or credit card will be deducted from the amount to be refunded to the customer."
+      }
+    ],
+    "companyInfo": {
+      "name": "Inn Elegance LLC",
+      "address": "7901 4th St N Ste 300, St. Petersburg, FL 33702, USA",
+      "website": "www.innelegance.com",
+      "owner": "Orhan Yavuz",
+      "email": "info@innelegance.com",
+      "phone": "+90 531 621 61 00"
     }
   },
   "gdprNotice": {

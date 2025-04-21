@@ -501,6 +501,8 @@ export default function VillaListingContainer({ locale, dictionary }: VillaListi
             limit={filters.limit || 6} // Limit 6 villa
             onPageChange={(page: number) => setFilters({...filters, page})}
             layout="horizontal" // Tek yatay satırda 2 villa gösterme layout prop'u
+            dictionary={dictionary}
+            locale={locale}
           />
           
           {error && (

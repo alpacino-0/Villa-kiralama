@@ -1,4 +1,4 @@
-import type { Status, CalendarStatus } from '@/types/enums';
+import type { Status, CalendarStatus, EventType } from '@/types/enums';
 
 export interface Villa {
   id: string;
@@ -34,6 +34,7 @@ export interface Villa {
   translations: Record<string, unknown>;
   images?: VillaImage[];
   prices?: SeasonalPrice[];
+  amenities?: VillaAmenity[];
 }
 
 export interface VillaImage {
@@ -61,20 +62,38 @@ export interface SeasonalPrice {
   startDate: string;
   endDate: string;
   nightlyPrice: number;
-  weeklyPrice: number;
+  weeklyPrice?: number | null;
   currencyId: string;
-  description: string;
+  description?: string | null;
   isActive: boolean;
+  currency?: {
+    symbol: string;
+    code: string;
+  };
 }
 
 export interface CalendarEvent {
   id: string;
   villaId: string;
-  reservationId: string;
+  reservationId: string | null;
   date: Date;
   status: CalendarStatus;
-  price: number;
-  note: string;
+  price: number | null;
+  note: string | null;
+  eventType: EventType[] | null;
+}
+
+/**
+ * VillaAmenity - Villa olanakları/özellikleri
+ * 
+ * Villa'nın sahip olduğu özellikler (örn. wifi, havuz, jakuzi vb.)
+ */
+export interface VillaAmenity {
+  id: string;
+  villaId: string;
+  name: string;
+  icon: string | null;
+  createdAt: string;
 }
 
 export interface VillaListResponse {

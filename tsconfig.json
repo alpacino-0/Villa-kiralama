@@ -25,7 +25,8 @@
       "@/lib/*": ["lib/*"],
       "@/app/*": ["app/*"],
       "@/types/*": ["types/*"],
-      "@/components/villa-kiralama/*": ["components/villa-kiralama/*"]
+      "@/components/villa-kiralama/*": ["components/villa-kiralama/*"],
+      "@/components/villa-kiralama/slug/*": ["components/villa-kiralama/slug/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

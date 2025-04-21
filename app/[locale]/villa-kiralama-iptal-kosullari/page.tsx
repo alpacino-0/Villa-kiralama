@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import iptalKosullariData from './iptal-kosullari.json';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { 
   Breadcrumb, 
@@ -19,11 +18,30 @@ import { ChevronRight, HomeIcon, AlertCircle } from 'lucide-react';
 import { getDictionary } from '@/app/dictionaries';
 import { type Locale, locales } from '@/app/i18n';
 import { Metadata } from 'next';
+import { getCancellationData } from './i18n';
 
 // Sayfa prop tipi - Next.js 15.3.0 için params Promise olarak geliyor
 type PageProps = {
   params: Promise<{ locale: string }>;
 };
+
+// Dinamik metadata oluşturma
+export async function generateMetadata({
+  params
+}: PageProps): Promise<Metadata> {
+  // Dinamik parametreleri await etmeliyiz
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  
+  // Dil kontrolü ve sözlük yükleme
+  const currentLocale = locales.includes(locale as Locale) ? locale : 'tr';
+  const dict = await getDictionary(currentLocale);
+  
+  return {
+    title: dict.cancellationTerms?.metadata?.title || "Villa Kiralama İptal Koşulları",
+    description: dict.cancellationTerms?.metadata?.description || "Villa kiralama hizmetimizde uygulanan iptal politikası ve iade koşulları hakkında detaylı bilgiler."
+  };
+}
 
 export default async function VillaKiralamaIptalKosullari({ params }: PageProps) {
   // Dinamik parametreleri önce await etmeliyiz
@@ -36,6 +54,9 @@ export default async function VillaKiralamaIptalKosullari({ params }: PageProps)
   
   // İptal koşulları içeriğini alıyoruz
   const cancellationDict = dict.cancellationTerms || {};
+  
+  // Çok dilli iptal koşulları verilerini al
+  const cancellationData = await getCancellationData(currentLocale);
   
   return (
     <div className="container mx-auto px-4 py-8 md:py-12">
@@ -68,10 +89,13 @@ export default async function VillaKiralamaIptalKosullari({ params }: PageProps)
             <AlertCircle className="h-16 w-16 text-primary" />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
-            {cancellationDict.hero?.title || iptalKosullariData.title}
+            {cancellationDict.hero?.title || cancellationData.title}
           </h1>
           <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto">
             {cancellationDict.hero?.description || "Bu sayfada Inn Elegance villa kiralama hizmetlerine ilişkin iptal koşulları ve iade politikalarını bulabilirsiniz. Rezervasyon yapmadan önce bu koşulları dikkatlice okuyunuz."}
+          </p>
+          <p className="text-accent text-sm mt-2">
+            {cancellationData.lastUpdated}
           </p>
         </div>
         
@@ -80,12 +104,12 @@ export default async function VillaKiralamaIptalKosullari({ params }: PageProps)
           <Card className="shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-primary">
             <CardHeader>
               <CardTitle className="text-xl md:text-2xl text-primary">
-                {iptalKosullariData.sections[0].title}
+                {cancellationData.sections[0].title}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-foreground text-base whitespace-pre-line">
-                {iptalKosullariData.sections[0].content}
+                {cancellationData.sections[0].content}
               </p>
             </CardContent>
           </Card>
@@ -93,12 +117,12 @@ export default async function VillaKiralamaIptalKosullari({ params }: PageProps)
           <Card className="shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-primary">
             <CardHeader>
               <CardTitle className="text-xl md:text-2xl text-primary">
-                {iptalKosullariData.sections[1].title}
+                {cancellationData.sections[1].title}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-foreground text-base whitespace-pre-line">
-                {iptalKosullariData.sections[1].content}
+                {cancellationData.sections[1].content}
               </p>
             </CardContent>
           </Card>
@@ -110,7 +134,7 @@ export default async function VillaKiralamaIptalKosullari({ params }: PageProps)
             {cancellationDict.sectionTitle || "İptal ve İade Koşulları"}
           </h2>
           <Accordion type="single" collapsible className="border rounded-lg">
-            {iptalKosullariData.sections.slice(2).map((section) => (
+            {cancellationData.sections.slice(2).map((section) => (
               <AccordionItem key={section.id} value={section.id}>
                 <AccordionTrigger className="text-lg font-medium text-primary px-4">
                   {section.title}
@@ -133,7 +157,7 @@ export default async function VillaKiralamaIptalKosullari({ params }: PageProps)
           <Card className="shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="pt-6">
               <Accordion type="single" collapsible>
-                {iptalKosullariData.faq.map((faq) => (
+                {cancellationData.faq.map((faq) => (
                   <AccordionItem 
                     key={`faq-${faq.question.replace(/\s+/g, '-').toLowerCase().slice(0, 20)}`} 
                     value={`faq-${faq.question.replace(/\s+/g, '-').toLowerCase().slice(0, 20)}`}
@@ -163,42 +187,42 @@ export default async function VillaKiralamaIptalKosullari({ params }: PageProps)
               <strong className="min-w-24 inline-block">
                 {cancellationDict.companyInfoLabels?.company || "Şirket:"}
               </strong> 
-              <span>{iptalKosullariData.companyInfo.name}</span>
+              <span>{cancellationData.companyInfo.name}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">
                 {cancellationDict.companyInfoLabels?.address || "Adres:"}
               </strong> 
-              <span>{iptalKosullariData.companyInfo.address}</span>
+              <span>{cancellationData.companyInfo.address}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">
                 {cancellationDict.companyInfoLabels?.website || "Web Sitesi:"}
               </strong> 
-              <a href={`https://${iptalKosullariData.companyInfo.website}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                {iptalKosullariData.companyInfo.website}
+              <a href={`https://${cancellationData.companyInfo.website}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                {cancellationData.companyInfo.website}
               </a>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">
                 {cancellationDict.companyInfoLabels?.owner || "Sahibi:"}
               </strong> 
-              <span>{iptalKosullariData.companyInfo.owner}</span>
+              <span>{cancellationData.companyInfo.owner}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">
                 {cancellationDict.companyInfoLabels?.email || "E-posta:"}
               </strong> 
-              <a href={`mailto:${iptalKosullariData.companyInfo.email}`} className="text-primary hover:underline">
-                {iptalKosullariData.companyInfo.email}
+              <a href={`mailto:${cancellationData.companyInfo.email}`} className="text-primary hover:underline">
+                {cancellationData.companyInfo.email}
               </a>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">
                 {cancellationDict.companyInfoLabels?.phone || "Telefon:"}
               </strong> 
-              <a href={`tel:${iptalKosullariData.companyInfo.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
-                {iptalKosullariData.companyInfo.phone}
+              <a href={`tel:${cancellationData.companyInfo.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
+                {cancellationData.companyInfo.phone}
               </a>
             </p>
           </div>
@@ -237,22 +261,4 @@ export default async function VillaKiralamaIptalKosullari({ params }: PageProps)
       </div>
     </div>
   );
-}
-
-// Next.js 15 için metadata tanımı
-export async function generateMetadata({
-  params
-}: PageProps): Promise<Metadata> {
-  // Dinamik parametreleri await etmeliyiz
-  const resolvedParams = await params;
-  const { locale } = resolvedParams;
-  
-  // Dil kontrolü ve sözlük yükleme
-  const currentLocale = locales.includes(locale as Locale) ? locale : 'tr';
-  const dict = await getDictionary(currentLocale);
-  
-  return {
-    title: dict.cancellationTerms?.metadata?.title || "Villa Kiralama İptal Koşulları",
-    description: dict.cancellationTerms?.metadata?.description || "Villa kiralama hizmetimizde uygulanan iptal politikası ve iade koşulları hakkında detaylı bilgiler."
-  };
 }

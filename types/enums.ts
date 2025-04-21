@@ -12,6 +12,13 @@ export enum CalendarStatus {
   BLOCKED = 'BLOCKED'
 }
 
+// Takvim olaylarının tipini belirten enum
+export enum EventType {
+  CHECKIN = 'CHECKIN',
+  CHECKOUT = 'CHECKOUT',
+  SPECIAL_OFFER = 'SPECIAL_OFFER'
+}
+
 export enum Currency {
   TRY = 'TRY',
   USD = 'USD',

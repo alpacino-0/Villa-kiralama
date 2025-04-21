@@ -2,6 +2,7 @@ import { getDictionary } from "../dictionaries";
 import type { Metadata } from "next";
 import { defaultMetadata } from "../metadata";
 import { DotPattern } from "@/components/dot-pattern-1";
+
 type HomePageProps = {
   params: Promise<{ locale: string }>;
 };
@@ -45,6 +46,6 @@ export default async function HomePage({
           </div>
         </div>
       </div>
-    </>
+    </> 
   );
 }     

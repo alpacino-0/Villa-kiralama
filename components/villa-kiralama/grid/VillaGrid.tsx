@@ -6,6 +6,7 @@ import Image from 'next/image';
 import type { Villa } from '@/types/villa';
 import { VillaPagination } from '@/components/villa-kiralama/grid/VillaPagination';
 import { VillaCard } from '@/components/villa-kiralama/VillaCard';
+import type { Locale } from '@/app/i18n';
 
 // Dictionary tipini tanımlayalım
 interface Dictionary {
@@ -31,6 +32,7 @@ interface VillaGridProps {
   onPageChange: (page: number) => void;
   layout?: 'grid' | 'horizontal' | 'list';
   dictionary?: Dictionary;
+  locale?: Locale;
 }
 
 export function VillaGrid({
@@ -41,7 +43,8 @@ export function VillaGrid({
   limit,
   onPageChange,
   layout = 'grid',
-  dictionary
+  dictionary,
+  locale = 'tr'
 }: VillaGridProps) {
   // Görünüm tipi (grid/list)
   const [viewType, setViewType] = useState<'grid' | 'list'>(layout === 'list' ? 'list' : 'grid');
@@ -178,7 +181,7 @@ export function VillaGrid({
             <div key={villa.id} className="flex flex-col sm:flex-row border rounded-lg overflow-hidden bg-white shadow-sm">
               <div className="sm:w-1/3 relative h-48 sm:h-auto">
                 {villa.images && villa.images.length > 0 ? (
-                  <Link href={`/villa-kiralama/${villa.slug}`}>
+                  <Link href={`/${locale}/villa-kiralama/${villa.slug}`}>
                     <Image
                       src={typeof villa.images[0] === 'string' 
                         ? villa.images[0] 
@@ -201,7 +204,7 @@ export function VillaGrid({
               <div className="p-4 sm:p-6 sm:w-2/3 flex flex-col">
                 <div className="flex justify-between items-start">
                   <div>
-                    <Link href={`/villa-kiralama/${villa.slug}`} className="text-lg font-semibold text-gray-900 hover:text-blue-600">
+                    <Link href={`/${locale}/villa-kiralama/${villa.slug}`} className="text-lg font-semibold text-gray-900 hover:text-blue-600">
                       {villa.title}
                     </Link>
                     <p className="text-sm text-gray-500 mt-1">{villa.mainRegion} - {villa.subRegion}</p>
@@ -252,7 +255,7 @@ export function VillaGrid({
                   </div>
                   
                   <Link
-                    href={`/villa-kiralama/${villa.slug}`}
+                    href={`/${locale}/villa-kiralama/${villa.slug}`}
                     className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                   >
                     Detayları Gör

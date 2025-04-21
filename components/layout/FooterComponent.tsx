@@ -161,7 +161,7 @@ const FooterComponent = ({ locale, dictionary }: FooterComponentProps) => {
   return (
     <footer className={`bg-secondary pt-10 pb-6 px-4 md:px-6 
                        ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Şirket Bilgileri */}
           <div className={`${isVisible ? 'animate-slide-up animate-delay-100' : ''}`}>

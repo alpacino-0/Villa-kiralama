@@ -17,19 +17,22 @@ import {
 } from '@/components/ui/accordion';
 import { ChevronRight, HomeIcon, Shield } from 'lucide-react';
 import { getDictionary } from '@/app/dictionaries';
-import { Locale, locales } from '@/app/i18n';
+import type { Locale } from '@/app/i18n';
+import { locales } from '@/app/i18n';
+import { getKVKKData } from './i18n';
+import type { KVKKSectionType } from './i18n';
 
+// Sayfa prop tipi - Next.js 15 için params Promise olarak geliyor
 type KVKKProps = {
   params: Promise<{ locale: string }>;
 };
 
 // Dinamik metadata oluşturma
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  // Next.js 15.3.0'da params bir Promise olarak geliyor
+  // Dinamik parametreleri await etmeliyiz
   const resolvedParams = await params;
-  
-  // Dil sözlüğünü al
   const locale = resolvedParams.locale;
+  
   const dict = await getDictionary(locale);
 
   return {
@@ -39,14 +42,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 export default async function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKProps) {
-  // Next.js 15.3.0'da params bir Promise olarak geliyor
+  // Dinamik parametreleri await etmeliyiz
   const resolvedParams = await params;
+  const { locale } = resolvedParams;
   
   // Dil kontrolü ve sözlük yükleme
-  const locale = locales.includes(resolvedParams.locale as Locale) ? resolvedParams.locale : 'en';
-  const dict = await getDictionary(locale);
+  const currentLocale = locales.includes(locale as Locale) ? locale : 'en';
+  const dict = await getDictionary(currentLocale);
   
-  // KVKK verileri
+  // Çok dilli KVKK verilerini al
+  const kvkkData = await getKVKKData(currentLocale);
+  
+  // Sözlükten GDPR metinlerini al
   const gdprData = dict.gdprNotice;
 
   return (
@@ -57,7 +64,7 @@ export default async function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKP
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link href={`/${locale}`} className="flex items-center text-muted-foreground hover:text-primary">
+                <Link href={`/${currentLocale}`} className="flex items-center text-muted-foreground hover:text-primary">
                   <HomeIcon className="h-4 w-4 mr-1" />
                   {gdprData.breadcrumb.home}
                 </Link>
@@ -78,13 +85,13 @@ export default async function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKP
             <Shield className="h-16 w-16 text-primary" />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
-            {gdprData.pageTitle}
+            {kvkkData.title}
           </h1>
           <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto">
             {gdprData.pageDescription}
           </p>
           <p className="text-accent text-sm mt-2">
-            {gdprData.lastUpdated}
+            {currentLocale === 'tr' ? 'Son Güncelleme:' : currentLocale === 'de' ? 'Letzte Aktualisierung:' : currentLocale === 'ru' ? 'Последнее обновление:' : 'Last Updated:'} {kvkkData.lastUpdated}
           </p>
         </div>
         
@@ -92,12 +99,12 @@ export default async function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKP
         <Card className="mb-8 shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-primary">
           <CardHeader>
             <CardTitle className="text-xl md:text-2xl text-primary">
-              {gdprData.sections[0].title}
+              {kvkkData.sections[0].title}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-foreground text-base whitespace-pre-line">
-              {gdprData.sections[0].content}
+              {kvkkData.sections[0].content}
             </p>
           </CardContent>
         </Card>
@@ -106,7 +113,7 @@ export default async function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKP
         <div className="mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-primary">{gdprData.princplesSectionTitle}</h2>
           <Accordion type="single" collapsible className="border rounded-lg">
-            {gdprData.sections.slice(1).map((section) => (
+            {kvkkData.sections.slice(1).map((section: KVKKSectionType) => (
               <AccordionItem key={section.id} value={section.id}>
                 <AccordionTrigger className="text-lg font-medium text-primary px-4">
                   {section.title}
@@ -127,32 +134,32 @@ export default async function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKP
           <div className="space-y-3 text-foreground">
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.company}:</strong> 
-              <span>{gdprData.companyInfo.name}</span>
+              <span>{kvkkData.companyInfo.name}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.address}:</strong> 
-              <span>{gdprData.companyInfo.address}</span>
+              <span>{kvkkData.companyInfo.address}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.website}:</strong> 
-              <a href={`https://${gdprData.companyInfo.website}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                {gdprData.companyInfo.website}
+              <a href={`https://${kvkkData.companyInfo.website}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                {kvkkData.companyInfo.website}
               </a>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.owner}:</strong> 
-              <span>{gdprData.companyInfo.owner}</span>
+              <span>{kvkkData.companyInfo.owner}</span>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.email}:</strong> 
-              <a href={`mailto:${gdprData.companyInfo.email}`} className="text-primary hover:underline">
-                {gdprData.companyInfo.email}
+              <a href={`mailto:${kvkkData.companyInfo.email}`} className="text-primary hover:underline">
+                {kvkkData.companyInfo.email}
               </a>
             </p>
             <p className="flex flex-col sm:flex-row sm:gap-2">
               <strong className="min-w-24 inline-block">{gdprData.companyInfo.labels.phone}:</strong> 
-              <a href={`tel:${gdprData.companyInfo.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
-                {gdprData.companyInfo.phone}
+              <a href={`tel:${kvkkData.companyInfo.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
+                {kvkkData.companyInfo.phone}
               </a>
             </p>
           </div>
@@ -165,7 +172,7 @@ export default async function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKP
               {gdprData.disclaimerText}
             </p>
             <p className="text-muted-foreground">
-              {gdprData.lastUpdated}
+              {currentLocale === 'tr' ? 'Son Güncelleme:' : currentLocale === 'de' ? 'Letzte Aktualisierung:' : currentLocale === 'ru' ? 'Последнее обновление:' : 'Last Updated:'} {kvkkData.lastUpdated}
             </p>
           </Card>
           
@@ -175,7 +182,7 @@ export default async function KisiselVerilerinKorunmasiSayfasi({ params }: KVKKP
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              href={`/${locale}/villa-kiralama-iletisim`} 
+              href={`/${currentLocale}/villa-kiralama-iletisim`} 
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
             >
               {gdprData.contactButton}

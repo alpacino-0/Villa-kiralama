@@ -9,8 +9,9 @@ import {
 } from '@/components/ui/breadcrumb';
 import { ChevronRight, HomeIcon, ShieldCheck } from 'lucide-react';
 import { getDictionary } from "@/app/dictionaries";
-import { Locale, locales } from "@/app/i18n";
-import { Metadata } from 'next';
+import type { Locale } from '@/app/i18n';
+import { locales } from '@/app/i18n';
+import type { Metadata } from 'next';
 
 // Sayfa prop tipi - Next.js 15.3.0 için params Promise olarak geliyor
 type PageProps = {
